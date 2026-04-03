@@ -6,3 +6,6 @@ saves/
 /*.ps1
 /*.log
 /*.txt
+emulationstation//emulatorLauncher.log
+emulationstation/.emulationstation/es_launch_stdout.log
+emulationstation/.emulationstation/es_log.txt
