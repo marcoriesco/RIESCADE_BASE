@@ -1,3 +1,4 @@
+bios/
 emulators/
 roms/
 saves/
@@ -5,4 +6,3 @@ saves/
 /*.ps1
 /*.log
 /*.txt
-bios/
