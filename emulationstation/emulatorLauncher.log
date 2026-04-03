@@ -3982,3 +3982,114 @@
 2026-04-03 01:03:45.675 [INFO]      [Generator] Process exited with code 0
 2026-04-03 01:03:45.676 [INFO]      [PadToKey] Exit listening
 2026-04-03 01:03:45.702 [INFO]      [Generator] Cleanup.
+2026-04-03 15:38:19.791 [INFO]      --------------------------------------------------------------
+2026-04-03 15:38:19.792 [INFO]      [Startup] Y:\images\RIESCADE\emulationstation\.emulationstation\scripts\start\..\..\..\emulatorLauncher.exe  -updatestores
+2026-04-03 15:38:19.793 [INFO]      [Startup] Loading configuration.
+2026-04-03 15:38:19.796 [INFO]      [Startup] Loading ES settings.
+2026-04-03 15:38:19.804 [INFO]      [Startup] Retrobat version : 7.5.3-stable-win64
+2026-04-03 15:38:19.805 [INFO]      [Startup] EmulatorLauncher.exe version : 30/03/2026 12:15:24
+2026-04-03 15:38:19.811 [INFO]      [ImportStore] Option to scan installed store games is disabled.
+2026-04-03 15:49:33.879 [INFO]      --------------------------------------------------------------
+2026-04-03 15:49:33.880 [INFO]      [Startup] "Y:\images\RIESCADE\emulationstation\emulatorLauncher.exe"  -gameinfo "C:\Users\MARCOR~1\AppData\Local\Temp\emulationstation.tmp\game.xml"  -system switch -emulator eden -core  -rom "Y:\images\RIESCADE\roms\switch\The Legend of Zelda Tears of the Kingdom.xci"
+2026-04-03 15:49:33.881 [INFO]      [Startup] Loading configuration.
+2026-04-03 15:49:33.884 [INFO]      [Startup] Loading ES settings.
+2026-04-03 15:49:33.892 [INFO]      [Startup] Retrobat version : 7.5.3-stable-win64
+2026-04-03 15:49:33.893 [INFO]      [Startup] EmulatorLauncher.exe version : 30/03/2026 12:15:24
+2026-04-03 15:49:34.329 [INFO]      [Startup] Emulator version: 0.2.0
+2026-04-03 15:49:34.347 [INFO]      [Game] The Legend of Zelda: Tears of the Kingdom
+2026-04-03 15:49:34.350 [INFO]      [Startup] Loading Controller configuration.
+2026-04-03 15:49:35.063 [ERROR]     [UrlExists] Exception O servidor remoto retornou um erro: (404) Não Localizado.
+2026-04-03 15:49:35.063 [EXCEPTION] [WebException] O servidor remoto retornou um erro: (404) Não Localizado.
+2026-04-03 15:49:35.065 [STACK]     [StackTrace] em System.Net.HttpWebRequest.GetResponse()
+   em EmulatorLauncher.Common.WebTools.UrlExists(String url)
+2026-04-03 15:49:35.686 [ERROR]     [UrlExists] Exception O servidor remoto retornou um erro: (404) Não Localizado.
+2026-04-03 15:49:35.686 [EXCEPTION] [WebException] O servidor remoto retornou um erro: (404) Não Localizado.
+2026-04-03 15:49:35.686 [STACK]     [StackTrace] em System.Net.HttpWebRequest.GetResponse()
+   em EmulatorLauncher.Common.WebTools.UrlExists(String url)
+2026-04-03 15:49:35.687 [INFO]      [Generator] Using EdenGenerator
+2026-04-03 15:49:35.753 [INFO]      [Generator] Loading features.
+2026-04-03 15:49:35.756 [INFO]      [Generator] Getting eden path and executable name.
+2026-04-03 15:49:35.819 [INFO]      [INFO] Creating controller configuration for Eden
+2026-04-03 15:49:36.012 [INFO]      [SdlGameController] 0 SDL controller(s) connected
+2026-04-03 15:49:39.319 [INFO]      [PadToKey] Loaded Y:\images\RIESCADE\emulationstation\.emulationstation\es_padtokey.cfg
+2026-04-03 15:49:39.322 [INFO]      [Running] Y:\images\RIESCADE\emulators\eden\eden.exe -f -g "Y:\images\RIESCADE\roms\switch\The Legend of Zelda Tears of the Kingdom.xci"
+2026-04-03 15:51:41.191 [INFO]      [Generator] Process exited with code 0
+2026-04-03 15:51:41.203 [INFO]      [Generator] Cleanup.
+2026-04-03 16:01:31.248 [INFO]      --------------------------------------------------------------
+2026-04-03 16:01:31.249 [INFO]      [Startup] Y:\images\RIESCADE\emulationstation\.emulationstation\scripts\start\..\..\..\emulatorLauncher.exe  -updatestores
+2026-04-03 16:01:31.249 [INFO]      [Startup] Loading configuration.
+2026-04-03 16:01:31.253 [INFO]      [Startup] Loading ES settings.
+2026-04-03 16:01:31.261 [INFO]      [Startup] Retrobat version : 7.5.3-stable-win64
+2026-04-03 16:01:31.262 [INFO]      [Startup] EmulatorLauncher.exe version : 30/03/2026 12:15:24
+2026-04-03 16:01:31.268 [INFO]      [ImportStore] Option to scan installed store games is disabled.
+2026-04-03 16:04:11.167 [INFO]      --------------------------------------------------------------
+2026-04-03 16:04:11.168 [INFO]      [Startup] "Y:\images\RIESCADE\emulationstation\emulatorLauncher.exe"  -gameinfo "C:\Users\MARCOR~1\AppData\Local\Temp\emulationstation.tmp\game.xml" -p1index 0 -p1guid 030000005e0400008e02000000007200 -p1path "USB\VID_045E&PID_028E&IG_00\2&DEE0F28&0&00" -p1name "Xbox 360 Controller" -p1nbbuttons 11 -p1nbhats 1 -p1nbaxes 6  -system switch -emulator eden -core  -rom "Y:\images\RIESCADE\roms\switch\The Legend of Zelda Tears of the Kingdom.xci"
+2026-04-03 16:04:11.168 [INFO]      [Startup] Loading configuration.
+2026-04-03 16:04:11.171 [INFO]      [Startup] Loading ES settings.
+2026-04-03 16:04:11.179 [INFO]      [Startup] Retrobat version : 7.5.3-stable-win64
+2026-04-03 16:04:11.180 [INFO]      [Startup] EmulatorLauncher.exe version : 30/03/2026 12:15:24
+2026-04-03 16:04:11.343 [INFO]      [Startup] Emulator version: 0.2.0
+2026-04-03 16:04:11.359 [INFO]      [Game] The Legend of Zelda: Tears of the Kingdom
+2026-04-03 16:04:11.362 [INFO]      [Startup] Loading Controller configuration.
+2026-04-03 16:04:12.083 [ERROR]     [UrlExists] Exception O servidor remoto retornou um erro: (404) Não Localizado.
+2026-04-03 16:04:12.083 [EXCEPTION] [WebException] O servidor remoto retornou um erro: (404) Não Localizado.
+2026-04-03 16:04:12.084 [STACK]     [StackTrace] em System.Net.HttpWebRequest.GetResponse()
+   em EmulatorLauncher.Common.WebTools.UrlExists(String url)
+2026-04-03 16:04:12.496 [ERROR]     [UrlExists] Exception O servidor remoto retornou um erro: (404) Não Localizado.
+2026-04-03 16:04:12.496 [EXCEPTION] [WebException] O servidor remoto retornou um erro: (404) Não Localizado.
+2026-04-03 16:04:12.496 [STACK]     [StackTrace] em System.Net.HttpWebRequest.GetResponse()
+   em EmulatorLauncher.Common.WebTools.UrlExists(String url)
+2026-04-03 16:04:12.496 [INFO]      [Generator] Using EdenGenerator
+2026-04-03 16:04:12.543 [INFO]      [Generator] Loading features.
+2026-04-03 16:04:12.546 [INFO]      [Generator] Getting eden path and executable name.
+2026-04-03 16:04:12.615 [INFO]      [INFO] Creating controller configuration for Eden
+2026-04-03 16:04:12.788 [INFO]      [SdlGameController] 1 SDL controller(s) connected
+2026-04-03 16:04:12.793 [INFO]      [SdlGameController] Loading SDL controller mapping : 0 => 0300B9695E0400008E02000000007200, Xbox 360 Controller, USB\VID_045E&PID_028E&IG_00\2&DEE0F28&0&00
+2026-04-03 16:04:16.178 [INFO]      [INFO] Assigned controller USB\VID_045E&PID_028E&IG_00\2&DEE0F28&0&00 to player : 1
+2026-04-03 16:04:16.197 [INFO]      [PadToKey] Loaded Y:\images\RIESCADE\emulationstation\.emulationstation\es_padtokey.cfg
+2026-04-03 16:04:16.200 [INFO]      [Running] Y:\images\RIESCADE\emulators\eden\eden.exe -f -g "Y:\images\RIESCADE\roms\switch\The Legend of Zelda Tears of the Kingdom.xci"
+2026-04-03 16:04:16.380 [INFO]      [PadToKey] Add joystick Xbox 360 Controller - Device:0, Player:1, Path:USB\VID_045E&PID_028E&IG_00\2&DEE0F28&0&00
+2026-04-03 16:04:16.380 [INFO]      [PadToKey] Start listening
+2026-04-03 16:14:39.584 [INFO]      [Generator] Process exited with code 0
+2026-04-03 16:14:39.585 [INFO]      Xbox 360 Controller - Device:0, Player:1, Path:USB\VID_045E&PID_028E&IG_00\2&DEE0F28&0&00
+2026-04-03 16:14:39.585 [INFO]      [PadToKey] Exit listening
+2026-04-03 16:14:39.610 [INFO]      [Generator] Cleanup.
+2026-04-03 16:29:28.086 [INFO]      --------------------------------------------------------------
+2026-04-03 16:29:28.087 [INFO]      [Startup] Y:\images\RIESCADE\emulationstation\.emulationstation\scripts\start\..\..\..\emulatorLauncher.exe  -updatestores
+2026-04-03 16:29:28.088 [INFO]      [Startup] Loading configuration.
+2026-04-03 16:29:28.091 [INFO]      [Startup] Loading ES settings.
+2026-04-03 16:29:28.099 [INFO]      [Startup] Retrobat version : 7.5.3-stable-win64
+2026-04-03 16:29:28.100 [INFO]      [Startup] EmulatorLauncher.exe version : 30/03/2026 12:15:24
+2026-04-03 16:29:28.107 [INFO]      [ImportStore] Option to scan installed store games is disabled.
+2026-04-03 16:30:01.809 [INFO]      --------------------------------------------------------------
+2026-04-03 16:30:01.810 [INFO]      [Startup] "Y:\images\RIESCADE\emulationstation\emulatorLauncher.exe"  -gameinfo "C:\Users\MARCOR~1\AppData\Local\Temp\emulationstation.tmp\game.xml" -p1index 0 -p1guid 030000005e0400008e02000000007200 -p1path "USB\VID_045E&PID_028E&IG_00\2&DEE0F28&0&00" -p1name "Xbox 360 Controller" -p1nbbuttons 11 -p1nbhats 1 -p1nbaxes 6  -system switch -emulator eden -core  -rom "Y:\images\RIESCADE\roms\switch\The Legend of Zelda Tears of the Kingdom.xci"
+2026-04-03 16:30:01.810 [INFO]      [Startup] Loading configuration.
+2026-04-03 16:30:01.814 [INFO]      [Startup] Loading ES settings.
+2026-04-03 16:30:01.821 [INFO]      [Startup] Retrobat version : 7.5.3-stable-win64
+2026-04-03 16:30:01.821 [INFO]      [Startup] EmulatorLauncher.exe version : 30/03/2026 12:15:24
+2026-04-03 16:30:01.976 [INFO]      [Startup] Emulator version: 0.2.0
+2026-04-03 16:30:01.993 [INFO]      [Game] The Legend of Zelda: Tears of the Kingdom
+2026-04-03 16:30:01.995 [INFO]      [Startup] Loading Controller configuration.
+2026-04-03 16:30:02.691 [ERROR]     [UrlExists] Exception O servidor remoto retornou um erro: (404) Não Localizado.
+2026-04-03 16:30:02.691 [EXCEPTION] [WebException] O servidor remoto retornou um erro: (404) Não Localizado.
+2026-04-03 16:30:02.691 [STACK]     [StackTrace] em System.Net.HttpWebRequest.GetResponse()
+   em EmulatorLauncher.Common.WebTools.UrlExists(String url)
+2026-04-03 16:30:03.572 [ERROR]     [UrlExists] Exception O servidor remoto retornou um erro: (404) Não Localizado.
+2026-04-03 16:30:03.572 [EXCEPTION] [WebException] O servidor remoto retornou um erro: (404) Não Localizado.
+2026-04-03 16:30:03.572 [STACK]     [StackTrace] em System.Net.HttpWebRequest.GetResponse()
+   em EmulatorLauncher.Common.WebTools.UrlExists(String url)
+2026-04-03 16:30:03.572 [INFO]      [Generator] Using EdenGenerator
+2026-04-03 16:30:03.620 [INFO]      [Generator] Loading features.
+2026-04-03 16:30:03.624 [INFO]      [Generator] Getting eden path and executable name.
+2026-04-03 16:30:03.699 [INFO]      [INFO] Creating controller configuration for Eden
+2026-04-03 16:30:03.874 [INFO]      [SdlGameController] 1 SDL controller(s) connected
+2026-04-03 16:30:03.880 [INFO]      [SdlGameController] Loading SDL controller mapping : 0 => 0300B9695E0400008E02000000007200, Xbox 360 Controller, USB\VID_045E&PID_028E&IG_00\2&DEE0F28&0&00
+2026-04-03 16:30:07.189 [INFO]      [INFO] Assigned controller USB\VID_045E&PID_028E&IG_00\2&DEE0F28&0&00 to player : 1
+2026-04-03 16:30:07.212 [INFO]      [PadToKey] Loaded Y:\images\RIESCADE\emulationstation\.emulationstation\es_padtokey.cfg
+2026-04-03 16:30:07.215 [INFO]      [Running] Y:\images\RIESCADE\emulators\eden\eden.exe -f -g "Y:\images\RIESCADE\roms\switch\The Legend of Zelda Tears of the Kingdom.xci"
+2026-04-03 16:30:07.393 [INFO]      [PadToKey] Add joystick Xbox 360 Controller - Device:0, Player:1, Path:USB\VID_045E&PID_028E&IG_00\2&DEE0F28&0&00
+2026-04-03 16:30:07.393 [INFO]      [PadToKey] Start listening
+2026-04-03 16:31:47.833 [INFO]      [Generator] Process exited with code 0
+2026-04-03 16:31:47.834 [INFO]      Xbox 360 Controller - Device:0, Player:1, Path:USB\VID_045E&PID_028E&IG_00\2&DEE0F28&0&00
+2026-04-03 16:31:47.834 [INFO]      [PadToKey] Exit listening
+2026-04-03 16:31:47.865 [INFO]      [Generator] Cleanup.

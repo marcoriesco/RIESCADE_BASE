@@ -40,7 +40,8 @@
         </menuTextSmall>
 
         <menuBackground name="menubg">
-            <color>000000</color>
+            <color>000000FF</color>
+            <path>./resources/_parts/bg-menu.png</path>
             <cornerSize>32 32</cornerSize>
             <scrollbarColor>${subset.colors}</scrollbarColor>
             <scrollbarCorner>0.49</scrollbarCorner>
