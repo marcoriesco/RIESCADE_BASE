@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="splash">
+
+        <splash name="splash">
+            <backgroundColor>333333FF</backgroundColor>
+        </splash>
+
+        <image name="game-fanart" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>{game:image}</path>
+            <zIndex>5</zIndex>
+        </image>
+
+        <image name="overlay" extra="static">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path ifSubset="overlay:light">./resources/_parts/overlay-gamelist-light.png</path>
+            <path ifSubset="overlay:hard">./resources/_parts/overlay-gamelist-hard.png</path>
+            <zIndex>6</zIndex>
+        </image>
+
+        <image name="game-logo" extra="static">
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.5</pos>
+            <maxSize>0.300 0.280</maxSize>
+            <path>{game:marquee}</path>
+            <zIndex>30</zIndex>
+        </image>
+
+        <text name="label">
+            <origin>0 0</origin>
+            <pos>0.03 0.77</pos>
+            <size>0.5 0.10</size>
+            <fontPath>./resources/fonts/InterTight-SemiBold.ttf</fontPath>
+            <fontSize>0.044</fontSize>
+            <color>FFFFFFFF</color>
+
+            <glowColor>000000</glowColor>
+            <glowSize>1</glowSize>
+            <glowOffset>1.5</glowOffset>
+            <alignment>left</alignment>
+            <extraTextColor>FFFFFF80</extraTextColor>
+            <zIndex>32</zIndex>
+        </text>
+
+        <text name="loading" extra="static">
+            <origin>0 0</origin>
+            <pos>0.035 0.86</pos>
+            <size>0.5 0.03</size>
+            <fontPath>./resources/fonts/InterTight-Regular.ttf</fontPath>
+            <fontSize>0.024</fontSize>
+            <color>FFFFFFFF</color>
+
+            <glowColor>000000</glowColor>
+            <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
+            <alignment>left</alignment>
+
+            <text>LOADING...</text>
+            <text lang="pt">CARREGANDO...</text>
+            <text lang="fr">CHARGEMENT...</text>
+            <text lang="es">CARGANDO...</text>
+
+            <zIndex>32</zIndex>
+        </text>
+
+        <image name="loading-icon" extra="true">
+            <origin>1 0</origin>
+            <pos>0.16 0.86</pos>
+            <maxSize>0.03 0.03</maxSize>
+            <alignment>right</alignment>
+            <path>./resources/_parts/loading.png</path>
+            <zIndex>32</zIndex>
+        </image>
+    </text>
+
+</view>
+
+</theme>

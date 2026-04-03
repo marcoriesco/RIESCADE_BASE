@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="system, gamecarousel, grid, detailed, basic">
+
+        <!-- UserInfo -->
+        <image name="platforms_avatar" extra="static">
+            <origin>1 0</origin>
+            <pos>0.86 0.026</pos>
+            <size>0.035 </size>
+            <path>./resources/_parts/riescade.png</path>
+            <zIndex>2000</zIndex>
+            <onclick>netplay</onclick>
+
+            <container>
+                <image name="platforms_avatar_netplay" extra="static">
+                    <pos>0.7 0.75</pos>
+                    <size>0.3 0</size>
+                    <path>./resources/icons/offline.png</path>
+                    <path if="{global.netplay}">./resources/icons/online.png</path>
+                    <autoFade>true</autoFade>
+                    <scale>0.8</scale>
+                    <scaleOrigin>0.5 0.5</scaleOrigin>
+
+                    <storyboard repeat="forever">
+                        <animation property="scale" from="0.8" to="1" begin="100" duration="1200" autoReverse="true" mode="EaseInOut" />
+                    </storyboard>
+                </image>
+            </container>
+        </image>
+
+        <webimage if="{global.cheevos} == true" name="platforms_avatar" extra="static">
+            <origin>1 0</origin>
+            <pos>0.86 0.026</pos>
+            <maxSize>0.05 0.05</maxSize>
+            <path if="{global.cheevos.username}">https://media.retroachievements.org/UserPic/${global.cheevos.username}.png</path>
+            <roundCorners>0.5</roundCorners>
+            <zIndex>2000</zIndex>
+            <onclick>netplay</onclick>
+
+            <container>
+                <image name="platforms_avatar_netplay" extra="static">
+                    <pos>0.7 0.75</pos>
+                    <size>0.3 0</size>
+                    <path>./resources/icons/offline.png</path>
+                    <path if="{global.netplay}">./resources/icons/online.png</path>
+                    <autoFade>true</autoFade>
+                    <scale>0.8</scale>
+                    <scaleOrigin>0.5 0.5</scaleOrigin>
+
+                    <storyboard if="{global.netplay}" repeat="forever">
+                        <animation property="scale" from="0.8" to="1" begin="100" duration="1200" autoReverse="true" mode="EaseInOut" />
+                    </storyboard>
+                </image>
+
+                <!-- Se a plataforma tiver RetroAchievements -->
+                <image if="{system.cheevos} == true" name="platforms_avatar_cheevos" extra="static">
+                    <pos>0.45 -0.30</pos>
+                    <size>0.67 0</size>
+                    <path>./resources/icons/cheevos.png</path>
+                    <autoFade>true</autoFade>
+                </image>
+            </container>
+        </webimage>
+
+        <image name="platforms_config" extra="static">
+            <origin>1 0</origin>
+            <pos>0.80 0.0434</pos>
+            <size>0.02 </size>
+            <path>./resources/icons/config.png</path>
+            <color>FFFFFF</color>
+            <zIndex>2000</zIndex>
+        </image>
+
+        <image name="platforms_filter" extra="static">
+            <origin>1 0</origin>
+            <pos>0.756 0.0432</pos>
+            <size>0.02 </size>
+            <path>./resources/icons/filter.png</path>
+            <color>FFFFFF</color>
+            <zIndex>2000</zIndex>
+        </image>
+
+    </view>
+
+    <view name="system">
+
+        <!-- Click Events -->
+        <image name="platforms_avatar" extra="static">
+            <onclick>cheevos</onclick>
+        </image>
+
+        <image name="platforms_config" extra="static">
+            <onclick>navigationbar</onclick>
+        </image>
+
+        <image name="platforms_filter" extra="static">
+            <onclick>search</onclick>
+        </image>
+
+    </view>
+
+    <view name="gamecarousel, grid">
+
+        <text name="platformFullname" extra="static">
+            <origin>0 0</origin>
+            <pos>0.03 0.01</pos>
+            <size>0.5 0.1</size>
+            <text>{system:fullName}</text>
+            <fontPath>./resources/fonts/InterTight-Regular.ttf</fontPath>
+            <fontSize>0.032</fontSize>
+            <color>FFFFFFFF</color>
+            <glowColor>00000025</glowColor>
+            <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
+            <alignment>left</alignment>
+            <zIndex>2000</zIndex>
+        </text>
+
+        <!-- Click Events -->
+        <image name="platforms_avatar" extra="static">
+            <onclick>cheevos</onclick>
+        </image>
+
+        <image name="platforms_config" extra="static">
+            <onclick>options</onclick>
+        </image>
+
+        <image name="platforms_filter" extra="static">
+            <onclick>search</onclick>
+        </image>
+
+    </view>
+
+</theme>

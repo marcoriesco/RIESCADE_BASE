@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<gameList parentHash="43442">
+	<game>
+		<path>./citra_canary.menu</path>
+		<name>citra_canary</name>
+		<playcount>1</playcount>
+		<lastplayed>20260316T173833</lastplayed>
+		<gametime>70</gametime>
+	</game>
+</gameList>

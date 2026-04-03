@@ -1,0 +1,82 @@
+[INFO] RetroArch 1.20.0 (Git 6412f4feef)
+[INFO] === Build =======================================
+[INFO] CPU Model Name: AMD Ryzen 7 7800X3D 8-Core Processor           
+[INFO] Capacidades: MMX MMXEXT SSE SSE2 SSE3 SSSE3 SSE4 SSE42 AES AVX AVX2 
+[INFO] Version: 1.20.0
+[INFO] Git: 6412f4feef
+[INFO] Built: Jan  4 2025
+[INFO] =================================================
+[INFO] [Input]: Found input driver: "dinput".
+[INFO] [Core]: Loading dynamic libretro core from: "Y:\images\RIESCADE\emulators\retroarch\cores\mame_libretro.dll"
+[INFO] [Overrides]: Redirecionando arquivo dados da memória do jogo em "Y:\images\RIESCADE\saves\Space Invaders.srm".
+[INFO] [Overrides]: Redirecionando o jogo salvo em "Y:\images\RIESCADE\saves\vg5k\libretro.mame\Space Invaders.state".
+[INFO] [Environ]: GET_CORE_OPTIONS_VERSION.
+[INFO] [Environ]: GET_LANGUAGE: "7".
+[INFO] [Environ]: RETRO_ENVIRONMENT_SET_CORE_OPTIONS_V2_INTL.
+[INFO] [Environ]: SET_CONTROLLER_INFO.
+[INFO] [Environ]: SET_SUPPORT_NO_GAME: yes.
+[INFO] [Environ]: GET_LED_INTERFACE.
+[INFO] [Remaps]: Core-specific remap found at "Y:\images\RIESCADE\emulators\retroarch\config\remaps\MAME\MAME.rmp".
+[INFO] [Environ]: GET_LOG_INTERFACE.
+[INFO] [Environ]: SYSTEM_DIRECTORY: "Y:\images\RIESCADE\bios".
+[INFO] [Environ]: CORE_ASSETS_DIRECTORY: "Y:\images\RIESCADE\emulators\retroarch\downloads".
+[INFO] [Environ]: SAVE_DIRECTORY: "Y:\images\RIESCADE\saves".
+[INFO] [Environ]: SET_PIXEL_FORMAT: XRGB8888.
+[INFO] [Environ]: SET_INPUT_DESCRIPTORS:
+[INFO] [Environ]: SET_KEYBOARD_CALLBACK.
+[libretro INFO] ------------------------
+[libretro INFO] MAME 0.284 (b207f9c6)
+[libretro INFO] ------------------------
+[INFO] [Content]: Carregamento de conteúdo ignorado. A implementação irá carregar por conta própria.
+[libretro INFO] Starting game from command line: "vg5k -rp Y:\images\RIESCADE\bios;Y:\images\RIESCADE\roms\vg5k -artpath Y:\images\RIESCADE\saves\mame\artwork -autoboot_delay 3 -autoboot_command cload\n -comment_directory "Y:\images\RIESCADE\roms\vg5k\Space Invaders.zip" -cass "Y:\images\RIESCADE\roms\vg5k\Space Invaders.zip""
+[libretro INFO] Game name: vg5k
+[libretro INFO] Game description: VG-5000
+[libretro WARN] charset.rom ROM NEEDS REDUMP
+WARNING: the machine might not run correctly.
+[INFO] [State]: Encontrada último compartimento de jogo salvo: #0
+[INFO] [SRAM]: Ignorando carregamento da SRAM.
+[INFO] [Core]: Versão da API libretro: 1, Compilado contra a API: 1
+[INFO] [Core]: Geometry: 336x270, Aspect: 1.333, FPS: 50.00, Sample rate: 48000.00 Hz.
+[INFO] [Video]: Set video size to: 1920x1080.
+[INFO] [Vulkan]: Vulkan dynamic library loaded.
+[INFO] [Vulkan]: Found vulkan context: "vk_w".
+[INFO] [Vulkan]: Detecting screen resolution: 1920x1080.
+[INFO] [Vulkan]: Found GPU at index 0: "Radeon RX 580 Series".
+[INFO] [Vulkan]: Using GPU index 0.
+[INFO] [Vulkan]: Using GPU: "Radeon RX 580 Series".
+[INFO] [Vulkan]: Queue family 0 supports 1 sub-queues.
+[INFO] [Vulkan]: Got 3 swapchain images.
+[INFO] [Vulkan]: Using resolution 1920x1080.
+[INFO] [Vulkan]: Using BGRA8888 format.
+[INFO] [slang]: Compiling shader: "Y:\images\RIESCADE\emulators\retroarch\shaders\shaders_slang\crt\shaders\crt-geom.slang".
+[INFO] [slang]: Using render target format R8G8B8A8_UNORM for pass output #0.
+[INFO] [Vulkan filter chain]: Creating framebuffer 1440x1080 (max 1 level(s)).
+[WARN] [SDL]: Couldn't open haptic device of the joypad #0: Haptic: Joystick isn't a haptic device.
+[INFO] [SDL]: Falling back to joystick rumble
+[INFO] [Joypad]: Found joypad driver: "sdl2".
+[INFO] [Video]: Found display server: "win32".
+[INFO] [Audio]: Set audio input rate to: 48000.00 Hz.
+[INFO] [Video]: Timings deviate too much. Will not adjust. (Target = 165.00 Hz, Game = 50.00 Hz)
+[INFO] [Vulkan filter chain]: Creating framebuffer 1440x1080 (max 1 level(s)).
+[INFO] [XAudio2]: Requesting 64 ms latency, using 64 ms latency.
+[INFO] [Audio]: Started synchronous audio driver.
+[INFO] [Microphone]: Initialized microphone driver.
+[INFO] [Display]: Found display driver: "vulkan".
+[INFO] Inicializando o buffer de rebobinamento com tamanho: 20 MB
+[INFO] [Playlist]: Carregando arquivo de histórico: "Y:\images\RIESCADE\emulators\retroarch\content_history.lpl".
+[INFO] [Playlist]: Carregando arquivo de histórico: "Y:\images\RIESCADE\emulators\retroarch\content_music_history.lpl".
+[INFO] [Playlist]: Carregando arquivo de histórico: "Y:\images\RIESCADE\emulators\retroarch\content_video_history.lpl".
+[INFO] [Playlist]: Carregando arquivo de histórico: "Y:\images\RIESCADE\emulators\retroarch\content_image_history.lpl".
+[INFO] [Playlist]: Carregando o arquivo de favoritos: "Y:\images\RIESCADE\emulators\retroarch\content_favorites.lpl".
+[INFO] [Playlist]: Written to playlist file: "Y:\images\RIESCADE\emulators\retroarch\content_history.lpl".
+[WARN] [SDL]: Couldn't open haptic device of the joypad #0: Haptic: Joystick isn't a haptic device.
+[INFO] [SDL]: Falling back to joystick rumble
+[INFO] [Vulkan filter chain]: Creating framebuffer 1440x1080 (max 1 level(s)).
+[INFO] [Config]: Salvado em "Y:\images\RIESCADE\emulators\retroarch\retroarch.cfg".
+[INFO] [Core]: Content ran for a total of: 00 hours, 00 minutes, 13 seconds.
+[INFO] [Runtime]: Saving runtime log file: "Y:\images\RIESCADE\emulators\retroarch\playlists\logs\MAME\Space Invaders.lrtl".
+[INFO] [Core]: Unloading game..
+[INFO] [Core]: Unloading core..
+[INFO] [Core]: Unloading core symbols..
+[INFO] [Core]: Saved core options file to "Y:\images\RIESCADE\emulators\retroarch\retroarch-core-options.cfg".
+[INFO] [Autoconf]: Xbox 360 Controller desconectado da porta 1.

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+
+    <formatVersion>7</formatVersion>
+
+    <view name="system">
+
+        <carousel name="systemcarousel">
+            <pos>0 0.59</pos>
+            <size>1 0.5</size>
+            <type>horizontal</type>
+            <logoAlignment>center</logoAlignment>
+            <logoSize>0.09 0.08</logoSize>
+            <logoScale>1.7</logoScale>
+            <minLogoOpacity>0.5</minLogoOpacity>
+            <maxLogoCount>5</maxLogoCount>
+            <color>00000000</color>
+            <colorEnd>00000000</colorEnd>
+            <systemInfoDelay>700</systemInfoDelay>
+            <systemInfoCountOnly>false</systemInfoCountOnly>
+            <transitionSpeed>600</transitionSpeed>
+            <linearSmooth>false</linearSmooth>
+            <defaultTransition>instant</defaultTransition>
+            <zIndex>20</zIndex>
+        </carousel>
+
+        <text name="logoText">
+            <fontPath>./resources/fonts/InterTight-SemiBold.ttf</fontPath>
+            <fontSize>0.026</fontSize>
+            <color>FFFFFFFF</color>
+        </text>
+
+        <image name="logo">
+            <path>./resources/logos/${system.theme}.png</path>
+            <!-- check if lang resources exist -->
+            <path>./resources/logos/${system.theme}-${lang}.png</path>
+            <linearSmooth>true</linearSmooth>
+            <saturation>0</saturation>
+
+            <storyboard event="activate">
+                <animation property="opacity" to="0" begin="0" duration="100" mode="easeIn"/>
+                <animation property="offsetX" to="0.005" begin="0" duration="150" mode="easeIn"/>
+                <animation property="scale" to="0" begin="0" duration="150" mode="easeIn"/>
+            </storyboard>
+            <storyboard event="deactivate">
+                <animation property="opacity" from="0" to="0.5" begin="100" duration="100" mode="easeIn"/>
+                <animation property="offsetX" to="0" begin="0" duration="150" mode="easeIn"/>
+                <animation property="scale" from="0" to="0.5" begin="0" duration="150" mode="easeIn"/>
+            </storyboard>
+            <storyboard event="scroll">
+                <animation property="opacity" to="0.5" begin="0" duration="0" mode="easeOut"/>
+                <animation property="offsetX" to="0" begin="0" duration="150" mode="easeIn"/>
+                <animation property="scale" to="0.5" begin="0" duration="0" mode="linear"/>
+            </storyboard>
+        </image>
+
+        <!-- custom collections logos -->
+        <image name="logo" if="{system.collection}">
+            <path>./resources/logos/collections/${system.theme}.png</path>
+        </image>
+
+        <!-- Shadow Effect -->
+        <image name="logoEffectShadow" extra="true">
+            <origin>0.5 0.5</origin>
+            <pos>0.497 0.84</pos>
+            <maxSize>0.2 0.14</maxSize>
+            <color>000000</color>
+            <path>./resources/logos/${system.theme}.png</path>
+            <path>./resources/logos/${system.theme}-${lang}.png</path>
+            <zIndex>21</zIndex>
+
+            <storyboard>
+                <animation property="scale" from="0.7" to="1" autoreverse="false" duration="150" mode="easyOut"/>
+            </storyboard>
+        </image>
+        <image name="logoEffect" extra="true">
+            <origin>0.5 0.5</origin>
+            <pos>0.497 0.84</pos>
+            <maxSize>0.2 0.14</maxSize>
+            <linearSmooth>true</linearSmooth>
+            <path>./resources/logos/${system.theme}.png</path>
+            <path>./resources/logos/${system.theme}-${lang}.png</path>
+
+            <color if="${system.name} == 'retrobat'">${subset.colors}</color>
+            <color if="${system.name} == 'collections'">${subset.colors}</color>
+            <color if="${system.name} == 'favorites'">${subset.colors}</color>
+            <color if="${system.name} == 'library'">${subset.colors}</color>
+            <color if="${system.name} == 'neverplayed'">${subset.colors}</color>
+            <color if="${system.name} == 'recent'">${subset.colors}</color>
+            <color if="${system.name} == 'screenshots'">${subset.colors}</color>
+            <color if="${system.name} == '2players'">${subset.colors}</color>
+            <color if="${system.name} == '4players'">${subset.colors}</color>
+            <color if="${system.name} == 'all'">${subset.colors}</color>
+            <color if="${system.name} == 'wheel'">${subset.colors}</color>
+            <color if="${system.name} == 'vertical'">${subset.colors}</color>
+            <color if="${system.name} == 'trackball'">${subset.colors}</color>
+            <color if="${system.name} == 'spinner'">${subset.colors}</color>
+            <color if="${system.name} == 'retroachievements'">${subset.colors}</color>
+            <color if="${system.name} == 'lightgun'">${subset.colors}</color>
+            <color if="${system.name} == 'magazine'">${subset.colors}</color>
+
+            <zIndex>21</zIndex>
+
+            <storyboard>
+                <animation property="scale" from="0.7" to="1" begin="" autoreverse="false" duration="150" mode="easyOut"/>
+            </storyboard>
+        </image>
+
+        <!-- System Fanart -->
+        <image name="fanart" extra="static">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./resources/_parts/default.jpg</path>
+            <path>./resources/arts/${system.theme}.jpg</path>
+            <linearSmooth>true</linearSmooth>
+            <zIndex>10</zIndex>
+        </image>
+
+        <image name="overlay" extra="static">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./resources/_parts/overlay-system.png</path>
+            <zIndex>15</zIndex>
+        </image>
+
+        <!-- Número de Games -->
+        <text name="systemInfo">
+            <zIndex>0</zIndex>
+        </text>
+
+        <stackpanel name="systemInfo-custom" extra="static">
+            <origin>0 0</origin>
+            <pos>0.015 0.01</pos>
+            <size>0.5 0.1</size>
+            <zIndex>99</zIndex>
+
+            <container>
+                <stackpanel reverse="false">
+                    <container>
+                        <pos>0 0</pos>
+                        <size>1 1</size>
+                        <stackpanel>
+                            <pos>0 0</pos>
+                            <size>1 1</size>
+                            <separator>10</separator>
+
+                            <text name="gamename">
+                                <size>1 0.1</size>
+
+                                <text>{system:fullName}</text>
+
+                                <text if="${system.name} == 'retrobat'">Configure emulators</text>
+                                <text if="${system.name} == 'collections'">Collections</text>
+                                <text if="${system.name} == 'favorites'">Favorites</text>
+                                <text if="${system.name} == 'library'">Access Library</text>
+                                <text if="${system.name} == 'screenshots'">Access Screenshots</text>
+                                <text if="${system.name} == 'magazine'">Access Magazines</text>
+                                <text if="${system.name} == 'all'">All games</text>
+
+                                <!-- English (default, without lang tag) -->
+                                <text if="${system.name} == 'retrobat'" lang="en">Configure emulators</text>
+                                <text if="${system.name} == 'collections'" lang="en">Collections</text>
+                                <text if="${system.name} == 'favorites'" lang="en">Favorites</text>
+                                <text if="${system.name} == 'library'" lang="en">Access Library</text>
+                                <text if="${system.name} == 'screenshots'" lang="en">Access Screenshots</text>
+                                <text if="${system.name} == 'magazine'" lang="en">Access Magazines</text>
+                                <text if="${system.name} == 'all'" lang="en">All games</text>
+
+                                <!-- Portuguese -->
+                                <text if="${system.name} == 'retrobat'" lang="pt">Configurar emuladores</text>
+                                <text if="${system.name} == 'collections'" lang="pt">Coleções</text>
+                                <text if="${system.name} == 'favorites'" lang="pt">Favoritos</text>
+                                <text if="${system.name} == 'library'" lang="pt">Acessar Biblioteca</text>
+                                <text if="${system.name} == 'screenshots'" lang="pt">Acessar Screenshots</text>
+                                <text if="${system.name} == 'magazine'" lang="pt">Acessar Revistas</text>
+                                <text if="${system.name} == 'all'" lang="pt">Todos os jogos</text>
+
+                                <!-- Spanish -->
+                                <text if="${system.name} == 'retrobat'" lang="es">Configurar emuladores</text>
+                                <text if="${system.name} == 'collections'" lang="es">Colecciones</text>
+                                <text if="${system.name} == 'favorites'" lang="es">Favoritos</text>
+                                <text if="${system.name} == 'library'" lang="es">Acceder a la Biblioteca</text>
+                                <text if="${system.name} == 'screenshots'" lang="es">Acceder a Capturas de Pantalla</text>
+                                <text if="${system.name} == 'magazine'" lang="es">Acceder a Revistas</text>
+                                <text if="${system.name} == 'all'" lang="es">Todos los juegos</text>
+
+                                <!-- French -->
+                                <text if="${system.name} == 'retrobat'" lang="fr">Configurer les émulateurs</text>
+                                <text if="${system.name} == 'collections'" lang="fr">Collections</text>
+                                <text if="${system.name} == 'favorites'" lang="fr">Favoris</text>
+                                <text if="${system.name} == 'library'" lang="fr">Accéder à la Bibliothèque</text>
+                                <text if="${system.name} == 'screenshots'" lang="fr">Accéder aux Captures d'Écran</text>
+                                <text if="${system.name} == 'magazine'" lang="fr">Accéder aux Magazines</text>
+                                <text if="${system.name} == 'all'" lang="fr">Tous les jeux</text>
+
+                                <fontPath>./resources/fonts/InterTight-Regular.ttf</fontPath>
+                                <fontSize>0.032</fontSize>
+                                <color>FFFFFFFF</color>
+                                <glowColor>000000</glowColor>
+                                <glowSize>1</glowSize>
+                                <glowOffset>1</glowOffset>
+                                <alignment>center</alignment>
+                                <verticalAlignment>center</verticalAlignment>
+                            </text>
+
+                            <text name="game_total">
+                                <size>1 0.03</size>
+
+                                <text>{binding:total} > 1 ? '({binding:total} games)' : '({binding:total} game)'</text>
+                                <text if="${system.name} == 'retrobat'"></text>
+                                <text if="${system.name} == 'collections'">({system:subSystems} collections)</text>
+                                <text if="${system.name} == 'favorites'">({system:favorites} favorites)</text>
+                                <text if="${system.name} == 'library'"></text>
+                                <text if="${system.name} == 'screenshots'"></text>
+                                <text if="${system.name} == 'magazine'">({system:total} magazines)</text>
+                                <text if="${system.name} == 'all'">({system:total} games)</text>
+
+                                <!-- English (default, without lang tag) -->
+                                <text lang="en">{binding:total} > 1 ? '({binding:total} games)' : '({binding:total} game)'</text>
+                                <text if="${system.name} == 'retrobat'" lang="en"></text>
+                                <text if="${system.name} == 'collections'" lang="en">({system:subSystems} collections)</text>
+                                <text if="${system.name} == 'favorites'" lang="en">({system:favorites} favorites)</text>
+                                <text if="${system.name} == 'library'" lang="en"></text>
+                                <text if="${system.name} == 'screenshots'" lang="en"></text>
+                                <text if="${system.name} == 'magazine'" lang="en">({system:total} magazines)</text>
+                                <text if="${system.name} == 'all'" lang="en">({system:total} games)</text>
+
+                                <!-- Portuguese -->
+                                <text lang="pt">{binding:total} > 1 ? '({binding:total} jogos)' : '({binding:total} jogo)'</text>
+                                <text if="${system.name} == 'retrobat'" lang="pt"></text>
+                                <text if="${system.name} == 'collections'" lang="pt">({system:subSystems} coleções)</text>
+                                <text if="${system.name} == 'favorites'" lang="pt">({system:favorites} favoritos)</text>
+                                <text if="${system.name} == 'library'" lang="pt"></text>
+                                <text if="${system.name} == 'screenshots'" lang="pt"></text>
+                                <text if="${system.name} == 'magazine'" lang="pt">({system:total} revistas)</text>
+                                <text if="${system.name} == 'all'" lang="pt">({system:total} jogos)</text>
+
+                                <!-- Spanish -->
+                                <text lang="es">{binding:total} > 1 ? '({binding:total} juegos)' : '({binding:total} juego)'</text>
+                                <text if="${system.name} == 'retrobat'" lang="es"></text>
+                                <text if="${system.name} == 'collections'" lang="es">({system:subSystems} colecciones)</text>
+                                <text if="${system.name} == 'favorites'" lang="es">({system:favorites} favoritos)</text>
+                                <text if="${system.name} == 'library'" lang="es"></text>
+                                <text if="${system.name} == 'screenshots'" lang="es"></text>
+                                <text if="${system.name} == 'magazine'" lang="es">({system:total} revistas)</text>
+                                <text if="${system.name} == 'all'" lang="es">({system:total} juegos)</text>
+
+                                <!-- French -->
+                                <text lang="fr">{binding:total} > 1 ? '({binding:total} jeux)' : '({binding:total} jeu)'</text>
+                                <text if="${system.name} == 'retrobat'" lang="fr"></text>
+                                <text if="${system.name} == 'collections'" lang="fr">({system:subSystems} collections)</text>
+                                <text if="${system.name} == 'favorites'" lang="fr">({system:favorites} favoris)</text>
+                                <text if="${system.name} == 'library'" lang="fr"></text>
+                                <text if="${system.name} == 'screenshots'" lang="fr"></text>
+                                <text if="${system.name} == 'magazine'" lang="fr">({system:total} magazines)</text>
+                                <text if="${system.name} == 'all'" lang="fr">({system:total} jeux)</text>
+
+                                <fontPath>./resources/fonts/InterTight-Regular.ttf</fontPath>
+                                <fontSize>0.024</fontSize>
+                                <color>FFFFFFFF</color>
+                                <glowColor>000000</glowColor>
+                                <glowSize>1</glowSize>
+                                <glowOffset>1</glowOffset>
+                                <extraTextColor>${subset.colors}</extraTextColor>
+                                <alignment>center</alignment>
+                                <verticalAlignment>center</verticalAlignment>
+                                <zIndex>99</zIndex>
+                            </text>
+                        </stackpanel>
+                    </container>
+                </stackpanel>
+            </container>
+        </stackpanel>
+
+    </view>
+
+</theme>

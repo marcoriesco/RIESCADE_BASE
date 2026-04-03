@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="menu, system, grid, gamecarousel, detailed">
+        <helpsystem name="help">
+            <origin>0 0</origin>
+            <pos>9 9</pos>
+            <size>0 0</size>
+            <visible>0</visible>
+            <zIndex>-1</zIndex>
+            <opacity>0</opacity>
+        </helpsystem>
+    </view>
+
+    <view name="system">
+        <image name="helpsystem-custom" extra="static">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.96</pos>
+            <size>0.2969 </size>
+            <path>./resources/_parts/helpsystem/helpsystem-${subset.controls}.png</path>
+            <path lang="en">./resources/_parts/helpsystem/helpsystem-${subset.controls}-en.png</path>
+            <path lang="pt">./resources/_parts/helpsystem/helpsystem-${subset.controls}-pt.png</path>
+            <path lang="es">./resources/_parts/helpsystem/helpsystem-${subset.controls}-es.png</path>
+            <path lang="fr">./resources/_parts/helpsystem/helpsystem-${subset.controls}-fr.png</path>
+            <zIndex>99</zIndex>
+        </image>
+    </view>
+
+</theme>

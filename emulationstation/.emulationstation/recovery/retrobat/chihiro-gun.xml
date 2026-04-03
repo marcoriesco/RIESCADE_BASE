@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<gameList parentHash="43442">
+	<game>
+		<path>./chihiro-gun.menu</path>
+		<name>Chihiro-ds (CxBx Reloaded - gun games)</name>
+		<desc>Run Chihiro Emulator (gun version).</desc>
+		<genre>Emulator</genre>
+		<image>./media/cxbxr-logo.png</image>
+		<marquee>./media/cxbxr-logo.png</marquee>
+		<rating>0</rating>
+		<releasedate></releasedate>
+		<developer>CXBX Team</developer>
+		<publisher>CXBX Team</publisher>
+		<playcount>1</playcount>
+		<lastplayed>20260313T191340</lastplayed>
+		<gametime>69</gametime>
+		<lang>en</lang>
+		<region>wr</region>
+	</game>
+</gameList>

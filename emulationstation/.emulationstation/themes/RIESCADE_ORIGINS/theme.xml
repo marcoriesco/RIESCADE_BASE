@@ -1,0 +1,63 @@
+<!--
+
+     ███████   ██ ████████  ████████   ██████      ██     ███████   ████████
+    ░██░░░░██ ░██░██░░░░░  ██░░░░░░   ██░░░░██    ████   ░██░░░░██ ░██░░░░░ 
+    ░██   ░██ ░██░██      ░██        ██    ░░    ██░░██  ░██    ░██░██      
+    ░███████  ░██░███████ ░█████████░██         ██  ░░██ ░██    ░██░███████ 
+    ░██░░░██  ░██░██░░░░  ░░░░░░░░██░██        ██████████░██    ░██░██░░░░  
+    ░██  ░░██ ░██░██             ░██░░██    ██░██░░░░░░██░██    ██ ░██      
+    ░██   ░░██░██░████████ ████████  ░░██████ ░██     ░██░███████  ░████████
+    ░░     ░░ ░░ ░░░░░░░░ ░░░░░░░░    ░░░░░░  ░░      ░░ ░░░░░░░   ░░░░░░░░  
+
+    theme: RIESCADE Origins
+	author: RIESCADE
+    version: 1.7
+    -
+    https://youtube.com/@riescade
+    https://facebook.com/riescade
+    https://discord.gg/cR3T4wkjyQ
+
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="gamelist">
+    <formatVersion>7</formatVersion>
+
+    <feature supported="carousel">
+        <view name="system">
+            <sound name="bgsound"></sound>
+        </view>
+    </feature>
+
+    <!-- CONFIG -->
+    <include name="vars">./views/config/vars.xml</include>
+    <include name="subsets">./views/config/subsets.xml</include>
+    <include name="helpsystems">./views/config/helpsystems.xml</include>
+
+    <!-- COMMON -->
+    <include name="menu">./views/common/menu.xml</include>
+    <include name="screen">./views/common/screen.xml</include>
+    <include name="gamecarousel">./views/common/gamecarousel.xml</include>
+    <include name="basic, detailed">./views/common/basic.xml</include>
+    <include name="system">./views/riescade_system.xml</include>
+
+    <!-- GAMELISTS -->
+    <include name="gamelist">./views/riescade_gamelist.xml</include>
+
+    <!-- TEMPLATES -->
+    <include>./views/common/header.xml</include>
+    <include>./views/common/footer.xml</include>
+
+    <!--
+    Theme: es-theme-carbon
+    author: Fabrice CARUSO
+    license: creative commons CC-BY-NC-SA
+    originally based on: "Carbon" by Eric Hettervik (Rookervik)
+    originally based on: "simple" by nils bonenberger
+    -->
+    <include name="grid">./views/common/grid.xml</include>
+    <include>./views/common/content.xml</include>
+    <include>./views/common/${system.name}.xml</include>
+
+</theme>

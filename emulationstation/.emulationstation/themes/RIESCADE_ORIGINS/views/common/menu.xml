@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="menu">
+        <menuText name="menutitle">
+            <fontPath>./resources/fonts/InterTight-SemiBold.ttf</fontPath>
+            <fontSize>0.030</fontSize>
+            <color>${subset.colors}</color>
+        </menuText>
+
+        <menuText name="menufooter">
+            <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.024</fontSize>
+            <color>868686</color>
+        </menuText>
+
+        <menuText name="menutext">
+            <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.030</fontSize>
+            <color>868686</color>
+            <separatorColor>000000</separatorColor>
+
+            <selectorColor>${subset.colors}</selectorColor>
+            <selectorColorEnd>${subset.colors}</selectorColorEnd>
+
+            <selectedColor>FFFFFF</selectedColor>
+            <selectedColor ifSubset="colors:ffffff">222222</selectedColor>
+            <selectedColor ifSubset="colors:00ffbf">222222</selectedColor>
+            <selectedColor ifSubset="colors:ffc233">222222</selectedColor>
+            <selectedColor ifSubset="colors:13eafd">222222</selectedColor>
+
+            <selectorGradientType>horizontal</selectorGradientType>
+        </menuText>
+
+        <menuTextSmall name="menutextsmall">
+            <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>${subset.colors}</color>
+        </menuTextSmall>
+
+        <menuBackground name="menubg">
+            <color>000000</color>
+            <cornerSize>32 32</cornerSize>
+            <scrollbarColor>${subset.colors}</scrollbarColor>
+            <scrollbarCorner>0.49</scrollbarCorner>
+            <scrollbarSize>0.003</scrollbarSize>
+            <scrollbarAlignment>outer right</scrollbarAlignment>
+        </menuBackground>
+
+        <menuGroup name="menugroup">
+            <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.018</fontSize>
+            <color>${subset.colors}</color>
+            <backgroundColor>00000000</backgroundColor>
+            <lineSpacing>2.5</lineSpacing>
+        </menuGroup>
+
+        <menuIcons name="menuicons">
+            <iconKodi>./resources/icons/kodi.png</iconKodi>
+            <iconSystem>./resources/icons/config.png</iconSystem>
+            <iconUpdates>./resources/icons/updates.png</iconUpdates>
+            <iconGames>./resources/icons/games.png</iconGames>
+            <iconControllers>./resources/icons/controllers.png</iconControllers>
+            <iconUI>./resources/icons/ui.png</iconUI>
+            <iconSound>./resources/icons/sound.png</iconSound>
+            <iconNetwork>./resources/icons/network.png</iconNetwork>
+            <iconScraper>./resources/icons/scraper.png</iconScraper>
+            <iconAdvanced>./resources/icons/advanced.png</iconAdvanced>
+            <iconQuit>./resources/icons/quit.png</iconQuit>
+            <iconRestart>./resources/icons/restart.png</iconRestart>
+            <iconShutdown>./resources/icons/shutdown.png</iconShutdown>
+            <iconFastShutdown>./resources/icons/fastshutdown.png</iconFastShutdown>
+            <iconRetroachievements>./resources/icons/contest.png</iconRetroachievements>
+            <iconEmuelec>./resources/icons/emuelec.png</iconEmuelec>
+        </menuIcons>
+
+        <helpsystem name="help">
+            <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.020</fontSize>
+            <pos>0.06 0.955</pos>
+            <textColor>FFFFFF</textColor>
+        </helpsystem>
+    </view>
+
+</theme>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <variables>
+
+        <!-- Colors -->
+        <white>ffffff</white>
+        <pink>9f0043</pink>
+        <blue>3377ff</blue>
+        <bluelight>13eafd</bluelight>
+        <red>fb2246</red>
+        <gray>cccccc</gray>
+        <green>00ffbf</green>
+        <purple>9133c7</purple>
+        <yellow>ffc233</yellow>
+
+    </variables>
+
+</theme>

@@ -1,0 +1,8 @@
+emulators/
+roms/
+saves/
+/*.py
+/*.ps1
+/*.log
+/*.txt
+bios/

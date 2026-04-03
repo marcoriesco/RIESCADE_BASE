@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <customView name="gamelist" inherits="gamecarousel" displayName="GAMELIST">
+
+        <gamecarousel name="gamecarousel">
+            <type>vertical_wheel</type>
+            <pos>0.34 0</pos>
+            <size>1 1</size>
+            <origin>0 0</origin>
+            <logoSize>0.15 0.270</logoSize>
+            <logoScale>1.5</logoScale>
+            <color>00000000</color>
+            <maxLogoCount>11</maxLogoCount>
+            <logoRotation>-11</logoRotation>
+            <logoRotationOrigin>3 0.5</logoRotationOrigin>
+            <logoAlignment>center</logoAlignment>
+            <scrollSound>./resources/sounds/click.ogg</scrollSound>
+            <imageSource>marquee</imageSource>
+            <zIndex>21</zIndex>
+        </gamecarousel>
+
+        <image name="gamecarouselLogo">
+            <opacity>0.25</opacity>
+            <scale>0.60</scale>
+            <saturation>0</saturation>
+            <linearSmooth>true</linearSmooth>
+            <scaleOrigin>0 0.5</scaleOrigin>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0.25" to="1" duration="0" mode="linear"/>
+                <animation property="scale" from="0.70" to="1.10" begin="0" duration="0" mode="linear"/>
+                <animation property="saturation" to="1" begin="0" duration="0" mode="easeOut"/>
+            </storyboard>
+
+            <storyboard event="deactivate">
+                <animation property="opacity" from="0" to="0.25" duration="0" mode="linear"/>
+                <animation property="scale" from="1.10" to="0.60" begin="0" duration="0" mode="easeOut"/>
+                <animation property="saturation" from="1" to="0" begin="0" duration="0" mode="easeOut"/>
+            </storyboard>
+
+            <storyboard event="scroll">
+                <animation property="opacity" from="0" to="0.25" duration="0" mode="linear"/>
+                <animation property="scale" from="1.10" to="0.60" begin="0" duration="0" mode="easeOut"/>
+                <animation property="saturation" from="1" to="0" begin="0" duration="0" mode="easeOut"/>
+            </storyboard>
+        </image>
+
+        <text name="gamecarouselLogoText">
+            <fontPath>./resources/fonts/InterTight-Regular.ttf</fontPath>
+            <fontSize>0.048</fontSize>
+            <color>FFFFFFFF</color>
+            <glowColor>00000050</glowColor>
+            <glowSize>3</glowSize>
+            <glowOffset>3</glowOffset>
+            <lineSpacing>1.0</lineSpacing>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0.2" to="1" duration="0" mode="linear"/>
+                <animation property="scale" from="0.70" to="1.10" begin="0" duration="0" mode="linear"/>
+            </storyboard>
+            <storyboard event="deactivate">
+                <animation property="opacity" from="0" to="0.2" duration="0" mode="linear"/>
+                <animation property="scale" from="1.10" to="0.60" begin="0" duration="0" mode="easeOut"/>
+            </storyboard>
+            <storyboard event="scroll">
+                <animation property="opacity" from="0" to="0.2" duration="0" mode="linear"/>
+                <animation property="scale" from="1.10" to="0.60" begin="0" duration="0" mode="easeOut"/>
+            </storyboard>
+        </text>
+
+        <!-- Overlays -->
+        <image name="overlay" extra="static">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path ifSubset="overlay:hard">./resources/_parts/overlay-gamelist-hard.png</path>
+            <path ifSubset="overlay:light">./resources/_parts/overlay-gamelist-light.png</path>
+            <zIndex>17</zIndex>
+        </image>
+
+
+        <!-- Video background -->
+        <video ifSubset="video_gamelist:On" name="md_video">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <delay>${subset.video_gamelist_delay}</delay>
+            <effect>none</effect>
+            <zIndex>16</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </video>
+
+        <!-- Background Default -->
+        <image name="background_default" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./resources/arts/${system.theme}.jpg</path>
+            <saturation>0</saturation>
+            <zIndex>1</zIndex>
+        </image>
+
+        <!-- Fanart background -->
+        <image name="md_fanart">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <zIndex>14</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+            <storyboard event="deactivate">
+                <animation property="opacity" from="1" to="0" duration="800" mode="easeIn" />
+            </storyboard>
+        </image>
+
+        <!-- Fanart Collection background -->
+        <image name="md_fanart_collection" if="${system.collection}" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./../resources/arts/collections/{game:name}.jpg</path>
+            <zIndex>15</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </image>
+
+        <!-- Cover -->
+        <image name="md_thumbnail_only" if="${system.name} != 'collections'">
+            <origin>0 0.5</origin>
+            <pos>0.06 0.48</pos>
+            <!-- <size> 0.55</size> -->
+            <maxSize>0.3 0.55</maxSize>
+
+            <maxSize if="${system.name} == 'bigfish'">0.3 0.45</maxSize>
+            <maxSize if="${system.name} == 'tiger'">0.3 0.45</maxSize>
+            <maxSize if="${system.name} == 'snes-msu1'">0.3 0.45</maxSize>
+            <maxSize if="${system.name} == 'dreamcast'">0.3 0.45</maxSize>
+            <maxSize if="${system.name} == 'psx'">0.3 0.45</maxSize>
+
+            <maxSize if="${system.name} == '3ds'">0.3 0.4</maxSize>
+            <maxSize if="${system.name} == '3do-japan'">0.3 0.4</maxSize>
+            <maxSize if="${system.name} == 'snes'">0.3 0.4</maxSize>
+            <maxSize if="${system.name} == 'ngage'">0.3 0.4</maxSize>
+            <maxSize if="${system.name} == 'touhou'">0.3 0.4</maxSize>
+
+            <rotation>-4</rotation>
+            <zIndex>18</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="600" mode="easeInOut" />
+                <animation property="pos" from="-0.06 0.48" to="0.06 0.48" duration="600" mode="easeInOut" />
+            </storyboard>
+
+            <storyboard event="deactivate">
+                <animation property="opacity" from="1" to="0" duration="600" mode="easeInOut" />
+                <animation property="pos" from="0.06 0.48" to="-0.06 0.48" duration="600" mode="easeInOut" />
+            </storyboard>
+
+        </image>
+
+        <!-- Game Name -->
+        <text name="md_name">
+            <origin>0 0</origin>
+            <pos>0.03 0.77</pos>
+            <size>0.75 0.10</size>
+            <fontPath>./resources/fonts/InterTight-SemiBold.ttf</fontPath>
+            <fontSize>0.044</fontSize>
+            <color>FFFFFFFF</color>
+
+            <glowColor>000000</glowColor>
+            <glowSize>1</glowSize>
+            <glowOffset>1.5</glowOffset>
+            <alignment>left</alignment>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </text>
+
+        <!-- Game md_releasedate & md_publisher -->
+        <text name="date_and_developer" extra="true">
+            <origin>0 0</origin>
+            <pos>0.035 0.86</pos>
+            <size>0.5 0.016</size>
+            <text if="!${system.collection}">{game:releaseyear}, {game:publisher}</text>
+            <text if="${system.collection}">{game:system:total} && {game:system:total} > 1 ? '{game:system:total} GAMES' : '{game:system:total} GAME'</text>
+            <fontPath>./resources/fonts/InterTight-Regular.ttf</fontPath>
+            <fontSize>0.030</fontSize>
+            <color>FFFFFFFF</color>
+
+            <glowColor>000000</glowColor>
+            <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
+            <alignment>left</alignment>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </text>
+
+    </customView>
+
+</theme>

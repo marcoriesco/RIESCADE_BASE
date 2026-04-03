@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="screen">
+
+        <!-- Controller Activity -->
+        <controllerActivity name="controllerActivity">
+            <origin>1 0</origin>
+            <pos>0 0.952</pos>
+            <size>0.985 0.03</size>
+            <itemSpacing>0.003</itemSpacing>
+            <imagePath>./resources/indicators/default.svg</imagePath>
+            <imagePath>./resources/indicators/${subset.controls}.svg</imagePath>
+            <gunPath>./resources/indicators/gun.svg</gunPath>
+            <wheelPath>./resources/indicators/wheel.svg</wheelPath>
+            <color>FFFFFF80</color>
+            <activityColor>${subset.colors}</activityColor>
+            <hotkeyColor>${subset.colors}</hotkeyColor>
+            <horizontalAlignment>right</horizontalAlignment>
+            <zIndex>99</zIndex>
+        </controllerActivity>
+
+        <!-- Clock -->
+        <text name="clock">
+            <origin>1 0</origin>
+            <pos>0.985 0.035</pos>
+            <size>0.5 0.1</size>
+            <fontPath>./resources/fonts/InterTight-Light.ttf</fontPath>
+            <fontSize>0.034</fontSize>
+            <color>FFFFFFFF</color>
+            <alignment>right</alignment>
+        </text>
+
+    </view>
+
+    <!-- <view name="menu, system, grid, gamecarousel, detailed">
+        <helpsystem name="help">
+            <origin>0.5 1</origin>
+            <pos>0.5 0.976</pos>
+            <size>1 0.03</size>
+            <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontSize>0.018</fontSize>
+            <iconColor>${subset.colors}</iconColor>
+            <textColor>ffffff90</textColor>
+        </helpsystem>
+    </view> -->
+
+</theme>

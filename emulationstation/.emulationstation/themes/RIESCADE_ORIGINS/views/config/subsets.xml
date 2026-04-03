@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <!-- COLORS -->
+    <subset name="colors" displayName="HIGHTLIGHTS">
+        <include name="9f0043" displayName="PADRÃO" />
+        <include name="ffffff" displayName="BRANCO" />
+        <include name="3377ff" displayName="AZUL" />
+        <include name="13eafd" displayName="AZUL LIGHT" />
+        <include name="fb2246" displayName="VERMELHO" />
+        <include name="cccccc" displayName="CINZA" />
+        <include name="00ffbf" displayName="VERDE" />
+        <include name="9133c7" displayName="ROXO" />
+        <include name="ffc233" displayName="AMARELO" />
+    </subset>
+
+    <!-- CONTROLS INDICATORS -->
+    <subset name="controls" displayName="CONTROLS INDICATORS">
+        <include name="ps4" displayName="PS4" />
+        <include name="xbox" displayName="XBOX" />
+        <include name="switch" displayName="SWITCH" />
+        <include name="arcade" displayName="ARCADE" />
+    </subset>
+
+    <!-- OVERLAY -->
+    <subset name="overlay" displayName="OVERLAY" appliesTo="gamelist">
+        <include name="hard" displayName="HARD OVERLAY" />
+        <include name="light" displayName="LIGHT OVERLAY" />
+    </subset>
+
+    <!-- VIDEO GAMELIST -->
+    <subset name="video_gamelist" displayName="VIDEO GAMEPLAY" appliesTo="gamelist">
+        <include name="On" />
+        <include name="Off" />
+    </subset>
+
+    <!-- VIDEO GAMELIST DELAY -->
+    <subset name="video_gamelist_delay" displayName="VIDEO GAMEPLAY DELAY" appliesTo="gamelist">
+        <include name="0.5" />
+        <include name="1" />
+        <include name="1.5" />
+        <include name="2" />
+        <include name="2.5" />
+        <include name="3" />
+        <include name="4" />
+        <include name="5" />
+        <include name="6" />
+    </subset>
+
+</theme>

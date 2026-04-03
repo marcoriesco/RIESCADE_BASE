@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="system">
+
+        <!-- System platform name -->
+        <text name="system-name" extra="true">
+            <origin>0 0</origin>
+            <pos>0.015 0.950</pos>
+            <size>0.5 0.03</size>
+            <itemSpacing>0.003</itemSpacing>
+            <text>{system:theme}[{system:hardwareType}]</text>
+            <text if="{system.name} == 'retrobat'">{system:theme}[system]</text>
+            <text if="{system.name} == 'screenshots'">{system:theme}[system]</text>
+            <fontPath>./resources/fonts/InterTight-Regular.ttf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>FFFFFF90</color>
+            <extraTextColor>${subset.colors}</extraTextColor>
+            <zIndex>99</zIndex>
+        </text>
+
+    </view>
+
+    <view name="gamecarousel, grid">
+
+        <!-- System platform name -->
+        <text name="system-name" extra="static">
+            <origin>0 0</origin>
+            <pos>0.015 0.950</pos>
+            <size>0.5 0.03</size>
+            <itemSpacing>0.003</itemSpacing>
+            <text>{system:name}[{system:hardwareType}]</text>
+            <text if="{system.name} == 'retrobat'">{system:theme}[system]</text>
+            <text if="{system.name} == 'screenshots'">{system:theme}[system]</text>
+            <fontPath>./resources/fonts/InterTight-Regular.ttf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>FFFFFF90</color>
+            <extraTextColor>${subset.colors}</extraTextColor>
+            <zIndex>2000</zIndex>
+        </text>
+
+    </view>
+
+</theme>
