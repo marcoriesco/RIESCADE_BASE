@@ -1,4 +1,7 @@
 bios
+bios\bk
+bios\bsyndrome
+bios\bsyndrome\MUSIC
 bios\cannonball
 bios\dc
 bios\dc\textures
@@ -27,6 +30,7 @@ bios\hbmame\samples
 bios\HdPacks
 bios\keropi
 bios\kronos
+bios\laseractive
 bios\mame
 bios\mame\artwork
 bios\mame\hash
@@ -57,6 +61,7 @@ bios\nxengine
 bios\openlara
 bios\openmsx
 bios\openmsx\share
+bios\openmsx\share\systemroms
 bios\pcsx2
 bios\pcsx2\bios
 bios\pcsx2\textures
@@ -70,6 +75,8 @@ bios\raine\emudx
 bios\same_cdi
 bios\same_cdi\bios
 bios\scummvm
+bios\supermodel
+bios\supermodel\Config
 bios\swanstation
 bios\vice
 bios\xmil
@@ -134,7 +141,6 @@ emulators\cxbx-reloaded
 emulators\cxbx-reloaded\EmuDisk
 emulators\daphne
 emulators\demul
-emulators\demul-old
 emulators\desmume
 emulators\dhewm3
 emulators\dhewm3\base
@@ -230,6 +236,9 @@ emulators\play\Play Data Files\inputprofiles
 emulators\ppsspp
 emulators\project64
 emulators\project64\Config
+emulators\project64\Plugin
+emulators\project64\Plugin\GFX
+emulators\project64\Plugin\GFX\GLideN64
 emulators\psxmame
 emulators\psxmame\cfg
 emulators\psxmame\ctrlr
@@ -267,9 +276,6 @@ emulators\sudachi\user\config
 emulators\supermodel
 emulators\supermodel\Config
 emulators\supermodel\NVRAM
-emulators\suyu
-emulators\suyu\user
-emulators\suyu\user\config
 emulators\vpinball
 emulators\xemu
 emulators\xenia
@@ -299,11 +305,12 @@ roms\quake2\rogue
 roms\quake2\xatrix
 roms\quake2\zaero
 roms\singe
-roms\sonicmania
+roms\sonic-mania
 roms\sonicretro
 roms\sonicretro\sonic1
 roms\sonicretro\sonic2
 roms\sonicretro\soniccd
+roms\switchupdates
 roms\vpinball\roms
 roms\halflife
 roms\halflife\bshift
@@ -342,6 +349,9 @@ saves\dolphin\User\GC\USA
 saves\dolphin\User\Wii
 saves\doom3
 saves\doom3\dhewm3
+saves\dreamcast\flycast
+saves\dreamcast\flycast\states
+saves\dreamcast\flycast\vmu
 saves\fbneo
 saves\fbneo\fbneo
 saves\gba
@@ -430,9 +440,6 @@ saves\supergrafx
 saves\supergrafx\mednafen
 saves\supergrafx\mednafen\sstates
 saves\switch
-saves\switch\dump
-saves\switch\load
-saves\switch\nand
 saves\switch\ryujinx
 saves\switch\ryujinx\portable
 saves\switch\ryujinx\portable\system
@@ -459,7 +466,6 @@ screenshots\Mupen64
 screenshots\pcsx2
 screenshots\Simple64
 screenshots\sudachi
-screenshots\suyu
 screenshots\winuae
 screenshots\xemu
 screenshots\yuzu
@@ -483,6 +489,7 @@ system\shaders
 system\templates
 user
 user\apikey
+user\customratio
 user\inputmapping
 user\inputmapping\mame
 user\tattoos

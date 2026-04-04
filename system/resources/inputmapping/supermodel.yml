@@ -208,8 +208,8 @@ daytona2:
   InputVR2: JOY_dpdown
   InputVR3: JOY_dpleft
   InputVR4: JOY_dpright
-  InputServiceA: JOY_leftstick
-  InputTestA: JOY_rightstick
+  InputServiceA: JOY_leftstick,KEY_9
+  InputTestA: JOY_rightstick,KEY_0
 scud:
   InputStart1: JOY_start
   InputCoin1: JOY_select
@@ -227,8 +227,8 @@ scud:
   InputVR3: JOY_dpleft
   InputVR4: JOY_dpright
 fvipers2:
-  InputServiceA: JOY_leftstick
-  InputTestA: JOY_rightstick
+  InputServiceA: JOY_leftstick,KEY_9
+  InputTestA: JOY_rightstick,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -250,8 +250,8 @@ fvipers2:
   InputGuard2: JOY_east
   InputEscape2: JOY_north
 fvipers2_modern8:
-  InputServiceA: JOY_righttrigger,KEY_S
-  InputTestA: JOY_lefttrigger,KEY_T
+  InputServiceA: JOY_righttrigger,KEY_9
+  InputTestA: JOY_lefttrigger,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -273,8 +273,8 @@ fvipers2_modern8:
   InputGuard2: JOY_south
   InputEscape2: JOY_rightshoulder
 fvipers2_8alternative:
-  InputServiceA: JOY_righttrigger,KEY_S
-  InputTestA: JOY_lefttrigger,KEY_T
+  InputServiceA: JOY_righttrigger,KEY_9
+  InputTestA: JOY_lefttrigger,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -296,8 +296,8 @@ fvipers2_8alternative:
   InputGuard2: JOY_west
   InputEscape2: JOY_leftshoulder
 fvipers2_6alternative:
-  InputServiceA: JOY_rightshoulder,KEY_S
-  InputTestA: JOY_leftshoulder,KEY_T
+  InputServiceA: JOY_rightshoulder,KEY_9
+  InputTestA: JOY_leftshoulder,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -318,9 +318,9 @@ fvipers2_6alternative:
   InputKick2: JOY_north
   InputGuard2: JOY_south
   InputEscape2: JOY_east
-spikeof:
-  InputServiceA: JOY_leftstick
-  InputTestA: JOY_rightstick
+spikeofe:
+  InputServiceA: JOY_leftstick,KEY_9
+  InputTestA: JOY_rightstick,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -337,9 +337,9 @@ spikeof:
   InputBeat: JOY_south
   InputCharge: JOY_west
   InputJump: JOY_north
-spikeof_modern8:
-  InputServiceA: JOY_righttrigger
-  InputTestA: JOY_lefttrigger
+spikeofe_modern8:
+  InputServiceA: JOY_righttrigger,KEY_9
+  InputTestA: JOY_lefttrigger,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -356,9 +356,9 @@ spikeof_modern8:
   InputBeat: JOY_north
   InputCharge: JOY_rightshoulder
   InputJump: JOY_leftshoulder
-spikeof_8alternative:
-  InputServiceA: JOY_righttrigger
-  InputTestA: JOY_lefttrigger
+spikeofe_8alternative:
+  InputServiceA: JOY_righttrigger,KEY_9
+  InputTestA: JOY_lefttrigger,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -375,9 +375,9 @@ spikeof_8alternative:
   InputBeat: JOY_north
   InputCharge: JOY_rightshoulder
   InputJump: JOY_leftshoulder
-spikeof_6alternative:
-  InputServiceA: JOY_east
-  InputTestA: JOY_leftshoulder
+spikeofe_6alternative:
+  InputServiceA: JOY_east,KEY_9
+  InputTestA: JOY_leftshoulder,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -395,8 +395,8 @@ spikeof_6alternative:
   InputCharge: JOY_north
   InputJump: JOY_rightshoulder
 spikeout:
-  InputServiceA: JOY_leftstick
-  InputTestA: JOY_rightstick
+  InputServiceA: JOY_leftstick,KEY_9
+  InputTestA: JOY_rightstick,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -414,8 +414,8 @@ spikeout:
   InputCharge: JOY_west
   InputJump: JOY_north
 spikeout_modern8:
-  InputServiceA: JOY_righttrigger
-  InputTestA: JOY_lefttrigger
+  InputServiceA: JOY_righttrigger,KEY_9
+  InputTestA: JOY_lefttrigger,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -433,8 +433,8 @@ spikeout_modern8:
   InputCharge: JOY_rightshoulder
   InputJump: JOY_leftshoulder
 spikeout_8alternative:
-  InputServiceA: JOY_righttrigger
-  InputTestA: JOY_lefttrigger
+  InputServiceA: JOY_righttrigger,KEY_9
+  InputTestA: JOY_lefttrigger,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -452,8 +452,8 @@ spikeout_8alternative:
   InputCharge: JOY_rightshoulder
   InputJump: JOY_leftshoulder
 spikeout_6alternative:
-  InputServiceA: JOY_east
-  InputTestA: JOY_leftshoulder
+  InputServiceA: JOY_east,KEY_9
+  InputTestA: JOY_leftshoulder,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -471,8 +471,8 @@ spikeout_6alternative:
   InputCharge: JOY_north
   InputJump: JOY_rightshoulder
 vf3:
-  InputServiceA: JOY_leftstick
-  InputTestA: JOY_rightstick
+  InputServiceA: JOY_leftstick,KEY_9
+  InputTestA: JOY_rightstick,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -494,8 +494,8 @@ vf3:
   InputGuard2: JOY_east
   InputEscape2: JOY_north
 vf3_modern8:
-  InputServiceA: JOY_righttrigger,KEY_S
-  InputTestA: JOY_lefttrigger,KEY_T
+  InputServiceA: JOY_righttrigger,KEY_9
+  InputTestA: JOY_lefttrigger,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -517,8 +517,8 @@ vf3_modern8:
   InputGuard2: JOY_south
   InputEscape2: JOY_rightshoulder
 vf3_8alternative:
-  InputServiceA: JOY_righttrigger,KEY_S
-  InputTestA: JOY_lefttrigger,KEY_T
+  InputServiceA: JOY_righttrigger,KEY_9
+  InputTestA: JOY_lefttrigger,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -540,8 +540,8 @@ vf3_8alternative:
   InputGuard2: JOY_west
   InputEscape2: JOY_leftshoulder
 vf3_6alternative:
-  InputServiceA: KEY_S
-  InputTestA: KEY_T
+  InputServiceA: KEY_9
+  InputTestA: KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -563,8 +563,8 @@ vf3_6alternative:
   InputGuard2: JOY_south
   InputEscape2: JOY_rightshoulder
 vf3tb:
-  InputServiceA: JOY_leftstick
-  InputTestA: JOY_rightstick
+  InputServiceA: JOY_leftstick,KEY_9
+  InputTestA: JOY_rightstick,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -586,8 +586,8 @@ vf3tb:
   InputGuard2: JOY_east
   InputEscape2: JOY_north
 vf3tb_modern8:
-  InputServiceA: JOY_righttrigger,KEY_S
-  InputTestA: JOY_lefttrigger,KEY_T
+  InputServiceA: JOY_righttrigger,KEY_9
+  InputTestA: JOY_lefttrigger,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -609,8 +609,8 @@ vf3tb_modern8:
   InputGuard2: JOY_south
   InputEscape2: JOY_rightshoulder
 vf3tb_8alternative:
-  InputServiceA: JOY_righttrigger,KEY_S
-  InputTestA: JOY_lefttrigger,KEY_T
+  InputServiceA: JOY_righttrigger,KEY_9
+  InputTestA: JOY_lefttrigger,KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start
@@ -632,8 +632,8 @@ vf3tb_8alternative:
   InputGuard2: JOY_west
   InputEscape2: JOY_leftshoulder
 vf3tb_6alternative:
-  InputServiceA: KEY_S
-  InputTestA: KEY_T
+  InputServiceA: KEY_9
+  InputTestA: KEY_0
   InputStart1: JOY_start
   InputCoin1: JOY_select
   InputStart2: JOY_start

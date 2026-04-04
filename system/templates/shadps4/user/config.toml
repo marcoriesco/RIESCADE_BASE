@@ -47,6 +47,7 @@ rcasAttenuation = 250
 rcasEnabled = true
 readbackLinearImages = false
 readbacks = false
+readbacksMode = 0
 screenHeight = 720
 screenWidth = 1280
 vblankFrequency = 60
@@ -66,7 +67,7 @@ validation_sync = false
 
 [Debug]
 CollectShader = false
-ConfigVersion = "950f6264de2e4f1b53a82c759cd140a6d4c3a646"
+ConfigVersion = "d961f92bda8afe05541690738271ebd53ddd0188"
 DebugDump = false
 FPSColor = true
 isSeparateLogFilesEnabled = false

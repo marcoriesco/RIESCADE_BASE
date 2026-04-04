@@ -1,16 +1,96 @@
-2026-04-03 16:29:28	ERROR	System "apple2group" is missing name, extension, or command!
-2026-04-03 16:29:28	ERROR	System "bandaiwonderswan" is missing name, extension, or command!
-2026-04-03 16:29:28	ERROR	System "atarijaguargroup" is missing name, extension, or command!
-2026-04-03 16:29:28	ERROR	System "segamegadrive" is missing name, extension, or command!
-2026-04-03 16:29:28	ERROR	System "mess" is missing name, extension, or command!
-2026-04-03 16:29:28	ERROR	System "nintendogameboy" is missing name, extension, or command!
-2026-04-03 16:29:28	ERROR	System "nintendogameboyadvance" is missing name, extension, or command!
-2026-04-03 16:29:28	ERROR	System "nintendon64" is missing name, extension, or command!
-2026-04-03 16:29:28	ERROR	System "nintendosnes" is missing name, extension, or command!
-2026-04-03 16:29:28	ERROR	System "nintendones" is missing name, extension, or command!
-2026-04-03 16:29:28	ERROR	System "necpcengine" is missing name, extension, or command!
-2026-04-03 16:29:28	ERROR	System "snkneogeo" is missing name, extension, or command!
-2026-04-03 16:29:28	ERROR	System "snkneogeopocket" is missing name, extension, or command!
-2026-04-03 16:29:28	ERROR	System "windowsgames" is missing name, extension, or command!
-2026-04-03 16:29:30	ERROR	HttpReq::onError (3) : Couldn't connect to server
-2026-04-03 16:32:06	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 14:59:14	ERROR	System "mess" is missing name, extension, or command!
+2026-04-04 14:59:16	ERROR	HttpReq::onError (3) : Couldn't connect to server
+2026-04-04 15:08:08	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:08	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:08	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:08	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:08	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:08	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:08	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:08	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:08	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:09	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:10	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:10	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:10	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:10	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:11	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:11	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:11	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:11	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:11	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:11	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:11	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:11	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:11	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:12	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:13	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:13	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:13	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:13	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:13	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:13	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:13	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:13	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:13	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:13	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:13	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:13	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:14	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:14	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:14	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:14	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:14	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:14	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:14	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:14	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:14	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:14	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:18	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282
+2026-04-04 15:08:18	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1,282

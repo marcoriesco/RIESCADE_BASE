@@ -5,7 +5,7 @@ enable_xmp = true                                 	# Enables Music Player playba
 ffmpeg_verbose = false                            	# Verbose FFmpeg output (debug and above)
 mute = false                                      	# Mutes all audio output.
 use_dedicated_xma_thread = true                   	# Enables XMA decoding on separate thread. Disabled should produce better results, but decrease performance a bit.
-xma_decoder = "old"                               	# Decoder version used to process XMA audio.
+xma_decoder = "new"                               	# Decoder version used to process XMA audio.
                                                   	# Use: [fake, master, old, new]
                                                   	#  fake: 
                                                   	#   No audio will be decoded.
@@ -74,7 +74,7 @@ writable_code_segments = false                    	# Enables a program to write 
 
 
 [Config]
-defaults_date = 2024083120                        	# Do not modify - internal version of the default values in the config, for seamless updates if default value of any option is changed.
+defaults_date = 2026021612                        	# Do not modify - internal version of the default values in the config, for seamless updates if default value of any option is changed.
 
 
 [Content]
@@ -146,8 +146,20 @@ window_size_ui_y = 750                            	# UI window height in pixels.
 
 
 [GPU]
+anisotropic_override = -1                         	# Forces anisotropic filtering (AF) for eligible textures.
+                                                  	# Higher values keep textures sharper at oblique angles at the cost of GPU bandwidth, though most GPUs handle up to 16x fine.
+                                                  	# In rare cases, forcing AF can introduce visual artifacts.
+                                                  	#  -1 = No override
+                                                  	#   0 = Disable anisotropic filtering
+                                                  	#   1 = Force 1x anisotropic filtering
+                                                  	#   2 = Force 2x anisotropic filtering
+                                                  	#   3 = Force 4x anisotropic filtering
+                                                  	#   4 = Force 8x anisotropic filtering
+                                                  	#   5 = Force 16x anisotropic filtering
+
 async_shader_compilation = true                   	# Compile shaders and create pipelines asynchronously in background threads. Eliminates shader compilation stutter but may cause brief rendering artifacts while pipelines are being created. When disabled, pipelines are created synchronously which causes stutter but no visual artifacts.
 clear_memory_page_state = true                    	# Refresh state of memory pages to enable gpu written data. Uses mostly lock-free double-buffering for minimal overhead. (Disable for minor performance boost, but may break rendering)
+depth_bias_decal_clamp = 0                        	# Minimum depth bias for projected decals. Set to 0 to disable. UE3 titles often use very small bias values (~0.00005) that cause Z-fighting on near-coplanar decal projections with host render target paths.
 depth_float24_convert_in_pixel_shader = false     	# Whether to convert the depth values to 24-bit floating-point (20e4) from the host precision (32-bit floating point) directly in the pixel shaders of guest draws when using a host depth buffer.
                                                   	# This prevents visual artifacts (interleaved stripes of parts of surfaces rendered and parts not rendered, having either the same width in case of the "greater or equal" depth test function, or the former being much thinner than the latter with the "equal" function) if the full host precision depth data is lost.
                                                   	# This issue may happen if the game reloads the depth data previously evicted from the EDRAM to the RAM back to the EDRAM, but the EDRAM region that previously contained that depth buffer was overwritten by another depth buffer, or the game loads it to a different location in the EDRAM than it was previously placed at, thus Xenia is unable to restore the depth data with the original precision, and instead falls back to converting the lower-precision values, so in subsequent rendering passes for the same geometry, the actual depth values of the surfaces don't match those stored in the depth buffer anymore.
@@ -207,14 +219,20 @@ force_convert_quad_lists_to_triangle_lists = false	# For host graphics API downl
 
 force_convert_triangle_fans_to_lists = false      	# For host graphics API downlevel support testing only, force CPU conversion of triangle fans to triangle lists even if the host supports triangle fan primitives natively.
 force_convert_triangle_strips_to_lists = false    	# Force CPU conversion of triangle strips to triangle lists. This may help diagnose rendering issues related to triangle strip handling.
-framerate_limit = 0                               	# Maximum frames per second. 0 = Unlimited frames.
-                                                  	# Defaults to 60, when set to 0, and VSYNC is enabled.
+framerate_limit = 0                               	# Host frame rate limit in FPS. 0 = unlimited.
+                                                  	# Throttles presentation without affecting guest vblank timing.
+                                                  	# Guest vblanks are controlled by use_50Hz_mode (50Hz PAL, 60Hz NTSC).
 
-gamma_render_target_as_srgb = false               	# When the host can't write piecewise linear gamma directly with correct blending, use sRGB output on the host for conceptually correct blending in linear color space while having slightly different precision distribution in the render target and severely incorrect values if the game accesses the resulting colors directly as raw data.
+gamma_render_target_as_unorm16 = true             	# When the host can't write 8 bits per component pixels with piecewise linear gamma encoding directly with correct blending, use the 16-bit unsigned normalized format, if supported, for conceptually correct 8_8_8_8_GAMMA render target format blending in linear color space. Greatly increases accuracy for this format, but may result in render target copying costs if the game switches between 8_8_8_8_GAMMA and 8_8_8_8 views for the same EDRAM render target.
 gpu = "d3d12"                                     	# Graphics system. Use: [d3d12, vulkan, null]
+gpu_3d_to_2d_texture = true                       	# Handle shaders that sample 3D textures as 2D by creating a 2D texture from slice 0 of the guest memory.
 gpu_allow_invalid_fetch_constants = true          	# Allow texture and vertex fetch constants with invalid type - generally unsafe because the constant may contain completely invalid values, but may be used to bypass fetch constant type errors in certain games until the real reason why they're invalid is found.
 gpu_allow_invalid_upload_range = false            	# Allows games to read data from pages that are marked as no access.
 gpu_debug_markers = false                         	# Insert debug markers into GPU command streams for tools like RenderDoc. Annotates draw calls with Xbox 360 GPU context (primitive type, shader hashes, vertex count, etc). Automatically enabled when RenderDoc is detected. Has minimal overhead when disabled.
+guest_display_refresh_cap = true                  	# Control guest vblank timing.
+                                                  	#   true: Fixed rate vblanks (50Hz PAL, 60Hz NTSC based on use_50Hz_mode).
+                                                  	#   false: Unlimited vblanks, allows the guest to run as fast as possible.
+
 half_pixel_offset = true                          	# Enable support of vertex half-pixel offset (D3D9 PA_SU_VTX_CNTL PIX_CENTER). Generally games are aware of the half-pixel offset, and having this enabled is the correct behavior (disabling this may significantly break post-processing in some games), but in certain games it might have been ignored, resulting in slight blurriness of UI textures, for instance, when they are read between texels rather than at texel centers, or the leftmost/topmost pixels may not be fully covered when MSAA is used with fullscreen passes.
 ignore_32bit_vertex_index_support = false         	# For host graphics API downlevel testing only (useful only for Qualcomm Adreno 4xx-level host GPU testing), force indirection or pre-masking and pre-swapping of 32-bit vertex indices as if the host only supports 24-bit indices.
 log_guest_driven_gpu_register_written_values = false	# Only does anything in debug builds, if set will log every write to a gpu register done by a guest. Does not log writes that are done by the CP on its own, just ones the guest makes or instructs it to make.
@@ -246,6 +264,7 @@ readback_resolve = "fast"                         	# Controls CPU readback of re
                                                   	#  full: Wait for GPU to finish (accurate but slow, GPU-CPU sync stall)
                                                   	#  none: Disable readback completely (some games render better without it)
 
+readback_resolve_half_pixel_offset = false        	# When resolution scaling is active, sample from the center of each scaled pixel block during readback resolve instead of the top-left corner. May improve image quality in some cases but can break games that rely on reading back specific pixel values (e.g., for gamma detection).
 render_target_path = "performance"                	# Render target emulation path to use across all GPU backends.
                                                   	# Use: [performance, accuracy]
                                                   	#  performance:
@@ -286,7 +305,7 @@ trace_dump_path = ""                              	# Output path for dumped file
 trace_gpu_prefix = "scratch/gpu/"                 	# Prefix path for GPU trace files.
 trace_gpu_stream = false                          	# Trace all GPU packets.
 use_fuzzy_alpha_epsilon = false                   	# Use approximate compare for alpha values to prevent flickering on NVIDIA graphics cards
-vsync = true                                      	# Enable VSYNC.
+vulkan_precise_interpolation = true               	# Use manual barycentric interpolation in fragment shaders to avoid precision issues on Nvidia GPUs. Fixes noise artifacts in games like Perfect Dark and Tenchu Z that do exact equality comparisons on interpolated values. Requires VK_KHR_fragment_shader_barycentric.
 
 
 [General]
@@ -297,9 +316,10 @@ controller_hotkeys = false                        	# Hotkeys for Xbox and PS con
 debug = false                                     	# Allow debugging and retain debug information.
 disable_game_window_mouse = false                 	# Disables mouse interactions in the game window, including double-click to fullscreen and right-click context menu.
 discord = true                                    	# Enable Discord rich presence
+dump_xex = false                                  	# Dump the main XEX to current directory on launch
+gdbport = 0                                       	# Port for GDBStub debugger to listen on, requires --debug (0 = disable)
 launch_module = ""                                	# Executable to launch from the .iso or the package instead of default.xex or the module specified by the game. Leave blank to launch the default module.
 priority_class = 0                                	# Forces Xenia to use different process priority than default one. It might affect performance and cause unexpected bugs. Possible values: 0 - Normal, 1 - Above normal, 2 - High
-recent_titles_entry_amount = 10                   	# Allows user to define how many titles is saved in list of recently played titles.
 time_scalar = 1                                   	# Scalar used to speed or slow time (1x, 2x, 1/2x, etc).
 
 
@@ -360,6 +380,7 @@ cl = ""                                           	# Specify additional command-
 default_achievements_backend = "GPD"              	# Defines which achievements backend should be used as an default. Possible options: GPD.
 ignore_thread_affinities = true                   	# Ignores game-specified thread affinities.
 ignore_thread_priorities = true                   	# Ignores game-specified thread priorities.
+in_process_title_relaunch = true                  	# Handle title-to-title launches in-process via full Shutdown/Setup cycle instead of spawning a new emulator process.
 kernel_build_version = 1888                       	# Define current kernel version
 kernel_cert_monitor = false                       	# Enable cert monitor.
 kernel_debug_monitor = false                      	# Enable debug monitor.
@@ -384,7 +405,8 @@ log_to_stdout = true                              	# Write log output to stdout
 ignore_offset_for_ranged_allocations = false      	# Allows to ignore 4k offset for physical allocations with provided range. Certain titles check if result matches provided lower range.
 protect_on_release = false                        	# Protect released memory to prevent accesses.
 protect_zero = true                               	# Protect the zero page from reads and writes.
-scribble_heap = false                             	# Scribble 0xCD into all allocated heap memory.
+scribble_heap = false                             	# Scribble specific or random value into all allocated heap memory.
+scribble_heap_value = 0                           	# Value used to fill all allocated heap memory. 0 - Random value. Valid range: [1-255]
 writable_executable_memory = true                 	# Allow mapping memory with both write and execute access, for simulating behavior on platforms where that's not supported
 
 
@@ -409,9 +431,10 @@ storage_root = ""                                 	# Root path for persistent in
 
 
 [UI]
+achievement_notification_position_by_game = false 	# Use game-specified notification position for achievements. When disabled, achievements always appear at center-bottom.
 achievement_sound_path = ""                       	# Path (including filename) to achievement unlock sound. Supports WAV, MP3, OGG, FLAC, and other common formats.
-custom_font_path = ""                             	# Allows user to load custom font and use it instead of default one.
-font_size = 14                                    	# Allows user to set custom font size.
+custom_font_path = "assets/font/Inter-VariableFont_opsz,wght.ttf"	# Path to custom font file. Set to empty to use system fonts.
+font_size = 13                                    	# Allows user to set custom font size.
 headless = false                                  	# Don't display any UI, using defaults for prompts as needed.
 imgui_debug = false                               	# Show ImGui debugging tools.
 profiler_dpi_scaling = false                      	# Apply window DPI scaling to the profiler.
@@ -477,8 +500,7 @@ vulkan_log_debug_messages = true                  	# Write Vulkan VK_EXT_debug_u
 vulkan_pipeline_creation_threads = -1             	# Number of threads used for graphics pipeline creation. -1 to calculate automatically (75% of logical CPU cores), a positive number to specify the number of threads explicitly (up to the number of logical CPU cores), 0 to disable multithreaded pipeline creation.
 vulkan_rebar = false                              	# Use ReBAR/SAM (Resizable BAR / Smart Access Memory) for upload buffers when available. This places staging buffers in GPU VRAM. May improve or hurt performance depending on hardware - traditional staging via system memory is often faster due to async GPU DMA.
 vulkan_sparse_shared_memory = true                	# Enable sparse binding for shared memory emulation. Disabling it increases video memory usage - a 512 MB buffer is created - but allows graphics debuggers that don't support sparse binding to work.
-vulkan_spirv_background_optimization = false      	# Enable background SPIR-V shader optimization. When enabled, shaders are initially compiled without optimization for faster startup, then optimized in a background thread.
-vulkan_spirv_inline_optimization = false          	# Enable inline SPIR-V shader optimization. When enabled, shaders are optimized immediately during translation, blocking the main thread. This increases shader compilation time but ensures all shaders are optimized before use. Can be combined with background optimization.
+vulkan_spirv_optimization = false                 	# Enable SPIR-V shader optimization. When enabled, shaders are optimized on pipeline creation threads before the shader module is created. This only affects async pipeline creation and does not block the main thread.
 vulkan_validation = false                         	# Enable the Vulkan validation layer (VK_LAYER_KHRONOS_validation). Messages will be written to the Xenia log if 'vulkan_log_debug_messages' is enabled, or to the OS debug output otherwise.
 
 

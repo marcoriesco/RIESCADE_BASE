@@ -12,6 +12,8 @@ ID7:
   executable: InitialD7_GLW_RE_SBYD.exe
 Initial D Arcade Stage Zero Ver.2:
   profile: IDZv2TP
+OffroadThunder:
+  executable: offroad3_x64.exe
 RaidenIII:
   executable: game.exe
 Snowboarder:

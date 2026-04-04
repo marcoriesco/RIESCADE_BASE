@@ -39,6 +39,7 @@ disable_prefetch_and_cachecontrol = true          	# Disables translating ppc pr
 disassemble_functions = false                     	# Disassemble functions during generation.
 dump_translated_hir_functions = false             	# dumps translated hir
 elide_e0_check = false                            	# Eliminate e0 check on some memory accesses, like to r13(tls) or r1(sp)
+emit_inline_mmio_checks = false                   	# Emit inline MMIO range checks for all I32 loads/stores instead of relying on exception-based MMIO detection.
 emit_mmio_aware_stores_for_recorded_exception_addresses = true	# Uses info gathered via record_mmio_access_exceptions to emit special stores that are faster than trapping the exception
 emit_source_annotations = false                   	# Add extra movs and nops to make disassembly easier to read.
 enable_early_precompilation = false               	# Enable pre-compiling guest functions that we know we've called/that we've recognized as being functions via simple heuristics, good for error finding/stress testing with the JIT
@@ -62,6 +63,7 @@ pvr = 7407360                                     	# Known PVR's.
                                                   	# Bits 16 to 31 are the revision number.
                                                   	# Note: Some XEXs (such as mfgbootlauncher.xex) may check for a value that's less than 0x710700.
 
+record_mmio_access_exceptions = true              	# For guest addresses records whether we caught any mmio accesses for them. This info can then be used on a subsequent run to instruct the recompiler to emit checks
 store_all_context_values = false                  	# Don't strip dead context stores to aid in debugging.
 trace_function_coverage = false                   	# Generate tracing for function instruction coverage statistics.
 trace_function_data = false                       	# Generate tracing for function result data.
@@ -99,7 +101,6 @@ d3d12_pipeline_creation_threads = -1              	# Number of threads used for 
 d3d12_queue_priority = 1                          	# Graphics (direct) command queue scheduling priority, 0 - normal, 1 - high, 2 - global realtime (requires administrator privileges, may impact system responsibility)
 d3d12_submit_on_primary_buffer_end = true         	# Submit the command list when a PM4 primary buffer ends if it's possible to submit immediately to try to reduce frame latency.
 d3d12_tessellation_wireframe = false              	# Display tessellated surfaces as wireframe for debugging.
-d3d12_tiled_shared_memory = true                  	# Enable tiled resources for shared memory emulation. Disabling them increases video memory usage - a 512 MB buffer is created - but allows graphics debuggers that don't support tiled resources to work.
 
 
 [Display]
@@ -146,6 +147,18 @@ present_safe_area_y = 100                         	# Percentage of the image hei
 
 
 [GPU]
+anisotropic_override = -1                         	# Forces anisotropic filtering (AF) for eligible textures.
+                                                  	# Higher values keep textures sharper at oblique angles at the cost of GPU bandwidth, though most GPUs handle up to 16x fine.
+                                                  	# In rare cases, forcing AF can introduce visual artifacts.
+                                                  	#  -1 = No override
+                                                  	#   0 = Disable anisotropic filtering
+                                                  	#   1 = Force 1x anisotropic filtering
+                                                  	#   2 = Force 2x anisotropic filtering
+                                                  	#   3 = Force 4x anisotropic filtering
+                                                  	#   4 = Force 8x anisotropic filtering
+                                                  	#   5 = Force 16x anisotropic filtering
+
+async_shader_compilation = true                   	# Compile shaders and create pipelines asynchronously in background threads. Eliminates shader compilation stutter but may cause brief rendering artifacts while pipelines are being created. When disabled, pipelines are created synchronously which causes stutter but no visual artifacts.
 clear_memory_page_state = false                   	# Refresh state of memory pages to enable gpu written data. (Use for 'Team Ninja' Games to fix missing character models)
 depth_float24_convert_in_pixel_shader = false     	# Whether to convert the depth values to 24-bit floating-point (20e4) from the host precision (32-bit floating point) directly in the pixel shaders of guest draws when using a host depth buffer.
                                                   	# This prevents visual artifacts (interleaved stripes of parts of surfaces rendered and parts not rendered, having either the same width in case of the "greater or equal" depth test function, or the former being much thinner than the latter with the "equal" function) if the full host precision depth data is lost.
@@ -180,7 +193,7 @@ depth_transfer_not_equal_test = true              	# When transferring data betw
 
 disassemble_pm4 = false                           	# Only does anything in debug builds, if set will disassemble and log all PM4 packets sent to the CP.
 draw_resolution_scale_x = 1                       	# Integer pixel width scale used for scaling the rendering resolution opaquely to the game.
-                                                  	# 1, 2 and 3 may be supported, but support of anything above 1 depends on the device properties, such as whether it supports sparse binding / tiled resources, the number of virtual address bits per resource, and other factors.
+                                                  	# Values from 1 to 7 may be supported, depending on device capabilities. Requires sparse binding (Vulkan) or tiled resources (D3D12) for scales above 1x1. The emulator will automatically clamp to the maximum supported scale if the requested value exceeds device limits.
                                                   	# Various effects and parts of game rendering pipelines may work incorrectly as pixels become ambiguous from the game's perspective and because half-pixel offset (which normally doesn't affect coverage when MSAA isn't used) becomes full-pixel.
 
 draw_resolution_scale_y = 1                       	# Integer pixel width scale used for scaling the rendering resolution opaquely to the game.
@@ -208,8 +221,9 @@ force_convert_triangle_fans_to_lists = false      	# For host graphics API downl
 framerate_limit = 0                               	# Maximum frames per second. 0 = Unlimited frames.
                                                   	# Defaults to 60, when set to 0, and VSYNC is enabled.
 
-gamma_render_target_as_srgb = false               	# When the host can't write piecewise linear gamma directly with correct blending, use sRGB output on the host for conceptually correct blending in linear color space while having slightly different precision distribution in the render target and severely incorrect values if the game accesses the resulting colors directly as raw data.
+gamma_render_target_as_unorm16 = true             	# When the host can't write 8 bits per component pixels with piecewise linear gamma encoding directly with correct blending, use the 16-bit unsigned normalized format, if supported, for conceptually correct 8_8_8_8_GAMMA render target format blending in linear color space. Greatly increases accuracy for this format, but may result in render target copying costs if the game switches between 8_8_8_8_GAMMA and 8_8_8_8 views for the same EDRAM render target.
 gpu = "any"                                       	# Graphics system. Use: [any, d3d12, vulkan, null]
+gpu_3d_to_2d_texture = true                       	# Handle shaders that sample 3D textures as 2D by creating a 2D texture from slice 0 of the guest memory.
 gpu_allow_invalid_fetch_constants = true          	# Allow texture and vertex fetch constants with invalid type - generally unsafe because the constant may contain completely invalid values, but may be used to bypass fetch constant type errors in certain games until the real reason why they're invalid is found.
 gpu_allow_invalid_upload_range = false            	# Allows games to read data from pages that are marked as no access.
 half_pixel_offset = true                          	# Enable support of vertex half-pixel offset (D3D9 PA_SU_VTX_CNTL PIX_CENTER). Generally games are aware of the half-pixel offset, and having this enabled is the correct behavior (disabling this may significantly break post-processing in some games), but in certain games it might have been ignored, resulting in slight blurriness of UI textures, for instance, when they are read between texels rather than at texel centers, or the leftmost/topmost pixels may not be fully covered when MSAA is used with fullscreen passes.
@@ -223,7 +237,7 @@ mrt_edram_used_range_clamp_to_min = true          	# With host render targets, i
 native_2x_msaa = true                             	# Use host 2x MSAA when available. Can be disabled for scalability testing on host GPU APIs where 2x is not mandatory, in this case, 2 samples of 4x MSAA will be used instead (with similar or worse quality and higher memory usage).
 native_stencil_value_output = true                	# Use pixel shader stencil reference output where available for purposes like copying between render targets. Can be disabled for scalability testing, in this case, much more expensive drawing of 8 quads will be done.
 native_stencil_value_output_d3d12_intel = false   	# Allow stencil reference output usage on Direct3D 12 on Intel GPUs - not working on UHD Graphics 630 as of March 2021 (driver 27.20.0100.8336).
-no_discard_stencil_in_transfer_pipelines = false  	# bleh
+no_discard_stencil_in_transfer_pipelines = false  	# Skip stencil bit discard in render target transfer pipelines. May improve performance on some GPUs.
 non_seamless_cube_map = true                      	# Disable filtering between cube map faces near edges where possible (Vulkan with VK_EXT_non_seamless_cube_map) to reproduce the Direct3D 9 behavior.
 primitive_processor_cache_min_indices = 4096      	# Smallest number of guest indices to store in the cache to try reusing later in the same frame if processing (such as primitive type conversion or reset index replacement) is performed.
                                                   	# Setting this to a very high value may result in excessive CPU processing, while a very low value may result in excessive locking and lookups.
@@ -276,6 +290,7 @@ texture_cache_memory_limit_render_to_texture = 24 	# Part of the host texture me
 
 texture_cache_memory_limit_soft = 384             	# Maximum host texture memory usage (in megabytes) above which old textures will be destroyed.
 texture_cache_memory_limit_soft_lifetime = 30     	# Seconds a texture should be unused to be considered old enough to be deleted if texture memory usage exceeds texture_cache_memory_limit_soft.
+tiled_shared_memory = true                        	# Enable tiled/sparse resources for efficient large address space support. Disable for graphics debugger compatibility.
 trace_dump_path = ""                              	# Output path for dumped files.
 trace_gpu_prefix = "scratch/gpu/"                 	# Prefix path for GPU trace files.
 trace_gpu_stream = false                          	# Trace all GPU packets.
@@ -352,6 +367,7 @@ allow_nui_initialization = false                  	# Enable NUI initialization
 
 apply_title_update = true                         	# Apply title updates.
 cl = ""                                           	# Specify additional command-line provided to guest.
+console_type = 0                                  	# Console Type Identifier: 0 - Development Kit, 1 - Test Kit
 default_achievements_backend = "GPD"              	# Defines which achievements backend should be used as an default. Possible options: GPD.
 ignore_thread_affinities = true                   	# Ignores game-specified thread affinities.
 ignore_thread_priorities = true                   	# Ignores game-specified thread priorities.
@@ -380,7 +396,8 @@ log_to_stdout = true                              	# Write log output to stdout
 ignore_offset_for_ranged_allocations = false      	# Allows to ignore 4k offset for physical allocations with provided range. Certain titles check if result matches provided lower range.
 protect_on_release = false                        	# Protect released memory to prevent accesses.
 protect_zero = true                               	# Protect the zero page from reads and writes.
-scribble_heap = false                             	# Scribble 0xCD into all allocated heap memory.
+scribble_heap = false                             	# Scribble specific or random value into all allocated heap memory.
+scribble_heap_value = 0                           	# Value used to fill all allocated heap memory. 0 - Random value. Valid range: [1-255]
 writable_executable_memory = true                 	# Allow mapping memory with both write and execute access, for simulating behavior on platforms where that's not supported
 
 
@@ -400,6 +417,7 @@ cache_root = ""                                   	# Root path for files used to
 content_root = ""                                 	# Root path for guest content storage (saves, etc.), or empty to use the content folder under the storage root.
 force_mount_devkit = false                        	# Force devkit mount
 mount_cache = true                                	# Enable cache mount
+mount_memory_unit = false                         	# Enable memory unit (MU) mount
 mount_scratch = false                             	# Enable scratch mount
 storage_root = ""                                 	# Root path for persistent internal data storage (config, etc.), or empty to use the path preferred for the OS, such as the documents folder, or the emulator executable directory if portable.txt is present in it.
 
@@ -468,6 +486,8 @@ vulkan_allow_present_mode_immediate = true        	# When available, allow the i
 vulkan_allow_present_mode_mailbox = true          	# When available, allow the mailbox presentation mode (2nd priority), offering low latency without the possibility of tearing.
 vulkan_device = -1                                	# Index of the preferred Vulkan physical device, or -1 to use any compatible device.
 vulkan_log_debug_messages = true                  	# Write Vulkan VK_EXT_debug_utils messages to the Xenia log, as opposed to the OS debug output.
+vulkan_pipeline_creation_threads = -1             	# Number of threads used for graphics pipeline creation. -1 to calculate automatically (75% of logical CPU cores), a positive number to specify the number of threads explicitly (up to the number of logical CPU cores), 0 to disable multithreaded pipeline creation.
+vulkan_semaphore_reuse_workaround = false         	# Wait for presentation queue idle before each frame to prevent semaphore reuse. May fix rendering issues but causes significant performance loss.
 vulkan_sparse_shared_memory = true                	# Enable sparse binding for shared memory emulation. Disabling it increases video memory usage - a 512 MB buffer is created - but allows graphics debuggers that don't support sparse binding to work.
 vulkan_validation = false                         	# Enable the Vulkan validation layer (VK_LAYER_KHRONOS_validation). Messages will be written to the Xenia log if 'vulkan_log_debug_messages' is enabled, or to the OS debug output otherwise.
 
@@ -519,7 +539,6 @@ enable_incorrect_roundingmode_behavior = false    	# Disables the FPU/VMX MXCSR 
 enable_rmw_context_merging = false                	# Permit merging read-modify-write HIR instr sequences together into x86 instructions that use a memory operand.
 instrument_call_times = false                     	# Compute time taken for functions, for profiling guest code
 max_stackpoints = 65536                           	# Max number of host->guest stack mappings we can record.
-record_mmio_access_exceptions = true              	# For guest addresses records whether we caught any mmio accesses for them. This info can then be used on a subsequent run to instruct the recompiler to emit checks
 x64_extension_mask = -1                           	# Allow the detection and utilization of specific instruction set features.
                                                   	#     0 = x86_64 + AVX1
                                                   	#     1 = AVX2

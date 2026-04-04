@@ -4100,3 +4100,50 @@
 2026-04-03 18:04:41.604 [INFO]      [Startup] Retrobat version : 7.5.3-stable-win64
 2026-04-03 18:04:41.605 [INFO]      [Startup] EmulatorLauncher.exe version : 30/03/2026 12:15:24
 2026-04-03 18:04:41.611 [INFO]      [ImportStore] Option to scan installed store games is disabled.
+2026-04-04 14:24:58.202 [INFO]      --------------------------------------------------------------
+2026-04-04 14:24:58.203 [INFO]      [Startup] Y:\images\RIESCADE\emulationstation\.emulationstation\scripts\start\..\..\..\emulatorLauncher.exe  -updatestores
+2026-04-04 14:24:58.203 [INFO]      [Startup] Loading configuration.
+2026-04-04 14:24:58.207 [INFO]      [Startup] Loading ES settings.
+2026-04-04 14:24:58.216 [INFO]      [Startup] Retrobat version : 7.5.3-stable-win64
+2026-04-04 14:24:58.217 [INFO]      [Startup] EmulatorLauncher.exe version : 30/03/2026 12:15:24
+2026-04-04 14:24:58.223 [INFO]      [ImportStore] Option to scan installed store games is disabled.
+2026-04-04 14:29:07.188 [INFO]      --------------------------------------------------------------
+2026-04-04 14:29:07.189 [INFO]      [Startup] Y:\images\RIESCADE\emulationstation\.emulationstation\scripts\start\..\..\..\emulatorLauncher.exe  -updatestores
+2026-04-04 14:29:07.189 [INFO]      [Startup] Loading configuration.
+2026-04-04 14:29:07.192 [INFO]      [Startup] Loading ES settings.
+2026-04-04 14:29:07.201 [INFO]      [Startup] Retrobat version : 7.5.3-stable-win64
+2026-04-04 14:29:07.202 [INFO]      [Startup] EmulatorLauncher.exe version : 30/03/2026 12:15:24
+2026-04-04 14:29:07.208 [INFO]      [ImportStore] Option to scan installed store games is disabled.
+2026-04-04 14:59:14.725 [INFO]      --------------------------------------------------------------
+2026-04-04 14:59:14.726 [INFO]      [Startup] Y:\images\RIESCADE\emulationstation\.emulationstation\scripts\start\..\..\..\emulatorLauncher.exe  -updatestores
+2026-04-04 14:59:14.726 [INFO]      [Startup] Loading configuration.
+2026-04-04 14:59:14.729 [INFO]      [Startup] Loading ES settings.
+2026-04-04 14:59:14.738 [INFO]      [Startup] Retrobat version : 8.0.0.0-stable-win64
+2026-04-04 14:59:14.739 [INFO]      [Startup] EmulatorLauncher.exe version : 03/04/2026 15:17:06
+2026-04-04 14:59:14.746 [INFO]      [ImportStore] Option to scan installed store games is disabled.
+2026-04-04 15:40:39.150 [INFO]      --------------------------------------------------------------
+2026-04-04 15:40:39.151 [INFO]      [Startup] Y:\images\RIESCADE\emulationstation\.emulationstation\scripts\start\..\..\..\emulatorLauncher.exe  -updatestores
+2026-04-04 15:40:39.152 [INFO]      [Startup] Loading configuration.
+2026-04-04 15:40:39.155 [INFO]      [Startup] Loading ES settings.
+2026-04-04 15:40:39.164 [INFO]      [Startup] Retrobat version : 8.0.0.0-stable-win64
+2026-04-04 15:40:39.165 [INFO]      [Startup] EmulatorLauncher.exe version : 03/04/2026 15:17:06
+2026-04-04 15:40:39.171 [INFO]      [ImportStore] Option to scan installed store games is disabled.
+2026-04-04 15:41:41.944 [INFO]      --------------------------------------------------------------
+2026-04-04 15:41:41.945 [INFO]      [Startup] "Y:\images\RIESCADE\emulationstation\emulatorLauncher.exe"  -gameinfo   -system snes-msu1 -emulator libretro -core snes9x -rom "Y:\images\RIESCADE\roms\snes-msu1\Actraiser.squashfs"
+2026-04-04 15:41:41.945 [INFO]      [Startup] Loading configuration.
+2026-04-04 15:41:41.949 [INFO]      [Startup] Loading ES settings.
+2026-04-04 15:41:41.958 [INFO]      [Startup] Retrobat version : 8.0.0.0-stable-win64
+2026-04-04 15:41:41.959 [INFO]      [Startup] EmulatorLauncher.exe version : 03/04/2026 15:17:06
+2026-04-04 15:41:43.840 [INFO]      [Startup] Emulator version: 1.22.2.0
+2026-04-04 15:41:43.918 [INFO]      [Startup] Loading Controller configuration.
+2026-04-04 15:41:45.195 [INFO]      [Generator] Using LibRetroGenerator
+2026-04-04 15:41:45.246 [INFO]      [Generator] Loading features.
+2026-04-04 15:41:45.253 [INFO]      [INFO] Checking core update availability
+2026-04-04 15:41:46.592 [INFO]      [Controller] No custom mapping found for User Controller.
+2026-04-04 15:41:46.694 [INFO]      [INFO] Configuring core options in retroarch-core-options file.
+2026-04-04 15:41:46.821 [INFO]      [INFO] Configuring Input Remap file in retroarch\config\remaps\Snes9x
+2026-04-04 15:41:46.854 [INFO]      [Running] Y:\images\RIESCADE\emulators\retroarch\retroarch.exe --log-file "Y:\images\RIESCADE\emulationstation\.emulationstation\es_launch_stdout.log" -verbose -L "Y:\images\RIESCADE\emulators\retroarch\cores\snes9x_libretro.dll" "Z:\ActRaiser (USA) (MSU1).sfc" --set-shader "Y:\images\RIESCADE\emulators\retroarch\shaders\shaders_slang\crt\crt-geom.slangp"
+2026-04-04 15:42:03.005 [INFO]      [Generator] Process exited with code 0
+2026-04-04 15:42:03.014 [INFO]      [Generator] Cleanup.
+2026-04-04 15:42:03.015 [INFO]      [Generator] Directory.Delete(C:\Users\marcoriesco\AppData\Local\Temp\.uncompressed\Actraiser.squashfs, true)
+2026-04-04 15:42:03.031 [INFO]      [Generator] Directory.Delete(C:\Users\marcoriesco\AppData\Local\Temp\.uncompressed, false)

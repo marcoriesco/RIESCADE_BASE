@@ -3,7 +3,7 @@
     {
         "Emulator": "libretro",
         "Name": "8BitDo M30 xinput",
-        "Guid": "030000005e040000e002000000007200",
+        "Guid": "030000005e040000e002000000007200,030000005e0400008e02000000007200",
         "Driver": "sdl2",
         "Mapping": {
             "analog_dpad_mode": "0",
@@ -45,7 +45,6 @@
         "HotKeyMapping": {
             "input_enable_hotkey_btn": "4",
             "input_exit_emulator_btn": "6",
-            "input_pause_toggle_btn": "1",
             "input_menu_toggle_btn": "0",
             "input_load_state_btn": "3",
             "input_save_state_btn": "2",
@@ -70,7 +69,7 @@
     {
         "Emulator": "libretro",
         "Name": "8BitDo M30 xinput",
-        "Guid": "030000005e040000e002000000007200",
+        "Guid": "030000005e040000e002000000007200,030000005e0400008e02000000007200",
         "Driver": "xinput",
         "Mapping": {
             "analog_dpad_mode": "0",
@@ -112,7 +111,6 @@
         "HotKeyMapping": {
             "input_enable_hotkey_btn": "7",
             "input_exit_emulator_btn": "6",
-            "input_pause_toggle_btn": "1",
             "input_menu_toggle_btn": "0",
             "input_load_state_btn": "3",
             "input_save_state_btn": "2",
@@ -137,7 +135,7 @@
     {
         "Emulator": "libretro",
         "Name": "8BitDo M30 xinput",
-        "Guid": "030000005e040000e002000000007200",
+        "Guid": "030000005e040000e002000000007200,030000005e0400008e02000000007200",
         "Driver": "dinput",
         "Mapping": {
             "analog_dpad_mode": "0",
@@ -179,7 +177,6 @@
         "HotKeyMapping": {
             "input_enable_hotkey_btn": "6",
             "input_exit_emulator_btn": "7",
-            "input_pause_toggle_btn": "1",
             "input_menu_toggle_btn": "0",
             "input_load_state_btn": "3",
             "input_save_state_btn": "2",
@@ -204,7 +201,7 @@
     {
         "Emulator": "ares",
         "Name": "8BitDo M30 xinput",
-        "Guid": "030000005e040000e002000000007200",
+        "Guid": "030000005e040000e002000000007200,030000005e0400008e02000000007200",
         "Driver": "SDL",
         "Mapping": {
             "Pad.Up": "0/1/Lo_1/1/Lo",
@@ -227,7 +224,7 @@
     {
         "Emulator": "bizhawk",
         "Name": "8BitDo M30 xinput",
-        "Guid": "030000005e040000e002000000007200",
+        "Guid": "030000005e040000e002000000007200,030000005e0400008e02000000007200",
         "Mapping": {
             "Up": "LStickUp_DpadUp",
             "Down": "LStickDown_DpadDown",
@@ -250,7 +247,7 @@
     {
         "Emulator": "jgenesis",
         "Name": "8BitDo M30 xinput",
-        "Guid": "030000005e040000e002000000007200",
+        "Guid": "030000005e040000e002000000007200,030000005e0400008e02000000007200",
         "Driver": "xinput",
         "Mapping": {
             "up": "Hat 0 Up_Axis 1 -",
@@ -274,7 +271,7 @@
     {
         "Emulator": "kega-fusion",
         "Name": "8BitDo M30 xinput",
-        "Guid": "030000005e040000e002000000007200",
+        "Guid": "030000005e040000e002000000007200,030000005e0400008e02000000007200",
         "Driver": "",
         "Mapping": {
             "buttons": "50,51,48,49,0,1,36,7,2,3,5,6,8,9,10,11",
@@ -287,7 +284,7 @@
     {
         "Emulator": "mednafen",
         "Name": "8BitDo M30 xinput",
-        "Guid": "030000005e040000e002000000007200",
+        "Guid": "030000005e040000e002000000007200,030000005e0400008e02000000007200",
         "Driver": "xinput",
         "Mapping": {
             "a": "button_12",
@@ -313,7 +310,6 @@
             "take_snapshot": "button_5_and_button_8",
             "fast_forward": "button_5_and_abs_0+_or_button_5_and_button_3",
             "state_rewind": "button_5_and_abs_0-_or_button_5_and_button_2",
-            "pause": "button_5_and_button_13",
             "exit": "button_5_and_button_4"
         },
         "ControllerInfo": {
@@ -323,7 +319,7 @@
     {
         "Emulator": "libretro",
         "Name": "8BitDo M30 switch",
-        "Guid": "030000007e0500000920000000006803",
+        "Guid": "030000007e0500000920000000006803,030000007e0500000920000000026803",
         "Driver": "sdl2",
         "Mapping": {
             "analog_dpad_mode": "0",
@@ -369,7 +365,6 @@
         "HotKeyMapping": {
             "input_enable_hotkey_btn": "4",
             "input_exit_emulator_btn": "6",
-            "input_pause_toggle_btn": "1",
             "input_menu_toggle_btn": "0",
             "input_load_state_btn": "3",
             "input_save_state_btn": "2",
@@ -394,7 +389,7 @@
     {
         "Emulator": "ares",
         "Name": "8BitDo M30 switch",
-        "Guid": "030000007e0500000920000000006803",
+        "Guid": "030000007e0500000920000000006803,030000007e0500000920000000026803",
         "Driver": "SDL",
         "Mapping": {
             "Pad.Up": "0/1/Lo_1/1/Lo",
@@ -417,7 +412,7 @@
     {
         "Emulator": "bizhawk",
         "Name": "8BitDo M30 switch",
-        "Guid": "030000007e0500000920000000006803",
+        "Guid": "030000007e0500000920000000006803,030000007e0500000920000000026803",
         "Mapping": {
             "Up": "LStickUp_DpadUp",
             "Down": "LStickDown_DpadDown",
@@ -440,13 +435,13 @@
     {
         "Emulator": "jgenesis",
         "Name": "8BitDo M30 switch",
-        "Guid": "030000007e0500000920000000006803",
+        "Guid": "030000007e0500000920000000006803,030000007e0500000920000000026803",
         "Driver": "sdl",
         "Mapping": {
-            "up": "Button 11_Axis 1 -",
-            "left": "Button 13_Axis 0 -",
-            "right": "Button 14_Axis 0 +",
-            "down": "Button 12_Axis 1 +",
+            "up": "Hat 0 Up_Axis 1 -",
+            "left": "Hat 0 Left_Axis 0 -",
+            "right": "Hat 0 Right_Axis 0 +",
+            "down": "Hat 0 Down_Axis 1 +",
             "a": "Button 0",
             "b": "Button 1",
             "c": "Button 10",
@@ -464,7 +459,7 @@
     {
         "Emulator": "kega-fusion",
         "Name": "8BitDo M30 switch",
-        "Guid": "030000007e0500000920000000006803",
+        "Guid": "030000007e0500000920000000006803,030000007e0500000920000000026803",
         "Driver": "",
         "Mapping": {
             "buttons": "50,51,48,49,1,0,5,9,3,2,4,8,8,9,10,11",
@@ -477,7 +472,7 @@
     {
         "Emulator": "mednafen",
         "Name": "8BitDo M30 switch",
-        "Guid": "030000007e0500000920000000006803",
+        "Guid": "030000007e0500000920000000006803,030000007e0500000920000000026803",
         "Driver": "sdl",
         "Mapping": {
             "a": "button_1",
@@ -503,8 +498,10 @@
             "take_snapshot": "button_8_and_abs_7+",
             "fast_forward": "button_8_and_abs_4+",
             "state_rewind": "button_8_and_abs_4-",
-            "pause": "button_8_and_button_0",
             "exit": "button_8_and_button_9"
+        },
+        "ControllerInfo": {
+            "needActivationSwitch": "true"
         }
     },
     {
@@ -552,7 +549,6 @@
         "HotKeyMapping": {
             "input_enable_hotkey_btn": "10",
             "input_exit_emulator_btn": "11",
-            "input_pause_toggle_btn": "1",
             "input_menu_toggle_btn": "0",
             "input_load_state_btn": "4",
             "input_save_state_btn": "3",
@@ -616,7 +612,6 @@
         "HotKeyMapping": {
             "input_enable_hotkey_btn": "4",
             "input_exit_emulator_btn": "6",
-            "input_pause_toggle_btn": "1",
             "input_menu_toggle_btn": "0",
             "input_load_state_btn": "3",
             "input_save_state_btn": "2",
@@ -680,7 +675,6 @@
         "HotKeyMapping": {
             "input_enable_hotkey_btn": "10",
             "input_exit_emulator_btn": "11",
-            "input_pause_toggle_btn": "1",
             "input_menu_toggle_btn": "0",
             "input_load_state_btn": "4",
             "input_save_state_btn": "3",
@@ -803,7 +797,6 @@
             "take_snapshot": "button_10_and_button_8",
             "fast_forward": "button_10_and_abs_0+_or_button_10_and_abs_4+",
             "state_rewind": "button_10_and_abs_0-_or_button_10_and_abs_4-",
-            "pause": "button_10_and_button_1",
             "exit": "button_10_and_button_11"
         }
     },
@@ -852,7 +845,6 @@
         "HotKeyMapping": {
             "input_enable_hotkey_btn": "8",
             "input_exit_emulator_btn": "9",
-            "input_pause_toggle_btn": "1",
             "input_menu_toggle_btn": "2",
             "input_load_state_btn": "0",
             "input_save_state_btn": "3",
@@ -920,7 +912,6 @@
         "HotKeyMapping": {
             "input_enable_hotkey_btn": "8",
             "input_exit_emulator_btn": "9",
-            "input_pause_toggle_btn": "1",
             "input_menu_toggle_btn": "2",
             "input_load_state_btn": "0",
             "input_save_state_btn": "3",
@@ -988,7 +979,6 @@
         "HotKeyMapping": {
             "input_enable_hotkey_btn": "8",
             "input_exit_emulator_btn": "9",
-            "input_pause_toggle_btn": "1",
             "input_menu_toggle_btn": "2",
             "input_load_state_btn": "0",
             "input_save_state_btn": "3",
@@ -1122,7 +1112,6 @@
             "take_snapshot": "button_8_and_button_7",
             "fast_forward": "button_8_and_abs_0+",
             "state_rewind": "button_8_and_abs_0-",
-            "pause": "button_8_and_button_1",
             "exit": "button_8_and_button_9"
         },
         "ControllerInfo": {

@@ -28,6 +28,7 @@ atom
 atomiswave
 bbcmicro
 bennugd
+bk
 bstone
 bsyndrome
 c128
@@ -36,7 +37,7 @@ c20
 c64
 camplynx
 cannonball
-casloopy
+cassettevision
 cave
 cavestory
 cdi
@@ -65,6 +66,7 @@ easyrpg
 ecwolf
 eduke32
 electron
+enterprise
 epic
 fbneo
 fds
@@ -85,8 +87,8 @@ gba
 gba2players
 gbc
 gbc2players
-gb-msu
 gemrb
+ghostship
 gmaster
 gog
 gp32
@@ -101,7 +103,9 @@ j2me
 jaguar
 jaguarcd
 karaoke
+laseractive
 lcdgames
+loopy
 love
 lowresnx
 lutro
@@ -134,7 +138,7 @@ nes
 ngage
 ngp
 ngpc
-o2em
+odyssey2
 openbor
 opengoal
 openjazz
@@ -179,13 +183,14 @@ sega32x
 segastv
 sg1000
 sgb
+sgb-msu1
 singe
 snes
-snes-msu
+snes-msu1
 soh
 solarus
-sonic3air
-sonicmania
+sonic3-air
+sonic-mania
 sonicretro
 spectravideo
 starship

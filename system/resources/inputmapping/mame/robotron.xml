@@ -102,7 +102,7 @@
         <mapping type="standard" name="JOY_south" />
       </button>
       <button type="P1_JOYSTICKRIGHT_RIGHT" tag=":IN1" mask="2" defvalue="0" x="30" y="60" color="Blue" function="P1_JOYSTICKRIGHT_RIGHT">
-        <mapping type="standard" name="JOY_l1" />
+        <mapping type="standard" name="JOY_r1" />
       </button>
     </layout>
   </layouts>

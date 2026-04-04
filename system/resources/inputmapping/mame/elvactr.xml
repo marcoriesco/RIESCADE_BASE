@@ -343,10 +343,10 @@
         <mapping type="standard" name="JOY_north" />
       </button>
       <button type="P1_BUTTON3" tag=":IN.0" mask="4" defvalue="4" x="30" y="60" color="Blue" function="P1_BUTTON3">
-        <mapping type="standard" name="JOY_r1" />
+        <mapping type="standard" name="JOY_l1" />
       </button>
       <button type="P1_BUTTON4" tag=":IN.0" mask="8" defvalue="8" x="30" y="60" color="Blue" function="P1_BUTTON4">
-        <mapping type="standard" name="JOY_l1" />
+        <mapping type="standard" name="JOY_r1" />
       </button>
       <button type="P2_BUTTON1" tag=":IN.0" mask="16" defvalue="16" x="30" y="60" color="Blue" function="P2_BUTTON1">
         <mapping type="standard" name="JOY_west" />
@@ -355,10 +355,10 @@
         <mapping type="standard" name="JOY_north" />
       </button>
       <button type="P2_BUTTON3" tag=":IN.0" mask="64" defvalue="64" x="30" y="60" color="Blue" function="P2_BUTTON3">
-        <mapping type="standard" name="JOY_r1" />
+        <mapping type="standard" name="JOY_l1" />
       </button>
       <button type="P2_BUTTON4" tag=":IN.0" mask="128" defvalue="128" x="30" y="60" color="Blue" function="P2_BUTTON4">
-        <mapping type="standard" name="JOY_l1" />
+        <mapping type="standard" name="JOY_r1" />
       </button>
       <button type="P1_JOYSTICK_UP" tag=":IN.1" mask="1" defvalue="1" x="30" y="60" color="Blue" function="P1_JOYSTICK_UP">
         <mapping type="standard" name="JOY_up OR JOY_lsup" />
@@ -391,10 +391,10 @@
         <mapping type="standard" name="JOY_north" />
       </button>
       <button type="P3_BUTTON3" tag=":IN.4" mask="1024" defvalue="1024" x="30" y="60" color="Blue" function="P3_BUTTON3">
-        <mapping type="standard" name="JOY_r1" />
+        <mapping type="standard" name="JOY_l1" />
       </button>
       <button type="P3_BUTTON4" tag=":IN.4" mask="2048" defvalue="2048" x="30" y="60" color="Blue" function="P3_BUTTON4">
-        <mapping type="standard" name="JOY_l1" />
+        <mapping type="standard" name="JOY_r1" />
       </button>
       <button type="P4_BUTTON1" tag=":IN.4" mask="4096" defvalue="4096" x="30" y="60" color="Blue" function="P4_BUTTON1">
         <mapping type="standard" name="JOY_west" />
@@ -403,10 +403,10 @@
         <mapping type="standard" name="JOY_north" />
       </button>
       <button type="P4_BUTTON3" tag=":IN.4" mask="16384" defvalue="16384" x="30" y="60" color="Blue" function="P4_BUTTON3">
-        <mapping type="standard" name="JOY_r1" />
+        <mapping type="standard" name="JOY_l1" />
       </button>
       <button type="P4_BUTTON4" tag=":IN.4" mask="32768" defvalue="32768" x="30" y="60" color="Blue" function="P4_BUTTON4">
-        <mapping type="standard" name="JOY_l1" />
+        <mapping type="standard" name="JOY_r1" />
       </button>
       <button type="P3_JOYSTICK_UP" tag=":IN.5" mask="1" defvalue="1" x="30" y="60" color="Blue" function="P3_JOYSTICK_UP">
         <mapping type="standard" name="JOY_up OR JOY_lsup" />
