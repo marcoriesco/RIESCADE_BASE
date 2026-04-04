@@ -4093,3 +4093,10 @@
 2026-04-03 16:31:47.834 [INFO]      Xbox 360 Controller - Device:0, Player:1, Path:USB\VID_045E&PID_028E&IG_00\2&DEE0F28&0&00
 2026-04-03 16:31:47.834 [INFO]      [PadToKey] Exit listening
 2026-04-03 16:31:47.865 [INFO]      [Generator] Cleanup.
+2026-04-03 18:04:41.591 [INFO]      --------------------------------------------------------------
+2026-04-03 18:04:41.592 [INFO]      [Startup] Y:\images\RIESCADE\emulationstation\.emulationstation\scripts\start\..\..\..\emulatorLauncher.exe  -updatestores
+2026-04-03 18:04:41.592 [INFO]      [Startup] Loading configuration.
+2026-04-03 18:04:41.596 [INFO]      [Startup] Loading ES settings.
+2026-04-03 18:04:41.604 [INFO]      [Startup] Retrobat version : 7.5.3-stable-win64
+2026-04-03 18:04:41.605 [INFO]      [Startup] EmulatorLauncher.exe version : 30/03/2026 12:15:24
+2026-04-03 18:04:41.611 [INFO]      [ImportStore] Option to scan installed store games is disabled.
