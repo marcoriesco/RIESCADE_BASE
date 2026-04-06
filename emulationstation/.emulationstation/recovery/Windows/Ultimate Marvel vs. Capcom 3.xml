@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<gameList parentHash="15578">
+	<game>
+		<path>./Ultimate Marvel vs. Capcom 3.wsquashfs</path>
+		<name>Ultimate Marvel vs. Capcom 3</name>
+		<image>./media/fanart/Ultimate Marvel vs. Capcom 3.jpg</image>
+		<video>./media/video/Ultimate Marvel vs. Capcom 3.mp4</video>
+		<marquee>./media/logo/Ultimate Marvel vs. Capcom 3.png</marquee>
+		<thumbnail>./media/cover/Ultimate Marvel vs. Capcom 3.png</thumbnail>
+		<playcount>1</playcount>
+		<lastplayed>20260405T013512</lastplayed>
+		<gametime>60</gametime>
+	</game>
+</gameList>

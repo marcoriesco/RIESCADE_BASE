@@ -180,6 +180,7 @@
             <glowSize>1</glowSize>
             <glowOffset>1.5</glowOffset>
             <alignment>left</alignment>
+            <extraTextColor>FFFFFF80</extraTextColor>
             <zIndex>99</zIndex>
 
             <storyboard event="activate">

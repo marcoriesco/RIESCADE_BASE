@@ -20,8 +20,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
-            <path ifSubset="overlay:light">./resources/_parts/overlay-gamelist-light.png</path>
-            <path ifSubset="overlay:hard">./resources/_parts/overlay-gamelist-hard.png</path>
+            <path>./resources/_parts/overlay-gamelist-hard.png</path>
             <zIndex>6</zIndex>
         </image>
 
