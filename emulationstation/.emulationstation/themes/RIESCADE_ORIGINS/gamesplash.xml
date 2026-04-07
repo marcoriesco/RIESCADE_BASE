@@ -71,9 +71,9 @@
 
         <image name="loading-icon" extra="true">
             <origin>1 0</origin>
-            <pos>0.16 0.86</pos>
+            <pos>0.444 0.86</pos>
             <maxSize>0.03 0.03</maxSize>
-            <alignment>right</alignment>
+            <alignment>left</alignment>
             <path>./resources/_parts/loading.png</path>
             <zIndex>32</zIndex>
         </image>

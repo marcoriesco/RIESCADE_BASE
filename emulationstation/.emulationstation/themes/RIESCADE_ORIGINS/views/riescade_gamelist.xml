@@ -80,7 +80,6 @@
             <zIndex>17</zIndex>
         </image>
 
-
         <!-- Video background -->
         <video ifSubset="video_gamelist:On" name="md_video">
             <origin>0 0</origin>
