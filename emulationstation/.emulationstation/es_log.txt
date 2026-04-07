@@ -1,5 +1,2 @@
-2026-04-06 16:43:50	ERROR	System "mess" is missing name, extension, or command!
-2026-04-06 16:43:50	ERROR	Error parsing XML file "Y:/images/RIESCADE/emulationstation/.emulationstation/recovery/arcadedumps/v2-RGS_typex2_batocera"!
-	Internal error occurred
-2026-04-06 16:43:52	ERROR	HttpReq::onError (3) : Couldn't connect to server
-2026-04-06 16:45:41	ERROR	System "mess" is missing name, extension, or command!
+2026-04-07 19:07:38	ERROR	System "mess" is missing name, extension, or command!
+2026-04-07 19:07:39	ERROR	HttpReq::onError (3) : Couldn't connect to server
