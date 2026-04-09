@@ -71,13 +71,21 @@
         </text>
 
         <!-- Overlays -->
-        <image name="overlay" extra="static">
+        <image name="overlay, overlay-right-down, overlay-right-top" extra="static">
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
             <path ifSubset="overlay:hard">./resources/_parts/overlay-gamelist-hard.png</path>
             <path ifSubset="overlay:light">./resources/_parts/overlay-gamelist-light.png</path>
             <zIndex>17</zIndex>
+        </image>
+        <image name="overlay-right-down" extra="static">
+            <path>./resources/_parts/overlays/OverlayRight.png</path>
+            <zIndex>22</zIndex>
+        </image>
+        <image name="overlay-right-top" extra="static">
+            <path>./resources/_parts/overlays/OverlayTopRight.png</path>
+            <zIndex>22</zIndex>
         </image>
 
         <!-- Video background -->
