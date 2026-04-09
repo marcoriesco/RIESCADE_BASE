@@ -9,3 +9,4 @@ saves/
 emulationstation/*.log
 emulationstation/.emulationstation/es_launch_stdout.log
 emulationstation/.emulationstation/es_log.txt
+emulationstation/.emulationstation/es_log.txt.bak

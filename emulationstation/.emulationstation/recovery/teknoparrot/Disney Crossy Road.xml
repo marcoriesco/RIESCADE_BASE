@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<gameList parentHash="106878">
+	<game>
+		<path>./Disney Crossy Road.wsquashfs</path>
+		<name>Disney Crossy Road</name>
+		<emulator>arcadedumps</emulator>
+		<playcount>1</playcount>
+		<lastplayed>20260409T110617</lastplayed>
+		<gametime>31</gametime>
+	</game>
+</gameList>
