@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<gameList parentHash="107593">
+	<game>
+		<path>./JurassicPark.teknoparrot</path>
+		<name>Jurassic Park</name>
+		<genre>Shooter</genre>
+		<image>./media/fanart/JurassicPark.jpg</image>
+		<video>./media/video/JurassicPark.mp4</video>
+		<marquee>./media/logo/JurassicPark.png</marquee>
+		<thumbnail>./media/cover/JurassicPark.png</thumbnail>
+		<releasedate>20150101T000000</releasedate>
+		<developer>RAW Thrills Linux PC Based</developer>
+		<publisher>RAW Thrills Linux PC Based</publisher>
+		<playcount>1</playcount>
+		<lastplayed>20260409T184906</lastplayed>
+		<gametime>104</gametime>
+	</game>
+</gameList>
