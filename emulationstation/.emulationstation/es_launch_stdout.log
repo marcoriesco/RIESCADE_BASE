@@ -6,83 +6,102 @@
 [INFO] Git: 69a4f0e
 [INFO] Built: Nov 20 2025
 [INFO] =================================================
-[INFO] [Input] Found input driver: "dinput".
-[INFO] [Core] Loading dynamic libretro core from: "Y:\images\RIESCADE\emulators\retroarch\cores\kronos_libretro.dll".
-[INFO] [Override] Redirecionando arquivo dados da memória do jogo em "Y:\images\RIESCADE\saves\saturnj\Space Invaders (Japan).srm".
-[INFO] [Override] Redirecionando ponto de save para "Y:\images\RIESCADE\saves\saturnj\libretro.kronos\Space Invaders (Japan).state".
-[INFO] [Environ] GET_VFS_INTERFACE. Core requested version >= V1, providing V3.
+[INFO] [Input] Found input driver: "raw".
+[INFO] [Core] Loading dynamic libretro core from: "Y:\images\RIESCADE\emulators\retroarch\cores\flycast_libretro.dll".
+[INFO] [Override] Redirecionando arquivo dados da memória do jogo em "Y:\images\RIESCADE\saves\atomiswave\claychal.srm".
+[INFO] [Override] Redirecionando ponto de save para "Y:\images\RIESCADE\saves\atomiswave\libretro.flycast\claychal.state".
 [INFO] [Environ] GET_CORE_OPTIONS_VERSION.
 [INFO] [Environ] GET_LANGUAGE: "7".
-[INFO] [Environ] SET_CORE_OPTIONS_INTL.
+[INFO] [Environ] SET_CORE_OPTIONS_V2_INTL.
 [INFO] [Environ] SET_CONTROLLER_INFO.
-[INFO] [Remap] Core-specific remap found at "Y:\images\RIESCADE\emulators\retroarch\config\remaps\Kronos\Kronos.rmp".
+[INFO] [Environ] SET_SUPPORT_NO_GAME: yes.
+[INFO] [Remap] Core-specific remap found at "Y:\images\RIESCADE\emulators\retroarch\config\remaps\Flycast\Flycast.rmp".
 [INFO] [Environ] GET_LOG_INTERFACE.
+[libretro INFO] shell/libretro/libretro.cpp:330 N[BOOT]: retro_init
 [INFO] [Environ] GET_PERF_INTERFACE.
-[INFO] [Environ] GET_SYSTEM_DIRECTORY: "Y:\images\RIESCADE\bios".
-[INFO] [Environ] GET_SAVE_DIRECTORY: "Y:\images\RIESCADE\saves\saturnj".
-[INFO] [Environ] SET_PERFORMANCE_LEVEL: 16.
-[INFO] [Environ] SET_SERIALIZATION_QUIRKS.
+[INFO] [Environ] SET_PIXEL_FORMAT: XRGB8888.
+[INFO] [Environ] SET_KEYBOARD_CALLBACK.
 [INFO] [Environ] GET_DISK_CONTROL_INTERFACE_VERSION.
 [INFO] [Environ] SET_DISK_CONTROL_EXT_INTERFACE.
+[libretro INFO] core/hw/mem/addrspace.cpp:425 N[VMEM]: Info: nvmem is enabled
+[libretro INFO] core/hw/mem/addrspace.cpp:457 N[VMEM]: BASE 00007ff4dd620000 RAM(16 MB) 00007ff4e9620000 VRAM64(8 MB) 00007ff4e1620000 ARAM(2 MB) 00007ff4fd620000
 [INFO] [Content] Carregamento de conteúdo ignorado. A implementação irá carregar por conta própria.
-[INFO] [Environ] SET_PIXEL_FORMAT: XRGB8888.
+[libretro INFO] shell/libretro/libretro.cpp:2136 N[BOOT]: retro_load_game: Y:\images\RIESCADE\roms\atomiswave\claychal.zip
+[INFO] [Environ] GET_RUMBLE_INTERFACE.
+[INFO] [Environ] GET_SYSTEM_DIRECTORY: "Y:\images\RIESCADE\bios".
+[INFO] [Environ] GET_SAVE_DIRECTORY: "Y:\images\RIESCADE\saves\atomiswave".
+[INFO] [Environ] SET_SAVE_STATE_IN_BACKGROUND: no.
+[libretro INFO] File extension is: .zip
 [INFO] [Environ] GET_PREFERRED_HW_RENDER, video driver: "vulkan"...
 [INFO] [Environ] GET_PREFERRED_HW_RENDER: RETRO_HW_CONTEXT_VULKAN.
-[INFO] [Environ] SET_HW_RENDER, context type: glcore.
-[INFO] [HW] Requesting core OpenGL context (4.3).
+[INFO] [Environ] SET_HW_RENDER, context type: vulkan.
+[INFO] [HW] Requesting Vulkan context.
+[INFO] [Environ] SET_HW_RENDER_CONTEXT_NEGOTIATION_INTERFACE.
+[INFO] [Environ] GET_SAVE_DIRECTORY: "Y:\images\RIESCADE\saves\atomiswave".
+[libretro INFO] core/hw/mem/addrspace.cpp:425 N[VMEM]: Info: nvmem is enabled
+[libretro INFO] core/hw/mem/addrspace.cpp:457 N[VMEM]: BASE 00007ff4dd620000 RAM(16 MB) 00007ff4e9620000 VRAM64(8 MB) 00007ff4e1620000 ARAM(2 MB) 00007ff4fd620000
+[libretro WARN] core/hw/naomi/naomi_cart.cpp:216 W[NAOMI]: Warning: Region 1 bios not found in awbios
+[libretro INFO] core/hw/naomi/naomi_cart.cpp:673 N[NAOMI]: NAOMI GAME ID [SEGA CLAY CHALLENGE] region 0 players 0 vertical 0
+[libretro INFO] core/emulator.cpp:63 N[BOOT]: Game ID is [SEGA CLAY CHALLENGE]
+[INFO] [Environ] GET_SYSTEM_DIRECTORY: "Y:\images\RIESCADE\bios".
+[libretro INFO] core/emulator.cpp:63 N[BOOT]: Game ID is [SEGA CLAY CHALLENGE]
+[INFO] [Environ] SET_ROTATION: "0" (0 deg).
 [INFO] [State] Encontrada último compartimento de jogo salvo: #0.
 [INFO] [SRAM] Ignorando carregamento da SRAM.
 [INFO] [Core] Versão da API libretro: 1, Compilado contra a API: 1
-[INFO] [Core] Geometry: 320x224, Aspect: 1.333, FPS: 60.00, Sample rate: 44100.00 Hz.
+[libretro INFO] shell/libretro/libretro.cpp:2485 N[RENDERER]: retro_get_system_av_info: Res=480
+[INFO] [Core] Geometry: 640x480, Aspect: 1.333, FPS: 59.94, Sample rate: 44100.00 Hz.
 [INFO] [Video] Set video size to: 1920x1080.
-[INFO] [Video] Using HW render, glcore driver forced.
-[INFO] [Video] "glcore" saved as cached driver.
-[INFO] [GLCore] Found GL context: "wgl".
-[INFO] [GLCore] Detecting screen resolution: 1920x1080.
+[INFO] [Video] Using HW render, vulkan driver forced.
+[INFO] [Vulkan] Vulkan dynamic library loaded.
 [INFO] [Video] Fullscreen set to 1920x1080 @ 165Hz on device \\.\DISPLAY1.
-[INFO] [WGL] Extensions: WGL_AMD_gpu_association WGL_ARB_buffer_region WGL_ARB_context_flush_control WGL_ARB_create_context WGL_ARB_create_context_no_error WGL_ARB_create_context_profile WGL_ARB_extensions_string WGL_ARB_framebuffer_sRGB WGL_ARB_make_current_read WGL_ARB_multisample WGL_ARB_pbuffer WGL_ARB_pixel_format WGL_ARB_pixel_format_float WGL_ARB_render_texture WGL_EXT_create_context_es_profile WGL_EXT_create_context_es2_profile WGL_EXT_extensions_string WGL_EXT_swap_control WGL_EXT_swap_control_tear WGL_I3D_genlock WGL_NV_DX_interop WGL_NV_DX_interop2 WGL_NV_swap_group 
-[INFO] [WGL] Adaptive VSync supported.
-[INFO] [GLCore] Initializing HW render (2048x2048).
-[INFO] [GLCore] Max texture size: 16384 px, renderbuffer size: 16384 px.
-[INFO] [GLCore] Vendor: ATI Technologies Inc., Renderer: Radeon RX 580 Series.
-[INFO] [GLCore] Version: 4.6.0 Core Profile Context 26.1.1.251211.
-[INFO] [GLCore] Using resolution 1920x1080.
+[INFO] [Vulkan] Got HW context negotiation interface 1.
+[INFO] [Vulkan] Found GPU at index 0: "Radeon RX 580 Series".
+[INFO] [Vulkan] Using GPU index 0.
+[libretro INFO] core/rend/vulkan/vk_context_lr.cpp:148 N[RENDERER]: Device extension enabled: VK_KHR_swapchain
+[libretro INFO] core/rend/vulkan/vk_context_lr.cpp:148 N[RENDERER]: Device extension enabled: VK_EXT_provoking_vertex
+[INFO] [Vulkan] Using GPU: "Radeon RX 580 Series".
+[INFO] [Vulkan] Got 3 swapchain images.
+[INFO] [Vulkan] Using resolution 1920x1080.
+[INFO] [Vulkan] Using BGRA8888 format.
+[INFO] [Slang] Compiling shader: "Y:\images\RIESCADE\emulators\retroarch\shaders\shaders_slang\crt\shaders\crt-geom.slang".
+[INFO] [Vulkan] Using render target format R8G8B8A8_UNORM for pass output #0.
+[INFO] [Vulkan] Creating framebuffer 1440x1080 (max 1 level(s)).
+[INFO] [WinRaw] Mouse #1: "\\?\HID#VID_1BCF&PID_08A0&Col01#a&9700d3f&0&0000#{378de44c-56ef-11d1-bc8c-00a0c91405dd}".
+[INFO] [WinRaw] Mouse #2: "2.4G Wireless Receiver".
+[INFO] [WinRaw] Mouse #3: "Gaming Keyboard".
 [WARN] [SDL] Couldn't open haptic device of the joypad #0: Haptic: Joystick isn't a haptic device..
 [INFO] [SDL] Falling back to joystick rumble.
 [INFO] [Input] Found joypad driver: "sdl2".
-[INFO] [GLCore] Using Slang shader backend.
-[INFO] [Slang] Compiling shader: "Y:\images\RIESCADE\emulators\retroarch\shaders\shaders_slang\crt\shaders\crt-geom.slang".
-[INFO] [GLCore] Using render target format R8G8B8A8_UNORM for pass output #0.
-[INFO] [GLCore] Building pass #0 (N/D)
-[INFO] [GLCore] Building pass #1 (N/D)
-[INFO] [GLCore] Not using frame history.
-[INFO] [GLCore] Not using framebuffer feedback.
 [INFO] [Video] Found display server: "win32".
-[libretro INFO] Saturn Emulation mode
-[INFO] [Environ] SET_MEMORY_MAPS.
-[INFO] [Environ] SET_SUPPORT_ACHIEVEMENTS: yes.
-[INFO] [Video] Taxa de atualização de vídeo alterada para 60.000 Hz.
+[libretro INFO] shell/libretro/libretro.cpp:1939 N[RENDERER]: retro_vk_context_reset
+[libretro INFO] core/rend/vulkan/vk_context_lr.cpp:262 N[RENDERER]: GPU Supports Vulkan API: 1.3.260
+[libretro INFO] core/rend/vulkan/vk_context_lr.cpp:268 N[RENDERER]: GPU Supports vkGetPhysicalDeviceProperties2
+[libretro INFO] core/rend/vulkan/vulkan_context.h:326 N[RENDERER]: Using depth format D32SfloatS8Uint tiling Optimal
+[libretro INFO] core/rend/vulkan/vulkan_renderer.cpp:240 N[RENDERER]: VulkanRenderer::Init
 [INFO] [Audio] Set audio input rate to: 44100.00 Hz.
+[INFO] [Vulkan] Creating framebuffer 1440x1080 (max 1 level(s)).
 [INFO] [XAudio2] Requesting 64 ms latency, using 64 ms latency.
 [INFO] [Audio] Started synchronous audio driver.
 [INFO] [Microphone] Initialized microphone driver.
-[INFO] [Display] Found display driver: "glcore".
-[ERROR] [Rewind] Rebobinar indisponível porque este núcleo não possui suporte a ponto de save serializado..
+[INFO] [Display] Found display driver: "vulkan".
+[INFO] [Environ] SET_INPUT_DESCRIPTORS.
 [INFO] [Playlist] Carregando o arquivo de favoritos: "Y:\images\RIESCADE\emulators\retroarch\playlists\builtin\content_favorites.lpl".
 [INFO] [Playlist] Carregando arquivo de histórico: "Y:\images\RIESCADE\emulators\retroarch\playlists\builtin\content_history.lpl".
 [INFO] [Playlist] Carregando arquivo de histórico: "Y:\images\RIESCADE\emulators\retroarch\playlists\builtin\content_image_history.lpl".
 [INFO] [Playlist] Carregando arquivo de histórico: "Y:\images\RIESCADE\emulators\retroarch\playlists\builtin\content_music_history.lpl".
 [INFO] [Playlist] Carregando arquivo de histórico: "Y:\images\RIESCADE\emulators\retroarch\playlists\builtin\content_video_history.lpl".
 [INFO] [Playlist] Written to file: "Y:\images\RIESCADE\emulators\retroarch\playlists\builtin\content_history.lpl".
-[INFO] [Environ] SET_INPUT_DESCRIPTORS.
 [WARN] [SDL] Couldn't open haptic device of the joypad #0: Haptic: Joystick isn't a haptic device..
 [INFO] [SDL] Falling back to joystick rumble.
-[INFO] [Environ] SET_GEOMETRY.
-[INFO] [Video] Restored video driver to "vulkan".
-[INFO] [Video] Taxa de atualização de vídeo alterada para 165.000 Hz.
+[INFO] [Vulkan] Updating framebuffer size 1920x1080 (format: 37).
+[INFO] [Vulkan] Creating framebuffer 1920x1080 (max 1 level(s)).
+[INFO] [Environ] SET_GEOMETRY: 640x480, Aspect: 1.333.
+[INFO] [Vulkan] Creating framebuffer 1920x1080 (max 1 level(s)).
 [INFO] [Config] Configuração salva em "Y:\images\RIESCADE\emulators\retroarch\retroarch.cfg".
-[INFO] [Runtime] Content ran for a total of: 00 hours, 01 minutes, 03 seconds.
-[INFO] [Runtime] Saving runtime log file: "Y:\images\RIESCADE\emulators\retroarch\playlists\logs\Kronos\Space Invaders (Japan).lrtl".
+[INFO] [Runtime] Content ran for a total of: 00 hours, 00 minutes, 02 seconds.
+[INFO] [Runtime] Saving runtime log file: "Y:\images\RIESCADE\emulators\retroarch\playlists\logs\Flycast\claychal.lrtl".
+[libretro INFO] shell/libretro/libretro.cpp:1955 N[RENDERER]: retro_vk_context_destroy
 [INFO] [Core] Unloading game...
 [INFO] [Core] Unloading core...
 [INFO] [Core] Unloading core symbols...

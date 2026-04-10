@@ -16,12 +16,20 @@
             <zIndex>5</zIndex>
         </image>
 
+        <screenshader name="blur" extra="static">
+            <path>:/shaders/blur.glsl</path>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <blur>6</blur>
+            <zIndex>6</zIndex>
+        </screenshader>
+
         <image name="overlay" extra="static">
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
             <path>./resources/_parts/overlay-gamelist-hard.png</path>
-            <zIndex>6</zIndex>
+            <zIndex>7</zIndex>
         </image>
 
         <image name="game-logo" extra="static">
@@ -75,6 +83,7 @@
             <maxSize>0.03 0.03</maxSize>
             <alignment>left</alignment>
             <path>./resources/_parts/loading.png</path>
+            <color>${subset:colors}</color>
             <zIndex>32</zIndex>
         </image>
     </text>

@@ -41,7 +41,6 @@
 
         <image name="progressbar:active">
             <color>b616e4</color>
-            <!-- <color>${subset:colors}</color> -->
         </image>
 
         <text name="label">
