@@ -6110,6 +6110,31 @@ ringriders:
   Analog4: lefttrigger # Brake
   Analog6: righttrigger # Handlebar Axis Right
 
+roadfighters3d:
+  Test: l3  # Test
+  Service1: r3  # Service
+  Coin1: select  # Coin
+  P1Button1: north  # View
+  P1Button2: east  # Toggle 2D/3D
+  P1Button3: west  # Lever Up
+  P1Button4: south  # Lever Down
+  P1Button5: rightshoulder  # Lever Left
+  P1Button6: leftshoulder  # Lever Right
+  Analog0: leftstickleft  # Wheel Axis Right
+  Analog2: righttrigger  # Gas
+  Analog4: lefttrigger  # Brake
+  JvsTwoP1Button1: leftstickup  # Shift Up Sequential
+  JvsTwoP1Button2: leftstickdown  # Shift Down Sequential
+
+  # Unmapped inputs:
+  P2Button1:   # Gear 1
+  P2Button2:   # Gear 2
+  P2Button3:   # Gear 3
+  P2Button4:   # Gear 4
+  P2Button5:   # Gear 5
+  P2Button6:   # Gear 6
+  TPSystem1:   # Enter Saved Pin
+
 r-tuned:
   Test: l3 # Test
   Service1: r3 # Service
@@ -6282,6 +6307,18 @@ swdc:
   Analog3: righttrigger # Gas
   Analog5: lefttrigger # Brake
   ExtensionOne13: leftshoulder # Insert AIME Card
+
+thrilldrive4:
+  Test: l3  # Test
+  Service1: r3  # Service
+  Coin1: select  # Coin
+  P1Button1: south  # View
+  P1Button2: start  # Start
+  P1Button3: rightstickup # Shift Up
+  P1Button4: rightstickdown  # Shift Down
+  Analog0: leftstickleft  # Wheel Axis Right
+  Analog2: righttrigger  # Gas
+  Analog4: lefttrigger  # Brake
 
 tokyocop:
   Test: l3 # Test
@@ -9882,6 +9919,50 @@ og_gun:
   P2RelativeRight:   # Player 2 Gun X Right
   P2RelativeUp:   # Player 2 Gun Y Up
   Service2:   # Service 2
+
+pigsmightfly:
+  Test: l3  # Test
+  Service1: r3  # Service
+  Coin1: select  # Coin
+  P1ButtonStart: start  # Start
+  P1Button1: righttrigger  # SeesawTrigger
+  P1Button2: east  # KeySwitch
+  Coin2: north  # Ticket
+
+pigsmightfly_gun:
+  # rawinput:
+  Test: kb_0                # Test
+  Service1: kb_9            # Service
+  # Player 1
+  Coin1: kb_5               # Coin 1
+  P1ButtonStart: kb_1       # P1 Start
+  mouseleft_1: P1Button1    # P1 Left Trigger
+  mouseright_1: P1Button2   # P1 Right Trigger
+  mousemiddle_1: Coin2 	    #Ticket
+
+plantsvszombies:
+  Test: l3  # Test
+  Service1: r3  # Service
+  Coin1: select  # Coin
+  P1Button1: righttrigger  # Gun Trigger
+  Analog0: rightstickleft  # Gun X
+  Analog2: rightstickup  # Gun Y
+
+plantsvszombies_gun:
+  # rawinput:
+  Test: kb_0                # Test
+  Service1: kb_9            # Service
+  # Player 1
+  Coin1: kb_5               # Coin 1
+  P1ButtonStart: kb_1       # P1 Start
+  mouseleft_1: P1Button1    # P1 Left Trigger
+
+  # Unmapped inputs:
+  P1LightGun:   # Gun
+  P1RelativeDown:   # Gun Down
+  P1RelativeLeft:   # Gun Left
+  P1RelativeRight:   # Gun Right
+  P1RelativeUp:   # Gun Up
 
 pointblankx:
   Test: l3 # Test
