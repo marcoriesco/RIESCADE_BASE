@@ -8,12 +8,13 @@
             <backgroundColor>333333FF</backgroundColor>
         </splash>
 
-        <image name="game-fanart" extra="true">
-            <origin>0 0</origin>
-            <pos>0 0</pos>
-            <size>1 1</size>
-            <path>{game:image}</path>
-            <zIndex>5</zIndex>
+        <image name="background">
+            <pos>0.5 0.5</pos>
+            <origin>0.5 0.5</origin>
+            <minSize>1 1</minSize>
+            <roundCorners>0</roundCorners>
+            <linearSmooth>false</linearSmooth>
+            <color>FFFFFFFF</color>
         </image>
 
         <screenshader name="blur" extra="static">
@@ -21,6 +22,7 @@
             <pos>0 0</pos>
             <size>1 1</size>
             <blur>6</blur>
+            <visibility>true</visibility>
             <zIndex>6</zIndex>
         </screenshader>
 
