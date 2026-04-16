@@ -1,0 +1,2 @@
+2026-04-15 15:20:21	[19984]	ERROR	System "mess" is missing name, extension, or command!
+2026-04-15 15:20:23	[29140]	ERROR	HttpReq::onError (3) : Couldn't connect to server

@@ -1,0 +1,95 @@
+2026-04-15 14:53:06	[28004]	ERROR	System "mess" is missing name, extension, or command!
+2026-04-15 14:53:08	[26440]	ERROR	HttpReq::onError (3) : Couldn't connect to server
+2026-04-15 14:56:17	[6496]	ERROR	System "mess" is missing name, extension, or command!
+2026-04-15 15:00:17	[6980]	ERROR	System "mess" is missing name, extension, or command!
+2026-04-15 15:04:34	[30104]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:04:35	[30104]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:04:42	[30104]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:04:50	[30104]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:05:41	[30104]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:07:14	[30104]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:07:15	[30104]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:08:38	[30104]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:08:39	[30104]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:08:40	[30104]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:08:41	[30104]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:10:49	[23972]	ERROR	System "mess" is missing name, extension, or command!
+2026-04-15 15:11:00	[28304]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:11:08	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:08	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:09	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:09	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:09	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:09	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:09	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:09	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:09	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:09	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:09	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:09	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:09	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:10	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:10	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:10	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:10	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:10	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:10	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:10	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:10	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:10	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:10	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:12	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:12	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:12	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:12	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:13	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:13	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:14	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:14	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:16	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:16	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:18	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:18	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:53	[28304]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:11:53	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:53	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:54	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:54	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:54	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:54	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:11:59	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:11	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:11	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:15	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:16	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:16	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:16	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:16	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:16	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:17	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:17	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:17	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:30	[28304]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:12:39	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:39	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:45	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:45	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:46	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:46	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:47	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:12:47	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:04	[28304]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
+2026-04-15 15:13:14	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:14	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:19	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:19	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:19	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:20	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:20	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:20	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:20	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:21	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:21	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:22	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:22	[28304]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-15 15:13:44	[28304]	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1282
