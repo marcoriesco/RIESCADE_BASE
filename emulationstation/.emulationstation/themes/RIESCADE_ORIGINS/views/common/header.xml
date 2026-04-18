@@ -2,7 +2,7 @@
 <theme>
     <formatVersion>7</formatVersion>
 
-    <view name="system, gamecarousel, grid, detailed, basic">
+    <view name="system, gamecarousel">
 
         <!-- UserInfo -->
         <image name="platforms_avatar" extra="static">
@@ -101,7 +101,7 @@
 
     </view>
 
-    <view name="gamecarousel, grid">
+    <view name="gamecarousel">
 
         <text name="platformFullname" extra="static">
             <origin>0 0</origin>

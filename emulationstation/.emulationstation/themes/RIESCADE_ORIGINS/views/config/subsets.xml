@@ -2,21 +2,81 @@
 <theme>
     <formatVersion>7</formatVersion>
 
+    <variables>
+        <!-- Colors -->
+        <colors>COLOR HIGHLIGHTS</colors>
+        <colors.default>DEFAULT</colors.default>
+        <colors.white>WHITE</colors.white>
+        <colors.blue>BLUE</colors.blue>
+        <colors.lightblue>LIGHT BLUE</colors.lightblue>
+        <colors.red>RED</colors.red>
+        <colors.gray>GRAY</colors.gray>
+        <colors.green>GREEN</colors.green>
+        <colors.purple>PURPLE</colors.purple>
+        <colors.yellow>YELLOW</colors.yellow>
+
+        <!-- Controls -->
+        <controls>CONTROLS INDICATORS</controls>
+
+        <!-- Overlay -->
+        <overlay>OVERLAY</overlay>
+        <overlay.hard>HARD OVERLAY</overlay.hard>
+        <overlay.light>LIGHT OVERLAY</overlay.light>
+
+        <!-- Video Gameplay -->
+        <video_gameplay>VIDEO GAMEPLAY</video_gameplay>
+        <video_gameplay.on>ON</video_gameplay.on>
+        <video_gameplay.off>OFF</video_gameplay.off>
+
+        <!-- Video Gameplay Delay -->
+        <video_gameplay_delay>VIDEO GAMEPLAY DELAY</video_gameplay_delay>
+    </variables>
+
+    <variables lang="pt">
+        <!-- Colors -->
+        <colors>COR DESTACADA</colors>
+        <colors.default>PADRÃO</colors.default>
+        <colors.white>BRANCO</colors.white>
+        <colors.blue>AZUL</colors.blue>
+        <colors.lightblue>AZUL CLARO</colors.lightblue>
+        <colors.red>VERMELHO</colors.red>
+        <colors.gray>CINZA</colors.gray>
+        <colors.green>VERDE</colors.green>
+        <colors.purple>ROXO</colors.purple>
+        <colors.yellow>AMARELO</colors.yellow>
+
+        <!-- Controls -->
+        <controls>INDICADORES DE CONTROLE</controls>
+
+        <!-- Overlay -->
+        <overlay>OVERLAY</overlay>
+        <overlay.hard>HARD OVERLAY</overlay.hard>
+        <overlay.light>LIGHT OVERLAY</overlay.light>
+
+        <!-- Video Gameplay -->
+        <video_gameplay>VÍDEO DA JOGABILIDADE</video_gameplay>
+        <video_gameplay.on>LIGADO</video_gameplay.on>
+        <video_gameplay.off>DESLIGADO</video_gameplay.off>
+
+        <!-- Video Gameplay Delay -->
+        <video_gameplay_delay>ATRASO DO VÍDEO</video_gameplay_delay>
+    </variables>
+
     <!-- COLORS -->
-    <subset name="colors" displayName="HIGHTLIGHTS">
-        <include name="9f0043" displayName="PADRÃO" />
-        <include name="ffffff" displayName="BRANCO" />
-        <include name="3377ff" displayName="AZUL" />
-        <include name="13eafd" displayName="AZUL LIGHT" />
-        <include name="fb2246" displayName="VERMELHO" />
-        <include name="cccccc" displayName="CINZA" />
-        <include name="00ffbf" displayName="VERDE" />
-        <include name="9133c7" displayName="ROXO" />
-        <include name="ffc233" displayName="AMARELO" />
+    <subset name="colors" displayName="${colors}">
+        <include name="9f0043" displayName="${colors.default}" />
+        <include name="ffffff" displayName="${colors.white}" />
+        <include name="3377ff" displayName="${colors.blue}" />
+        <include name="13eafd" displayName="${colors.lightblue}" />
+        <include name="fb2246" displayName="${colors.red}" />
+        <include name="cccccc" displayName="${colors.gray}" />
+        <include name="00ffbf" displayName="${colors.green}" />
+        <include name="9133c7" displayName="${colors.purple}" />
+        <include name="ffc233" displayName="${colors.yellow}" />
     </subset>
 
     <!-- CONTROLS INDICATORS -->
-    <subset name="controls" displayName="CONTROLS INDICATORS">
+    <subset name="controls" displayName="${controls}">
         <include name="ps4" displayName="PS4" />
         <include name="xbox" displayName="XBOX" />
         <include name="switch" displayName="SWITCH" />
@@ -24,28 +84,28 @@
     </subset>
 
     <!-- OVERLAY -->
-    <subset name="overlay" displayName="OVERLAY" appliesTo="gamelist">
-        <include name="hard" displayName="HARD OVERLAY" />
-        <include name="light" displayName="LIGHT OVERLAY" />
+    <subset name="overlay" displayName="${overlay}" appliesTo="gamelist">
+        <include name="hard" displayName="${overlay.hard}" />
+        <include name="light" displayName="${overlay.light}" />
     </subset>
 
     <!-- VIDEO GAMELIST -->
-    <subset name="video_gamelist" displayName="VIDEO GAMEPLAY" appliesTo="gamelist">
-        <include name="On" />
-        <include name="Off" />
+    <subset name="video_gamelist" displayName="${video_gameplay}" appliesTo="gamelist">
+        <include name="On" displayName="${video_gameplay.on}" />
+        <include name="Off" displayName="${video_gameplay.off}" />
     </subset>
 
     <!-- VIDEO GAMELIST DELAY -->
-    <subset name="video_gamelist_delay" displayName="VIDEO GAMEPLAY DELAY" appliesTo="gamelist">
-        <include name="0.5" />
-        <include name="1" />
-        <include name="1.5" />
-        <include name="2" />
-        <include name="2.5" />
-        <include name="3" />
-        <include name="4" />
-        <include name="5" />
-        <include name="6" />
+    <subset name="video_gamelist_delay" displayName="${video_gameplay_delay}" appliesTo="gamelist">
+        <include name="0.5" displayName="0.5s" />
+        <include name="1" displayName="1s" />
+        <include name="1.5" displayName="1.5s" />
+        <include name="2" displayName="2s" />
+        <include name="2.5" displayName="2.5s" />
+        <include name="3" displayName="3s" />
+        <include name="4" displayName="4s" />
+        <include name="5" displayName="5s" />
+        <include name="6" displayName="6s" />
     </subset>
 
 </theme>

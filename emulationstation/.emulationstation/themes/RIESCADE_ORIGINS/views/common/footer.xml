@@ -22,7 +22,7 @@
 
     </view>
 
-    <view name="gamecarousel, grid">
+    <view name="gamecarousel">
 
         <!-- System platform name -->
         <text name="system-name" extra="static">

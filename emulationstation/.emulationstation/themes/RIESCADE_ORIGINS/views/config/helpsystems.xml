@@ -2,7 +2,7 @@
 <theme>
     <formatVersion>7</formatVersion>
 
-    <view name="menu, system, grid, gamecarousel, detailed">
+    <view name="menu, system, gamecarousel">
         <helpsystem name="help">
             <origin>0 0</origin>
             <pos>9 9</pos>

@@ -2,7 +2,8 @@
 <theme>
     <formatVersion>7</formatVersion>
 
-    <customView name="gamelist" inherits="gamecarousel" displayName="GAMELIST">
+
+    <view name="gamecarousel" displayName="GAMELIST">
 
         <gamecarousel name="gamecarousel">
             <type>vertical_wheel</type>
@@ -107,6 +108,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 1</size>
+            <path>./resources/_parts/default.png</path>
             <path>./resources/arts/${system.theme}.jpg</path>
             <saturation>0</saturation>
             <zIndex>1</zIndex>
@@ -217,6 +219,6 @@
             </storyboard>
         </text>
 
-    </customView>
+    </view>
 
 </theme>
