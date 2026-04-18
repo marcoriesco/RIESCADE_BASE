@@ -11,15 +11,15 @@
 
         <menuText name="menufooter">
             <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
-            <fontSize>0.024</fontSize>
+            <fontSize>0.016</fontSize>
             <color>868686</color>
         </menuText>
 
         <menuText name="menutext">
             <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
-            <fontSize>0.030</fontSize>
+            <fontSize>0.028</fontSize>
             <color>868686</color>
-            <separatorColor>000000</separatorColor>
+            <separatorColor>00000000</separatorColor>
 
             <selectorColor>${subset.colors}</selectorColor>
             <selectorColorEnd>${subset.colors}</selectorColorEnd>
@@ -40,13 +40,23 @@
         </menuTextSmall>
 
         <menuBackground name="menubg">
-            <color>000000FF</color>
-            <path>./resources/_parts/bg-menu.png</path>
+            <path>./resources/_parts/frame.png</path>
             <cornerSize>32 32</cornerSize>
             <scrollbarColor>${subset.colors}</scrollbarColor>
-            <scrollbarCorner>0.49</scrollbarCorner>
+            <scrollbarCorner>0.4</scrollbarCorner>
             <scrollbarSize>0.003</scrollbarSize>
-            <scrollbarAlignment>outer right</scrollbarAlignment>
+            <scrollbarAlignment>innerright</scrollbarAlignment>
+
+            <color>242424D0</color>
+
+            <fadeShader>
+                <path>:/shaders/blur.glsl</path>
+                <blur>10</blur>
+            </fadeShader>
+
+            <menuShader>
+                <path>./resources/_parts/shaders/gaussianblur.glsl</path>
+            </menuShader>
         </menuBackground>
 
         <menuGroup name="menugroup">

@@ -79,13 +79,12 @@
             <zIndex>32</zIndex>
         </text>
 
-        <image name="loading-icon" extra="true">
+        <image name="loading-icon" extra="static">
             <origin>1 0</origin>
             <pos>0.444 0.86</pos>
             <maxSize>0.03 0.03</maxSize>
             <alignment>left</alignment>
             <path>./resources/_parts/loading.png</path>
-            <color>${subset:colors}</color>
             <zIndex>32</zIndex>
         </image>
     </text>
