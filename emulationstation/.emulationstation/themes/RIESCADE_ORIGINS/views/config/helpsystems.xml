@@ -21,8 +21,6 @@
             <path>./resources/_parts/helpsystem/helpsystem-${subset.controls}.png</path>
             <path lang="en">./resources/_parts/helpsystem/helpsystem-${subset.controls}-en.png</path>
             <path lang="pt">./resources/_parts/helpsystem/helpsystem-${subset.controls}-pt.png</path>
-            <path lang="es">./resources/_parts/helpsystem/helpsystem-${subset.controls}-es.png</path>
-            <path lang="fr">./resources/_parts/helpsystem/helpsystem-${subset.controls}-fr.png</path>
             <zIndex>99</zIndex>
         </image>
     </view>
