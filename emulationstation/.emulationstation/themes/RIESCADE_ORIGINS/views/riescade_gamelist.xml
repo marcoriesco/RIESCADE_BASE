@@ -6,8 +6,8 @@
     <view name="gamecarousel" displayName="GAMELIST">
 
         <gamecarousel name="gamecarousel">
-            <type>vertical_wheel</type>
-            <pos>0.34 0</pos>
+            <type>vertical</type>
+            <pos>0.36 0</pos>
             <size>1 1</size>
             <origin>0 0</origin>
             <logoSize>0.15 0.270</logoSize>

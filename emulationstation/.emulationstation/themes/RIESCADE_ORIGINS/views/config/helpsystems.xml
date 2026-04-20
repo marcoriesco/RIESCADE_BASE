@@ -2,7 +2,7 @@
 <theme>
     <formatVersion>7</formatVersion>
 
-    <view name="menu, system, gamecarousel">
+    <view name="system, gamecarousel">
         <helpsystem name="help">
             <origin>0 0</origin>
             <pos>9 9</pos>
@@ -14,13 +14,23 @@
     </view>
 
     <view name="system">
-        <image name="helpsystem-custom" extra="static">
+        <image name="helpsystem-system" extra="static">
             <origin>0.5 0</origin>
             <pos>0.5 0.96</pos>
-            <size>0.2969 </size>
-            <path>./resources/_parts/helpsystem/helpsystem-${subset.controls}.png</path>
-            <path lang="en">./resources/_parts/helpsystem/helpsystem-${subset.controls}-en.png</path>
-            <path lang="pt">./resources/_parts/helpsystem/helpsystem-${subset.controls}-pt.png</path>
+            <size>0.31 </size>
+            <path>./resources/_parts/helpsystem/system-${subset.controls}.png</path>
+            <path lang="en">./resources/_parts/helpsystem/system-${subset.controls}-en.png</path>
+            <zIndex>99</zIndex>
+        </image>
+    </view>
+
+    <view name="gamecarousel">
+        <image name="helpsystem-gamelist" extra="static">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.96</pos>
+            <size>0.4 </size>
+            <path>./resources/_parts/helpsystem/gamelist-${subset.controls}.png</path>
+            <path lang="en">./resources/_parts/helpsystem/gamelist-${subset.controls}-en.png</path>
             <zIndex>99</zIndex>
         </image>
     </view>
