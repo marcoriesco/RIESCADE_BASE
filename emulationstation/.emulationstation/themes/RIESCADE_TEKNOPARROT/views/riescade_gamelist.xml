@@ -5,6 +5,15 @@
 
     <view name="gamecarousel" displayName="GAMELIST">
 
+        <!-- Background Default -->
+        <image name="background_default" extra="static">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./resources/background-new.png</path>
+            <zIndex>17</zIndex>
+        </image>
+
         <image name="carrousel-overlay" extra="true">
             <origin>0 0</origin>
             <pos>0 0.1</pos>
@@ -25,7 +34,7 @@
             <logoRotation>2.8</logoRotation>
             <logoRotationOrigin>0.5 28</logoRotationOrigin>
             <logoAlignment>center</logoAlignment>
-            <scrollSound>./resources/sounds/click.wav</scrollSound>
+            <scrollSound>./resources/sounds/click.ogg</scrollSound>
             <imageSource>marquee</imageSource>
             <zIndex>21</zIndex>
         </gamecarousel>
@@ -66,7 +75,7 @@
         <video ifSubset="video_gamelist:On" name="md_video">
             <origin>0.5 0.5</origin>
             <pos>0.5 0.44</pos>
-            <size>0.45 0.45</size>
+            <size>0.4318 0.4352</size>
             <delay>${subset.video_gamelist_delay}</delay>
             <effect>none</effect>
             <zIndex>16</zIndex>
@@ -76,20 +85,11 @@
             </storyboard>
         </video>
 
-        <!-- Background Default -->
-        <image name="background_default" extra="static">
-            <origin>0 0</origin>
-            <pos>0 0</pos>
-            <size>1 1</size>
-            <path>./resources/background-new.png</path>
-            <zIndex>17</zIndex>
-        </image>
-
         <!-- Fanart background -->
         <image name="md_fanart">
-            <origin>0 0</origin>
-            <pos>0 0</pos>
-            <size>1 1</size>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.44</pos>
+            <size>0.4318 0.4352</size>
             <zIndex>14</zIndex>
 
             <storyboard event="activate">
@@ -104,7 +104,7 @@
         <image name="md_thumbnail_only">
             <origin>0 0.5</origin>
             <pos>0.04 0.55</pos>
-            <maxSize>0.3 0.5</maxSize>
+            <maxSize>0.3 0.4</maxSize>
             <zIndex>18</zIndex>
 
             <storyboard event="activate">
@@ -115,6 +115,25 @@
             <storyboard event="deactivate">
                 <animation property="opacity" from="1" to="0" duration="600" mode="easeInOut" />
                 <animation property="pos" from="0.04 0.55" to="-0.06 0.55" duration="600" mode="easeInOut" />
+            </storyboard>
+
+        </image>
+
+        <!-- Char -->
+        <image name="md_boxart_only">
+            <origin>1 0.5</origin>
+            <pos>1.06 0.6</pos>
+            <maxSize>0.3 0.5</maxSize>
+            <zIndex>18</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" to="1" duration="600" mode="easeInOut" />
+                <animation property="x" to="0.96" duration="600" mode="easeInOut" />
+            </storyboard>
+
+            <storyboard event="deactivate">
+                <animation property="opacity" to="0" duration="600" mode="easeInOut" />
+                <animation property="x" to="1.06" duration="600" mode="easeInOut" />
             </storyboard>
 
         </image>
@@ -132,7 +151,7 @@
             <glowSize>1</glowSize>
             <glowOffset>1.5</glowOffset>
             <alignment>left</alignment>
-            <extraTextColor>ffcd02</extraTextColor>
+            <extraTextColor>33e9ff</extraTextColor>
             <zIndex>99</zIndex>
 
             <storyboard event="activate">
@@ -149,7 +168,7 @@
             <text if="${system.collection}">{game:system:total} && {game:system:total} > 1 ? '{game:system:total} GAMES' : '{game:system:total} GAME'</text>
             <fontPath>./resources/fonts/LazerGameZone.ttf</fontPath>
             <fontSize>0.020</fontSize>
-            <color>FFFFFFFF</color>
+            <color>ff04ff</color>
 
             <glowColor>000000</glowColor>
             <glowSize>1</glowSize>

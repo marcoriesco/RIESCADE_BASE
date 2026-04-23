@@ -1,10 +1,2 @@
-2026-04-22 14:58:46	[32808]	ERROR	HttpReq::onError (3) : Couldn't connect to server
-2026-04-22 14:58:47	[31988]	ERROR	System "mess" is missing name, extension, or command!
-2026-04-22 15:15:56	[31784]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
-2026-04-22 15:16:46	[31784]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
-2026-04-22 15:22:08	[31784]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
-2026-04-22 15:24:15	[31784]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
-2026-04-22 15:24:29	[31784]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
-2026-04-22 15:27:04	[31784]	ERROR	HttpReq::onError (404) : Erreur : Rom/Iso/Dossier non trouvée !  
-2026-04-22 15:29:40	[34548]	ERROR	System "mess" is missing name, extension, or command!
-2026-04-22 16:28:56	[36556]	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1282
+2026-04-22 16:41:05	[9472]	ERROR	System "mess" is missing name, extension, or command!
+2026-04-22 16:41:07	[34692]	ERROR	HttpReq::onError (3) : Couldn't connect to server
