@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="system, gamecarousel">
+        <helpsystem name="help">
+            <origin>0 0</origin>
+            <pos>9 9</pos>
+            <size>0 0</size>
+            <visible>0</visible>
+            <zIndex>-1</zIndex>
+            <opacity>0</opacity>
+        </helpsystem>
+    </view>
+
+    <view name="system">
+        <image name="helpsystem-system" extra="static">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.96</pos>
+            <size>0.31 </size>
+            <path>./resources/_parts/helpsystem/system-${subset.controls}.png</path>
+            <path lang="en">./resources/_parts/helpsystem/system-${subset.controls}-en.png</path>
+            <zIndex>99</zIndex>
+        </image>
+    </view>
+
+    <view name="gamecarousel">
+        <image name="helpsystem-gamelist" extra="static">
+            <origin>0.5 0</origin>
+            <pos>0.5 0.96</pos>
+            <size>0.4 </size>
+            <path>./resources/_parts/helpsystem/gamelist-${subset.controls}.png</path>
+            <path lang="en">./resources/_parts/helpsystem/gamelist-${subset.controls}-en.png</path>
+            <zIndex>99</zIndex>
+        </image>
+    </view>
+
+</theme>

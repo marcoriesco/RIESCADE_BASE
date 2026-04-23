@@ -1,0 +1,44 @@
+<!--
+
+     ███████   ██ ████████  ████████   ██████      ██     ███████   ████████
+    ░██░░░░██ ░██░██░░░░░  ██░░░░░░   ██░░░░██    ████   ░██░░░░██ ░██░░░░░ 
+    ░██   ░██ ░██░██      ░██        ██    ░░    ██░░██  ░██    ░██░██      
+    ░███████  ░██░███████ ░█████████░██         ██  ░░██ ░██    ░██░███████ 
+    ░██░░░██  ░██░██░░░░  ░░░░░░░░██░██        ██████████░██    ░██░██░░░░  
+    ░██  ░░██ ░██░██             ░██░░██    ██░██░░░░░░██░██    ██ ░██      
+    ░██   ░░██░██░████████ ████████  ░░██████ ░██     ░██░███████  ░████████
+    ░░     ░░ ░░ ░░░░░░░░ ░░░░░░░░    ░░░░░░  ░░      ░░ ░░░░░░░   ░░░░░░░░  
+
+    theme: RIESCADE Origins
+	author: RIESCADE
+    version: 2.1.1
+    -
+    https://youtube.com/@riescade
+    https://facebook.com/riescade
+    https://discord.gg/cR3T4wkjyQ
+
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="gamecarousel">
+    <formatVersion>7</formatVersion>
+
+    <feature supported="carousel">
+        <view name="system">
+            <sound name="bgsound"></sound>
+        </view>
+    </feature>
+
+    <!-- CONFIG -->
+    <include name="subsets">./views/config/subsets.xml</include>
+    <include name="helpsystems">./views/config/helpsystems.xml</include>
+
+    <include name="system">./views/riescade_system.xml</include>
+    <include name="gamelist">./views/riescade_gamelist.xml</include>
+
+    <!-- COMMON -->
+    <include name="menu">./views/common/menu.xml</include>
+    <include name="screen">./views/common/screen.xml</include>
+
+</theme>

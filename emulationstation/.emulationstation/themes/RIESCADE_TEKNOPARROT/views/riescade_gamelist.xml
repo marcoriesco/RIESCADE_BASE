@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+
+    <view name="gamecarousel" displayName="GAMELIST">
+
+        <image name="carrousel-overlay" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./resources/carrousel-overlay.png</path>
+            <zIndex>20</zIndex>
+        </image>
+
+        <gamecarousel name="gamecarousel">
+            <type>horizontal_wheel</type>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.75</pos>
+            <size>1 1</size>
+            <logoSize>0.15 0.270</logoSize>
+            <logoScale>1.1</logoScale>
+            <color>00000000</color>
+            <maxLogoCount>11</maxLogoCount>
+            <logoRotation>2.8</logoRotation>
+            <logoRotationOrigin>0.5 28</logoRotationOrigin>
+            <logoAlignment>center</logoAlignment>
+            <scrollSound>./resources/sounds/click.wav</scrollSound>
+            <imageSource>marquee</imageSource>
+            <zIndex>21</zIndex>
+        </gamecarousel>
+
+        <image name="gamecarouselLogo">
+            <opacity>0.75</opacity>
+            <scale>0.4</scale>
+            <scaleOrigin>0 0.5</scaleOrigin>
+
+            <storyboard event="activate">
+                <animation property="opacity" to="1" mode="linear"/>
+                <animation property="scale" to="1.1" begin="0" mode="linear"/>
+                <animation property="scaleOrigin" to="0 1.1" begin="0" mode="linear"/>
+            </storyboard>
+
+            <storyboard event="deactivate">
+                <animation property="opacity" to="0.75" mode="linear"/>
+                <animation property="scale" to="0.4" begin="0" mode="easeOut"/>
+                <animation property="scaleOrigin" to="0 0" begin="0" mode="linear"/>
+            </storyboard>
+
+            <storyboard event="scroll">
+                <animation property="opacity" to="0.75" mode="linear"/>
+                <animation property="scale" to="0.4" begin="0" mode="easeOut"/>
+                <animation property="scaleOrigin" to="0 0" begin="0" mode="linear"/>
+            </storyboard>
+        </image>
+
+        <image name="carrousel-custom" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./resources/carrousel.png</path>
+            <zIndex>22</zIndex>
+        </image>
+
+        <!-- Video background -->
+        <video ifSubset="video_gamelist:On" name="md_video">
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.44</pos>
+            <size>0.45 0.45</size>
+            <delay>${subset.video_gamelist_delay}</delay>
+            <effect>none</effect>
+            <zIndex>16</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </video>
+
+        <!-- Background Default -->
+        <image name="background_default" extra="static">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./resources/background-new.png</path>
+            <zIndex>17</zIndex>
+        </image>
+
+        <!-- Fanart background -->
+        <image name="md_fanart">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <zIndex>14</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+            <storyboard event="deactivate">
+                <animation property="opacity" to="0" duration="800" mode="easeIn" />
+            </storyboard>
+        </image>
+
+        <!-- Cover -->
+        <image name="md_thumbnail_only">
+            <origin>0 0.5</origin>
+            <pos>0.04 0.55</pos>
+            <maxSize>0.3 0.55</maxSize>
+            <zIndex>18</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="600" mode="easeInOut" />
+                <animation property="pos" from="-0.06 0.55" to="0.04 0.55" duration="600" mode="easeInOut" />
+            </storyboard>
+
+            <storyboard event="deactivate">
+                <animation property="opacity" from="1" to="0" duration="600" mode="easeInOut" />
+                <animation property="pos" from="0.04 0.55" to="-0.06 0.55" duration="600" mode="easeInOut" />
+            </storyboard>
+
+        </image>
+
+        <!-- Game Name -->
+        <text name="md_name">
+            <origin>0 0</origin>
+            <pos>0.04 0.08</pos>
+            <size>0.75 0.10</size>
+            <fontPath>./resources/fonts/LazerGameZone.ttf</fontPath>
+            <fontSize>0.034</fontSize>
+            <color>FFFFFFFF</color>
+
+            <glowColor>000000</glowColor>
+            <glowSize>1</glowSize>
+            <glowOffset>1.5</glowOffset>
+            <alignment>left</alignment>
+            <extraTextColor>ffcd02</extraTextColor>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </text>
+
+        <!-- Game md_releasedate & md_publisher -->
+        <text name="date_and_developer" extra="true">
+            <origin>0 0</origin>
+            <pos>0.04 0.16</pos>
+            <size>0.5 0.016</size>
+            <text if="!${system.collection}">{game:releaseyear}, {game:publisher}</text>
+            <text if="${system.collection}">{game:system:total} && {game:system:total} > 1 ? '{game:system:total} GAMES' : '{game:system:total} GAME'</text>
+            <fontPath>./resources/fonts/LazerGameZone.ttf</fontPath>
+            <fontSize>0.020</fontSize>
+            <color>FFFFFFFF</color>
+
+            <glowColor>000000</glowColor>
+            <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
+            <alignment>left</alignment>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </text>
+
+        <text name="md_description">
+            <origin>0 0</origin>
+            <pos>0.775 0.21</pos>
+            <size>0.22 0.5</size>
+            <fontPath>./resources/fonts/InterTight-Regular.ttf</fontPath>
+            <fontSize>0.022</fontSize>
+            <lineSpacing>1.2</lineSpacing>
+            <forceUppercase>true</forceUppercase>
+            <color>FFFFFFFF</color>
+
+            <glowColor>000000</glowColor>
+            <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
+            <alignment>left</alignment>
+            <autoScroll>true</autoScroll>
+            <autoScrollDelay>5</autoScrollDelay>
+            <zIndex>99</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="800" mode="easeIn" />
+            </storyboard>
+        </text>
+
+    </view>
+
+</theme>
