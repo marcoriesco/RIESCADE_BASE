@@ -7,7 +7,7 @@
 
         <image name="carrousel-overlay" extra="true">
             <origin>0 0</origin>
-            <pos>0 0</pos>
+            <pos>0 0.1</pos>
             <size>1 1</size>
             <path>./resources/carrousel-overlay.png</path>
             <zIndex>20</zIndex>
@@ -16,7 +16,7 @@
         <gamecarousel name="gamecarousel">
             <type>horizontal_wheel</type>
             <origin>0.5 0.5</origin>
-            <pos>0.5 0.75</pos>
+            <pos>0.5 0.85</pos>
             <size>1 1</size>
             <logoSize>0.15 0.270</logoSize>
             <logoScale>1.1</logoScale>
@@ -56,7 +56,7 @@
 
         <image name="carrousel-custom" extra="true">
             <origin>0 0</origin>
-            <pos>0 0</pos>
+            <pos>0 0.1</pos>
             <size>1 1</size>
             <path>./resources/carrousel.png</path>
             <zIndex>22</zIndex>
@@ -104,7 +104,7 @@
         <image name="md_thumbnail_only">
             <origin>0 0.5</origin>
             <pos>0.04 0.55</pos>
-            <maxSize>0.3 0.55</maxSize>
+            <maxSize>0.3 0.5</maxSize>
             <zIndex>18</zIndex>
 
             <storyboard event="activate">

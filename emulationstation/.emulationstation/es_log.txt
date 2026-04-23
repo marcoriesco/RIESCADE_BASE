@@ -1,0 +1,21 @@
+2026-04-22 23:24:36	[27816]	ERROR	System "mess" is missing name, extension, or command!
+2026-04-22 23:24:38	[17544]	ERROR	HttpReq::onError (3) : Couldn't connect to server
+2026-04-22 23:25:46	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:25:46	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:25:47	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:25:47	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:25:50	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:25:50	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:26:01	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:26:01	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:26:02	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:26:02	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:26:03	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:26:03	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:26:03	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:26:03	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:26:04	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:26:04	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:26:06	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:26:06	[14720]	ERROR	Unknown help icon "cima/baixo"!
+2026-04-22 23:54:09	[14720]	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1282
