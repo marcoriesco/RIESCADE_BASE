@@ -7,8 +7,8 @@
     <view name="system">
 
         <carousel name="systemcarousel">
-            <pos>0 0.59</pos>
-            <size>1 0.5</size>
+            <pos>0 0</pos>
+            <size>1 1</size>
             <type>horizontal</type>
             <logoAlignment>center</logoAlignment>
             <logoSize>0.09 0.08</logoSize>
@@ -36,7 +36,7 @@
             <!-- check if lang resources exist -->
             <path>./resources/logos/${system.theme}-${lang}.png</path>
             <linearSmooth>true</linearSmooth>
-            <saturation>0</saturation>
+            <saturation>1</saturation>
 
             <storyboard event="activate">
                 <animation property="opacity" to="0" begin="0" duration="100" mode="easeIn"/>
@@ -63,7 +63,7 @@
         <!-- Shadow Effect -->
         <image name="logoEffectShadow" extra="true">
             <origin>0.5 0.5</origin>
-            <pos>0.497 0.84</pos>
+            <pos>0.497 0.5</pos>
             <maxSize>0.2 0.14</maxSize>
             <color>000000</color>
             <path>./resources/logos/${system.theme}.png</path>
@@ -76,7 +76,7 @@
         </image>
         <image name="logoEffect" extra="true">
             <origin>0.5 0.5</origin>
-            <pos>0.497 0.84</pos>
+            <pos>0.497 0.5</pos>
             <maxSize>0.2 0.14</maxSize>
             <linearSmooth>true</linearSmooth>
             <path>./resources/logos/${system.theme}.png</path>
@@ -126,96 +126,114 @@
             <zIndex>15</zIndex>
         </image>
 
+        <!-- Background Animations -->
+        <image name="sky1" extra="true">
+            <path>./resources/sky1.png</path>
+            <origin>0 0.5</origin>
+            <pos>-0.3646 0.5</pos>
+            <size>1.3906 0.7222</size>
+            <opacity>0.4</opacity>
+            <zIndex>18</zIndex>
+            <storyboard repeat="forever">
+                <animation property="x" from="-0.3646" to="-0.1042" duration="10000" mode="linear" autoreverse="true"/>
+            </storyboard>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="0.4" duration="250" mode="easeIn"/>
+            </storyboard>
+            <storyboard event="deactivate">
+                <animation property="opacity" to="0" duration="250" mode="easeOut"/>
+            </storyboard>
+        </image>
+
+        <image name="sky2" extra="true">
+            <path>./resources/sky2.png</path>
+            <origin>0 0.5</origin>
+            <pos>-0.8854 0.5</pos>
+            <size>2.0052 0.6296</size>
+            <opacity>0.7</opacity>
+            <zIndex>17</zIndex>
+            <storyboard repeat="forever">
+                <animation property="x" from="-0.8854" to="-0.1250" duration="20000" mode="linear" autoreverse="true"/>
+            </storyboard>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="0.7" duration="250" mode="easeIn"/>
+            </storyboard>
+            <storyboard event="deactivate">
+                <animation property="opacity" to="0" duration="250" mode="easeOut"/>
+            </storyboard>
+        </image>
+
+        <image name="overlay_converted" extra="true">
+            <path>./resources/Overlay.png</path>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <zIndex>18</zIndex>
+        </image>
+
+        <image name="promo_overlay" extra="true">
+            <path>./resources/PromoOverlay2.png</path>
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.5</pos>
+            <size>1 1</size>
+            <opacity>1</opacity>
+            <zIndex>18</zIndex>
+            <storyboard event="activate">
+                <animation property="opacity" from="0" to="1" duration="250" mode="easeInQuadratic"/>
+                <animation property="scale" from="1.05" to="1" duration="250" mode="easeInQuadratic"/>
+            </storyboard>
+            <storyboard event="deactivate">
+                <animation property="opacity" to="0" duration="250" mode="easeInQuadratic"/>
+                <animation property="scale" to="1.05" duration="250" mode="easeInQuadratic"/>
+            </storyboard>
+        </image>
+
+        <image name="hardware_selected" extra="static">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>0.1953 1</size>
+            <path if="${system.name} == 'all'">./resources/all.png</path>
+            <path if="{system.hardwareType} == 'arcade'">./resources/1_arcades.png</path>
+            <path if="{system.hardwareType} == 'computer'">./resources/5_computer.png</path>
+            <path if="{system.hardwareType} == 'console'">./resources/3_retroConsoles.png</path>
+            <path if="{system.hardwareType} == 'portable'">./resources/4_handhelds.png</path>
+            <path if="{system.hardwareType} == 'extension'">./resources/1_extensions.png</path>
+            <path if="{system.hardwareType} == 'port'">./resources/1_ports.png</path>
+            <path if="{system.hardwareType} == 'pinball'">./resources/1_pinball.png</path>
+            <zIndex>99</zIndex>
+        </image>
+
         <!-- Número de Games -->
         <text name="systemInfo">
             <zIndex>0</zIndex>
         </text>
 
-        <stackpanel name="systemInfo-custom" extra="static">
+        <text name="game_total" extra="true">
             <origin>0 0</origin>
-            <pos>0.015 0.01</pos>
-            <size>0.5 0.1</size>
+            <pos>0 0.952</pos>
+            <size>0.985 0.03</size>
+
+            <!-- Default -->
+            <text>{binding:total} GAMES</text>
+            <text if="${system.name} == 'retrobat'"></text>
+            <text if="${system.name} == 'collections'">{system:subSystems}</text>
+            <text if="${system.name} == 'favorites'">{system:favorites}</text>
+            <text if="${system.name} == 'library'"></text>
+            <text if="${system.name} == 'screenshots'"></text>
+            <text if="${system.name} == 'magazine'">{system:total}</text>
+            <text if="${system.name} == 'all'">{system:total}</text>
+
+            <fontPath>./resources/fonts/Roboto-Bold.ttf</fontPath>
+            <fontSize>0.024</fontSize>
+            <color>FFFFFFFF</color>
+            <glowColor>000000</glowColor>
+            <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
+            <extraTextColor>${subset.colors}</extraTextColor>
+            <alignment>right</alignment>
+            <verticalAlignment>center</verticalAlignment>
+
             <zIndex>99</zIndex>
-
-
-            <container>
-                <pos>0 0</pos>
-                <size>1 1</size>
-                <stackpanel>
-                    <pos>0 0</pos>
-                    <size>1 1</size>
-                    <separator>10</separator>
-
-                    <text name="gamename">
-                        <size>1 0.1</size>
-
-                        <text>{system:fullName}</text>
-
-                        <!-- Default -->
-                        <text if="${system.name} == 'retrobat'">Configure emulators</text>
-                        <text if="${system.name} == 'collections'">Collections</text>
-                        <text if="${system.name} == 'favorites'">Favorites</text>
-                        <text if="${system.name} == 'library'">Access Library</text>
-                        <text if="${system.name} == 'screenshots'">Access Screenshots</text>
-                        <text if="${system.name} == 'magazine'">Access Magazines</text>
-                        <text if="${system.name} == 'all'">All games</text>
-
-                        <!-- Portuguese -->
-                        <text if="${system.name} == 'retrobat'" lang="pt">Configurar emuladores</text>
-                        <text if="${system.name} == 'collections'" lang="pt">Coleções</text>
-                        <text if="${system.name} == 'favorites'" lang="pt">Favoritos</text>
-                        <text if="${system.name} == 'library'" lang="pt">Acessar Biblioteca</text>
-                        <text if="${system.name} == 'screenshots'" lang="pt">Acessar Screenshots</text>
-                        <text if="${system.name} == 'magazine'" lang="pt">Acessar Revistas</text>
-                        <text if="${system.name} == 'all'" lang="pt">Todos os jogos</text>
-
-                        <fontPath>./resources/fonts/InterTight-Regular.ttf</fontPath>
-                        <fontSize>0.032</fontSize>
-                        <color>FFFFFFFF</color>
-                        <glowColor>000000</glowColor>
-                        <glowSize>1</glowSize>
-                        <glowOffset>1</glowOffset>
-                        <alignment>center</alignment>
-                        <verticalAlignment>center</verticalAlignment>
-                    </text>
-
-                    <text name="game_total">
-                        <size>1 0.03</size>
-
-                        <!-- Default -->
-                        <text>{binding:total} > 1 ? '({binding:total} games)' : '({binding:total} game)'</text>
-                        <text if="${system.name} == 'retrobat'"></text>
-                        <text if="${system.name} == 'collections'">({system:subSystems} collections)</text>
-                        <text if="${system.name} == 'favorites'">({system:favorites} favorites)</text>
-                        <text if="${system.name} == 'library'"></text>
-                        <text if="${system.name} == 'screenshots'"></text>
-                        <text if="${system.name} == 'magazine'">({system:total} magazines)</text>
-                        <text if="${system.name} == 'all'">({system:total} games)</text>
-
-                        <!-- Portuguese -->
-                        <text lang="pt">{binding:total} > 1 ? '({binding:total} jogos)' : '({binding:total} jogo)'</text>
-                        <text if="${system.name} == 'retrobat'" lang="pt"></text>
-                        <text if="${system.name} == 'collections'" lang="pt">({system:subSystems} coleções)</text>
-                        <text if="${system.name} == 'favorites'" lang="pt">({system:favorites} favoritos)</text>
-                        <text if="${system.name} == 'library'" lang="pt"></text>
-                        <text if="${system.name} == 'screenshots'" lang="pt"></text>
-                        <text if="${system.name} == 'magazine'" lang="pt">({system:total} revistas)</text>
-                        <text if="${system.name} == 'all'" lang="pt">({system:total} jogos)</text>
-
-                        <fontPath>./resources/fonts/InterTight-Regular.ttf</fontPath>
-                        <fontSize>0.024</fontSize>
-                        <color>FFFFFFFF</color>
-                        <glowColor>000000</glowColor>
-                        <glowSize>1</glowSize>
-                        <glowOffset>1</glowOffset>
-                        <extraTextColor>${subset.colors}</extraTextColor>
-                        <alignment>center</alignment>
-                        <verticalAlignment>center</verticalAlignment>
-                        <zIndex>99</zIndex>
-                    </text>
-                </stackpanel>
-            </container>
-        </stackpanel>
+        </text>
 
     </view>
 

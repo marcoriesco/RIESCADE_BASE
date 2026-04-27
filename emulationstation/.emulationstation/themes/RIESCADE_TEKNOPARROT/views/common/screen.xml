@@ -7,7 +7,7 @@
         <!-- Controller Activity -->
         <controllerActivity name="controllerActivity">
             <origin>1 0</origin>
-            <pos>0 0.952</pos>
+            <pos>9 0.952</pos>
             <size>0.985 0.03</size>
             <itemSpacing>0.003</itemSpacing>
             <imagePath>./resources/indicators/default.svg</imagePath>
@@ -24,7 +24,7 @@
         <!-- Clock -->
         <text name="clock">
             <origin>0 0</origin>
-            <pos>0 0.035</pos>
+            <pos>9 0.035</pos>
             <size>1 0.1</size>
             <fontPath>./resources/fonts/LazerGameZone.ttf</fontPath>
             <fontSize>0.034</fontSize>
