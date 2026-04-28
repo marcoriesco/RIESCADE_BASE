@@ -23,13 +23,16 @@
 
         <!-- Clock -->
         <text name="clock">
-            <origin>1 0</origin>
-            <pos>0.985 0.035</pos>
-            <size>0.5 0.1</size>
+            <origin>0 0</origin>
+            <pos>0 0.03</pos>
+            <size>1 0.1</size>
             <fontPath>./resources/fonts/InterTight-Light.ttf</fontPath>
             <fontSize>0.034</fontSize>
             <color>FFFFFFFF</color>
-            <alignment>right</alignment>
+            <alignment>center</alignment>
+            <glowColor>00000025</glowColor>
+            <glowSize>1</glowSize>
+            <glowOffset>1</glowOffset>
         </text>
 
     </view>

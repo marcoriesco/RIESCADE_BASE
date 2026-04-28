@@ -23,6 +23,11 @@
         <overlay.hard>HARD OVERLAY</overlay.hard>
         <overlay.light>LIGHT OVERLAY</overlay.light>
 
+        <!-- Carousel Angular -->
+        <carousel>CAROUSEL</carousel>
+        <carousel.plain>PLAIN</carousel.plain>
+        <carousel.angular>ANGULAR</carousel.angular>
+
         <!-- Video Gameplay -->
         <video_gameplay>VIDEO GAMEPLAY</video_gameplay>
         <video_gameplay.on>ON</video_gameplay.on>
@@ -52,6 +57,11 @@
         <overlay>OVERLAY</overlay>
         <overlay.hard>EFEITO FORTE</overlay.hard>
         <overlay.light>EFEITO SUAVE</overlay.light>
+
+        <!-- Carousel Angular -->
+        <carousel>CAROUSEL</carousel>
+        <carousel.plain>NORMAL</carousel.plain>
+        <carousel.angular>ANGULAR</carousel.angular>
 
         <!-- Video Gameplay -->
         <video_gameplay>VÍDEO DO JOGO</video_gameplay>
@@ -87,6 +97,12 @@
     <subset name="overlay" displayName="${overlay}" appliesTo="gamelist">
         <include name="hard" displayName="${overlay.hard}" />
         <include name="light" displayName="${overlay.light}" />
+    </subset>
+
+    <!-- CAROUSEL -->
+    <subset name="carousel" displayName="${carousel}" appliesTo="gamelist">
+        <include name="plain" displayName="${carousel.plain}" />
+        <include name="angular" displayName="${carousel.angular}" />
     </subset>
 
     <!-- VIDEO GAMELIST -->

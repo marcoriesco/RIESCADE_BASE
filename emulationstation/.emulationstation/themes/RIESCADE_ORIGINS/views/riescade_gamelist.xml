@@ -6,7 +6,8 @@
     <view name="gamecarousel" displayName="GAMELIST">
 
         <gamecarousel name="gamecarousel">
-            <type>vertical</type>
+            <type ifSubset="carousel:plain">vertical</type>
+            <type ifSubset="carousel:angular">vertical_wheel</type>
             <pos>0.36 0</pos>
             <size>1 1</size>
             <origin>0 0</origin>
