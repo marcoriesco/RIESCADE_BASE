@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="system, gamecarousel">
+
+        <!-- batteryIcon icon -->
+        <image name="batteryIcon2" extra="static">
+            <origin>1 0</origin>
+            <pos>0.962 0.092</pos>
+            <size>0.028 0.029</size>
+            <color ifSubset="theme:dark">e0e0e0</color>
+            <color ifSubset="theme:white">0f0f0f</color>
+            <path>./resources/indicators/battery-50.svg</path>
+            <zIndex>99</zIndex>
+        </image>
+
+        <!-- UserInfo -->
+        <image name="platforms_avatar" extra="static">
+            <origin>1 0</origin>
+            <pos>0.084 0.07</pos>
+            <maxSize>0.075 0.075</maxSize>
+            <path>./resources/_parts/user.png</path>
+            <roundCorners>0.5</roundCorners>
+            <zIndex>2000</zIndex>
+            <onclick>cheevos</onclick>
+        </image>
+
+        <webimage if="{global.cheevos} == true" name="platforms_avatar" extra="static">
+            <origin>1 0</origin>
+            <pos>0.084 0.069</pos>
+            <maxSize>0.075 0.075</maxSize>
+            <path if="${global.cheevos.username}">https://media.retroachievements.org/UserPic/${global.cheevos.username}.png</path>
+            <roundCorners>0.5</roundCorners>
+            <zIndex>2000</zIndex>
+            <onclick>cheevos</onclick>
+        </webimage>
+
+        <rectangle name="background_avatar" extra="static">
+            <origin>0 0</origin>
+            <pos>0.038 0.062</pos>
+            <size>0.05 0.09</size>
+            <color ifSubset="theme:dark">2e2e2e</color>
+            <color ifSubset="theme:white">ffffff</color>
+            <roundCorners>0.5</roundCorners>
+            <zIndex>1999</zIndex>
+            <onclick>cheevos</onclick>
+        </rectangle>
+
+        <!-- Platform Names -->
+        <text name="platforms_hardwareType" extra="true">
+            <size>0.5 0.055</size>
+
+            <pos>0.1727 0.84</pos>
+            <pos if="${system.hardwareType} == 'arcade'">0.03 0.84</pos>
+            <pos if="${system.hardwareType} == 'computer'">0.1 0.84</pos>
+            <pos if="${system.hardwareType} == 'console'">0.166 0.84</pos>
+            <pos if="${system.hardwareType} == 'extension'">0.233 0.84</pos>
+            <pos if="${system.hardwareType} == 'pinball'">0.297 0.84</pos>
+            <pos if="${system.hardwareType} == 'port'">0.365 0.84</pos>
+            <pos if="${system.hardwareType} == 'portable'">0.425 0.84</pos>
+
+            <fontPath>./resources/fonts/switch.otf</fontPath>
+            <fontSize>0.036</fontSize>
+            <alignment>center</alignment>
+
+            <text if="${system.hardwareType} == 'arcade'">Arcades</text>
+            <text if="${system.hardwareType} == 'computer'">Computadores</text>
+            <text if="${system.hardwareType} == 'console'">Consoles</text>
+            <text if="${system.hardwareType} == 'extension'">Extensões</text>
+            <text if="${system.hardwareType} == 'pinball'">Pinballs</text>
+            <text if="${system.hardwareType} == 'port'">Ports</text>
+            <text if="${system.hardwareType} == 'portable'">Portáteis</text>
+
+            <color>4b9cf5FF</color>
+            <zIndex>9999</zIndex>
+        </text>
+
+        <!-- Platforms Icons (Switch Menu)-->
+        <rectangle name="platforms_background" extra="static">
+            <pos>0.17 0.715</pos>
+            <size>0.67 0.125</size>
+            <color ifSubset="theme:dark">2e2e2e</color>
+            <color ifSubset="theme:white">ffffff</color>
+            <roundCorners>0.5</roundCorners>
+            <padding>0.1 0.035 0.016 0.035</padding>
+            <zIndex>1998</zIndex>
+        </rectangle>
+
+        <image name="platform_Switch" extra="static">
+            <pos>0.18 0.734</pos>
+            <size> 0.09</size>
+            <path>./resources/switchmenu/switch.png</path>
+            <zIndex>2000</zIndex>
+        </image>
+
+        <image name="platform_Arcade" extra="static">
+            <pos>0.268 0.752</pos>
+            <size> 0.05</size>
+            <path>./resources/switchmenu/switch_arcade.svg</path>
+            <zIndex>2000</zIndex>
+        </image>
+
+        <image name="platform_Computer" extra="static">
+            <pos>0.3342 0.752</pos>
+            <size> 0.05</size>
+            <path>./resources/switchmenu/switch_computer.svg</path>
+            <zIndex>2000</zIndex>
+        </image>
+
+        <image name="platform_Console" extra="static">
+            <pos>0.4004 0.754</pos>
+            <size> 0.045</size>
+            <path>./resources/switchmenu/switch_console.svg</path>
+            <zIndex>2000</zIndex>
+        </image>
+
+        <image name="platform_Extension" extra="static">
+            <pos>0.4666 0.752</pos>
+            <size> 0.05</size>
+            <path>./resources/switchmenu/switch_extension.svg</path>
+            <zIndex>2000</zIndex>
+        </image>
+
+        <image name="platform_Pinball" extra="static">
+            <pos>0.5328 0.752</pos>
+            <size> 0.05</size>
+            <path>./resources/switchmenu/switch_pinball.svg</path>
+            <zIndex>2000</zIndex>
+        </image>
+
+        <image name="platform_Port" extra="static">
+            <pos>0.599 0.752</pos>
+            <size> 0.05</size>
+            <path>./resources/switchmenu/switch_port.svg</path>
+            <zIndex>2000</zIndex>
+        </image>
+
+        <image name="platform_Portable" extra="static">
+            <pos>0.6652 0.752</pos>
+            <size> 0.05</size>
+            <path>./resources/switchmenu/switch_portable.svg</path>
+            <zIndex>2000</zIndex>
+        </image>
+
+        <image name="platform_Settings" extra="static">
+            <pos>0.7314 0.752</pos>
+            <size> 0.05</size>
+            <path>./resources/switchmenu/switch_settings.svg</path>
+            <zIndex>2000</zIndex>
+            <onclick>settings</onclick>
+        </image>
+
+        <image name="platform_PowerOff" extra="static">
+            <pos>0.79 0.752</pos>
+            <size> 0.05</size>
+            <path>./resources/switchmenu/switch_poweroff.svg</path>
+            <zIndex>2000</zIndex>
+            <onclick>poweroff</onclick>
+        </image>
+
+        <image name="platforms_selected" extra="static">
+            <origin>0 0</origin>
+
+            <pos>0.1727 0.72</pos>
+            <pos if="{system.hardwareType} == 'arcade'">0.2485 0.72</pos>
+            <pos if="{system.hardwareType} == 'computer'">0.3158 0.72</pos>
+            <pos if="{system.hardwareType} == 'console'">0.384 0.72</pos>
+            <pos if="{system.hardwareType} == 'extension'">0.45 0.72</pos>
+            <pos if="{system.hardwareType} == 'pinball'">0.5138 0.72</pos>
+            <pos if="{system.hardwareType} == 'port'">0.58 0.72</pos>
+            <pos if="{system.hardwareType} == 'portable'">0.642 0.72</pos>
+
+            <size> 0.116</size>
+            <path>./resources/_parts/selected.png</path>
+            <opacity>0</opacity>
+            <roundCorners>0.5</roundCorners>
+            <autoFade>true</autoFade>
+            <rotation>0</rotation>
+            <zIndex>1999</zIndex>
+
+            <rectangle name="border">
+                <origin>0.5 0.5</origin>
+                <pos>0.026 0.026</pos>
+                <size>0.94 0.94</size>
+                <color ifSubset="theme:dark">2e2e2e</color>
+                <color ifSubset="theme:white">ffffff</color>
+                <roundCorners>0.5</roundCorners>
+            </rectangle>
+
+            <storyboard>
+                <animation property="opacity" begin="100" from="0" to="1" duration="300" mode="easeInOut" />
+                <animation property="rotation" begin="0" from="0" to="360" duration="2000" mode="linear" repeat="forever" />
+            </storyboard>
+
+        </image>
+
+    </view>
+
+    <view name="gamecarousel">
+
+        <text name="platforms_hardwareType" extra="true">
+            <pos>-0.045 0.84</pos>
+            <pos if="${system.hardwareType} == 'arcade'">0.03 0.84</pos>
+            <pos if="${system.hardwareType} == 'computer'">0.1 0.84</pos>
+            <pos if="${system.hardwareType} == 'console'">0.166 0.84</pos>
+            <pos if="${system.hardwareType} == 'extension'">0.233 0.84</pos>
+            <pos if="${system.hardwareType} == 'pinball'">0.297 0.84</pos>
+            <pos if="${system.hardwareType} == 'port'">0.365 0.84</pos>
+            <pos if="${system.hardwareType} == 'portable'">0.425 0.84</pos>
+
+            <fontSize>0.036</fontSize>
+            <fontPath>./resources/fonts/switch.otf</fontPath>
+
+            <text>${system.fullName}</text>
+
+            <alignment>center</alignment>
+            <color>4b9cf5FF</color>
+            <zIndex>9999</zIndex>
+        </text>
+
+    </view>
+
+</theme>

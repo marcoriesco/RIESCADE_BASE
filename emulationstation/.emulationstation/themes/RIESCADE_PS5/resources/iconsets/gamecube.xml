@@ -1,0 +1,26 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="menu, system, grid, gamecarousel">
+		<helpsystem name="help">
+			<origin>1 0</origin>
+			<pos>0.965 0.9575</pos>
+			<fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+			<textColor>c7c8ca</textColor>
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./gamecube/updown.png</iconUpDown>
+			<iconLeftRight>./gamecube/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./gamecube/all.png</iconUpDownLeftRight>
+			<iconA>./gamecube/a.png</iconA>
+			<iconB>./gamecube/b.png</iconB>
+			<iconX>./gamecube/x.png</iconX>
+			<iconY>./gamecube/y.png</iconY>
+			<iconL>./gamecube/l.png</iconL>
+			<iconR>./gamecube/r.png</iconR>
+			<iconStart>./gamecube/start.png</iconStart>
+			<iconSelect>./gamecube/select.png</iconSelect>
+		</helpsystem>
+	</view>
+
+</theme>

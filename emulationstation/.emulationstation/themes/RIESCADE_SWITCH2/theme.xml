@@ -1,0 +1,84 @@
+<!--
+
+    ███████   ██ ████████  ████████   ██████      ██     ███████   ████████
+    ░██░░░░██ ░██░██░░░░░  ██░░░░░░   ██░░░░██    ████   ░██░░░░██ ░██░░░░░ 
+    ░██   ░██ ░██░██      ░██        ██    ░░    ██░░██  ░██    ░██░██      
+    ░███████  ░██░███████ ░█████████░██         ██  ░░██ ░██    ░██░███████ 
+    ░██░░░██  ░██░██░░░░  ░░░░░░░░██░██        ██████████░██    ░██░██░░░░  
+    ░██  ░░██ ░██░██             ░██░░██    ██░██░░░░░░██░██    ██ ░██      
+    ░██   ░░██░██░████████ ████████  ░░██████ ░██     ░██░███████  ░████████
+    ░░     ░░ ░░ ░░░░░░░░ ░░░░░░░░    ░░░░░░  ░░      ░░ ░░░░░░░   ░░░░░░░░  
+
+    theme: RIESCADE Platform
+	author: RIESCADE
+    version: 1.1
+    -
+    https://youtube.com/@riescade
+    https://facebook.com/riescade
+    https://discord.gg/cR3T4wkjyQ
+
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<theme defaultView="gamecarousel">
+    <formatVersion>7</formatVersion>
+
+    <!-- THEME -->
+    <subset name="theme" displayName="TEMA">
+        <include name="white" displayName="Claro" />
+        <include name="dark" displayName="Dark Mode" />
+    </subset>
+
+    <!-- VIDEO GAMELIST -->
+    <subset name="video_gamelist" displayName="VIDEO GAMEPLAY" appliesTo="gamelist">
+        <include name="Ativo" />
+        <include name="Desativado" />
+    </subset>
+
+    <!-- VIDEO GAMELIST DELAY -->
+    <subset name="video_gamelist_delay" displayName="VIDEO GAMEPLAY DELAY" appliesTo="gamelist">
+        <include name="0.5" />
+        <include name="1" />
+        <include name="1.5" />
+        <include name="2" />
+        <include name="2.5" />
+        <include name="3" />
+        <include name="4" />
+        <include name="5" />
+    </subset>
+
+    <!-- COVER GAMELIST -->
+    <subset name="cover_gamelist" displayName="COVER GAME" appliesTo="gamelist">
+        <include name="Ativo" />
+        <include name="Desativado" />
+    </subset>
+
+    <!-- COVER STYLE -->
+    <subset name="cover_gamelist_style" displayName="COVER STYLE" appliesTo="gamelist" ifSubset="cover_gamelist:Ativo">
+        <include name="2D" />
+        <include name="3D" />
+    </subset>
+
+    <feature supported="carousel">
+        <view name="system">
+            <sound name="bgsound"></sound>
+        </view>
+    </feature>
+
+
+    <include name="iconsets" ifSubset="theme:white">./resources/iconsets/black.xml</include>
+    <include name="iconsets" ifSubset="theme:dark">./resources/iconsets/white.xml</include>
+
+    <include name="menu">./views/common/menu.xml</include>
+    <include name="screen">./views/common/screen.xml</include>
+
+    <!-- SYSTEMS -->
+    <include name="system">./views/riescade_system.xml</include>
+
+    <!-- GAMELISTS -->
+    <include name="gamecarousel">./views/riescade_gamelist.xml</include>
+
+    <include>./views/common/header.xml</include>
+
+</theme>

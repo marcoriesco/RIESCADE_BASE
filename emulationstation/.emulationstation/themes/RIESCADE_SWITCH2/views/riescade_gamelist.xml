@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="gamecarousel" tinyScreen="false" displayName="GAMELIST">
+
+        <gamecarousel name="gamecarousel">
+            <origin>0 0</origin>
+            <pos>-0.088 0</pos>
+            <size>1.49 1</size>
+            <logoScale>1</logoScale>
+            <logoSize>0.36</logoSize>
+            <logoPos>0 0.275</logoPos>
+            <scaledLogoSpacing>1</scaledLogoSpacing>
+            <maxLogoCount>7</maxLogoCount>
+            <type>horizontal</type>
+            <systemInfoDelay>5</systemInfoDelay>
+            <color>00000000</color>
+            <logoAlignment>center</logoAlignment>
+            <defaultTransition>fade &amp; slide</defaultTransition>
+            <transitionSpeed>600</transitionSpeed>
+            <minLogoOpacity>1</minLogoOpacity>
+            <scrollSound>./../resources/sounds/click.ogg</scrollSound>
+            <imageSource>marquee</imageSource>
+            <zIndex>2001</zIndex>
+
+            <itemTemplate>
+                <container>
+                    <image name="gamecarouselLogoCover" pos="0.5" origin="0.5" maxSize="1" linearSmooth="false">
+                        <visible>!exists({game:mix})</visible>
+                        <path>./resources/_parts/white.png</path>
+                        <color ifSubset="theme:dark">2e2e2e</color>
+                        <color ifSubset="theme:white">ffffff</color>
+                        <roundCorners>0.1</roundCorners>
+                        <zIndex>2000</zIndex>
+                    </image>
+                    <image name="gamecarouselLogo" pos="0.5" origin="0.5" maxSize="0.35" linearSmooth="false">
+                        <visible>!exists({game:mix})</visible>
+                        <path>{game:marquee}</path>
+                        <zIndex>2002</zIndex>
+                    </image>
+                    <image name="gamecarouselLogo" pos="0.5" origin="0.5" maxSize="1" linearSmooth="false">
+                        <visible>exists({game:mix})</visible>
+                        <path>{game:mix}</path>
+                        <roundCorners>0.1</roundCorners>
+                        <zIndex>2002</zIndex>
+                    </image>
+                    <text name="gamecarouselLogoText" pos="0.5" origin="0.5" maxSize="1" alignment="center" multiLine="true">
+                        <visible>!exists({game:marquee})</visible>
+                        <size>0.3 1</size>
+                        <text>{game:name}</text>
+                        <fontSize>0.026</fontSize>
+                        <fontPath>./resources/fonts/switch.otf</fontPath>
+                        <forceUppercase>false</forceUppercase>
+                        <color ifSubset="theme:dark">FFFFFFFF</color>
+                        <color ifSubset="theme:black">0f0f0fFF</color>
+                        <!-- <padding>0.05 0 0.05 0</padding> -->
+                        <zIndex>2001</zIndex>
+                    </text>
+                    <text name="gamecarouselLogoText" color="white" alignment="center" multiLine="true">
+                        <visible>!exists({game:mix})</visible>
+                    </text>
+                </container>
+            </itemTemplate>
+        </gamecarousel>
+
+        <image name="logo_active" extra="static">
+            <origin>0 0</origin>
+            <pos>0.0738 0.265</pos>
+            <size>0.212 0.38</size>
+            <path>./resources/_parts/selected_s.png</path>
+            <opacity>0</opacity>
+            <roundCorners>0.1</roundCorners>
+            <autoFade>true</autoFade>
+            <zIndex>1999</zIndex>
+
+            <storyboard event="activate">
+                <animation property="opacity" begin="300" from="0" to="1" duration="1200" mode="easeOut" />
+            </storyboard>
+            <storyboard event="deactivate">
+                <animation property="opacity" from="1" to="0" duration="0" mode="easeOut" />
+            </storyboard>
+
+        </image>
+
+        <image name="logo_active_border" extra="static">
+            <origin>0 0</origin>
+            <pos>0.0765 0.27</pos>
+            <size>0.207 0.37</size>
+            <path>./resources/_parts/white.png</path>
+            <opacity>0</opacity>
+            <roundCorners>0.1</roundCorners>
+            <color ifSubset="theme:dark">1c1c1cFF</color>
+            <color ifSubset="theme:white">e9e9e9FF</color>
+            <autoFade>true</autoFade>
+            <zIndex>2000</zIndex>
+
+            <storyboard>
+                <animation property="opacity" begin="100" from="0" to="1" duration="0" mode="easeOut" />
+            </storyboard>
+        </image>
+
+        <rectangle name="background" extra="static">
+            <origin>0 0</origin>
+            <pos>-0.1 -0.1</pos>
+            <size>1.5 1.5</size>
+            <color ifSubset="theme:dark">1c1c1cFF</color>
+            <color ifSubset="theme:white">e9e9e9FF</color>
+            <zIndex>10</zIndex>
+        </rectangle>
+
+        <!-- Selected Game Name -->
+        <stackpanel name="gamename" extra="static">
+            <origin>0 0</origin>
+            <pos>0.09 0.2165</pos>
+            <size>1 0.0333</size>
+            <zIndex>2000</zIndex>
+
+            <container>
+                <stackpanel reverse="true">
+                    <container>
+                        <size>1 1</size>
+
+                        <stackpanel>
+                            <size>1 1</size>
+                            <pos>0 0</pos>
+                            <separator>15</separator>
+
+                            <image name="gamename_icon">
+                                <size>0.0151 1</size>
+                                <path>./resources/_parts/game_selected.png</path>
+                                <color>3ad3fcFF</color>
+                                <verticalAlignment>center</verticalAlignment>
+                            </image>
+
+                            <text name="gamename_name">
+                                <size>0 1</size>
+                                <text>{game:name}</text>
+                                <fontPath>./resources/fonts/switch.otf</fontPath>
+                                <fontSize>0.032</fontSize>
+                                <color>3ad3fcFF</color>
+                                <alignment>center</alignment>
+                                <verticalAlignment>center</verticalAlignment>
+                            </text>
+
+                            <text if="${system.name} == 'all' || ${system.name} == 'favorites' || ${system.collection}" name="gamename_system">
+                                <visible>{game:system:name} == {game:name} ? 0 : 1</visible>
+                                <origin>0.5 0.5</origin>
+                                <pos>0.5 0.5</pos>
+                                <size>0 0.05</size>
+                                <text>[{game:system:fullName}]</text>
+                                <fontPath>./resources/fonts/switch.otf</fontPath>
+                                <fontSize>0.018</fontSize>
+                                <color>FFFFFFFF</color>
+                                <glowColor>000000</glowColor>
+                                <glowSize>1</glowSize>
+                                <glowOffset>1</glowOffset>
+                                <alignment>center</alignment>
+                                <verticalAlignment>top</verticalAlignment>
+                                <autoScroll>none</autoScroll>
+                            </text>
+                        </stackpanel>
+                    </container>
+                </stackpanel>
+            </container>
+        </stackpanel>
+
+    </view>
+
+</theme>

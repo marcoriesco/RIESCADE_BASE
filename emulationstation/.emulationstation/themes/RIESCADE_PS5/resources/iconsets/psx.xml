@@ -1,0 +1,26 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="menu, system, grid, gamecarousel">
+		<helpsystem name="help">
+			<origin>1 0</origin>
+			<pos>0.965 0.9575</pos>
+			<fontPath>./resources/fonts/OpenSans-SemiBold.ttf</fontPath>
+			<fontSize>0.016</fontSize>
+			<textColor>c7c8ca</textColor>
+			<iconColor>FFFFFFFF</iconColor>
+			<iconUpDown>./psx/updown.png</iconUpDown>
+			<iconLeftRight>./psx/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./psx/all.png</iconUpDownLeftRight>
+			<iconA>./psx/a.png</iconA>
+			<iconB>./psx/b.png</iconB>
+			<iconX>./psx/x.png</iconX>
+			<iconY>./psx/y.png</iconY>
+			<iconL>./psx/l.png</iconL>
+			<iconR>./psx/r.png</iconR>
+			<iconStart>./psx/start.png</iconStart>
+			<iconSelect>./psx/select.png</iconSelect>
+		</helpsystem>
+	</view>
+
+</theme>

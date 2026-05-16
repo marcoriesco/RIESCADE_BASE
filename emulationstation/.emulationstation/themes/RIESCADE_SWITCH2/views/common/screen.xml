@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="screen">
+
+        <!-- Controller Activity -->
+        <controllerActivity name="controllerActivity">
+            <origin>0 0</origin>
+            <pos>0.056 0.9225</pos>
+            <size>0.055 0.047</size>
+            <itemSpacing>0.015</itemSpacing>
+            <imagePath>./resources/indicators/default.svg</imagePath>
+
+            <color ifSubset="theme:dark">e0e0e0</color>
+            <color ifSubset="theme:white">0f0f0f</color>
+
+            <activityColor ifSubset="theme:dark">e0e0e080</activityColor>
+            <activityColor ifSubset="theme:white">0f0f0f80</activityColor>
+
+            <hotkeyColor ifSubset="theme:dark">e0e0e080</hotkeyColor>
+            <hotkeyColor ifSubset="theme:white">0f0f0f80</hotkeyColor>
+
+            <zIndex>99</zIndex>
+        </controllerActivity>
+
+        <!-- Clock -->
+        <text name="clock">
+            <origin>1 0</origin>
+            <pos>0.88 0.075</pos>
+            <size>0.5 0.1</size>
+            <fontPath>./resources/fonts/switch.otf</fontPath>
+            <fontSize>0.038</fontSize>
+            <color ifSubset="theme:dark">e0e0e0</color>
+            <color ifSubset="theme:white">0f0f0f</color>
+            <alignment>right</alignment>
+            <zIndex>99</zIndex>
+        </text>
+
+        <!-- networkIcon icon -->
+        <networkIcon name="networkIcon">
+            <origin>1 0</origin>
+            <pos>0.92 0.092</pos>
+            <size>0.023 0.03</size>
+            <networkIcon>./resources/indicators/networkIcon.svg</networkIcon>
+            <color ifSubset="theme:dark">e0e0e0</color>
+            <color ifSubset="theme:white">0f0f0f</color>
+            <zIndex>99</zIndex>
+        </networkIcon>
+
+        <!-- batteryIcon icon -->
+        <batteryIcon name="batteryIcon">
+            <origin>1 0</origin>
+            <pos>0.962 0.092</pos>
+            <size>0.028 0.029</size>
+            <color ifSubset="theme:dark">e0e0e0</color>
+            <color ifSubset="theme:white">0f0f0f</color>
+
+            <incharge>./resources/indicators/battery-charging.svg</incharge>
+            <full>./resources/indicators/battery-full.svg</full>
+            <at75>./resources/indicators/battery-75.svg</at75>
+            <at50>./resources/indicators/battery-50.svg</at50>
+            <at25>./resources/indicators/battery-25.svg</at25>
+            <empty>./resources/indicators/battery-empty.svg</empty>
+
+            <zIndex>99</zIndex>
+        </batteryIcon>
+
+    </view>
+
+</theme>

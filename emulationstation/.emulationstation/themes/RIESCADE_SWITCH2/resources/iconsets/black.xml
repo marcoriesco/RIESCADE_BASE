@@ -1,0 +1,77 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="menu, system, gamecarousel">
+
+		<helpsystem name="help">
+			<pos>9999</pos>
+			<visible>false</visible>
+			<zIndex>0</zIndex>
+		</helpsystem>
+
+		<stackpanel name="helpsystem_custom_Plus" extra="static">
+			<origin>1 0</origin>
+			<pos>0.758 0.928</pos>
+			<size>0.5 0.035</size>
+			<zIndex>9999</zIndex>
+
+			<container>
+				<size>1 1</size>
+				<stackpanel>
+					<size>1 1</size>
+					<pos>0 0</pos>
+					<separator>15</separator>
+
+					<image name="button_Plus">
+						<size> 1</size>
+						<path>./resources/iconsets/black/Plus.png</path>
+					</image>
+
+					<text name="label_Plus">
+						<fontPath>./resources/fonts/switch.otf</fontPath>
+						<fontSize>0.032</fontSize>
+						<forceUppercase>false</forceUppercase>
+						<text>Opções</text>
+						<color>0f0f0fFF</color>
+					</text>
+
+				</stackpanel>
+
+			</container>
+
+		</stackpanel>
+
+		<stackpanel name="helpsystem_custom_A" extra="static">
+			<origin>1 0</origin>
+			<pos>0.8725 0.928</pos>
+			<size>0.5 0.035</size>
+			<zIndex>9999</zIndex>
+
+			<container>
+				<size>1 1</size>
+				<stackpanel>
+					<size>1 1</size>
+					<pos>0 0</pos>
+					<separator>15</separator>
+
+					<image name="button_A">
+						<size> 1</size>
+						<path>./resources/iconsets/black/A.png</path>
+					</image>
+
+					<text name="label_A">
+						<fontPath>./resources/fonts/switch.otf</fontPath>
+						<fontSize>0.032</fontSize>
+						<forceUppercase>false</forceUppercase>
+						<text>Iniciar</text>
+						<color>0f0f0fFF</color>
+					</text>
+
+				</stackpanel>
+
+			</container>
+
+		</stackpanel>
+	</view>
+
+</theme>
