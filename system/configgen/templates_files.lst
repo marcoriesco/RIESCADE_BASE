@@ -24,6 +24,8 @@
 \system\templates\citra\portable.txt|\emulators\citra\portable.txt
 \system\templates\citra\user\config\qt-config.ini|\emulators\citra\user\config\qt-config.ini
 \system\templates\citron\user\config\qt-config.ini|\emulators\citron\user\config\qt-config.ini
+\system\templates\crosshairs\cross1.png|\emulators\linuxloader\cross\cross1.png
+\system\templates\crosshairs\cross2.png|\emulators\linuxloader\cross\cross2.png
 \system\templates\cxbx-reloaded\settings.ini|\emulators\cxbx-reloaded\settings.ini
 \system\templates\daphne\config.xml|\emulators\daphne\config.xml
 \system\templates\demul\Demul.ini|\emulators\demul\Demul.ini
@@ -45,6 +47,8 @@
 \system\templates\dosbox-pure\DOSBoxPure.cfg|\emulators\dosbox-pure\DOSBoxPure.cfg
 \system\templates\dosbox-staging\dosbox-staging.conf|\emulators\dosbox-staging\dosbox-staging.conf
 \system\templates\duckstation\settings.ini|\emulators\duckstation\settings.ini
+\system\templates\dusklight\data_location.json|\emulators\dusklight\data_location.json
+\system\templates\dusklight\data\config.json|\emulators\dusklight\data\config.json
 \system\templates\eden\user\config\qt-config.ini|\emulators\eden\user\config\qt-config.ini
 \system\templates\eka2l1\config.yml|\emulators\eka2l1\config.yml
 \system\templates\emulationstation\about.info|\emulationstation\about.info
@@ -54,6 +58,7 @@
 \system\templates\emulationstation\es_input.cfg|\emulationstation\.emulationstation\es_input.cfg
 \system\templates\emulationstation\es_padtokey.cfg|\emulationstation\.emulationstation\es_padtokey.cfg
 \system\templates\emulationstation\es_settings.cfg|\emulationstation\.emulationstation\es_settings.cfg
+\system\templates\emulationstation\mountsquashfs.exe|\emulationstation\mountsquashfs.exe
 \system\templates\fbneo\config\fbneo64.ini|\emulators\fbneo\config\fbneo64.ini
 \system\templates\flycast\emu.cfg|\emulators\flycast\emu.cfg
 \system\templates\flycast\nvmem_atomiswave.zip|\saves\atomiswave\reicast
@@ -101,6 +106,7 @@
 \system\templates\mgba\config.ini|\emulators\mgba\config.ini
 \system\templates\mupen64\Config\GLideN64.ini|\emulators\mupen64\Config\GLideN64.ini
 \system\templates\mupen64\Config\mupen64plus.cfg|\emulators\mupen64\Config\mupen64plus.cfg
+\system\templates\n64recomplauncher\settings.json|\emulators\n64recomplauncher\settings.json
 \system\templates\nosgba\NO$GBA.INI|\emulators\nosgba\NO$GBA.INI
 \system\templates\opengoal\config\OpenGOAL\jak1\misc\debug-settings.json|\emulators\opengoal\config\OpenGOAL\jak1\misc\debug-settings.json
 \system\templates\opengoal\config\OpenGOAL\jak1\settings\display-settings.json|\emulators\opengoal\config\OpenGOAL\jak1\settings\display-settings.json

@@ -162,6 +162,8 @@ emulators\dosbox-staging
 emulators\dosbox-staging\mt32-roms
 emulators\dosbox-staging\soundfonts
 emulators\duckstation
+emulators\dusklight
+emulators\dusklight\data
 emulators\eden
 emulators\eden\user
 emulators\eden\user\config
@@ -189,6 +191,8 @@ emulators\kronos
 emulators\lime3ds
 emulators\lime3ds\user
 emulators\lime3ds\user\config
+emulators\linuxloader
+emulators\linuxloader\cross
 emulators\m2emulator
 emulators\m2emulator\artwork
 emulators\m2emulator\artwork\crosshairs

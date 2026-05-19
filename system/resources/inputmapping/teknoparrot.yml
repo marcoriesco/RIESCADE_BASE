@@ -745,6 +745,153 @@ yugiohdt6u:
   Analog0: leftstickleft # X Axis
   Analog2: leftstickup # Y Axis
 
+############### CHIHIRO ###############
+
+hotd3:
+  Test: l3  # Test
+  Service1: r3  # Service 1
+  Coin1: select  # Coin 1
+  P1ButtonStart: start  # Player 1 Start
+  P1Button1: righttrigger  # Player 1 Gun Trigger
+  P1Button3: lefttrigger  # Player 1 Reload
+  Analog0: rightstickleft  # Player 1 Gun X
+  Analog2: rightstickup  # Player 1 Gun Y
+  Coin2: select  # Coin 2
+  P2ButtonStart: start  # Player 2 Start
+  P2Button1: righttrigger  # Player 2 Gun Trigger
+  P2Button3: lefttrigger  # Player 2 Reload
+  Analog4: rightstickleft  # Player 2 Gun X
+  Analog6: rightstickup  # Player 2 Gun Y
+
+hotd3_gun:
+  # rawinput:
+  Test: kb_0                # Test
+  Service1: kb_5            # Service
+  # Player 1
+  Coin1: kb_5               # Coin 1
+  P1ButtonStart: kb_1       # P1 Start
+  mouseleft_1: P1Button1    # P1 Left Trigger
+  mouseright_1: P1Button3   # P1 Right Trigger
+  # Player 2
+  Coin2: kb_6               # Coin 2
+  P2ButtonStart: kb_2       # P2 Start
+  mouseleft_2: P2Button1    # P2 Left Trigger
+  mouseright_2: P2Button3   # P2 Right Trigger
+
+  # Unmapped inputs:
+  P1LightGun:   # Player 1 Light Gun
+  P1RelativeDown:   # Player 1 Gun Y Down
+  P1RelativeLeft:   # Player 1 Gun X Left
+  P1RelativeRight:   # Player 1 Gun X Right
+  P1RelativeUp:   # Player 1 Gun Y Up
+  P2LightGun:   # Player 2 Light Gun
+  P2RelativeDown:   # Player 2 Gun Y Down
+  P2RelativeLeft:   # Player 2 Gun X Left
+  P2RelativeRight:   # Player 2 Gun X Right
+  P2RelativeUp:   # Player 2 Gun Y Up
+  Service2:   # Service 2
+
+  vc3:
+  Test: l3  # Test
+  Service1: r3  # Service 1
+  Coin1: select  # Coin 1
+  P1ButtonStart: start  # Player 1 Start
+  P1Button1: righttrigger  # Player 1 Gun Trigger
+  P1Button2: lefttrigger  # Player 1 Reload
+  P1Button3: south  # Player 1 Weapon
+  P1Button4: west  # Player 1 Special
+  Analog0: rightstickleft  # Player 1 Gun X
+  Analog2: rightstickup  # Player 1 Gun Y
+  Coin2: select  # Coin 2
+  P2ButtonStart: start  # Player 2 Start
+  P2Button1: righttrigger  # Player 2 Gun Trigger
+  P2Button2: lefttrigger  # Player 2 Reload
+  P2Button3: south  # Player 2 Weapon
+  P2Button4: west  # Player 2 Special
+  Analog4: rightstickleft  # Player 2 Gun X
+  Analog6: rightstickup  # Player 2 Gun Y
+
+vc3_gun:
+  # rawinput:
+  Test: kb_T                 # Test
+  Service1: kb_S            # Service
+  # Player 1
+  Coin1: kb_5               # Coin 1
+  P1ButtonStart: kb_1       # P1 Start
+  mouseleft_1: P1Button1    # P1 Left Trigger
+  mouseright_1: P1Button2   # P1 Right Trigger
+  mousemiddle_1: P1Button3  # P1 Grenades
+  P1Button4: left             #Player 1 Special
+  # Player 2
+  Coin2: kb_6               # Coin 2
+  P2ButtonStart: kb_2       # P2 Start
+  mouseleft_2: P2Button1    # P2 Left Trigger
+  mouseright_2: P2Button2   # P2 Right Trigger
+  mousemiddle_2: P2Button3  # P2 Grenades
+  P2Button4: left             #Player 1 Special
+
+wmmt1:
+  Test: l3  # Test
+  Service1: r3  # Service
+  Coin1: select  # Coin
+  Analog0: leftstickleft  # Wheel Axis Right
+  Analog2: righttrigger  # Gas
+  Analog4: lefttrigger  # Brake
+  ExtensionOne1: north  # View Change
+  ExtensionOne2: south  # Intrude Change
+  Wmmt5GearChangeUp: rigthstickup  # Gear Shift Up  
+  Wmmt5GearChangeDown: rigthstickdown # Gear Shift Down
+  Wmmt3InsertCard: west  # Insert Card
+
+  # Unmapped inputs:
+  Wmmt5GearChange1:   # Gear Shift 1
+  Wmmt5GearChange2:   # Gear Shift 2
+  Wmmt5GearChange3:   # Gear Shift 3
+  Wmmt5GearChange4:   # Gear Shift 4
+  Wmmt5GearChange5:   # Gear Shift 5
+  Wmmt5GearChange6:   # Gear Shift 6
+
+wmmt2:
+  Test: l3  # Test
+  Service1: r3  # Service
+  Coin1: select  # Coin
+  Analog0: leftstickleft  # Wheel Axis Right
+  Analog2: righttrigger  # Gas
+  Analog4: lefttrigger  # Brake
+  ExtensionOne1: north  # View Change
+  ExtensionOne2: south  # Intrude Change
+  Wmmt5GearChangeUp: rigthstickup  # Gear Shift Up  
+  Wmmt5GearChangeDown: rigthstickdown # Gear Shift Down
+  Wmmt3InsertCard: west  # Insert Card
+
+  # Unmapped inputs:
+  Wmmt5GearChange1:   # Gear Shift 1
+  Wmmt5GearChange2:   # Gear Shift 2
+  Wmmt5GearChange3:   # Gear Shift 3
+  Wmmt5GearChange4:   # Gear Shift 4
+  Wmmt5GearChange5:   # Gear Shift 5
+  Wmmt5GearChange6:   # Gear Shift 6
+
+wmmt2j:
+  Test: l3  # Test
+  Service1: r3  # Service
+  Coin1: select  # Coin
+  Analog0: leftstickleft  # Wheel Axis Right
+  Analog2: righttrigger  # Gas
+  Analog4: lefttrigger  # Brake
+  ExtensionOne1: north  # View Change
+  ExtensionOne2: south  # Intrude Change
+  Wmmt5GearChangeUp: rigthstickup  # Gear Shift Up  
+  Wmmt5GearChangeDown: rigthstickdown # Gear Shift Down
+  Wmmt3InsertCard: west  # Insert Card
+
+  # Unmapped inputs:
+  Wmmt5GearChange1:   # Gear Shift 1
+  Wmmt5GearChange2:   # Gear Shift 2
+  Wmmt5GearChange3:   # Gear Shift 3
+  Wmmt5GearChange4:   # Gear Shift 4
+  Wmmt5GearChange5:   # Gear Shift 5
+  Wmmt5GearChange6:   # Gear Shift 6
 
 ############### COMPILATION ###############
 
@@ -1904,24 +2051,24 @@ kingoffightersxii:
   Service1: r3 # Service 1
   Coin1: select # Coin 1
   P1ButtonStart: start # Player 1 Start
-  P1Button1: west # Player 1 Button 1
-  P1Button2: south # Player 1 Button 3
-  P1Button4: north # Player 1 Button 2
-  P1Button5: east # Player 1 Button 4
-  P1ButtonDown: down # Player 1 Down
-  P1ButtonLeft: left # Player 1 Left
+  P1Button1: north   # Player 1 Button 1
+  P1Button2: west  # Player 1 Button 2
+  P1Button4: south  # Player 1 Button 3
+  P1Button5: east   # Player 1 Button 4
+  P1ButtonDown: down   # Player 1 Down
+  P1ButtonLeft: left   # Player 1 Left
   P1ButtonRight: right # Player 1 Right
-  P1ButtonUp: up # Player 1 Up
-  Coin2: select # Coin 2
+  P1ButtonUp: up       # Player 1 Up
+  Coin2: select        # Coin 2
   P2ButtonStart: start # Player 2 Start
-  P2Button1: west # Player 2 Button 1
-  P2Button2: south # Player 2 Button 3
-  P2Button4: north # Player 2 Button 2
-  P2Button5: east # Player 2 Button 4
-  P2ButtonDown: down # Player 2 Down
-  P2ButtonLeft: left # Player 2 Left
+  P2Button1: north # Player 2 Button 1
+  P2Button2: west # Player 2 Button 2
+  P2Button4: south  # Player 2 Button 3
+  P2Button5: east  # Player 2 Button 4
+  P2ButtonDown: down   # Player 2 Down
+  P2ButtonLeft: left   # Player 2 Left
   P2ButtonRight: right # Player 2 Right
-  P2ButtonUp: up # Player 2 Up
+  P2ButtonUp: up       # Player 2 Up
 
   # Unmapped inputs:
   Service2:   # Service 2

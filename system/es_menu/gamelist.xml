@@ -324,6 +324,23 @@
 		<region>wr</region>
 	</game>
 	<game>
+		<path>./dusklight.menu</path>
+		<name>Dusklight (Twilight Princess decompilation)</name>
+		<desc>Run Dusklight</desc>
+		<image>./media/dusklight-logo.png</image>
+		<marquee>./media/dusklight-logo.png</marquee>
+		<rating>0</rating>
+		<releasedate />
+		<developer>TwilitRealm</developer>
+		<publisher />
+		<genre>Decompilation</genre>
+		<playcount />
+		<lastplayed />
+		<gametime />
+		<lang>en</lang>
+		<region>wr</region>
+	</game>
+	<game>
 		<path>./eden.menu</path>
 		<name>Eden (Switch)</name>
 		<desc>Run Eden (Switch). This software is not provided by RetroBat.</desc>
@@ -614,6 +631,23 @@
 		<releasedate />
 		<developer>mGBA Team</developer>
 		<publisher>mGBA Team</publisher>
+		<genre>Emulator</genre>
+		<playcount />
+		<lastplayed />
+		<gametime />
+		<lang>en</lang>
+		<region>wr</region>
+	</game>
+	<game>
+		<path>./n64recomplauncher.menu</path>
+		<name>N64RecompLauncher (Nintendo 64 Recompilation)</name>
+		<desc>Run N64 Recompilation Launcher.</desc>
+		<image>./media/n64recomplauncher-logo.png</image>
+		<marquee>./media/n64recomplauncher-logo.png</marquee>
+		<rating>0</rating>
+		<releasedate />
+		<developer>SirDiabo</developer>
+		<publisher></publisher>
 		<genre>Emulator</genre>
 		<playcount />
 		<lastplayed />

@@ -30,6 +30,7 @@ dosbox
 dosbox-pure
 dosbox-staging
 duckstation
+dusklight
 eden
 eduke32
 eka2l1
@@ -51,6 +52,7 @@ jynx
 kega-fusion
 kronos
 lime3ds
+linuxloader
 love
 m2emulator
 magicengine
@@ -61,6 +63,7 @@ melonds
 mesen
 mgba
 mupen64
+n64recomplauncher
 nosgba
 openbor
 opengoal
