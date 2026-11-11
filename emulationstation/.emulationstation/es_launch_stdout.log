@@ -7,38 +7,105 @@
 [INFO] Built: Nov 20 2025
 [INFO] =================================================
 [INFO] [Input] Found input driver: "dinput".
-[INFO] [Core] Loading dynamic libretro core from: "Y:\images\RIESCADE\emulators\retroarch\cores\mame_libretro.dll".
-[INFO] [Override] Redirecionando arquivo dados da memória do jogo em "Y:\images\RIESCADE\saves\88games.srm".
-[INFO] [Override] Redirecionando ponto de save para "Y:\images\RIESCADE\saves\arcade\libretro.mame\88games.state".
-[INFO] [Environ] GET_CORE_OPTIONS_VERSION.
-[INFO] [Environ] GET_LANGUAGE: "7".
-[INFO] [Environ] SET_CORE_OPTIONS_V2_INTL.
-[INFO] [Environ] SET_CONTROLLER_INFO.
-[INFO] [Environ] SET_SUPPORT_NO_GAME: yes.
-[INFO] [Environ] GET_LED_INTERFACE.
-[INFO] [Remap] Core-specific remap found at "Y:\images\RIESCADE\emulators\retroarch\config\remaps\MAME\MAME.rmp".
+[INFO] [Core] Loading dynamic libretro core from: "Y:\images\RIESCADE\emulators\retroarch\cores\mame2003_plus_libretro.dll".
+[INFO] [Override] Redirecionando arquivo dados da memória do jogo em "Y:\images\RIESCADE\saves\AAE\armora.srm".
+[INFO] [Override] Redirecionando ponto de save para "Y:\images\RIESCADE\saves\AAE\libretro.mame2003_plus\armora.state".
+[INFO] [Environ] GET_VFS_INTERFACE. Core requested version >= V1, providing V3.
+[INFO] [Remap] Core-specific remap found at "Y:\images\RIESCADE\emulators\retroarch\config\remaps\MAME 2003-Plus\MAME 2003-Plus.rmp".
 [INFO] [Environ] GET_LOG_INTERFACE.
-[INFO] [Environ] GET_SYSTEM_DIRECTORY: "Y:\images\RIESCADE\bios".
-[INFO] [Environ] GET_CORE_ASSETS_DIRECTORY: "Y:\images\RIESCADE\emulators\retroarch\downloads".
-[INFO] [Environ] GET_SAVE_DIRECTORY: "Y:\images\RIESCADE\saves".
-[INFO] [Environ] SET_PIXEL_FORMAT: XRGB8888.
-[INFO] [Environ] SET_INPUT_DESCRIPTORS.
-[INFO] [Environ] SET_SUPPORT_ACHIEVEMENTS: yes.
-[INFO] [Environ] SET_KEYBOARD_CALLBACK.
-[libretro INFO] ------------------------
-[libretro INFO] MAME 0.286 (74731455)
-[libretro INFO] ------------------------
+[INFO] [Environ] SET_PERFORMANCE_LEVEL: 10.
 [INFO] [Content] Carregamento de conteúdo ignorado. A implementação irá carregar por conta própria.
-[libretro INFO] Starting game: "Y:\images\RIESCADE\roms\arcade\88games.zip"
-[libretro INFO] Game name: 88games
-[libretro INFO] Game description: '88 Games
+[libretro INFO] [MAME 2003+] Full content path Y:\images\RIESCADE\roms\aae\armora.zip
+[libretro INFO] [MAME 2003+] Git Version  e784df7
+[libretro INFO] [MAME 2003+] Content lookup name: armora
+[libretro INFO] [MAME 2003+] Driver index counter: 4144. Matched game driver: armora
+[libretro INFO] [MAME 2003+] ==== BEGIN DRIVER CONTENT ATTRIBUTES ====
+[libretro INFO] [MAME 2003+] * Vector display.
+[libretro INFO] [MAME 2003+] * Supports 2 players with 2 distinct controls.
+[libretro INFO] [MAME 2003+] * Supports 2 distinct button controls.
+[libretro INFO] [MAME 2003+] * Uses multiplayer control labels.
+[libretro INFO] [MAME 2003+] * Uses 8-way joystick controls.
+[libretro INFO] [MAME 2003+] ==== END DRIVER CONTENT ATTRIBUTES ====
+[INFO] [Environ] GET_SYSTEM_DIRECTORY: "Y:\images\RIESCADE\bios".
+[INFO] [Environ] GET_SAVE_DIRECTORY: "Y:\images\RIESCADE\saves\AAE".
+[libretro INFO] [MAME 2003+] content path: Y:\images\RIESCADE\roms\aae
+[libretro INFO] [MAME 2003+]  system path: Y:\images\RIESCADE\bios
+[libretro INFO] [MAME 2003+]    save path: Y:\images\RIESCADE\saves\AAE
+[INFO] [Environ] GET_CORE_OPTIONS_VERSION.
+[INFO] [Environ] SET_CORE_OPTIONS_V2.
+[ERROR] [Environ] GET_VARIABLE: mame2003-plus_nvram_bootstraps - Invalid value.
+[ERROR] [Environ] GET_VARIABLE: mame2003-plus_four_way_emulation - Invalid value.
+[ERROR] [Environ] GET_VARIABLE: mame2003-plus_crosshair_enabled - Invalid value.
+[ERROR] [Environ] GET_VARIABLE: mame2003-plus_crosshair_appearance - Invalid value.
+[ERROR] [Environ] GET_VARIABLE: mame2003-plus_dialsharexy - Invalid value.
+[ERROR] [Environ] GET_VARIABLE: mame2003-plus_dial_swap_xy - Invalid value.
+[ERROR] [Environ] GET_VARIABLE: mame2003-plus_cheat_input_ports - Invalid value.
+[ERROR] [Environ] GET_VARIABLE: mame2003-plus_override_ad_stick - Invalid value.
+[ERROR] [Environ] GET_VARIABLE: mame2003-plus_use_alt_sound - Invalid value.
+[libretro INFO] options.frameskip:0
+[INFO] [Environ] SET_AUDIO_BUFFER_STATUS_CALLBACK.
+[ERROR] [Environ] GET_VARIABLE: mame2003-plus_neogeo_bios - Invalid value.
+[ERROR] [Environ] GET_VARIABLE: mame2003-plus_stv_bios - Invalid value.
+[INFO] [Environ] GET_LED_INTERFACE.
+[INFO] [Environ] SET_CONTROLLER_INFO.
+[libretro INFO] [MAME 2003+] Opening ROM file: ar414le.t6
+[libretro INFO] [MAME 2003+] read_rom_data: All done
+[libretro INFO] [MAME 2003+] Opening ROM file: ar414lo.p6
+[libretro INFO] [MAME 2003+] read_rom_data: All done
+[libretro INFO] [MAME 2003+] Opening ROM file: ar414ue.u6
+[libretro INFO] [MAME 2003+] read_rom_data: All done
+[libretro INFO] [MAME 2003+] Opening ROM file: ar414uo.r6
+[libretro INFO] [MAME 2003+] read_rom_data: All done
+[libretro INFO] [MAME 2003+] Succesfully loaded ROMs.
+[INFO] [Environ] SET_ROTATION: "0" (0 deg).
+[libretro INFO] [MAME 2003+] RetroArch will perform the rotation.
+[INFO] [Environ] SET_ROTATION: "0" (0 deg).
+[INFO] [Environ] SET_PIXEL_FORMAT: XRGB8888.
+[libretro WARN] [MAME 2003+] Missing audio sample: tankfire.wav
+[libretro WARN] [MAME 2003+] Warning: audio sample(s) not found.
+[INFO] [Environ] SET_MESSAGE: Warning: audio sample(s) not found.
+[libretro WARN] [MAME 2003+] Missing audio sample: hiexp.wav
+[libretro WARN] [MAME 2003+] Warning: audio sample(s) not found.
+[INFO] [Environ] SET_MESSAGE: Warning: audio sample(s) not found.
+[libretro WARN] [MAME 2003+] Missing audio sample: jeepfire.wav
+[libretro WARN] [MAME 2003+] Warning: audio sample(s) not found.
+[INFO] [Environ] SET_MESSAGE: Warning: audio sample(s) not found.
+[libretro WARN] [MAME 2003+] Missing audio sample: loexp.wav
+[libretro WARN] [MAME 2003+] Warning: audio sample(s) not found.
+[INFO] [Environ] SET_MESSAGE: Warning: audio sample(s) not found.
+[libretro WARN] [MAME 2003+] Missing audio sample: tankeng.wav
+[libretro WARN] [MAME 2003+] Warning: audio sample(s) not found.
+[INFO] [Environ] SET_MESSAGE: Warning: audio sample(s) not found.
+[libretro WARN] [MAME 2003+] Missing audio sample: beep.wav
+[libretro WARN] [MAME 2003+] Warning: audio sample(s) not found.
+[INFO] [Environ] SET_MESSAGE: Warning: audio sample(s) not found.
+[libretro WARN] [MAME 2003+] Missing audio sample: chopper.wav
+[libretro WARN] [MAME 2003+] Warning: audio sample(s) not found.
+[INFO] [Environ] SET_MESSAGE: Warning: audio sample(s) not found.
+[libretro INFO] [MAME 2003+] 
+
+CONTROLS: 
+
+GAMEINFO: Armor Attack
+1980 Cinematronics
+
+CPU:
+CCPU 5.000000 MHz
+
+Sound:
+Samples
+
+Vector Game
+
+[libretro INFO] [MAME 2003+] Preparing emulated CPUs for execution.
+[libretro INFO] [MAME 2003+] armora hiscore memory map found in hiscore.dat!
 [INFO] [State] Encontrada último compartimento de jogo salvo: #0.
 [INFO] [SRAM] Ignorando carregamento da SRAM.
 [INFO] [Core] Versão da API libretro: 1, Compilado contra a API: 1
-[INFO] [Core] Geometry: 320x224, Aspect: 1.333, FPS: 59.19, Sample rate: 48000.00 Hz.
+[INFO] [Core] Geometry: 1024x768, Aspect: 1.333, FPS: 38.00, Sample rate: 44100.00 Hz.
 [INFO] [Video] Set video size to: 1920x1080.
 [INFO] [Vulkan] Vulkan dynamic library loaded.
-[INFO] [Video] Fullscreen set to 1920x1080 @ 165Hz on device \\.\DISPLAY1.
+[INFO] [Video] Fullscreen set to 1920x1080 @ 165Hz on device \\.\DISPLAY7.
 [INFO] [Vulkan] Found GPU at index 0: "NVIDIA GeForce RTX 2060 SUPER".
 [INFO] [Vulkan] Using GPU index 0.
 [INFO] [Vulkan] Using GPU: "NVIDIA GeForce RTX 2060 SUPER".
@@ -49,26 +116,36 @@
 [INFO] [Slang] Compiling shader: "Y:\images\RIESCADE\emulators\retroarch\shaders\shaders_slang\crt\shaders\crt-geom.slang".
 [INFO] [Vulkan] Using render target format R8G8B8A8_UNORM for pass output #0.
 [INFO] [Vulkan] Creating framebuffer 1440x1080 (max 1 level(s)).
+[WARN] [SDL] Couldn't open haptic device of the joypad #0: Haptic: Joystick isn't a haptic device..
+[INFO] [SDL] Falling back to joystick rumble.
 [INFO] [Input] Found joypad driver: "sdl2".
 [INFO] [Video] Found display server: "win32".
-[INFO] [Audio] Set audio input rate to: 48000.00 Hz.
+[INFO] [Audio] Set audio input rate to: 44100.00 Hz.
 [INFO] [Vulkan] Creating framebuffer 1440x1080 (max 1 level(s)).
 [INFO] [XAudio2] Requesting 64 ms latency, using 64 ms latency.
 [INFO] [Audio] Started synchronous audio driver.
 [INFO] [Microphone] Initialized microphone driver.
 [INFO] [Display] Found display driver: "vulkan".
-[INFO] [Rewind] Inicializando o buffer de rebobinamento com tamanho: 20 MB
+[ERROR] [Rewind] Rebobinar indisponível porque este núcleo não possui suporte a ponto de save serializado..
+[INFO] [Environ] SET_INPUT_DESCRIPTORS.
 [INFO] [Playlist] Carregando o arquivo de favoritos: "Y:\images\RIESCADE\emulators\retroarch\playlists\builtin\content_favorites.lpl".
 [INFO] [Playlist] Carregando arquivo de histórico: "Y:\images\RIESCADE\emulators\retroarch\playlists\builtin\content_history.lpl".
 [INFO] [Playlist] Carregando arquivo de histórico: "Y:\images\RIESCADE\emulators\retroarch\playlists\builtin\content_image_history.lpl".
 [INFO] [Playlist] Carregando arquivo de histórico: "Y:\images\RIESCADE\emulators\retroarch\playlists\builtin\content_music_history.lpl".
 [INFO] [Playlist] Carregando arquivo de histórico: "Y:\images\RIESCADE\emulators\retroarch\playlists\builtin\content_video_history.lpl".
+[WARN] [SDL] Couldn't open haptic device of the joypad #0: Haptic: Joystick isn't a haptic device..
+[INFO] [SDL] Falling back to joystick rumble.
+[INFO] [Environ] SET_GEOMETRY.
 [INFO] [Vulkan] Updating framebuffer size 1920x1080 (format: 37).
 [INFO] [Vulkan] Creating framebuffer 1920x1080 (max 1 level(s)).
+[libretro INFO] [MAME 2003+] loading armora.hi hiscore memory file...
+[INFO] [State] Salvar ponto de save automático em "Y:\images\RIESCADE\saves\AAE\libretro.mame2003_plus\armora.state.auto" succeeded.
 [INFO] [Config] Configuração salva em "Y:\images\RIESCADE\emulators\retroarch\retroarch.cfg".
-[INFO] [Runtime] Content ran for a total of: 00 hours, 00 minutes, 02 seconds.
-[INFO] [Runtime] Saving runtime log file: "Y:\images\RIESCADE\emulators\retroarch\playlists\logs\MAME\88games.lrtl".
+[INFO] [Runtime] Content ran for a total of: 00 hours, 00 minutes, 14 seconds.
+[INFO] [Runtime] Saving runtime log file: "Y:\images\RIESCADE\emulators\retroarch\playlists\logs\MAME 2003-Plus\armora.lrtl".
 [INFO] [Core] Unloading game...
+[libretro INFO] [MAME 2003+] saving armora.hi hiscore memory file...
 [INFO] [Core] Unloading core...
 [INFO] [Core] Unloading core symbols...
 [INFO] [Core] Saved core options file to "Y:\images\RIESCADE\emulators\retroarch\retroarch-core-options.cfg".
+[INFO] [Autoconf] Xbox 360 Controller desconectado da porta 1.
