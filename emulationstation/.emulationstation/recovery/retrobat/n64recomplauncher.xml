@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<gameList parentHash="44372">
+	<game>
+		<path>./n64recomplauncher.menu</path>
+		<name>N64RecompLauncher (Nintendo 64 Recompilation)</name>
+		<desc>Run N64 Recompilation Launcher.</desc>
+		<genre>Emulator</genre>
+		<image>./media/n64recomplauncher-logo.png</image>
+		<marquee>./media/n64recomplauncher-logo.png</marquee>
+		<rating>0</rating>
+		<developer>SirDiabo</developer>
+		<playcount>1</playcount>
+		<lastplayed>20260609T170749</lastplayed>
+		<gametime>104</gametime>
+		<lang>en</lang>
+		<region>wr</region>
+	</game>
+</gameList>

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: batocera-es v34beta(2022/04/06)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-02-05 20:43+0800\n"
+"PO-Revision-Date: 2026-07-23 22:31+0800\n"
 "Last-Translator: wanger\n"
 "Language-Team: mikakunin,王二,monyxie\n"
 "Language: zh_CN\n"
@@ -102,7 +102,7 @@ msgid "Loading gamelists"
 msgstr "正在加载游戏列表"
 
 msgid "Loading..."
-msgstr "载入中..."
+msgstr "载入中…"
 
 msgid "MENU"
 msgstr "菜单"
@@ -189,8 +189,8 @@ msgid "Favorite"
 msgstr "收藏"
 
 #, c-format
-msgid "This folder contains %i game, including :%s"
-msgid_plural "This folder contains %i games, including :%s"
+msgid "This folder contains %i game, including: %s"
+msgid_plural "This folder contains %i games, including: %s"
 msgstr[0] "此文件夹中有 %i 游戏，其中包含：%s"
 
 msgid "FILTER GAMES BY TEXT"
@@ -290,14 +290,14 @@ msgstr "是否保存更改?"
 msgid "ARE YOU SURE?"
 msgstr "确定吗？"
 
-msgid "RETROACHIEVEMENT SETTINGS"
-msgstr "RetroAchievement设置"
+msgid "RETROACHIEVEMENTS SETTINGS"
+msgstr "RetroAchievements设置"
 
 msgid "SETTINGS"
 msgstr "设置"
 
 msgid "RETROACHIEVEMENTS"
-msgstr "RetroAchievement"
+msgstr "RetroAchievements"
 
 msgid "USERNAME"
 msgstr "用户名"
@@ -352,7 +352,7 @@ msgstr "非官方成就"
 msgid "Enable unlocking of unofficial achievements."
 msgstr "允许解锁非官方成就."
 
-msgid "RETROACHIEVEMENT UNLOCK SOUND"
+msgid "RETROACHIEVEMENTS UNLOCK SOUND"
 msgstr "成就解锁声音"
 
 msgid "none"
@@ -364,8 +364,8 @@ msgstr "解锁声音"
 msgid "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
 msgstr "在主菜单中显示成就菜单项"
 
-msgid "View your RetroAchievement stats right from the main menu!"
-msgstr "从主菜单查看您的RetroAchievement统计数据！"
+msgid "View your RetroAchievements stats right from the main menu!"
+msgstr "从主菜单查看您的RetroAchievements统计数据！"
 
 msgid "GAME INDEXES"
 msgstr "游戏索引"
@@ -377,7 +377,7 @@ msgid "INDEX GAMES"
 msgstr "游戏索引"
 
 msgid "UNABLE TO ACTIVATE RETROACHIEVEMENTS:"
-msgstr "无法激活RetroAchievement:"
+msgstr "无法激活RetroAchievements:"
 
 msgid "KEYBOARDTOPADS"
 msgstr "键盘支架"
@@ -467,13 +467,13 @@ msgid "VOLUME MUTE"
 msgstr "静音音量"
 
 msgid "START RECORDING"
-msgstr ""
+msgstr "开始录制"
 
 msgid "STOP RECORDING"
-msgstr ""
+msgstr "停止录制"
 
 msgid "KEYBOARD TOGGLE"
-msgstr ""
+msgstr "键盘切换"
 
 msgid "KEY ASSIGNED TWICE"
 msgstr "密钥被重复分配"
@@ -578,16 +578,6 @@ msgstr "包含的游戏系统"
 msgid "START"
 msgstr "开始"
 
-#, c-format
-msgid "UPDATING %s"
-msgstr "正在更新 %s"
-
-msgid "UPDATE IS READY"
-msgstr "更新已准备就绪"
-
-msgid "REBOOT TO APPLY"
-msgstr "重启并应用"
-
 msgid "REALLY UPDATE?"
 msgstr "确定要更新?"
 
@@ -614,6 +604,16 @@ msgstr "需要连接到互联网"
 
 msgid "NO UPDATE AVAILABLE"
 msgstr "暂无可用更新"
+
+#, c-format
+msgid "UPDATING %s"
+msgstr "正在更新 %s"
+
+msgid "UPDATE IS READY"
+msgstr "更新已准备就绪"
+
+msgid "REBOOT TO APPLY"
+msgstr "重启并应用"
 
 msgid "CONNECT TO NETPLAY"
 msgstr "进行联网游戏"
@@ -877,7 +877,7 @@ msgid "VIEWER PASSWORD"
 msgstr "观众密码"
 
 msgid "FIND SIMILAR GAMES..."
-msgstr "寻找类似游戏..."
+msgstr "寻找类似游戏…"
 
 msgid "DELETE ITEM"
 msgstr "删除项目"
@@ -912,7 +912,7 @@ msgid "WRITE"
 msgstr "写入"
 
 msgid "PLACE A TAG ON THE WRITER..."
-msgstr "为作者写入标签..."
+msgstr "为作者写入标签…"
 
 msgid "THE TAG WAS WRITTEN SUCCESSFULLY"
 msgstr "标签写入成功"
@@ -929,7 +929,7 @@ msgid "FAVORITES"
 msgstr "收藏"
 
 msgid "ADD TO CUSTOM COLLECTION..."
-msgstr "添加到自定义合辑..."
+msgstr "添加到自定义合辑…"
 
 msgid "SCRAPE"
 msgstr "抓取封面元数据"
@@ -1133,7 +1133,7 @@ msgid "SHOW CONTROLLER BATTERY LEVEL"
 msgstr "显示手柄电池电量"
 
 msgid "SHOW GUN NOTIFICATIONS"
-msgstr ""
+msgstr "武器提示"
 
 msgid "DRAW GUN CROSSHAIR"
 msgstr "绘制枪的准星"
@@ -1204,8 +1204,8 @@ msgstr "热键"
 msgid "DEFAULT"
 msgstr "默认"
 
-msgid "NO DEVICE FOUND (JAMMASD, IPAC, ...)"
-msgstr "未找到设备 (JAMMASD, IPAC, ...)"
+msgid "NO DEVICE FOUND (JAMMASD, IPAC...)"
+msgstr "未找到设备 (JAMMASD, IPAC…)"
 
 msgid "DECLARE A NEW GLOBAL HOTKEY"
 msgstr "新建全局热键"
@@ -1370,10 +1370,10 @@ msgid "INPUT MANUALLY"
 msgstr "手动输入"
 
 msgid "NO WI-FI NETWORKS FOUND"
-msgstr "未发现可用的WIFI网络"
+msgstr "未发现可用的WI-FI网络"
 
 msgid "SEARCHING WI-FI NETWORKS"
-msgstr "正在查询WIFI网络"
+msgstr "正在查询WI-FI网络"
 
 msgid "PARIS"
 msgstr "巴黎"
@@ -1545,9 +1545,6 @@ msgstr "社区评分"
 
 msgid "VIDEO"
 msgstr "视频"
-
-msgid "FANART"
-msgstr "同人"
 
 msgid "BEZEL (16:9)"
 msgstr "遮罩（16:9）"
@@ -2006,6 +2003,9 @@ msgstr "如果可用，打开模拟器自带的FPS计数器。"
 msgid "VSYNC"
 msgstr "垂直同步"
 
+msgid "FPS LIMIT"
+msgstr "FPS限制"
+
 msgid "OVERSCAN"
 msgstr "过扫描"
 
@@ -2208,7 +2208,7 @@ msgid "OPTIMIZE VIDEO VRAM USAGE"
 msgstr "优化视频VRAM的使用"
 
 msgid "USE FILESYSTEM CACHE"
-msgstr ""
+msgstr "使用文件系统缓存"
 
 msgid "REBOOT REQUIRED TO APPLY THE NEW CONFIGURATION"
 msgstr "需要重新启动系统才能应用新配置"
@@ -2236,6 +2236,33 @@ msgstr "开始更新"
 
 msgid "UPDATER IS ALREADY RUNNING"
 msgstr "更新程序已经运行"
+
+msgid "START LOCAL MEDIA UPDATE"
+msgstr "启动本地媒体更新"
+
+msgid "REALLY UPDATE FROM LOCAL MEDIA?"
+msgstr "确定从本地介质更新？"
+
+msgid "SOFTWARE UPDATES VIA TORRENT"
+msgstr "通过torrent进行软件更新"
+
+msgid "SHARE UPDATES VIA TORRENT"
+msgstr "通过torrent共享更新"
+
+msgid "Torrent update service started"
+msgstr "Torrent更新服务已启动"
+
+msgid "Torrent update service stopped"
+msgstr "Torrent更新服务已停止"
+
+msgid "START UPDATE FROM TORRENT FILE"
+msgstr "从Torrent文件开始更新"
+
+msgid "REALLY UPDATE FROM TORRENT FILE ?"
+msgstr "确定从Torrent文件开始更新？"
+
+msgid "DOWNLOAD STATUS"
+msgstr "下载状态"
 
 msgid "LANGUAGE"
 msgstr "语言"
@@ -2392,6 +2419,21 @@ msgstr "LED硬件"
 msgid "ENABLE LED"
 msgstr "启用LED"
 
+msgid "LED MODE"
+msgstr "LED模式"
+
+msgid "STATIC"
+msgstr "静态"
+
+msgid "RAINBOW"
+msgstr "彩虹"
+
+msgid "CHROMA"
+msgstr "色度"
+
+msgid "PULSE"
+msgstr "脉冲"
+
 msgid "LED BRIGHTNESS"
 msgstr "LED亮度"
 
@@ -2421,6 +2463,16 @@ msgstr "访问网络共享需要密码。"
 
 msgid "ROOT PASSWORD"
 msgstr "管理员密码"
+
+msgid "CPU SECURITY MITIGATIONS"
+msgstr "CPU安全缓解措施"
+
+msgid ""
+"Disabling mitigations may improve performance on some systems at the cost of "
+"reduced protection against certain CPU vulnerabilities."
+msgstr ""
+"禁用缓解措施可能会在某些系统上提升性能， 但代价是降低了对某些 CPU 漏洞的防护"
+"能力。"
 
 msgid "LATENCY REDUCTION"
 msgstr "减少延迟"
@@ -2683,7 +2735,7 @@ msgid "SHOW MANUAL ICON"
 msgstr "显示手册图标"
 
 msgid "SHOW RETROACHIEVEMENTS ICON"
-msgstr "显示RetroAchievement图标"
+msgstr "显示RetroAchievements图标"
 
 msgid "SHOW GUN ICON"
 msgstr "显示光枪图标"
@@ -2814,26 +2866,26 @@ msgstr "网络状态"
 msgid "HOSTNAME"
 msgstr "主机名"
 
-msgid "ENABLE WIFI"
-msgstr "启用 WiFi"
+msgid "ENABLE WI-FI"
+msgstr "启用 WI-FI"
 
-msgid "WIFI SSID"
-msgstr "WiFi 名称"
+msgid "WI-FI SSID"
+msgstr "WI-FI 名称"
 
-msgid "WIFI KEY"
-msgstr "WiFi 密码"
+msgid "WI-FI KEY"
+msgstr "WI-FI 密码"
 
-msgid "WIFI COUNTRY"
-msgstr "WIFI国家代码"
+msgid "WI-FI COUNTRY"
+msgstr "WI-FI国家代码"
 
 msgid "N/A"
 msgstr "N/A"
 
-msgid "WIFI ENABLED"
-msgstr "WiFi 已启用"
+msgid "WI-FI ENABLED"
+msgstr "WI-FI 已启用"
 
-msgid "WIFI CONFIGURATION ERROR"
-msgstr "WiFi 配置错误"
+msgid "WI-FI CONFIGURATION ERROR"
+msgstr "WI-FI 配置错误"
 
 msgid "QUICK ACCESS"
 msgstr "快速进入"
@@ -2968,7 +3020,7 @@ msgid "NO DRIVE SELECTED"
 msgstr "未选择驱动器"
 
 msgid "Ejecting..."
-msgstr "弹出..."
+msgstr "弹出…"
 
 msgid "EDIT METADATA"
 msgstr "编辑元数据"
@@ -3202,7 +3254,7 @@ msgstr "输入盒子路径"
 msgid "Fan art"
 msgstr "同人作品"
 
-msgid "enter path to fanart"
+msgid "enter path to fan art"
 msgstr "输入同人作品路径"
 
 msgid "Title shot"
@@ -3365,13 +3417,13 @@ msgid "Screenscraper Game ID"
 msgstr "Screenscraper游戏ID"
 
 msgid "MultiDisk"
-msgstr ""
+msgstr "多光盘"
 
 msgid "Loading system config..."
-msgstr "正在载入系统配置..."
+msgstr "正在载入系统配置…"
 
 msgid "SAVING METADATA. PLEASE WAIT..."
-msgstr "保存元数据中, 请稍候..."
+msgstr "保存元数据中, 请稍候…"
 
 msgid "DO YOU WANT TO SWITCH THE SCREEN ?"
 msgstr "你想切换屏幕吗？"
@@ -3394,8 +3446,8 @@ msgstr "四人游戏"
 msgid "never played"
 msgstr "从未玩过的"
 
-msgid "retroachievements"
-msgstr "RetroAchievement"
+msgid "RetroAchievements"
+msgstr "RetroAchievements"
 
 msgid "arcade"
 msgstr "街机"
@@ -3437,9 +3489,9 @@ msgid "Various"
 msgstr "多个开发商"
 
 #, c-format
-msgid "This collection contains %i game:%s"
-msgid_plural "This collection contains %i games, including:%s"
-msgstr[0] "此合集包含 %i 个游戏:%s"
+msgid "This collection contains %i game: %s"
+msgid_plural "This collection contains %i games, including: %s"
+msgstr[0] "此合集包含 %i 个游戏: %s"
 
 msgid "INVALID CONTENT"
 msgstr "无效内容"
@@ -3489,11 +3541,14 @@ msgstr "核心缺失"
 msgid "UKNOWN ERROR"
 msgstr "未知错误"
 
+msgid "Checking for latest upgrade script..."
+msgstr "正在检查最新的升级脚本…"
+
 msgid "Collections"
 msgstr "合辑"
 
 msgid "Searching for devices..."
-msgstr "正在搜索设备..."
+msgstr "正在搜索设备…"
 
 msgid "FORMATTING DEVICE"
 msgstr "格式化驱动器"
@@ -3583,7 +3638,7 @@ msgid "up/down"
 msgstr "上/下"
 
 msgid "WORKING..."
-msgstr "进行中..."
+msgstr "进行中…"
 
 msgid "accept"
 msgstr "接受"
@@ -3622,7 +3677,7 @@ msgstr "%s 已连接"
 msgid "%s disconnected"
 msgstr "%s 已断开连接"
 
-msgid "SHIFTS FOR UPPER,LOWER, AND SPECIAL"
+msgid "SHIFTS FOR UPPER, LOWER, AND SPECIAL"
 msgstr "SHIFT键可切换大小写或特殊字符"
 
 msgid "ALT GR"
@@ -3808,13 +3863,13 @@ msgstr ""
 "对准目标射击以进行校准"
 
 msgid "Reloaded the games list..."
-msgstr "已重新加载游戏列表..."
+msgstr "已重新加载游戏列表…"
 
 msgid "GAME DRIVE DETECTED"
 msgstr "检测到游戏驱动器"
 
 msgid "DEVICE"
-msgstr "驱动器"
+msgstr "设备"
 
 msgid "MODEL"
 msgstr "型号"
@@ -3832,7 +3887,7 @@ msgid "(This will also apply on future boots)"
 msgstr "(这也将适用于未来的启动)"
 
 msgid "Merge requested... Please wait."
-msgstr "合并请求中... 请稍候."
+msgstr "合并请求中… 请稍候."
 
 msgid "MERGE FAILED"
 msgstr "合并失败"
@@ -3847,10 +3902,10 @@ msgid "NO, IGNORE FOREVER"
 msgstr "否, 永远忽略"
 
 msgid "Adding drive to ignore list..."
-msgstr "将驱动器添加到忽略列表中..."
+msgstr "将驱动器添加到忽略列表中…"
 
 msgid "YES, MERGE DRIVE"
-msgstr ""
+msgstr "是的，合并驱动器"
 
 msgid "NEW DRIVE DETECTED"
 msgstr "检测到新驱动器"
@@ -3862,7 +3917,7 @@ msgid "(ALL EXISTING DATA WILL BE ERASED)"
 msgstr "(所有现有数据将被清除)"
 
 msgid "Starting format process..."
-msgstr "正在启动格式化进程..."
+msgstr "正在启动格式化进程…"
 
 msgid "FORMAT FAILED"
 msgstr "格式化失败"
@@ -3914,6 +3969,9 @@ msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d 秒前"
 
+#~ msgid "FANART"
+#~ msgstr "同人"
+
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "建立图片缓存"
 
@@ -3930,10 +3988,10 @@ msgstr[0] "%d 秒前"
 #~ msgstr "现在从这个硬盘合并游戏吗?"
 
 #~ msgid "Merging drive... Please wait."
-#~ msgstr "正在合并驱动器... 请稍候."
+#~ msgstr "正在合并驱动器… 请稍候."
 
 #~ msgid "New drive content will be available after games list is refreshed..."
-#~ msgstr "游戏列表刷新后, 将有新的硬盘内容可用..."
+#~ msgstr "游戏列表刷新后, 将有新的硬盘内容可用…"
 
 #~ msgid "BY HARDWARE TYPE"
 #~ msgstr "按硬件类型"
@@ -3978,7 +4036,7 @@ msgstr[0] "%d 秒前"
 #~ msgstr "重置游玩时间、游玩次数和上次游玩时间元数据的值。"
 
 #~ msgid "SAVING METADATAS. PLEASE WAIT..."
-#~ msgstr "正在保存元数据。请稍候..."
+#~ msgstr "正在保存元数据。请稍候…"
 
 #~ msgid "FORGET A BLUETOOTH DEVICE"
 #~ msgstr "解除配对的蓝牙设备"
@@ -4058,7 +4116,7 @@ msgstr[0] "%d 秒前"
 #~ msgid "SCRAPE BOX BACKSIDE"
 #~ msgstr "抓取合子背面"
 
-#~ msgid "SCRAPE FANART"
+#~ msgid "SCRAPE FAN ART"
 #~ msgstr "抓取同人作品"
 
 #~ msgid "SCRAPE MANUAL"

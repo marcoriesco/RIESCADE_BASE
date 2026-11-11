@@ -104,7 +104,7 @@ msgid "Loading gamelists"
 msgstr "Loading gamelists"
 
 msgid "Loading..."
-msgstr "Loading..."
+msgstr "Loading…"
 
 msgid "MENU"
 msgstr "MENU"
@@ -194,10 +194,10 @@ msgid "Favorite"
 msgstr "Favourite"
 
 #, c-format
-msgid "This folder contains %i game, including :%s"
-msgid_plural "This folder contains %i games, including :%s"
-msgstr[0] "This folder contains %i game, including :%s"
-msgstr[1] "This folder contains %i games, including :%s"
+msgid "This folder contains %i game, including: %s"
+msgid_plural "This folder contains %i games, including: %s"
+msgstr[0] "This folder contains %i game, including: %s"
+msgstr[1] "This folder contains %i games, including: %s"
 
 msgid "FILTER GAMES BY TEXT"
 msgstr "FILTER GAMES BY TEXT"
@@ -296,8 +296,8 @@ msgstr "SAVE CHANGES?"
 msgid "ARE YOU SURE?"
 msgstr "ARE YOU SURE?"
 
-msgid "RETROACHIEVEMENT SETTINGS"
-msgstr "RETROACHIEVEMENT SETTINGS"
+msgid "RETROACHIEVEMENTS SETTINGS"
+msgstr "RETROACHIEVEMENTS SETTINGS"
 
 msgid "SETTINGS"
 msgstr "SETTINGS"
@@ -360,8 +360,8 @@ msgstr ""
 msgid "Enable unlocking of unofficial achievements."
 msgstr ""
 
-msgid "RETROACHIEVEMENT UNLOCK SOUND"
-msgstr "RETROACHIEVEMENT UNLOCK SOUND"
+msgid "RETROACHIEVEMENTS UNLOCK SOUND"
+msgstr "RETROACHIEVEMENTS UNLOCK SOUND"
 
 msgid "none"
 msgstr "none"
@@ -372,8 +372,8 @@ msgstr "UNLOCK SOUND"
 msgid "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
 msgstr "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
 
-msgid "View your RetroAchievement stats right from the main menu!"
-msgstr "View your RetroAchievement stats right from the main menu!"
+msgid "View your RetroAchievements stats right from the main menu!"
+msgstr "View your RetroAchievements stats right from the main menu!"
 
 msgid "GAME INDEXES"
 msgstr "GAME INDEXES"
@@ -586,16 +586,6 @@ msgstr "SYSTEMS INCLUDED"
 msgid "START"
 msgstr "START"
 
-#, c-format
-msgid "UPDATING %s"
-msgstr "UPDATING %s"
-
-msgid "UPDATE IS READY"
-msgstr "UPDATE IS READY"
-
-msgid "REBOOT TO APPLY"
-msgstr "REBOOT TO APPLY"
-
 msgid "REALLY UPDATE?"
 msgstr "REALLY UPDATE?"
 
@@ -622,6 +612,16 @@ msgstr "NETWORK CONNECTION NEEDED"
 
 msgid "NO UPDATE AVAILABLE"
 msgstr "NO UPDATE AVAILABLE"
+
+#, c-format
+msgid "UPDATING %s"
+msgstr "UPDATING %s"
+
+msgid "UPDATE IS READY"
+msgstr "UPDATE IS READY"
+
+msgid "REBOOT TO APPLY"
+msgstr "REBOOT TO APPLY"
 
 msgid "CONNECT TO NETPLAY"
 msgstr "CONNECT TO NETPLAY"
@@ -885,7 +885,7 @@ msgid "VIEWER PASSWORD"
 msgstr "VIEWER PASSWORD"
 
 msgid "FIND SIMILAR GAMES..."
-msgstr "FIND SIMILAR GAMES..."
+msgstr "FIND SIMILAR GAMES…"
 
 msgid "DELETE ITEM"
 msgstr "DELETE ITEM"
@@ -920,7 +920,7 @@ msgid "WRITE"
 msgstr "WRITE"
 
 msgid "PLACE A TAG ON THE WRITER..."
-msgstr "PLACE A TAG ON THE WRITER..."
+msgstr "PLACE A TAG ON THE WRITER…"
 
 msgid "THE TAG WAS WRITTEN SUCCESSFULLY"
 msgstr "THE TAG WAS WRITTEN SUCCESSFULLY"
@@ -937,7 +937,7 @@ msgid "FAVORITES"
 msgstr "FAVOURITES"
 
 msgid "ADD TO CUSTOM COLLECTION..."
-msgstr "ADD TO CUSTOM COLLECTION..."
+msgstr "ADD TO CUSTOM COLLECTION…"
 
 msgid "SCRAPE"
 msgstr "SCRAPE"
@@ -1213,7 +1213,7 @@ msgstr ""
 msgid "DEFAULT"
 msgstr "DEFAULT"
 
-msgid "NO DEVICE FOUND (JAMMASD, IPAC, ...)"
+msgid "NO DEVICE FOUND (JAMMASD, IPAC...)"
 msgstr ""
 
 msgid "DECLARE A NEW GLOBAL HOTKEY"
@@ -1554,9 +1554,6 @@ msgstr "COMMUNITY RATING"
 
 msgid "VIDEO"
 msgstr "VIDEO"
-
-msgid "FANART"
-msgstr "FANART"
 
 msgid "BEZEL (16:9)"
 msgstr "BEZEL (16:9)"
@@ -2016,6 +2013,9 @@ msgstr "Also turns on the emulator's native FPS counter, if available."
 msgid "VSYNC"
 msgstr "VSYNC"
 
+msgid "FPS LIMIT"
+msgstr ""
+
 msgid "OVERSCAN"
 msgstr "OVERSCAN"
 
@@ -2256,6 +2256,33 @@ msgstr "START UPDATE"
 msgid "UPDATER IS ALREADY RUNNING"
 msgstr "UPDATER IS ALREADY RUNNING"
 
+msgid "START LOCAL MEDIA UPDATE"
+msgstr ""
+
+msgid "REALLY UPDATE FROM LOCAL MEDIA?"
+msgstr ""
+
+msgid "SOFTWARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "SHARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "Torrent update service started"
+msgstr ""
+
+msgid "Torrent update service stopped"
+msgstr ""
+
+msgid "START UPDATE FROM TORRENT FILE"
+msgstr ""
+
+msgid "REALLY UPDATE FROM TORRENT FILE ?"
+msgstr ""
+
+msgid "DOWNLOAD STATUS"
+msgstr ""
+
 msgid "LANGUAGE"
 msgstr "LANGUAGE"
 
@@ -2411,6 +2438,21 @@ msgstr "LED HARDWARE"
 msgid "ENABLE LED"
 msgstr ""
 
+msgid "LED MODE"
+msgstr ""
+
+msgid "STATIC"
+msgstr ""
+
+msgid "RAINBOW"
+msgstr ""
+
+msgid "CHROMA"
+msgstr ""
+
+msgid "PULSE"
+msgstr ""
+
 msgid "LED BRIGHTNESS"
 msgstr "LED BRIGHTNESS"
 
@@ -2440,6 +2482,14 @@ msgstr "Require a password for accessing the network share."
 
 msgid "ROOT PASSWORD"
 msgstr "ROOT PASSWORD"
+
+msgid "CPU SECURITY MITIGATIONS"
+msgstr ""
+
+msgid ""
+"Disabling mitigations may improve performance on some systems at the cost of "
+"reduced protection against certain CPU vulnerabilities."
+msgstr ""
 
 msgid "LATENCY REDUCTION"
 msgstr "LATENCY REDUCTION"
@@ -2836,26 +2886,26 @@ msgstr "INTERNET STATUS"
 msgid "HOSTNAME"
 msgstr "HOSTNAME"
 
-msgid "ENABLE WIFI"
-msgstr "ENABLE WIFI"
+msgid "ENABLE WI-FI"
+msgstr "ENABLE WI-FI"
 
-msgid "WIFI SSID"
-msgstr "WIFI SSID"
+msgid "WI-FI SSID"
+msgstr "WI-FI SSID"
 
-msgid "WIFI KEY"
-msgstr "WIFI KEY"
+msgid "WI-FI KEY"
+msgstr "WI-FI KEY"
 
-msgid "WIFI COUNTRY"
+msgid "WI-FI COUNTRY"
 msgstr ""
 
 msgid "N/A"
 msgstr ""
 
-msgid "WIFI ENABLED"
-msgstr "WIFI ENABLED"
+msgid "WI-FI ENABLED"
+msgstr "WI-FI ENABLED"
 
-msgid "WIFI CONFIGURATION ERROR"
-msgstr "WIFI CONFIGURATION ERROR"
+msgid "WI-FI CONFIGURATION ERROR"
+msgstr "WI-FI CONFIGURATION ERROR"
 
 msgid "QUICK ACCESS"
 msgstr "QUICK ACCESS"
@@ -3225,8 +3275,8 @@ msgstr "enter path to box"
 msgid "Fan art"
 msgstr "Fan art"
 
-msgid "enter path to fanart"
-msgstr "enter path to fanart"
+msgid "enter path to fan art"
+msgstr "enter path to fan art"
 
 msgid "Title shot"
 msgstr "Title shot"
@@ -3391,7 +3441,7 @@ msgid "MultiDisk"
 msgstr ""
 
 msgid "Loading system config..."
-msgstr "Loading system config..."
+msgstr "Loading system config…"
 
 msgid "SAVING METADATA. PLEASE WAIT..."
 msgstr ""
@@ -3417,8 +3467,8 @@ msgstr "4 players"
 msgid "never played"
 msgstr "never played"
 
-msgid "retroachievements"
-msgstr "retroachievements"
+msgid "RetroAchievements"
+msgstr "RetroAchievements"
 
 msgid "arcade"
 msgstr "arcade"
@@ -3460,10 +3510,10 @@ msgid "Various"
 msgstr "Various"
 
 #, c-format
-msgid "This collection contains %i game:%s"
-msgid_plural "This collection contains %i games, including:%s"
-msgstr[0] "This collection contains %i game:%s"
-msgstr[1] "This collection contains %i games, including:%s"
+msgid "This collection contains %i game: %s"
+msgid_plural "This collection contains %i games, including: %s"
+msgstr[0] "This collection contains %i game: %s"
+msgstr[1] "This collection contains %i games, including: %s"
 
 msgid "INVALID CONTENT"
 msgstr "INVALID CONTENT"
@@ -3514,11 +3564,14 @@ msgstr "CORE IS MISSING"
 msgid "UKNOWN ERROR"
 msgstr "UKNOWN ERROR"
 
+msgid "Checking for latest upgrade script..."
+msgstr ""
+
 msgid "Collections"
 msgstr "Collections"
 
 msgid "Searching for devices..."
-msgstr "Searching for devices..."
+msgstr "Searching for devices…"
 
 msgid "FORMATTING DEVICE"
 msgstr "FORMATTING DEVICE"
@@ -3608,7 +3661,7 @@ msgid "up/down"
 msgstr "up/down"
 
 msgid "WORKING..."
-msgstr "WORKING..."
+msgstr "WORKING…"
 
 msgid "accept"
 msgstr "accept"
@@ -3648,7 +3701,7 @@ msgstr "%s connected"
 msgid "%s disconnected"
 msgstr "%s disconnected"
 
-msgid "SHIFTS FOR UPPER,LOWER, AND SPECIAL"
+msgid "SHIFTS FOR UPPER, LOWER, AND SPECIAL"
 msgstr "SHIFTS FOR UPPER, LOWER, AND SPECIAL"
 
 msgid "ALT GR"
@@ -3947,6 +4000,9 @@ msgid_plural "%d seconds ago"
 msgstr[0] "%d second ago"
 msgstr[1] "%d seconds ago"
 
+#~ msgid "FANART"
+#~ msgstr "FAN ART"
+
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "BUILD IMAGE CACHE"
 
@@ -3975,7 +4031,7 @@ msgstr[1] "%d seconds ago"
 #~ msgstr "Reset values of GameTime, PlayCount and LastPlayed metadatas."
 
 #~ msgid "SAVING METADATAS. PLEASE WAIT..."
-#~ msgstr "SAVING METADATAS. PLEASE WAIT..."
+#~ msgstr "SAVING METADATAS. PLEASE WAIT…"
 
 #~ msgid "FORGET A BLUETOOTH DEVICE"
 #~ msgstr "FORGET A BLUETOOTH DEVICE"

@@ -104,7 +104,7 @@ msgid "Loading gamelists"
 msgstr "正在載入遊戲清單"
 
 msgid "Loading..."
-msgstr "載入中..."
+msgstr "載入中…"
 
 msgid "MENU"
 msgstr "主選單"
@@ -191,8 +191,8 @@ msgid "Favorite"
 msgstr "我的最愛"
 
 #, c-format
-msgid "This folder contains %i game, including :%s"
-msgid_plural "This folder contains %i games, including :%s"
+msgid "This folder contains %i game, including: %s"
+msgid_plural "This folder contains %i games, including: %s"
 msgstr[0] "這個資料夾包含 %i 個遊戲，包括：%s"
 
 msgid "FILTER GAMES BY TEXT"
@@ -292,8 +292,8 @@ msgstr "要儲存修改嗎？"
 msgid "ARE YOU SURE?"
 msgstr "您確定嗎？"
 
-msgid "RETROACHIEVEMENT SETTINGS"
-msgstr "RETROACHIEVEMENT 復古成就設定"
+msgid "RETROACHIEVEMENTS SETTINGS"
+msgstr "RETROACHIEVEMENTS 復古成就設定"
 
 msgid "SETTINGS"
 msgstr "設定"
@@ -354,8 +354,8 @@ msgstr ""
 msgid "Enable unlocking of unofficial achievements."
 msgstr ""
 
-msgid "RETROACHIEVEMENT UNLOCK SOUND"
-msgstr "RETROACHIEVEMENT 解鎖音效"
+msgid "RETROACHIEVEMENTS UNLOCK SOUND"
+msgstr "RETROACHIEVEMENTS 解鎖音效"
 
 msgid "none"
 msgstr "沒有"
@@ -364,10 +364,10 @@ msgid "UNLOCK SOUND"
 msgstr "解鎖音效"
 
 msgid "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
-msgstr "顯示 RETROACHIEVEMENT 項目在主選單"
+msgstr "顯示 RETROACHIEVEMENTS 項目在主選單"
 
-msgid "View your RetroAchievement stats right from the main menu!"
-msgstr "從主選單直接檢視您的 RetroAchievement 狀態！"
+msgid "View your RetroAchievements stats right from the main menu!"
+msgstr "從主選單直接檢視您的 RetroAchievements 狀態！"
 
 msgid "GAME INDEXES"
 msgstr "遊戲索引"
@@ -580,16 +580,6 @@ msgstr "已包含的遊戲平台"
 msgid "START"
 msgstr "開始"
 
-#, c-format
-msgid "UPDATING %s"
-msgstr "正在更新 %s"
-
-msgid "UPDATE IS READY"
-msgstr "已準備好可以更新"
-
-msgid "REBOOT TO APPLY"
-msgstr "重開機套用更新"
-
 msgid "REALLY UPDATE?"
 msgstr "確定要更新嗎？"
 
@@ -616,6 +606,16 @@ msgstr "需要連線到網際網路"
 
 msgid "NO UPDATE AVAILABLE"
 msgstr "沒有可用的更新"
+
+#, c-format
+msgid "UPDATING %s"
+msgstr "正在更新 %s"
+
+msgid "UPDATE IS READY"
+msgstr "已準備好可以更新"
+
+msgid "REBOOT TO APPLY"
+msgstr "重開機套用更新"
 
 msgid "CONNECT TO NETPLAY"
 msgstr "連線到多人遊戲"
@@ -879,7 +879,7 @@ msgid "VIEWER PASSWORD"
 msgstr "觀眾密碼"
 
 msgid "FIND SIMILAR GAMES..."
-msgstr "尋找相似的遊戲..."
+msgstr "尋找相似的遊戲…"
 
 msgid "DELETE ITEM"
 msgstr "刪除項目"
@@ -928,7 +928,7 @@ msgid "FAVORITES"
 msgstr "我的最愛"
 
 msgid "ADD TO CUSTOM COLLECTION..."
-msgstr "新增至自定義合輯..."
+msgstr "新增至自定義合輯…"
 
 msgid "SCRAPE"
 msgstr "資料搜刮"
@@ -1203,7 +1203,7 @@ msgstr ""
 msgid "DEFAULT"
 msgstr "預設"
 
-msgid "NO DEVICE FOUND (JAMMASD, IPAC, ...)"
+msgid "NO DEVICE FOUND (JAMMASD, IPAC...)"
 msgstr ""
 
 msgid "DECLARE A NEW GLOBAL HOTKEY"
@@ -1544,9 +1544,6 @@ msgstr "社群評分"
 
 msgid "VIDEO"
 msgstr "影片"
-
-msgid "FANART"
-msgstr "粉絲繪圖"
 
 msgid "BEZEL (16:9)"
 msgstr "框體 (16:9)"
@@ -2005,6 +2002,9 @@ msgstr "如果可用的話，也打開模擬器原生的 FPS 計數器。"
 msgid "VSYNC"
 msgstr "垂直同步"
 
+msgid "FPS LIMIT"
+msgstr ""
+
 msgid "OVERSCAN"
 msgstr "過掃瞄 (OVERSCAN)"
 
@@ -2236,6 +2236,33 @@ msgstr "開始更新"
 msgid "UPDATER IS ALREADY RUNNING"
 msgstr "更新已經在進行了"
 
+msgid "START LOCAL MEDIA UPDATE"
+msgstr ""
+
+msgid "REALLY UPDATE FROM LOCAL MEDIA?"
+msgstr ""
+
+msgid "SOFTWARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "SHARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "Torrent update service started"
+msgstr ""
+
+msgid "Torrent update service stopped"
+msgstr ""
+
+msgid "START UPDATE FROM TORRENT FILE"
+msgstr ""
+
+msgid "REALLY UPDATE FROM TORRENT FILE ?"
+msgstr ""
+
+msgid "DOWNLOAD STATUS"
+msgstr ""
+
 msgid "LANGUAGE"
 msgstr "語言"
 
@@ -2391,6 +2418,21 @@ msgstr "LED硬體"
 msgid "ENABLE LED"
 msgstr ""
 
+msgid "LED MODE"
+msgstr ""
+
+msgid "STATIC"
+msgstr ""
+
+msgid "RAINBOW"
+msgstr ""
+
+msgid "CHROMA"
+msgstr ""
+
+msgid "PULSE"
+msgstr ""
+
 msgid "LED BRIGHTNESS"
 msgstr "LED亮度"
 
@@ -2420,6 +2462,14 @@ msgstr "需要一組密碼來存取網路共享。"
 
 msgid "ROOT PASSWORD"
 msgstr "ROOT 密碼"
+
+msgid "CPU SECURITY MITIGATIONS"
+msgstr ""
+
+msgid ""
+"Disabling mitigations may improve performance on some systems at the cost of "
+"reduced protection against certain CPU vulnerabilities."
+msgstr ""
 
 msgid "LATENCY REDUCTION"
 msgstr "降低延遲"
@@ -2812,26 +2862,26 @@ msgstr "網路狀態"
 msgid "HOSTNAME"
 msgstr "主機名稱"
 
-msgid "ENABLE WIFI"
-msgstr "啟用 WIFI 無線網絡"
+msgid "ENABLE WI-FI"
+msgstr "啟用 WI-FI 無線網絡"
 
-msgid "WIFI SSID"
-msgstr "WIFI 連線名稱"
+msgid "WI-FI SSID"
+msgstr "WI-FI 連線名稱"
 
-msgid "WIFI KEY"
-msgstr "WIFI 連線金鑰"
+msgid "WI-FI KEY"
+msgstr "WI-FI 連線金鑰"
 
-msgid "WIFI COUNTRY"
+msgid "WI-FI COUNTRY"
 msgstr ""
 
 msgid "N/A"
 msgstr ""
 
-msgid "WIFI ENABLED"
-msgstr "已啟用 WIFI 無線網路"
+msgid "WI-FI ENABLED"
+msgstr "已啟用 WI-FI 無線網路"
 
-msgid "WIFI CONFIGURATION ERROR"
-msgstr "WIFI 無線網路設定錯誤"
+msgid "WI-FI CONFIGURATION ERROR"
+msgstr "WI-FI 無線網路設定錯誤"
 
 msgid "QUICK ACCESS"
 msgstr "快速存取"
@@ -3200,7 +3250,7 @@ msgstr "輸入包裝盒路徑"
 msgid "Fan art"
 msgstr "粉絲繪圖"
 
-msgid "enter path to fanart"
+msgid "enter path to fan art"
 msgstr "輸入粉絲繪圖路徑"
 
 msgid "Title shot"
@@ -3366,10 +3416,10 @@ msgid "MultiDisk"
 msgstr ""
 
 msgid "Loading system config..."
-msgstr "正在載入系統設定..."
+msgstr "正在載入系統設定…"
 
 msgid "SAVING METADATA. PLEASE WAIT..."
-msgstr "保存中繼資料。請稍等..."
+msgstr "保存中繼資料。請稍等…"
 
 msgid "DO YOU WANT TO SWITCH THE SCREEN ?"
 msgstr "您想要切換畫面嗎？"
@@ -3392,8 +3442,8 @@ msgstr "四人遊戲"
 msgid "never played"
 msgstr "從未玩過"
 
-msgid "retroachievements"
-msgstr "retroachievements復古成就"
+msgid "RetroAchievements"
+msgstr "RetroAchievements復古成就"
 
 msgid "arcade"
 msgstr "街機"
@@ -3435,8 +3485,8 @@ msgid "Various"
 msgstr "各式各樣"
 
 #, c-format
-msgid "This collection contains %i game:%s"
-msgid_plural "This collection contains %i games, including:%s"
+msgid "This collection contains %i game: %s"
+msgid_plural "This collection contains %i games, including: %s"
 msgstr[0] "這個合輯包含 %i 個遊戲：%s"
 
 msgid "INVALID CONTENT"
@@ -3486,11 +3536,14 @@ msgstr "核心遺失"
 msgid "UKNOWN ERROR"
 msgstr "未知的錯誤"
 
+msgid "Checking for latest upgrade script..."
+msgstr ""
+
 msgid "Collections"
 msgstr "合輯"
 
 msgid "Searching for devices..."
-msgstr "搜尋遊戲控制器..."
+msgstr "搜尋遊戲控制器…"
 
 msgid "FORMATTING DEVICE"
 msgstr "格式化裝置"
@@ -3580,7 +3633,7 @@ msgid "up/down"
 msgstr "上/下"
 
 msgid "WORKING..."
-msgstr "作業中..."
+msgstr "作業中…"
 
 msgid "accept"
 msgstr "確定"
@@ -3619,7 +3672,7 @@ msgstr "%s 位已連線"
 msgid "%s disconnected"
 msgstr "%s 位已斷線"
 
-msgid "SHIFTS FOR UPPER,LOWER, AND SPECIAL"
+msgid "SHIFTS FOR UPPER, LOWER, AND SPECIAL"
 msgstr "SHIFT 鍵可用於切換大小寫或特殊符號"
 
 msgid "ALT GR"
@@ -3911,6 +3964,9 @@ msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d 幾秒前"
 
+#~ msgid "FANART"
+#~ msgstr "粉絲繪圖"
+
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "建立圖片快取"
 
@@ -3933,7 +3989,7 @@ msgstr[0] "%d 幾秒前"
 #~ msgstr "使用者介面模式已經解鎖"
 
 #~ msgid "SAVING METADATAS. PLEASE WAIT..."
-#~ msgstr "正在儲存中繼資料。請稍後..."
+#~ msgstr "正在儲存中繼資料。請稍後…"
 
 #~ msgid "FORGET A BLUETOOTH DEVICE"
 #~ msgstr "忘記藍牙裝置"

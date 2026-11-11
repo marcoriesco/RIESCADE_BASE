@@ -99,7 +99,7 @@ msgid "Loading gamelists"
 msgstr ""
 
 msgid "Loading..."
-msgstr "Завантаження..."
+msgstr "Завантаження…"
 
 msgid "MENU"
 msgstr "МЕНЮ"
@@ -192,8 +192,8 @@ msgid "Favorite"
 msgstr "Вибране"
 
 #, c-format
-msgid "This folder contains %i game, including :%s"
-msgid_plural "This folder contains %i games, including :%s"
+msgid "This folder contains %i game, including: %s"
+msgid_plural "This folder contains %i games, including: %s"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -295,7 +295,7 @@ msgstr "ЗБЕРЕГТИ ЗМІНИ?"
 msgid "ARE YOU SURE?"
 msgstr "ВИ ВПЕВНЕНІ?"
 
-msgid "RETROACHIEVEMENT SETTINGS"
+msgid "RETROACHIEVEMENTS SETTINGS"
 msgstr "НАЛАШТУВАННЯ РЕСТРОДОСЯГНЕНЬ"
 
 msgid "SETTINGS"
@@ -357,7 +357,7 @@ msgstr ""
 msgid "Enable unlocking of unofficial achievements."
 msgstr ""
 
-msgid "RETROACHIEVEMENT UNLOCK SOUND"
+msgid "RETROACHIEVEMENTS UNLOCK SOUND"
 msgstr "ЗВУК РОЗБЛОКУВАННЯ РЕТРОДОСЯГНЕНЬ"
 
 msgid "none"
@@ -369,7 +369,7 @@ msgstr "ЗВУК РОЗБЛОКУВАННЯ"
 msgid "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
 msgstr "ВІДОБРАЖАТИ РЕТРОДОСЯГНЕННЯ В ГОЛОВНОМУ МЕНЮ"
 
-msgid "View your RetroAchievement stats right from the main menu!"
+msgid "View your RetroAchievements stats right from the main menu!"
 msgstr "Переглянути статистику ваших РетроДосягненнь в головному меню! "
 
 msgid "GAME INDEXES"
@@ -583,16 +583,6 @@ msgstr "ІНТЕГРОВАНІ"
 msgid "START"
 msgstr "ПОЧАТИ"
 
-#, c-format
-msgid "UPDATING %s"
-msgstr "ОНОВЛЕННЯ %s"
-
-msgid "UPDATE IS READY"
-msgstr "ОНОВЛЕННЯ ГОТОВЕ"
-
-msgid "REBOOT TO APPLY"
-msgstr "ПЕРЕЗАВАНТАЖИТИ ДЛЯ ЗАСТОСУВАННЯ"
-
 msgid "REALLY UPDATE?"
 msgstr "ДІЙСНО ОНОВИТИ?"
 
@@ -619,6 +609,16 @@ msgstr "НЕОБХІДНО МЕРЕЖЕВЕ З'ЄДНАННЯ"
 
 msgid "NO UPDATE AVAILABLE"
 msgstr "НЕМАЄ ОНОВЛЕНЬ"
+
+#, c-format
+msgid "UPDATING %s"
+msgstr "ОНОВЛЕННЯ %s"
+
+msgid "UPDATE IS READY"
+msgstr "ОНОВЛЕННЯ ГОТОВЕ"
+
+msgid "REBOOT TO APPLY"
+msgstr "ПЕРЕЗАВАНТАЖИТИ ДЛЯ ЗАСТОСУВАННЯ"
 
 msgid "CONNECT TO NETPLAY"
 msgstr "ПІД'ЄДНАТИСЬ ДО NETPLAY"
@@ -882,7 +882,7 @@ msgid "VIEWER PASSWORD"
 msgstr ""
 
 msgid "FIND SIMILAR GAMES..."
-msgstr "ЗНАЙТИ СХОЖІ ІГРИ..."
+msgstr "ЗНАЙТИ СХОЖІ ІГРИ…"
 
 msgid "DELETE ITEM"
 msgstr ""
@@ -917,7 +917,7 @@ msgid "WRITE"
 msgstr "ЗАПИСАТИ"
 
 msgid "PLACE A TAG ON THE WRITER..."
-msgstr "ПРИКЛАДІТЬ МІТКУ ДО ПРИСТРОЮ ДЛЯ ЗАПИСУ..."
+msgstr "ПРИКЛАДІТЬ МІТКУ ДО ПРИСТРОЮ ДЛЯ ЗАПИСУ…"
 
 msgid "THE TAG WAS WRITTEN SUCCESSFULLY"
 msgstr "МІТКУ УСПІШНО ЗАПИСАНО"
@@ -1206,7 +1206,7 @@ msgstr "ГАРЯЧА КНОПКА"
 msgid "DEFAULT"
 msgstr ""
 
-msgid "NO DEVICE FOUND (JAMMASD, IPAC, ...)"
+msgid "NO DEVICE FOUND (JAMMASD, IPAC...)"
 msgstr ""
 
 msgid "DECLARE A NEW GLOBAL HOTKEY"
@@ -1372,10 +1372,10 @@ msgid "INPUT MANUALLY"
 msgstr "ВВЕСТИ ВРУЧНУ"
 
 msgid "NO WI-FI NETWORKS FOUND"
-msgstr "МЕРЕЖА WIFI НЕ ЗНАЙДЕНА"
+msgstr "МЕРЕЖА WI-FI НЕ ЗНАЙДЕНА"
 
 msgid "SEARCHING WI-FI NETWORKS"
-msgstr "ПОШУК МЕРЕЖІ WIFI"
+msgstr "ПОШУК МЕРЕЖІ WI-FI"
 
 msgid "PARIS"
 msgstr ""
@@ -1546,9 +1546,6 @@ msgid "COMMUNITY RATING"
 msgstr ""
 
 msgid "VIDEO"
-msgstr ""
-
-msgid "FANART"
 msgstr ""
 
 msgid "BEZEL (16:9)"
@@ -2006,6 +2003,9 @@ msgstr "Також увімкнути штатний FPS емулятора, я�
 msgid "VSYNC"
 msgstr "VSYNC"
 
+msgid "FPS LIMIT"
+msgstr ""
+
 msgid "OVERSCAN"
 msgstr "РОЗГОРТКА"
 
@@ -2237,6 +2237,33 @@ msgstr "ПОЧАТИ ОНОВЛЕННЯ"
 msgid "UPDATER IS ALREADY RUNNING"
 msgstr ""
 
+msgid "START LOCAL MEDIA UPDATE"
+msgstr ""
+
+msgid "REALLY UPDATE FROM LOCAL MEDIA?"
+msgstr ""
+
+msgid "SOFTWARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "SHARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "Torrent update service started"
+msgstr ""
+
+msgid "Torrent update service stopped"
+msgstr ""
+
+msgid "START UPDATE FROM TORRENT FILE"
+msgstr ""
+
+msgid "REALLY UPDATE FROM TORRENT FILE ?"
+msgstr ""
+
+msgid "DOWNLOAD STATUS"
+msgstr ""
+
 msgid "LANGUAGE"
 msgstr "МОВА"
 
@@ -2389,6 +2416,21 @@ msgstr ""
 msgid "ENABLE LED"
 msgstr ""
 
+msgid "LED MODE"
+msgstr ""
+
+msgid "STATIC"
+msgstr ""
+
+msgid "RAINBOW"
+msgstr ""
+
+msgid "CHROMA"
+msgstr ""
+
+msgid "PULSE"
+msgstr ""
+
 msgid "LED BRIGHTNESS"
 msgstr ""
 
@@ -2418,6 +2460,14 @@ msgstr ""
 
 msgid "ROOT PASSWORD"
 msgstr "ПАРОЛЬ АДМИНІСТРАТОРА"
+
+msgid "CPU SECURITY MITIGATIONS"
+msgstr ""
+
+msgid ""
+"Disabling mitigations may improve performance on some systems at the cost of "
+"reduced protection against certain CPU vulnerabilities."
+msgstr ""
 
 msgid "LATENCY REDUCTION"
 msgstr "ЗМЕНШЕННЯ ЗАТРИМКИ"
@@ -2810,25 +2860,25 @@ msgstr "СТАТУС ІНТЕРНЕТУ"
 msgid "HOSTNAME"
 msgstr "ІМ'Я ХОСТУ"
 
-msgid "ENABLE WIFI"
+msgid "ENABLE WI-FI"
 msgstr "УВІМКНУТИ WI-FI"
 
-msgid "WIFI SSID"
+msgid "WI-FI SSID"
 msgstr "ІМ'Я МЕРЕЖІ WI-FI"
 
-msgid "WIFI KEY"
+msgid "WI-FI KEY"
 msgstr "ПАРОЛЬ МЕРЕЖІ WI-FI"
 
-msgid "WIFI COUNTRY"
+msgid "WI-FI COUNTRY"
 msgstr ""
 
 msgid "N/A"
 msgstr ""
 
-msgid "WIFI ENABLED"
+msgid "WI-FI ENABLED"
 msgstr "WI-FI УВІМКНУТО"
 
-msgid "WIFI CONFIGURATION ERROR"
+msgid "WI-FI CONFIGURATION ERROR"
 msgstr "ПОМИЛКА КОНФІГУРАЦІЇ WI-FI"
 
 msgid "QUICK ACCESS"
@@ -3196,7 +3246,7 @@ msgstr "введіть шлях для коробки"
 msgid "Fan art"
 msgstr "Фан арт"
 
-msgid "enter path to fanart"
+msgid "enter path to fan art"
 msgstr "введіть шлях для фан арту"
 
 msgid "Title shot"
@@ -3362,7 +3412,7 @@ msgid "MultiDisk"
 msgstr ""
 
 msgid "Loading system config..."
-msgstr "Завантаження системних налаштувань..."
+msgstr "Завантаження системних налаштувань…"
 
 msgid "SAVING METADATA. PLEASE WAIT..."
 msgstr ""
@@ -3388,7 +3438,7 @@ msgstr "4 гравці"
 msgid "never played"
 msgstr "не запускалась"
 
-msgid "retroachievements"
+msgid "RetroAchievements"
 msgstr "ретродосягнення"
 
 msgid "arcade"
@@ -3431,8 +3481,8 @@ msgid "Various"
 msgstr "Різні"
 
 #, c-format
-msgid "This collection contains %i game:%s"
-msgid_plural "This collection contains %i games, including:%s"
+msgid "This collection contains %i game: %s"
+msgid_plural "This collection contains %i games, including: %s"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -3484,11 +3534,14 @@ msgstr ""
 msgid "UKNOWN ERROR"
 msgstr ""
 
+msgid "Checking for latest upgrade script..."
+msgstr ""
+
 msgid "Collections"
 msgstr ""
 
 msgid "Searching for devices..."
-msgstr "Пошук контролерів..."
+msgstr "Пошук контролерів…"
 
 msgid "FORMATTING DEVICE"
 msgstr "ФОРМАТУВАННЯ НОСІЯ"
@@ -3578,7 +3631,7 @@ msgid "up/down"
 msgstr "вгору/вниз"
 
 msgid "WORKING..."
-msgstr "ОБРОБКА..."
+msgstr "ОБРОБКА…"
 
 msgid "accept"
 msgstr "прийняти"
@@ -3619,7 +3672,7 @@ msgstr ""
 msgid "%s disconnected"
 msgstr ""
 
-msgid "SHIFTS FOR UPPER,LOWER, AND SPECIAL"
+msgid "SHIFTS FOR UPPER, LOWER, AND SPECIAL"
 msgstr "SHIFT ДЛЯ РЕЄСТРУ ТА СИМВОЛІВ"
 
 msgid "ALT GR"
@@ -3931,7 +3984,7 @@ msgstr[2] ""
 #~ msgstr "РЕЖИМ КОРИСТУВАЧА РОЗБЛОКОВАНО"
 
 #~ msgid "SAVING METADATAS. PLEASE WAIT..."
-#~ msgstr "ЗБЕРЕЖЕННЯ МЕТАДАННИХ. ЗАЧЕКАЙТЕ, БУДЬ ЛАСКА..."
+#~ msgstr "ЗБЕРЕЖЕННЯ МЕТАДАННИХ. ЗАЧЕКАЙТЕ, БУДЬ ЛАСКА…"
 
 #~ msgid "FORGET A BLUETOOTH DEVICE"
 #~ msgstr "ЗАБУТИ BLUETOOTH ПРИСТРІЙ"
@@ -3954,7 +4007,7 @@ msgstr[2] ""
 #~ msgid "SCRAPE VIDEOS"
 #~ msgstr "ЗАВАНТАЖЕННЯ ВІДЕО"
 
-#~ msgid "SCRAPE FANART"
+#~ msgid "SCRAPE FAN ART"
 #~ msgstr "ЗАВАНТАЖИТИ ФАН АРТ"
 
 #~ msgid "SCRAPE MANUAL"
@@ -4194,9 +4247,6 @@ msgstr[2] ""
 #~ "Це приховає більшість пунктів меню, щоб запобігти зміни в системі.\n"
 #~ "Щоб розблокувати і повернутись до повного інтерфейсу, введіть цей код:"
 
-#~ msgid "RETROACHIEVEMENTS SETTINGS"
-#~ msgstr "НАЛАШТУВАННЯ РЕТРОДОСЯГНЕНЬ"
-
 #~ msgid "SHOW IN MAIN MENU"
 #~ msgstr "ПОКАЗАТИ В ГОЛОВНОМУ МЕНЮ"
 
@@ -4347,7 +4397,7 @@ msgstr[2] ""
 #~ msgstr "ЗАВЕРШИТИ РЕДАГУВАТИ КОЛЕКЦІЇ"
 
 #~ msgid "JUMP TO..."
-#~ msgstr "ПЕРЕЙТИ ДО..."
+#~ msgstr "ПЕРЕЙТИ ДО…"
 
 #~ msgid "COLLECTION MANAGEMENT"
 #~ msgstr "КЕРУВАННЯ КОЛЕКЦІЄЮ"

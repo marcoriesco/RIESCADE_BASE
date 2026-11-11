@@ -108,7 +108,7 @@ msgid "Loading gamelists"
 msgstr "Ladataan pelilistaa"
 
 msgid "Loading..."
-msgstr "Ladataan..."
+msgstr "Ladataan…"
 
 msgid "MENU"
 msgstr "VALIKKO"
@@ -200,8 +200,8 @@ msgid "Favorite"
 msgstr "Suosikki"
 
 #, c-format
-msgid "This folder contains %i game, including :%s"
-msgid_plural "This folder contains %i games, including :%s"
+msgid "This folder contains %i game, including: %s"
+msgid_plural "This folder contains %i games, including: %s"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -302,8 +302,8 @@ msgstr "TALLENNA MUUTOKSET?"
 msgid "ARE YOU SURE?"
 msgstr "OLETKO VARMA?"
 
-msgid "RETROACHIEVEMENT SETTINGS"
-msgstr "RETROACHIEVEMENT-ASETUKSET"
+msgid "RETROACHIEVEMENTS SETTINGS"
+msgstr "RETROACHIEVEMENTS-ASETUKSET"
 
 msgid "SETTINGS"
 msgstr "ASETUKSET"
@@ -366,7 +366,7 @@ msgstr ""
 msgid "Enable unlocking of unofficial achievements."
 msgstr ""
 
-msgid "RETROACHIEVEMENT UNLOCK SOUND"
+msgid "RETROACHIEVEMENTS UNLOCK SOUND"
 msgstr ""
 
 msgid "none"
@@ -378,7 +378,7 @@ msgstr ""
 msgid "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
 msgstr ""
 
-msgid "View your RetroAchievement stats right from the main menu!"
+msgid "View your RetroAchievements stats right from the main menu!"
 msgstr ""
 
 msgid "GAME INDEXES"
@@ -592,16 +592,6 @@ msgstr "SISÄLLETYT JÄRJESTELMÄT"
 msgid "START"
 msgstr "KÄYNNISTÄ"
 
-#, c-format
-msgid "UPDATING %s"
-msgstr "PÄIVITETÄÄN %s"
-
-msgid "UPDATE IS READY"
-msgstr "PÄIVITYS ON VALMIS"
-
-msgid "REBOOT TO APPLY"
-msgstr "UUDELLEENKÄYNNISTÄ VIIMEISTELLÄKSESI"
-
 msgid "REALLY UPDATE?"
 msgstr "HALUATKO VARMASTI PÄIVITTÄÄ?"
 
@@ -628,6 +618,16 @@ msgstr "VERKKOYHTEYS VAADITAAN"
 
 msgid "NO UPDATE AVAILABLE"
 msgstr "PÄIVITYKSIÄ EI SAATAVILLA"
+
+#, c-format
+msgid "UPDATING %s"
+msgstr "PÄIVITETÄÄN %s"
+
+msgid "UPDATE IS READY"
+msgstr "PÄIVITYS ON VALMIS"
+
+msgid "REBOOT TO APPLY"
+msgstr "UUDELLEENKÄYNNISTÄ VIIMEISTELLÄKSESI"
 
 msgid "CONNECT TO NETPLAY"
 msgstr "YHDISTÄ VERKKOPELIIN"
@@ -891,7 +891,7 @@ msgid "VIEWER PASSWORD"
 msgstr "KATSELIJAN SALASANA"
 
 msgid "FIND SIMILAR GAMES..."
-msgstr "ETSI SAMANKALTAISIA PELEJÄ..."
+msgstr "ETSI SAMANKALTAISIA PELEJÄ…"
 
 msgid "DELETE ITEM"
 msgstr "POISTA KOHDE"
@@ -940,7 +940,7 @@ msgid "FAVORITES"
 msgstr "SUOSIKIT"
 
 msgid "ADD TO CUSTOM COLLECTION..."
-msgstr "LISÄÄ MUKAUTETTUUN KOKOELMAAN..."
+msgstr "LISÄÄ MUKAUTETTUUN KOKOELMAAN…"
 
 msgid "SCRAPE"
 msgstr "ETSI TIETOA"
@@ -1212,7 +1212,7 @@ msgstr ""
 msgid "DEFAULT"
 msgstr "OLETUS"
 
-msgid "NO DEVICE FOUND (JAMMASD, IPAC, ...)"
+msgid "NO DEVICE FOUND (JAMMASD, IPAC...)"
 msgstr ""
 
 msgid "DECLARE A NEW GLOBAL HOTKEY"
@@ -1553,9 +1553,6 @@ msgstr "YHTEISÖN ARVOSANA"
 
 msgid "VIDEO"
 msgstr "VIDEO"
-
-msgid "FANART"
-msgstr "FANITAIDE"
 
 msgid "BEZEL (16:9)"
 msgstr "KEHYS (16:9)"
@@ -2013,6 +2010,9 @@ msgstr ""
 msgid "VSYNC"
 msgstr "VSYNC"
 
+msgid "FPS LIMIT"
+msgstr ""
+
 msgid "OVERSCAN"
 msgstr "YLISKANNAUS"
 
@@ -2248,6 +2248,33 @@ msgstr "ALOITA PÄIVITYS"
 msgid "UPDATER IS ALREADY RUNNING"
 msgstr "PÄIVITYS ON JO KÄYNNISSÄ"
 
+msgid "START LOCAL MEDIA UPDATE"
+msgstr ""
+
+msgid "REALLY UPDATE FROM LOCAL MEDIA?"
+msgstr ""
+
+msgid "SOFTWARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "SHARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "Torrent update service started"
+msgstr ""
+
+msgid "Torrent update service stopped"
+msgstr ""
+
+msgid "START UPDATE FROM TORRENT FILE"
+msgstr ""
+
+msgid "REALLY UPDATE FROM TORRENT FILE ?"
+msgstr ""
+
+msgid "DOWNLOAD STATUS"
+msgstr ""
+
 msgid "LANGUAGE"
 msgstr "KIELI"
 
@@ -2407,6 +2434,21 @@ msgstr ""
 msgid "ENABLE LED"
 msgstr ""
 
+msgid "LED MODE"
+msgstr ""
+
+msgid "STATIC"
+msgstr ""
+
+msgid "RAINBOW"
+msgstr ""
+
+msgid "CHROMA"
+msgstr ""
+
+msgid "PULSE"
+msgstr ""
+
 msgid "LED BRIGHTNESS"
 msgstr ""
 
@@ -2436,6 +2478,14 @@ msgstr "Vaadi salasana verkkojaon käyttämiseen."
 
 msgid "ROOT PASSWORD"
 msgstr "PÄÄKÄYTTÄJÄN SALASANA"
+
+msgid "CPU SECURITY MITIGATIONS"
+msgstr ""
+
+msgid ""
+"Disabling mitigations may improve performance on some systems at the cost of "
+"reduced protection against certain CPU vulnerabilities."
+msgstr ""
 
 msgid "LATENCY REDUCTION"
 msgstr "VIIVEEN VÄHENTÄMINEN"
@@ -2834,26 +2884,26 @@ msgstr "INTERNET-YHTEYDEN TILA"
 msgid "HOSTNAME"
 msgstr "ISÄNTÄNIMI"
 
-msgid "ENABLE WIFI"
-msgstr "OTA WIFI KÄYTTÖÖN"
+msgid "ENABLE WI-FI"
+msgstr "OTA WI-FI KÄYTTÖÖN"
 
-msgid "WIFI SSID"
-msgstr "WIFI:N SSID"
+msgid "WI-FI SSID"
+msgstr "WI-FI:N SSID"
 
-msgid "WIFI KEY"
-msgstr "WIFI:N SALASANA"
+msgid "WI-FI KEY"
+msgstr "WI-FI:N SALASANA"
 
-msgid "WIFI COUNTRY"
+msgid "WI-FI COUNTRY"
 msgstr ""
 
 msgid "N/A"
 msgstr ""
 
-msgid "WIFI ENABLED"
-msgstr "WIFI KÄYTÖSSÄ"
+msgid "WI-FI ENABLED"
+msgstr "WI-FI KÄYTÖSSÄ"
 
-msgid "WIFI CONFIGURATION ERROR"
-msgstr "VIRHE WIFI:N ASETUKSISSA"
+msgid "WI-FI CONFIGURATION ERROR"
+msgstr "VIRHE WI-FI:N ASETUKSISSA"
 
 msgid "QUICK ACCESS"
 msgstr ""
@@ -3225,7 +3275,7 @@ msgstr "polku kansikuvaan"
 msgid "Fan art"
 msgstr "Fanikuva"
 
-msgid "enter path to fanart"
+msgid "enter path to fan art"
 msgstr "polku fanitaiteeseen"
 
 msgid "Title shot"
@@ -3417,8 +3467,8 @@ msgstr "4 pelaajaa"
 msgid "never played"
 msgstr "ei koskaan pelattu"
 
-msgid "retroachievements"
-msgstr "retroachievements"
+msgid "RetroAchievements"
+msgstr "RetroAchievements"
 
 msgid "arcade"
 msgstr ""
@@ -3460,8 +3510,8 @@ msgid "Various"
 msgstr "Useita"
 
 #, c-format
-msgid "This collection contains %i game:%s"
-msgid_plural "This collection contains %i games, including:%s"
+msgid "This collection contains %i game: %s"
+msgid_plural "This collection contains %i games, including: %s"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -3512,11 +3562,14 @@ msgstr "YDIN PUUTTUU"
 msgid "UKNOWN ERROR"
 msgstr "TUNTEMATON VIRHE"
 
+msgid "Checking for latest upgrade script..."
+msgstr ""
+
 msgid "Collections"
 msgstr ""
 
 msgid "Searching for devices..."
-msgstr "Etsitään laitteita..."
+msgstr "Etsitään laitteita…"
 
 msgid "FORMATTING DEVICE"
 msgstr "ALUSTETAAN LAITETTA"
@@ -3646,7 +3699,7 @@ msgstr ""
 msgid "%s disconnected"
 msgstr ""
 
-msgid "SHIFTS FOR UPPER,LOWER, AND SPECIAL"
+msgid "SHIFTS FOR UPPER, LOWER, AND SPECIAL"
 msgstr ""
 
 msgid "ALT GR"
@@ -3940,6 +3993,9 @@ msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d sekuntti sitten"
 msgstr[1] "%d sekunttia sitten"
+
+#~ msgid "FANART"
+#~ msgstr "FANITAIDE"
 
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "LUO KUVAVÄLIMUISTI"

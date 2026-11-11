@@ -6,7 +6,6 @@ Core:
   Save LLVM logs: false
   Use LLVM CPU: ""
   Max LLVM Compile Threads: 0
-  PPU LLVM Greedy Mode: false
   LLVM Precompilation: true
   Thread Scheduler Mode: Operating System
   Set DAZ and FTZ: false
@@ -26,7 +25,8 @@ Core:
   Accurate SPU Reservations: true
   Accurate Cache Line Stores: false
   Accurate RSX reservation access: false
-  RSX FIFO Fetch Accuracy: Fast
+  PPU Reservation Priority Over SPUs: false
+  RSX FIFO Fetch Accuracy: Atomic
   SPU Verification: true
   SPU Cache: true
   SPU Profiler: false
@@ -34,15 +34,14 @@ Core:
   MFC Commands Shuffling Limit: 0
   MFC Commands Timeout: 0
   MFC Commands Shuffling In Steps: false
-  SPU XFloat Accuracy: Accurate
+  SPU XFloat Accuracy: Approximate
   Accurate PPU 128-byte Reservation Op Max Length: 0
   Stub PPU Traps: 0
   Precise SPU Verification: false
-  PPU LLVM Java Mode Handling: true
+  PPU Vector NaN Handling: true
   Use Accurate DFMA: true
   PPU Set Saturation Bit: false
   PPU Accurate Non-Java Mode: false
-  PPU Fixup Vector NaN Values: false
   PPU Accurate Vector NaN Values: false
   PPU Set FPCC Bits: false
   Debug Console Mode: false
@@ -77,7 +76,7 @@ Video:
   MSAA: Auto
   Shader Mode: Async Recompiler (multi-threaded)
   Shader Precision: Auto
-  VSync Mode: Adaptive
+  VSync Mode: Disabled
   Write Color Buffers: false
   Write Depth Buffer: false
   Read Color Buffers: false
@@ -91,10 +90,12 @@ Video:
   Stretch To Display Area: false
   Force High Precision Z buffer: false
   Strict Rendering Mode: false
+  Framebuffer Aliasing Heuristic Bias: Auto
   Disable ZCull Occlusion Queries: false
   Disable Video Output: false
   Disable Vertex Cache: false
   Disable FIFO Reordering: false
+  Emulate Special Depth Comparison: false
   Enable Frame Skip: false
   Force CPU Blit: false
   Disable On-Disk Shader Cache: false
@@ -106,6 +107,7 @@ Video:
   Force Hardware MSAA Resolve: false
   3D Display Enabled: false
   3D Display Mode: Disabled
+  Screen size in inches: 24
   Debug Program Analyser: false
   Accurate ZCULL stats: true
   Consecutive Frames To Draw: 1
@@ -128,8 +130,7 @@ Video:
   Disable Hardware ColorSpace Remapping: false
   FidelityFX CAS Sharpening Intensity: 50
   Vulkan:
-    Adapter: NVIDIA GeForce RTX 3050 Laptop GPU
-    Force primitive restart flag: false
+    Adapter: ""
     Exclusive Fullscreen Mode: Automatic
     Asynchronous Texture Streaming: false
     Asynchronous Queue Scheduler: Safe
@@ -162,6 +163,11 @@ Video:
     Allow custom background: true
     Darkening effect strength: 30
     Blur effect strength: 0
+  Custom Anaglyph Matrices:
+    Matrix Left:
+      {}
+    Matrix Right:
+      {}
 Audio:
   Renderer: Cubeb
   Audio Provider: CellAudio
@@ -183,7 +189,7 @@ Audio:
   Music Handler: Qt
 Input/Output:
   Keyboard: "Null"
-  Mouse: "Null"
+  Mouse: Basic
   Camera: "Null"
   Camera type: Unknown
   Camera flip: None
@@ -201,22 +207,21 @@ Input/Output:
   Paint move spheres: false
   Allow move hue set by game: false
   Lock overlay input to player one: false
-  Emulated Midi devices: ßßß@@@ßßß@@@ßßß@@@
+  Emulated Midi devices: Keyboardßßß@@@Keyboardßßß@@@Keyboardßßß@@@
   Load SDL GameController Mappings: true
+  Mouse-based gyro enabled: false
   IO Debug overlay: false
   Mouse Debug overlay: false
   Fake Move Rotation Cone: 10
   Fake Move Rotation Cone (Vertical): 10
 System:
-  License Area: SCEE
+  License Area: SCEA
   Language: English (US)
   Keyboard Type: English keyboard (US standard)
   Enter button assignment: Enter with cross
   Date Format: ddmmyyyy
   Time Format: clock24
   Console time offset (s): 0
-  System Name: RPCS3-647
-  Console PSID: 0xDBDA301C69F35929B90D11F840B608E3
   HDD Model Name: ""
   HDD Serial Number: ""
   Process ARGV:
@@ -228,6 +233,7 @@ Net:
   DNS address: 8.8.8.8
   IP swap list: ""
   UPNP Enabled: false
+  Derive MAC from PSID: false
   PSN status: Disconnected
   PSN Country: us
   Clans Enabled: false
@@ -242,8 +248,8 @@ Savestate:
 Miscellaneous:
   Automatically start games after boot: true
   Exit RPCS3 when process finishes: true
-  Pause emulation on RPCS3 focus loss: true
-  Start games in fullscreen mode: false
+  Pause emulation on RPCS3 focus loss: false
+  Start games in fullscreen mode: true
   Prevent display sleep while running games: true
   Show trophy popups: true
   Show RPCN popups: true
@@ -256,6 +262,7 @@ Miscellaneous:
   Show fatal error hints: false
   Show capture hints: true
   Use native user interface: true
+  Use recursive scan: false
   GDB Server: 127.0.0.1:2345
   Silence All Logs: false
   Window Title Format: "FPS: %F | %R | %V | %T [%t]"

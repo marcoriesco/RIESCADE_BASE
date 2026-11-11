@@ -200,10 +200,6 @@ Transformers:
   path: TR_Gun_R_Ring_dumped.exe 
   platform: x86
   type: d3d9
-TransformersShadowsRising:
-  path: Transformers2.exe
-  platform: x86
-  type: d3d9
 WalkingDead:
   path: elf_budgie
   platform: x86

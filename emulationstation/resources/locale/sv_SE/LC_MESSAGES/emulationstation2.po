@@ -109,7 +109,7 @@ msgid "Loading gamelists"
 msgstr "Laddar spellistor"
 
 msgid "Loading..."
-msgstr "Laddar..."
+msgstr "Laddar…"
 
 msgid "MENU"
 msgstr "MENY"
@@ -199,10 +199,10 @@ msgid "Favorite"
 msgstr "Favorit"
 
 #, fuzzy, c-format
-msgid "This folder contains %i game, including :%s"
-msgid_plural "This folder contains %i games, including :%s"
-msgstr[0] "Den här mappen innehåller %i spel, inklusive :%s"
-msgstr[1] "Den här mappen innehåller %i spel, inklusive :%s"
+msgid "This folder contains %i game, including: %s"
+msgid_plural "This folder contains %i games, including: %s"
+msgstr[0] "Den här mappen innehåller %i spel, inklusive: %s"
+msgstr[1] "Den här mappen innehåller %i spel, inklusive: %s"
 
 msgid "FILTER GAMES BY TEXT"
 msgstr "FILTRERA SPEL EFTER TEXT"
@@ -301,8 +301,8 @@ msgstr "SPARA ÄNDRINGAR?"
 msgid "ARE YOU SURE?"
 msgstr "ÄR DU SÄKER?"
 
-msgid "RETROACHIEVEMENT SETTINGS"
-msgstr "INSTÄLLNINGAR FÖR RETROACHIEVEMENT"
+msgid "RETROACHIEVEMENTS SETTINGS"
+msgstr "INSTÄLLNINGAR FÖR RETROACHIEVEMENTS"
 
 msgid "SETTINGS"
 msgstr "INSTÄLLNINGAR"
@@ -366,8 +366,8 @@ msgstr "INOFFICIELLA PRESTATIONER"
 msgid "Enable unlocking of unofficial achievements."
 msgstr "Möjliggör upplåsning av inofficiella prestationer."
 
-msgid "RETROACHIEVEMENT UNLOCK SOUND"
-msgstr "LÅS UPP LJUD FÖR RETROACHIEVEMENT"
+msgid "RETROACHIEVEMENTS UNLOCK SOUND"
+msgstr "LÅS UPP LJUD FÖR RETROACHIEVEMENTS"
 
 msgid "none"
 msgstr "ingen"
@@ -378,8 +378,8 @@ msgstr "LÅS UPP LJUDET"
 msgid "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
 msgstr "VISA RETROACHIEVEMENTS-POST I HUVUDMENYN"
 
-msgid "View your RetroAchievement stats right from the main menu!"
-msgstr "Se din RetroAchievement-statistik direkt från huvudmenyn!"
+msgid "View your RetroAchievements stats right from the main menu!"
+msgstr "Se din RetroAchievements-statistik direkt från huvudmenyn!"
 
 msgid "GAME INDEXES"
 msgstr "INDEX FÖR SPEL"
@@ -592,16 +592,6 @@ msgstr "SYSTEM INGÅR"
 msgid "START"
 msgstr "STARTA"
 
-#, c-format
-msgid "UPDATING %s"
-msgstr "UPPDATERING %s"
-
-msgid "UPDATE IS READY"
-msgstr "UPPDATERINGEN ÄR KLAR"
-
-msgid "REBOOT TO APPLY"
-msgstr "STARTA OM FÖR ATT TILLÄMPA"
-
 msgid "REALLY UPDATE?"
 msgstr "VERKLIGEN UPPDATERING?"
 
@@ -628,6 +618,16 @@ msgstr "NÄTVERKSANSLUTNING BEHÖVS"
 
 msgid "NO UPDATE AVAILABLE"
 msgstr "INGEN UPPDATERING TILLGÄNGLIG"
+
+#, c-format
+msgid "UPDATING %s"
+msgstr "UPPDATERING %s"
+
+msgid "UPDATE IS READY"
+msgstr "UPPDATERINGEN ÄR KLAR"
+
+msgid "REBOOT TO APPLY"
+msgstr "STARTA OM FÖR ATT TILLÄMPA"
 
 msgid "CONNECT TO NETPLAY"
 msgstr "ANSLUT TILL NETPLAY"
@@ -891,7 +891,7 @@ msgid "VIEWER PASSWORD"
 msgstr "LÖSENORD FÖR TITTARE"
 
 msgid "FIND SIMILAR GAMES..."
-msgstr "HITTA LIKNANDE SPEL..."
+msgstr "HITTA LIKNANDE SPEL…"
 
 msgid "DELETE ITEM"
 msgstr "RADERA ITEM"
@@ -924,7 +924,7 @@ msgid "WRITE"
 msgstr "SKRIVA"
 
 msgid "PLACE A TAG ON THE WRITER..."
-msgstr "PLACERA EN TAGG PÅ SKRIBENTEN..."
+msgstr "PLACERA EN TAGG PÅ SKRIBENTEN…"
 
 msgid "THE TAG WAS WRITTEN SUCCESSFULLY"
 msgstr "TAGGEN SKREVS FRAMGÅNGSRIKT"
@@ -941,7 +941,7 @@ msgid "FAVORITES"
 msgstr "FAVORITER"
 
 msgid "ADD TO CUSTOM COLLECTION..."
-msgstr "LÄGG TILL I ANPASSAD SAMLING..."
+msgstr "LÄGG TILL I ANPASSAD SAMLING…"
 
 msgid "SCRAPE"
 msgstr "SKRAPA"
@@ -1217,8 +1217,8 @@ msgstr "snabbtangent"
 msgid "DEFAULT"
 msgstr "STANDARD"
 
-msgid "NO DEVICE FOUND (JAMMASD, IPAC, ...)"
-msgstr "INGEN ENHET HITTADES (JAMMASD, IPAC, ...)"
+msgid "NO DEVICE FOUND (JAMMASD, IPAC...)"
+msgstr "INGEN ENHET HITTADES (JAMMASD, IPAC…)"
 
 msgid "DECLARE A NEW GLOBAL HOTKEY"
 msgstr "ANGE EN NY GLOBAL SNABBTANGENT"
@@ -1560,9 +1560,6 @@ msgstr "SAMHÄLLSBETYG"
 
 msgid "VIDEO"
 msgstr "VIDEO"
-
-msgid "FANART"
-msgstr "FANART"
 
 msgid "BEZEL (16:9)"
 msgstr "BEZEL (16:9)"
@@ -2022,6 +2019,9 @@ msgstr "Aktiverar även emulatorns inbyggda FPS-räknare, om sådan finns."
 msgid "VSYNC"
 msgstr "VSYNC"
 
+msgid "FPS LIMIT"
+msgstr ""
+
 msgid "OVERSCAN"
 msgstr "ÖVERSKANNING"
 
@@ -2267,6 +2267,33 @@ msgstr "STARTA UPPDATERING"
 msgid "UPDATER IS ALREADY RUNNING"
 msgstr "UPPDATERINGSPROGRAMMET ÄR REDAN IGÅNG"
 
+msgid "START LOCAL MEDIA UPDATE"
+msgstr ""
+
+msgid "REALLY UPDATE FROM LOCAL MEDIA?"
+msgstr ""
+
+msgid "SOFTWARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "SHARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "Torrent update service started"
+msgstr ""
+
+msgid "Torrent update service stopped"
+msgstr ""
+
+msgid "START UPDATE FROM TORRENT FILE"
+msgstr ""
+
+msgid "REALLY UPDATE FROM TORRENT FILE ?"
+msgstr ""
+
+msgid "DOWNLOAD STATUS"
+msgstr ""
+
 msgid "LANGUAGE"
 msgstr "SPRÅKET"
 
@@ -2426,6 +2453,21 @@ msgstr "LED-HÅRDVARA"
 msgid "ENABLE LED"
 msgstr "LED FÖR AKTIVERING"
 
+msgid "LED MODE"
+msgstr ""
+
+msgid "STATIC"
+msgstr ""
+
+msgid "RAINBOW"
+msgstr ""
+
+msgid "CHROMA"
+msgstr ""
+
+msgid "PULSE"
+msgstr ""
+
 msgid "LED BRIGHTNESS"
 msgstr "LED-LJUSSTYRKA"
 
@@ -2455,6 +2497,14 @@ msgstr "Kräv ett lösenord för åtkomst till nätverksdelningen."
 
 msgid "ROOT PASSWORD"
 msgstr "ROOT-LÖSENORD"
+
+msgid "CPU SECURITY MITIGATIONS"
+msgstr ""
+
+msgid ""
+"Disabling mitigations may improve performance on some systems at the cost of "
+"reduced protection against certain CPU vulnerabilities."
+msgstr ""
 
 msgid "LATENCY REDUCTION"
 msgstr "MINSKAD LATENSTID"
@@ -2854,26 +2904,26 @@ msgstr "INTERNETSTATUS"
 msgid "HOSTNAME"
 msgstr "VÄRDNAMN"
 
-msgid "ENABLE WIFI"
-msgstr "AKTIVERA WIFI"
+msgid "ENABLE WI-FI"
+msgstr "AKTIVERA WI-FI"
 
-msgid "WIFI SSID"
-msgstr "WIFI SSID"
+msgid "WI-FI SSID"
+msgstr "WI-FI SSID"
 
-msgid "WIFI KEY"
-msgstr "WIFI-NYCKEL"
+msgid "WI-FI KEY"
+msgstr "WI-FI-NYCKEL"
 
-msgid "WIFI COUNTRY"
-msgstr "WIFI LAND"
+msgid "WI-FI COUNTRY"
+msgstr "WI-FI LAND"
 
 msgid "N/A"
 msgstr "-"
 
-msgid "WIFI ENABLED"
-msgstr "WIFI TILLGÄNGLIG"
+msgid "WI-FI ENABLED"
+msgstr "WI-FI TILLGÄNGLIG"
 
-msgid "WIFI CONFIGURATION ERROR"
-msgstr "FEL I WIFI-KONFIGURATIONEN"
+msgid "WI-FI CONFIGURATION ERROR"
+msgstr "FEL I WI-FI-KONFIGURATIONEN"
 
 msgid "QUICK ACCESS"
 msgstr "SNABB ÅTKOMST"
@@ -3009,7 +3059,7 @@ msgid "NO DRIVE SELECTED"
 msgstr "INGEN ENHET VALD"
 
 msgid "Ejecting..."
-msgstr "Utskjutning..."
+msgstr "Utskjutning…"
 
 msgid "EDIT METADATA"
 msgstr "REDIGERA METADATA"
@@ -3243,7 +3293,7 @@ msgstr "ange sökväg till box"
 msgid "Fan art"
 msgstr "Fan-konst"
 
-msgid "enter path to fanart"
+msgid "enter path to fan art"
 msgstr "ange väg till fanart"
 
 msgid "Title shot"
@@ -3409,10 +3459,10 @@ msgid "MultiDisk"
 msgstr ""
 
 msgid "Loading system config..."
-msgstr "Läser in systemkonfiguration..."
+msgstr "Läser in systemkonfiguration…"
 
 msgid "SAVING METADATA. PLEASE WAIT..."
-msgstr "SPARA METADATA. VÄNTA..."
+msgstr "SPARA METADATA. VÄNTA…"
 
 msgid "DO YOU WANT TO SWITCH THE SCREEN ?"
 msgstr "VILL DU BYTA SKÄRM?"
@@ -3435,8 +3485,8 @@ msgstr "4 spelare"
 msgid "never played"
 msgstr "aldrig spelat"
 
-msgid "retroachievements"
-msgstr "retroachievements"
+msgid "RetroAchievements"
+msgstr "RetroAchievements"
 
 msgid "arcade"
 msgstr "arkad"
@@ -3478,10 +3528,10 @@ msgid "Various"
 msgstr "Olika"
 
 #, fuzzy, c-format
-msgid "This collection contains %i game:%s"
-msgid_plural "This collection contains %i games, including:%s"
-msgstr[0] "Den här samlingen innehåller %i game:%s"
-msgstr[1] "Den här samlingen innehåller %i game:%s"
+msgid "This collection contains %i game: %s"
+msgid_plural "This collection contains %i games, including: %s"
+msgstr[0] "Den här samlingen innehåller %i game: %s"
+msgstr[1] "Den här samlingen innehåller %i game: %s"
 
 msgid "INVALID CONTENT"
 msgstr "OGILTIGT INNEHÅLL"
@@ -3532,11 +3582,14 @@ msgstr "KÄRNAN SAKNAS"
 msgid "UKNOWN ERROR"
 msgstr "OKÄNT FEL"
 
+msgid "Checking for latest upgrade script..."
+msgstr ""
+
 msgid "Collections"
 msgstr "Samlingar"
 
 msgid "Searching for devices..."
-msgstr "Söker efter enheter..."
+msgstr "Söker efter enheter…"
 
 msgid "FORMATTING DEVICE"
 msgstr "FORMATERINGSENHET"
@@ -3626,7 +3679,7 @@ msgid "up/down"
 msgstr "upp/ned"
 
 msgid "WORKING..."
-msgstr "ARBETAR..."
+msgstr "ARBETAR…"
 
 msgid "accept"
 msgstr "acceptera"
@@ -3666,7 +3719,7 @@ msgstr "%s ansluten"
 msgid "%s disconnected"
 msgstr "%s frånkopplad"
 
-msgid "SHIFTS FOR UPPER,LOWER, AND SPECIAL"
+msgid "SHIFTS FOR UPPER, LOWER, AND SPECIAL"
 msgstr "VÄXLAR FÖR ÖVRE, NEDRE OCH SPECIAL"
 
 msgid "ALT GR"
@@ -3854,7 +3907,7 @@ msgstr ""
 "Skjut på mål för att kalibrera"
 
 msgid "Reloaded the games list..."
-msgstr "Läste om spellistan..."
+msgstr "Läste om spellistan…"
 
 msgid "GAME DRIVE DETECTED"
 msgstr "GAME DRIVE UPPTÄCKT"
@@ -3878,7 +3931,7 @@ msgid "(This will also apply on future boots)"
 msgstr "(Detta kommer även att gälla framtida uppstarter)"
 
 msgid "Merge requested... Please wait."
-msgstr "Sammanslagning begärd... Vänta."
+msgstr "Sammanslagning begärd… Vänta."
 
 msgid "MERGE FAILED"
 msgstr "SAMMANFOGNING MISSLYCKAD"
@@ -3893,7 +3946,7 @@ msgid "NO, IGNORE FOREVER"
 msgstr "NEJ, IGNORERA FÖR ALLTID"
 
 msgid "Adding drive to ignore list..."
-msgstr "Lägger till drive till ignoreringslistan..."
+msgstr "Lägger till drive till ignoreringslistan…"
 
 msgid "YES, MERGE DRIVE"
 msgstr ""
@@ -3908,7 +3961,7 @@ msgid "(ALL EXISTING DATA WILL BE ERASED)"
 msgstr "(ALLA BEFINTLIGA DATA KOMMER ATT RADERAS)"
 
 msgid "Starting format process..."
-msgstr "Startar formatprocessen..."
+msgstr "Startar formatprocessen…"
 
 msgid "FORMAT FAILED"
 msgstr "FORMAT MISSLYCKAD"
@@ -3964,6 +4017,9 @@ msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d sekund sedan"
 msgstr[1] "%d sekund sedan"
+
+#~ msgid "FANART"
+#~ msgstr "FANART"
 
 #~ msgid "SHARP-BILINEAR-SIMPLE"
 #~ msgstr "SKARP-BILINJÄR-ENKEL"

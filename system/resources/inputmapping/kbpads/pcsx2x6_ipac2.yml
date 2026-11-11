@@ -1,0 +1,38 @@
+# This file is provided with RetroBat
+# It is used to automatically generate the PCSX2x6 mapping for the IPAC2 controller.
+# Each container must be named exactly the same as either your game rom file (without the extension) or the system you want the mapping to be applied to.
+# It works like an override, you just need to enter what is different from default, the override order is "default" => "system" => "core" => "game"
+# The elements listed are the buttons that will be mapped in PCSX2x6.
+default:
+  Pad1_Select: 5
+  Pad1_Start: 1
+  Pad1_Left: Left
+  Pad1_Right: Right
+  Pad1_Up: Up
+  Pad1_Down: Down
+  Pad1_Circle: Control
+  Pad1_Cross: Alt
+  Pad1_Triangle: Space
+  Pad1_Square: Shift
+  Pad1_L1: Z
+  Pad1_L2: X
+  Pad1_R1: C
+  Pad1_R2: V
+  JVS_Coin1: 5
+  JVS_Coin2: 6
+  Pad2_Select: 6
+  Pad2_Start: 2
+  Pad2_Left: D
+  Pad2_Right: G
+  Pad2_Up: R
+  Pad2_Down: F
+  Pad2_Circle: A
+  Pad2_Cross: S
+  Pad2_Triangle: W
+  Pad2_Square: Q
+  Pad2_L1: I
+  Pad2_L2: K
+  Pad2_R1: O
+  Pad2_R2: L
+  Hotkeys_ShutdownVM: Escape
+  Hotkeys_OpenPauseMenu: Tab

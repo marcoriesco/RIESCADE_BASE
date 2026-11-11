@@ -103,7 +103,7 @@ msgid "Loading gamelists"
 msgstr "Oyun listeleri yükleniyor"
 
 msgid "Loading..."
-msgstr "Yükleniyor..."
+msgstr "Yükleniyor…"
 
 msgid "MENU"
 msgstr "MENÜ"
@@ -193,10 +193,10 @@ msgid "Favorite"
 msgstr "Favori"
 
 #, c-format
-msgid "This folder contains %i game, including :%s"
-msgid_plural "This folder contains %i games, including :%s"
-msgstr[0] "Bu klasör %i oyun barındırıyor, içeriği :%s"
-msgstr[1] "Bu klasör %i oyun barındırıyor, içeriği :%s"
+msgid "This folder contains %i game, including: %s"
+msgid_plural "This folder contains %i games, including: %s"
+msgstr[0] "Bu klasör %i oyun barındırıyor, içeriği: %s"
+msgstr[1] "Bu klasör %i oyun barındırıyor, içeriği: %s"
 
 msgid "FILTER GAMES BY TEXT"
 msgstr "METİN OLARAK OYUNLARI LİSTELE"
@@ -295,7 +295,7 @@ msgstr "DEĞİŞİKLİKLERİ KAYDET?"
 msgid "ARE YOU SURE?"
 msgstr "EMİN MİSİN ?"
 
-msgid "RETROACHIEVEMENT SETTINGS"
+msgid "RETROACHIEVEMENTS SETTINGS"
 msgstr "RETROBAŞARIM AYARLARI"
 
 msgid "SETTINGS"
@@ -362,7 +362,7 @@ msgstr "GAYRİ RESMİ BAŞARIMLAR"
 msgid "Enable unlocking of unofficial achievements."
 msgstr "Gayri resmi başarımların kilidini açmayı etkinleştirin."
 
-msgid "RETROACHIEVEMENT UNLOCK SOUND"
+msgid "RETROACHIEVEMENTS UNLOCK SOUND"
 msgstr "RETROBAŞARIM KİLİT AÇILMA SESİ"
 
 msgid "none"
@@ -374,7 +374,7 @@ msgstr "KİLİT AÇILMA SESİ"
 msgid "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
 msgstr "ANA MENÜDE RETROBAŞARIMLAR GİRİŞİNİ GÖSTER"
 
-msgid "View your RetroAchievement stats right from the main menu!"
+msgid "View your RetroAchievements stats right from the main menu!"
 msgstr "RetroBaşarım istatistiklerinizi doğrudan ana menüden görüntüleyin!"
 
 msgid "GAME INDEXES"
@@ -588,16 +588,6 @@ msgstr "DAHİL EDİLMİŞ SİSTEMLER"
 msgid "START"
 msgstr "BAŞLAT"
 
-#, c-format
-msgid "UPDATING %s"
-msgstr "GÜNCELLENİYOR %s"
-
-msgid "UPDATE IS READY"
-msgstr "GÜNCELLEME HAZIR"
-
-msgid "REBOOT TO APPLY"
-msgstr "UYGULAMAK İÇİN ÖNYÜKLE"
-
 msgid "REALLY UPDATE?"
 msgstr "GÜNCELLE?"
 
@@ -624,6 +614,16 @@ msgstr "AĞ BAĞLANTISI GEREKİYOR"
 
 msgid "NO UPDATE AVAILABLE"
 msgstr "YENİ GÜNCELLEME YOK"
+
+#, c-format
+msgid "UPDATING %s"
+msgstr "GÜNCELLENİYOR %s"
+
+msgid "UPDATE IS READY"
+msgstr "GÜNCELLEME HAZIR"
+
+msgid "REBOOT TO APPLY"
+msgstr "UYGULAMAK İÇİN ÖNYÜKLE"
 
 msgid "CONNECT TO NETPLAY"
 msgstr "NETPLAY BAĞLAN"
@@ -888,7 +888,7 @@ msgid "VIEWER PASSWORD"
 msgstr "İZLEYİCİ ŞİFRESİ"
 
 msgid "FIND SIMILAR GAMES..."
-msgstr "BENZER OYUNLARI BUL..."
+msgstr "BENZER OYUNLARI BUL…"
 
 msgid "DELETE ITEM"
 msgstr "BUNU SİL"
@@ -923,7 +923,7 @@ msgid "WRITE"
 msgstr "YAZ"
 
 msgid "PLACE A TAG ON THE WRITER..."
-msgstr "YAZICIYA ETİKET YERLEŞTİRİN..."
+msgstr "YAZICIYA ETİKET YERLEŞTİRİN…"
 
 msgid "THE TAG WAS WRITTEN SUCCESSFULLY"
 msgstr "ETİKET BAŞARIYLA YAZILDI"
@@ -940,7 +940,7 @@ msgid "FAVORITES"
 msgstr "FAVORİLER"
 
 msgid "ADD TO CUSTOM COLLECTION..."
-msgstr "ÖZEL KOLEKSİYONA EKLE..."
+msgstr "ÖZEL KOLEKSİYONA EKLE…"
 
 msgid "SCRAPE"
 msgstr "BİLGİ GETİRİCİ"
@@ -1216,8 +1216,8 @@ msgstr "KISAYOL TUŞU"
 msgid "DEFAULT"
 msgstr "VARSAYILAN"
 
-msgid "NO DEVICE FOUND (JAMMASD, IPAC, ...)"
-msgstr "CİHAZ BULUNAMADI (JAMMASD, IPAC, ...)"
+msgid "NO DEVICE FOUND (JAMMASD, IPAC...)"
+msgstr "CİHAZ BULUNAMADI (JAMMASD, IPAC…)"
 
 msgid "DECLARE A NEW GLOBAL HOTKEY"
 msgstr "YENİ BİR GENEL KISAYOL TUŞU TANIMLA"
@@ -1557,9 +1557,6 @@ msgstr "TOPLULUK DEĞERLENDİRMESİ"
 
 msgid "VIDEO"
 msgstr "VİDEO"
-
-msgid "FANART"
-msgstr "FAN GÖRSELİ"
 
 msgid "BEZEL (16:9)"
 msgstr "ÇERÇEVE (16:9)"
@@ -2022,6 +2019,9 @@ msgstr "Eğer mümkün ise emülatörün dahili FPS sayacını açar."
 msgid "VSYNC"
 msgstr "VSYNC"
 
+msgid "FPS LIMIT"
+msgstr ""
+
 msgid "OVERSCAN"
 msgstr "AŞIRI TARAMA"
 
@@ -2267,6 +2267,33 @@ msgstr "GÜNCELLE"
 msgid "UPDATER IS ALREADY RUNNING"
 msgstr "GÜNCELLEYİCİ ZATEN ÇALIŞIYOR"
 
+msgid "START LOCAL MEDIA UPDATE"
+msgstr ""
+
+msgid "REALLY UPDATE FROM LOCAL MEDIA?"
+msgstr ""
+
+msgid "SOFTWARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "SHARE UPDATES VIA TORRENT"
+msgstr ""
+
+msgid "Torrent update service started"
+msgstr ""
+
+msgid "Torrent update service stopped"
+msgstr ""
+
+msgid "START UPDATE FROM TORRENT FILE"
+msgstr ""
+
+msgid "REALLY UPDATE FROM TORRENT FILE ?"
+msgstr ""
+
+msgid "DOWNLOAD STATUS"
+msgstr ""
+
 msgid "LANGUAGE"
 msgstr "DİL"
 
@@ -2427,6 +2454,21 @@ msgstr "LED DONANIM"
 msgid "ENABLE LED"
 msgstr "LEDİ ETKİNLEŞTİR"
 
+msgid "LED MODE"
+msgstr ""
+
+msgid "STATIC"
+msgstr ""
+
+msgid "RAINBOW"
+msgstr ""
+
+msgid "CHROMA"
+msgstr ""
+
+msgid "PULSE"
+msgstr ""
+
 msgid "LED BRIGHTNESS"
 msgstr "LED PARLAKLIĞI"
 
@@ -2456,6 +2498,14 @@ msgstr "Ağ paylaşımına erişmek için bir parola isteyin."
 
 msgid "ROOT PASSWORD"
 msgstr "ROOT PAROLASI"
+
+msgid "CPU SECURITY MITIGATIONS"
+msgstr ""
+
+msgid ""
+"Disabling mitigations may improve performance on some systems at the cost of "
+"reduced protection against certain CPU vulnerabilities."
+msgstr ""
 
 msgid "LATENCY REDUCTION"
 msgstr "GECİKMEYİ AZALT"
@@ -2860,25 +2910,25 @@ msgstr "İNTERNET DURUMU"
 msgid "HOSTNAME"
 msgstr "SUNUCU ADI"
 
-msgid "ENABLE WIFI"
+msgid "ENABLE WI-FI"
 msgstr "WİFİ ETKİNLEŞTİR"
 
-msgid "WIFI SSID"
+msgid "WI-FI SSID"
 msgstr "WİFİ SSID"
 
-msgid "WIFI KEY"
+msgid "WI-FI KEY"
 msgstr "WİFİ ANAHTARI"
 
-msgid "WIFI COUNTRY"
+msgid "WI-FI COUNTRY"
 msgstr "WİFİ ÜLKESİ"
 
 msgid "N/A"
 msgstr "YOK"
 
-msgid "WIFI ENABLED"
+msgid "WI-FI ENABLED"
 msgstr "WİFİ ETKİN"
 
-msgid "WIFI CONFIGURATION ERROR"
+msgid "WI-FI CONFIGURATION ERROR"
 msgstr "WİFİ YAPILANDIRMA HATASI"
 
 msgid "QUICK ACCESS"
@@ -3016,7 +3066,7 @@ msgid "NO DRIVE SELECTED"
 msgstr "HİÇBİR SÜRÜCÜ SEÇİLMEDİ"
 
 msgid "Ejecting..."
-msgstr "Çıkartılıyor..."
+msgstr "Çıkartılıyor…"
 
 msgid "EDIT METADATA"
 msgstr "ÜST VERİYİ DÜZENLE"
@@ -3250,7 +3300,7 @@ msgstr "kutucuğun yolunu girin"
 msgid "Fan art"
 msgstr "Fan görseli"
 
-msgid "enter path to fanart"
+msgid "enter path to fan art"
 msgstr "fan görseli yolunu girin"
 
 msgid "Title shot"
@@ -3416,10 +3466,10 @@ msgid "MultiDisk"
 msgstr ""
 
 msgid "Loading system config..."
-msgstr "Sistem yapılandırması yükleniyor..."
+msgstr "Sistem yapılandırması yükleniyor…"
 
 msgid "SAVING METADATA. PLEASE WAIT..."
-msgstr "ÜST VERİ KAYDEDİLİYOR. LÜTFEN BEKLEYİN..."
+msgstr "ÜST VERİ KAYDEDİLİYOR. LÜTFEN BEKLEYİN…"
 
 msgid "DO YOU WANT TO SWITCH THE SCREEN ?"
 msgstr "EKRANI DEĞİŞTİRMEK İSTİYOR MUSUN ?"
@@ -3445,7 +3495,7 @@ msgstr "4 OYUNCU"
 msgid "never played"
 msgstr "HİÇ OYNANMADI"
 
-msgid "retroachievements"
+msgid "RetroAchievements"
 msgstr "RETROBAŞARIMLAR"
 
 msgid "arcade"
@@ -3494,9 +3544,9 @@ msgid "Various"
 msgstr "Çeşitli"
 
 #, c-format
-msgid "This collection contains %i game:%s"
-msgid_plural "This collection contains %i games, including:%s"
-msgstr[0] "Bu koleksiyon %i oyun içerir:%s"
+msgid "This collection contains %i game: %s"
+msgid_plural "This collection contains %i games, including: %s"
+msgstr[0] "Bu koleksiyon %i oyun içerir: %s"
 msgstr[1] "Bu koleksiyon %i oyun içerir, bunlar dahil: %s"
 
 msgid "INVALID CONTENT"
@@ -3548,11 +3598,14 @@ msgstr "ÇEKİRDEK EKSİK"
 msgid "UKNOWN ERROR"
 msgstr "BİLİNMEYEN HATA"
 
+msgid "Checking for latest upgrade script..."
+msgstr ""
+
 msgid "Collections"
 msgstr "Koleksiyonlar"
 
 msgid "Searching for devices..."
-msgstr "Cihazlar aranıyor..."
+msgstr "Cihazlar aranıyor…"
 
 msgid "FORMATTING DEVICE"
 msgstr "CİHAZ BİÇİMLENDİRİLİYOR"
@@ -3644,7 +3697,7 @@ msgid "up/down"
 msgstr "yukarı/aşağı"
 
 msgid "WORKING..."
-msgstr "ÇALIŞIYOR..."
+msgstr "ÇALIŞIYOR…"
 
 msgid "accept"
 msgstr "onayla"
@@ -3684,7 +3737,7 @@ msgstr "%s bağlandı"
 msgid "%s disconnected"
 msgstr "%s bağlantı kesildi"
 
-msgid "SHIFTS FOR UPPER,LOWER, AND SPECIAL"
+msgid "SHIFTS FOR UPPER, LOWER, AND SPECIAL"
 msgstr "ÜST, ALT VE ÖZEL İÇİN SEÇENEKLER"
 
 msgid "ALT GR"
@@ -3872,7 +3925,7 @@ msgstr ""
 "Kalibrasyon için hedeflere ateş et"
 
 msgid "Reloaded the games list..."
-msgstr "Oyun listesi yeniden yükleniyor..."
+msgstr "Oyun listesi yeniden yükleniyor…"
 
 msgid "GAME DRIVE DETECTED"
 msgstr "OYUN SÜRÜCÜSÜ ALGILANDI"
@@ -3896,7 +3949,7 @@ msgid "(This will also apply on future boots)"
 msgstr "(Bu aynı zamanda gelecekteki botlar için de geçerli olacaktır)"
 
 msgid "Merge requested... Please wait."
-msgstr "Birleştirme isteği yapıldı... Lütfen bekleyin."
+msgstr "Birleştirme isteği yapıldı… Lütfen bekleyin."
 
 msgid "MERGE FAILED"
 msgstr "BİRLEŞTİRME BAŞARISIZ"
@@ -3911,7 +3964,7 @@ msgid "NO, IGNORE FOREVER"
 msgstr "HAYIR, SÜREKLİ YOKSAY"
 
 msgid "Adding drive to ignore list..."
-msgstr "Yoksayılacak sürücü listesine ekleniyor..."
+msgstr "Yoksayılacak sürücü listesine ekleniyor…"
 
 msgid "YES, MERGE DRIVE"
 msgstr ""
@@ -3926,7 +3979,7 @@ msgid "(ALL EXISTING DATA WILL BE ERASED)"
 msgstr "(MEVCUT TÜM VERİLER SİLİNECEKTİR)"
 
 msgid "Starting format process..."
-msgstr "Biçimlendirme işlemi başlıyor..."
+msgstr "Biçimlendirme işlemi başlıyor…"
 
 msgid "FORMAT FAILED"
 msgstr "BİÇİMLENDİRME BAŞARISIZ"
@@ -3983,6 +4036,9 @@ msgid_plural "%d seconds ago"
 msgstr[0] "%d saniye önce"
 msgstr[1] "%d saniye önce"
 
+#~ msgid "FANART"
+#~ msgstr "FAN GÖRSELİ"
+
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "GÖRÜNTÜ ÖNBELLEĞİ OLUŞTUR"
 
@@ -3999,11 +4055,10 @@ msgstr[1] "%d saniye önce"
 #~ msgstr "Bu sürücüdeki oyunlar şimdi birleştirilsin mi?"
 
 #~ msgid "Merging drive... Please wait."
-#~ msgstr "Sürücü birleştiriliyor... Lütfen bekleyin."
+#~ msgstr "Sürücü birleştiriliyor… Lütfen bekleyin."
 
 #~ msgid "New drive content will be available after games list is refreshed..."
-#~ msgstr ""
-#~ "Oyun listesi yenilendikten sonra yeni sürücü içeriği mevcut olacak..."
+#~ msgstr "Oyun listesi yenilendikten sonra yeni sürücü içeriği mevcut olacak…"
 
 #~ msgid "SCRAPER SETTINGS"
 #~ msgstr "OYUN BİLGİ AYARLARI"

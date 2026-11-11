@@ -107,7 +107,7 @@ msgid "Loading gamelists"
 msgstr "Carregando lista de jogos"
 
 msgid "Loading..."
-msgstr "Carregando..."
+msgstr "Carregando…"
 
 msgid "MENU"
 msgstr "MENU"
@@ -197,10 +197,10 @@ msgid "Favorite"
 msgstr "Favorito"
 
 #, c-format
-msgid "This folder contains %i game, including :%s"
-msgid_plural "This folder contains %i games, including :%s"
-msgstr[0] "Esta pasta contém %i jogo, incluindo :%s"
-msgstr[1] "Esta pasta contém %i jogos, incluindo :%s"
+msgid "This folder contains %i game, including: %s"
+msgid_plural "This folder contains %i games, including: %s"
+msgstr[0] "Esta pasta contém %i jogo, incluindo: %s"
+msgstr[1] "Esta pasta contém %i jogos, incluindo: %s"
 
 msgid "FILTER GAMES BY TEXT"
 msgstr "FILTRAR JOGOS POR TEXTO"
@@ -299,7 +299,7 @@ msgstr "SALVAR MODIFICAÇÕES?"
 msgid "ARE YOU SURE?"
 msgstr "TEM CERTEZA?"
 
-msgid "RETROACHIEVEMENT SETTINGS"
+msgid "RETROACHIEVEMENTS SETTINGS"
 msgstr "AJUSTES DAS CONQUISTAS RETRÔ"
 
 msgid "SETTINGS"
@@ -370,7 +370,7 @@ msgstr "Conquistas não oficias"
 msgid "Enable unlocking of unofficial achievements."
 msgstr "Ativar conquistas não oficias."
 
-msgid "RETROACHIEVEMENT UNLOCK SOUND"
+msgid "RETROACHIEVEMENTS UNLOCK SOUND"
 msgstr "SOM AO DESBLOQUEAR NOVAS CONQUISTAS"
 
 msgid "none"
@@ -382,9 +382,9 @@ msgstr "SOM AO DESBLOQUEAR CONQUISTAS"
 msgid "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
 msgstr "EXIBIR CONQUISTAS ALCANÇADAS NO MENU PRINCIPAL"
 
-msgid "View your RetroAchievement stats right from the main menu!"
+msgid "View your RetroAchievements stats right from the main menu!"
 msgstr ""
-"Veja suas estatísticas do RetroAchievement diretamente no menu principal!"
+"Veja suas estatísticas do RetroAchievements diretamente no menu principal!"
 
 msgid "GAME INDEXES"
 msgstr "ÍNDICES DO JOGO"
@@ -486,13 +486,13 @@ msgid "VOLUME MUTE"
 msgstr "SILENCIAR VOLUME"
 
 msgid "START RECORDING"
-msgstr ""
+msgstr "INICIAR GRAVAÇÃO"
 
 msgid "STOP RECORDING"
-msgstr ""
+msgstr "PARAR GRAVAÇÃO"
 
 msgid "KEYBOARD TOGGLE"
-msgstr ""
+msgstr "ATIVAR TECLADO"
 
 msgid "KEY ASSIGNED TWICE"
 msgstr "TECLA ASSINALADA DUAS VEZES"
@@ -597,16 +597,6 @@ msgstr "SISTEMAS INCLUÍDOS"
 msgid "START"
 msgstr "INICIAR"
 
-#, c-format
-msgid "UPDATING %s"
-msgstr "ATUALIZANDO %s"
-
-msgid "UPDATE IS READY"
-msgstr "ATUALIZAÇÃO ESTÁ PRONTA"
-
-msgid "REBOOT TO APPLY"
-msgstr "REINICIALIZAR PARA APLICAR"
-
 msgid "REALLY UPDATE?"
 msgstr "DESEJA ATUALIZAR O SISTEMA BATOCERA?"
 
@@ -633,6 +623,16 @@ msgstr "É NECESSÁRIO CONEXÃO COM A INTERNET"
 
 msgid "NO UPDATE AVAILABLE"
 msgstr "NENHUMA ATUALIZAÇÃO DISPONÍVEL"
+
+#, c-format
+msgid "UPDATING %s"
+msgstr "ATUALIZANDO %s"
+
+msgid "UPDATE IS READY"
+msgstr "ATUALIZAÇÃO ESTÁ PRONTA"
+
+msgid "REBOOT TO APPLY"
+msgstr "REINICIALIZAR PARA APLICAR"
 
 msgid "CONNECT TO NETPLAY"
 msgstr "CONECTE-SE AOS JOGOS EM REDE"
@@ -896,7 +896,7 @@ msgid "VIEWER PASSWORD"
 msgstr "SENHA DE ESPECTADOR"
 
 msgid "FIND SIMILAR GAMES..."
-msgstr "JOGOS SEMELHANTES..."
+msgstr "JOGOS SEMELHANTES…"
 
 msgid "DELETE ITEM"
 msgstr "APAGAR ITEM"
@@ -931,7 +931,7 @@ msgid "WRITE"
 msgstr "GRAVAR"
 
 msgid "PLACE A TAG ON THE WRITER..."
-msgstr "COLOQUE UMA ETIQUETA NO GRAVADOR..."
+msgstr "COLOQUE UMA ETIQUETA NO GRAVADOR…"
 
 msgid "THE TAG WAS WRITTEN SUCCESSFULLY"
 msgstr "A ETIQUETA FOI GRAVADA COM SUCESSO"
@@ -948,7 +948,7 @@ msgid "FAVORITES"
 msgstr "FAVORITOS"
 
 msgid "ADD TO CUSTOM COLLECTION..."
-msgstr "ADICIONAR À COLEÇÃO PERSONALIZADA ..."
+msgstr "ADICIONAR À COLEÇÃO PERSONALIZADA …"
 
 msgid "SCRAPE"
 msgstr "PROCURAR POR MÍDIAS DESTE JOGO"
@@ -1155,7 +1155,7 @@ msgid "SHOW CONTROLLER BATTERY LEVEL"
 msgstr "EXIBIR NÍVEL DA BATERIA DO CONTROLE"
 
 msgid "SHOW GUN NOTIFICATIONS"
-msgstr ""
+msgstr "MOSTRAR NOTIFICALÇÕES DE ARMAS"
 
 msgid "DRAW GUN CROSSHAIR"
 msgstr "DESENHAR A MIRA DA ARMA"
@@ -1226,8 +1226,8 @@ msgstr "TECLA DE ATALHO"
 msgid "DEFAULT"
 msgstr "PADRÃO"
 
-msgid "NO DEVICE FOUND (JAMMASD, IPAC, ...)"
-msgstr "NENHUM APARELHO DETECTADO (JAMMASD, IPAC, ...)"
+msgid "NO DEVICE FOUND (JAMMASD, IPAC...)"
+msgstr "NENHUM APARELHO DETECTADO (JAMMASD, IPAC…)"
 
 msgid "DECLARE A NEW GLOBAL HOTKEY"
 msgstr "DECLARAR UMA NOVA TECLA DE ATALHO GLOBAL"
@@ -1394,10 +1394,10 @@ msgid "INPUT MANUALLY"
 msgstr "ENTRAR MANUALMENTE"
 
 msgid "NO WI-FI NETWORKS FOUND"
-msgstr "NENHUMA REDE WIFI ENCONTRADA"
+msgstr "NENHUMA REDE WI-FI ENCONTRADA"
 
 msgid "SEARCHING WI-FI NETWORKS"
-msgstr "PESQUISANDO REDES WIFI"
+msgstr "PESQUISANDO REDES WI-FI"
 
 msgid "PARIS"
 msgstr "PARIS"
@@ -1570,9 +1570,6 @@ msgstr "AVALIAÇÃO DA COMUNIDADE"
 
 msgid "VIDEO"
 msgstr "VÍDEO"
-
-msgid "FANART"
-msgstr "FÃ-ARTE"
 
 msgid "BEZEL (16:9)"
 msgstr "MOLDURA (16:9)"
@@ -2032,6 +2029,9 @@ msgstr "Também ativa o contador de FPS nativo do emulador, se disponível."
 msgid "VSYNC"
 msgstr "SINCRONIZAÇÃO VERTICAL"
 
+msgid "FPS LIMIT"
+msgstr "LIMITE DE FPS"
+
 msgid "OVERSCAN"
 msgstr "OVERSCAN (ULTRAPASSAR BORDAS DA TELA)"
 
@@ -2253,7 +2253,7 @@ msgid "OPTIMIZE VIDEO VRAM USAGE"
 msgstr "OTIMIZAR O USO DE VÍDEO NA VRAM"
 
 msgid "USE FILESYSTEM CACHE"
-msgstr ""
+msgstr "USAR CACHÊ DE SISTEMA DE ARQUIVOS"
 
 msgid "REBOOT REQUIRED TO APPLY THE NEW CONFIGURATION"
 msgstr "É NECESSÁRIO REINICIAR O SISTEMA PARA APLICAR A NOVA CONFIGURAÇÃO"
@@ -2281,6 +2281,33 @@ msgstr "INICIAR ATUALIZAÇÃO"
 
 msgid "UPDATER IS ALREADY RUNNING"
 msgstr "A ATUALIZAÇÃO JÁ ESTÁ EM EXECUÇÃO"
+
+msgid "START LOCAL MEDIA UPDATE"
+msgstr "INICIAR ATUALIZAÇÃO DE MÍDIA LOCAL"
+
+msgid "REALLY UPDATE FROM LOCAL MEDIA?"
+msgstr "REALMENTE ATUALIZAR A PARTIR DE MÍDIA LOCAL?"
+
+msgid "SOFTWARE UPDATES VIA TORRENT"
+msgstr "ATUALIZAÇÕES DE SOFTWARE VIA TORRENT"
+
+msgid "SHARE UPDATES VIA TORRENT"
+msgstr "COMPARTILHAR ATUALIZAÇÕES VIA TORRENT"
+
+msgid "Torrent update service started"
+msgstr "Serviço de atualização de torrent iniciado"
+
+msgid "Torrent update service stopped"
+msgstr "Serviço de atualização de torrent parado"
+
+msgid "START UPDATE FROM TORRENT FILE"
+msgstr "INICIAR ATUALIZAÇÃO A PARTIR DE ARQUIVO TORRENT"
+
+msgid "REALLY UPDATE FROM TORRENT FILE ?"
+msgstr "REALMENTE ATUALIZAR A PARTIR DE ARQUIVO TORRENT ?"
+
+msgid "DOWNLOAD STATUS"
+msgstr "STATUS DO DOWNLOAD"
 
 msgid "LANGUAGE"
 msgstr "IDIOMA"
@@ -2443,6 +2470,21 @@ msgstr "HARDWARE LED"
 msgid "ENABLE LED"
 msgstr "HABILITAR LED"
 
+msgid "LED MODE"
+msgstr "MODO DE LED"
+
+msgid "STATIC"
+msgstr "ESTÁTICO"
+
+msgid "RAINBOW"
+msgstr "ARCO-ÍRIS"
+
+msgid "CHROMA"
+msgstr "CHROMA"
+
+msgid "PULSE"
+msgstr "PULSAR"
+
 msgid "LED BRIGHTNESS"
 msgstr "BRILHO LED"
 
@@ -2472,6 +2514,16 @@ msgstr "Solicitar uma senha para acessar o compartilhamento de rede."
 
 msgid "ROOT PASSWORD"
 msgstr "SENHA PRIMÁRIA (ROOT)"
+
+msgid "CPU SECURITY MITIGATIONS"
+msgstr "REDUÇÃO DE SEGURANÇA DE PROCESSADOR"
+
+msgid ""
+"Disabling mitigations may improve performance on some systems at the cost of "
+"reduced protection against certain CPU vulnerabilities."
+msgstr ""
+"Desativar reduções pode melhorar performance em alguns sistemas ao custo de "
+"proteção reduzida contra certas vulnerabilidades do processador."
 
 msgid "LATENCY REDUCTION"
 msgstr "REDUÇÃO DE LATÊNCIA"
@@ -2872,26 +2924,26 @@ msgstr "ESTADO DA CONEXÃO COM A INTERNET"
 msgid "HOSTNAME"
 msgstr "NOME DA MÁQUINA"
 
-msgid "ENABLE WIFI"
-msgstr "ATIVAR WIFI"
+msgid "ENABLE WI-FI"
+msgstr "ATIVAR WI-FI"
 
-msgid "WIFI SSID"
-msgstr "NOME DA REDE WIFI (SSID)"
+msgid "WI-FI SSID"
+msgstr "NOME DA REDE WI-FI (SSID)"
 
-msgid "WIFI KEY"
-msgstr "SENHA DO WIFI"
+msgid "WI-FI KEY"
+msgstr "SENHA DO WI-FI"
 
-msgid "WIFI COUNTRY"
-msgstr "PAÍS DO WIFI"
+msgid "WI-FI COUNTRY"
+msgstr "PAÍS DO WI-FI"
 
 msgid "N/A"
 msgstr "NÃO APLICÁVEL"
 
-msgid "WIFI ENABLED"
-msgstr "WIFI ATIVO"
+msgid "WI-FI ENABLED"
+msgstr "WI-FI ATIVO"
 
-msgid "WIFI CONFIGURATION ERROR"
-msgstr "ERRO NA CONFIGURAÇÃO DO WIFI"
+msgid "WI-FI CONFIGURATION ERROR"
+msgstr "ERRO NA CONFIGURAÇÃO DO WI-FI"
 
 msgid "QUICK ACCESS"
 msgstr "ACESSO RÁPIDO"
@@ -3028,7 +3080,7 @@ msgid "NO DRIVE SELECTED"
 msgstr "NENHUM DISCO SELECIONADO"
 
 msgid "Ejecting..."
-msgstr "Ejetando..."
+msgstr "Ejetando…"
 
 msgid "EDIT METADATA"
 msgstr "EDITAR INFORMAÇÕES"
@@ -3263,7 +3315,7 @@ msgstr "insira o caminho do diretório para a caixa do jogo"
 msgid "Fan art"
 msgstr "Fã-arte"
 
-msgid "enter path to fanart"
+msgid "enter path to fan art"
 msgstr "insira o caminho do diretório para a arte do fã-arte"
 
 msgid "Title shot"
@@ -3426,13 +3478,13 @@ msgid "Screenscraper Game ID"
 msgstr "ID da Mídia do Jogo"
 
 msgid "MultiDisk"
-msgstr ""
+msgstr "Múltiplos Discos"
 
 msgid "Loading system config..."
-msgstr "Carregando a configuração do sistema..."
+msgstr "Carregando a configuração do sistema…"
 
 msgid "SAVING METADATA. PLEASE WAIT..."
-msgstr "SALVANDO METADADOS. POR FAVOR, AGUARDE..."
+msgstr "SALVANDO METADADOS. POR FAVOR, AGUARDE…"
 
 msgid "DO YOU WANT TO SWITCH THE SCREEN ?"
 msgstr "VOCÊ QUER TROCAR DE TELA?"
@@ -3455,7 +3507,7 @@ msgstr "4 jogadores"
 msgid "never played"
 msgstr "nunca jogado"
 
-msgid "retroachievements"
+msgid "RetroAchievements"
 msgstr "conquistas retrô"
 
 msgid "arcade"
@@ -3498,10 +3550,10 @@ msgid "Various"
 msgstr "Vários"
 
 #, c-format
-msgid "This collection contains %i game:%s"
-msgid_plural "This collection contains %i games, including:%s"
-msgstr[0] "Esta coleção contêm %i jogo:%s"
-msgstr[1] "Esta coleção contêm %i jogos, incluído:%s"
+msgid "This collection contains %i game: %s"
+msgid_plural "This collection contains %i games, including: %s"
+msgstr[0] "Esta coleção contêm %i jogo: %s"
+msgstr[1] "Esta coleção contêm %i jogos, incluído: %s"
 
 msgid "INVALID CONTENT"
 msgstr "CONTEÚDO INVÁLIDO"
@@ -3552,11 +3604,14 @@ msgstr "ESTÁ FALTANDO NÚCLEO"
 msgid "UKNOWN ERROR"
 msgstr "ERRO DESCONHECIDO"
 
+msgid "Checking for latest upgrade script..."
+msgstr "Verificando script mais recente de atualização…"
+
 msgid "Collections"
 msgstr "Coleções"
 
 msgid "Searching for devices..."
-msgstr "Procurando controles..."
+msgstr "Procurando controles…"
 
 msgid "FORMATTING DEVICE"
 msgstr "FORMATANDO DISPOSITIVO"
@@ -3646,7 +3701,7 @@ msgid "up/down"
 msgstr "cima/baixo"
 
 msgid "WORKING..."
-msgstr "EM PROGRESSO..."
+msgstr "EM PROGRESSO…"
 
 msgid "accept"
 msgstr "aceitar"
@@ -3686,7 +3741,7 @@ msgstr "%s conectado"
 msgid "%s disconnected"
 msgstr "%s desconectado"
 
-msgid "SHIFTS FOR UPPER,LOWER, AND SPECIAL"
+msgid "SHIFTS FOR UPPER, LOWER, AND SPECIAL"
 msgstr "ALTERNAR PARA MAIÚSCULAS, MINÚSCULAS E CARACTERES ESPECIAIS"
 
 msgid "ALT GR"
@@ -3875,7 +3930,7 @@ msgstr ""
 "Atire nos alvos para calibrar"
 
 msgid "Reloaded the games list..."
-msgstr "Atualizou a lista de jogos..."
+msgstr "Atualizou a lista de jogos…"
 
 msgid "GAME DRIVE DETECTED"
 msgstr "DISCO DE JOGOS DETECTADO"
@@ -3899,7 +3954,7 @@ msgid "(This will also apply on future boots)"
 msgstr "(Isso também se aplicará em inicializações futuras)"
 
 msgid "Merge requested... Please wait."
-msgstr "Combinação solicitada... Por favor aguarde."
+msgstr "Combinação solicitada… Por favor aguarde."
 
 msgid "MERGE FAILED"
 msgstr "FUNDIÇÃO FALHOU"
@@ -3914,10 +3969,10 @@ msgid "NO, IGNORE FOREVER"
 msgstr "NÃO, IGNORAR PARA SEMPRE"
 
 msgid "Adding drive to ignore list..."
-msgstr "Adicionando disco a lista de ignorados..."
+msgstr "Adicionando disco a lista de ignorados…"
 
 msgid "YES, MERGE DRIVE"
-msgstr ""
+msgstr "SIM, FUNDIR DISCO"
 
 msgid "NEW DRIVE DETECTED"
 msgstr "NOVO DISCO DETECTADO"
@@ -3929,7 +3984,7 @@ msgid "(ALL EXISTING DATA WILL BE ERASED)"
 msgstr "(TODOS OS DADOS EXISTENTES SERÃO APAGADOS)"
 
 msgid "Starting format process..."
-msgstr "Começando o processo de formatação..."
+msgstr "Começando o processo de formatação…"
 
 msgid "FORMAT FAILED"
 msgstr "FORMATAÇÃO FALHOU"
@@ -3986,6 +4041,9 @@ msgid_plural "%d seconds ago"
 msgstr[0] "%d segundo atrás"
 msgstr[1] "%d segundos atrás"
 
+#~ msgid "FANART"
+#~ msgstr "FÃ-ARTE"
+
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "CONSTRUIR MEMÓRIA CACHE DE IMAGENS"
 
@@ -4002,12 +4060,12 @@ msgstr[1] "%d segundos atrás"
 #~ msgstr "Fundir jogos deste disco agora?"
 
 #~ msgid "Merging drive... Please wait."
-#~ msgstr "Fundindo discos... Por favor aguarde."
+#~ msgstr "Fundindo discos… Por favor aguarde."
 
 #~ msgid "New drive content will be available after games list is refreshed..."
 #~ msgstr ""
 #~ "O conteúdo do novo disco ficará disponível após a lista de jogos ser "
-#~ "atualizada..."
+#~ "atualizada…"
 
 #~ msgid "BY HARDWARE TYPE"
 #~ msgstr "POR TIPO DE HARDWARE"

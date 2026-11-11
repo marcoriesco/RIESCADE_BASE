@@ -706,7 +706,24 @@
 		<lang>en</lang>
 		<region>wr</region>
 	</game>
-    <game>
+	<game>
+		<path>./pcsx2x6.menu</path>
+		<name>PCSX2x6 (Namco246/256 PCSX2 fork)</name>
+		<desc>Run PCSX2x6 Emulator (Namco246/256).</desc>
+		<image>./media/pcsx2x6-logo.png</image>
+		<marquee>./media/pcsx2x6-logo.png</marquee>
+		<rating>0</rating>
+		<releasedate />
+		<developer>Matías Israelson</developer>
+		<publisher>PS2Homebrew-Arcade</publisher>
+		<genre>Emulator</genre>
+		<playcount />
+		<lastplayed />
+		<gametime />
+		<lang>en</lang>
+		<region>wr</region>
+	</game>
+		<game>
 		<path>./play.menu</path>
 		<name>PLAY (PlayStation 2)</name>
 		<desc>Run PLAY Emulator (PlayStation 2).</desc>

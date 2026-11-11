@@ -1,0 +1,36 @@
+# This file is provided with RetroBat
+# It is used to automatically generate the PCSX2x6 mapping for the X-Arcade Tankstick controller.
+# Each container must be named exactly the same as either your game rom file (without the extension) or the system you want the mapping to be applied to.
+# It works like an override, you just need to enter what is different from default, the override order is "default" => "system" => "core" => "game"
+# The elements listed are the buttons that will be mapped in PCSX2x6.
+default:
+  Pad1_Select: 5
+  Pad1_Start: 1
+  Pad1_Left: Left
+  Pad1_Right: Right
+  Pad1_Up: Up
+  Pad1_Down: Down
+  Pad1_Circle: Z
+  Pad1_Cross: Shift
+  Pad1_Triangle: Alt
+  Pad1_Square: Control
+  Pad1_L1: Space
+  Pad1_L2: C
+  Pad1_R1: X
+  JVS_Coin1: 5
+  JVS_Coin2: 6
+  Pad2_Select: 6
+  Pad2_Start: 2
+  Pad2_Left: D
+  Pad2_Right: G
+  Pad2_Up: R
+  Pad2_Down: F
+  Pad2_Circle: E
+  Pad2_Cross: W
+  Pad2_Triangle: S
+  Pad2_Square: A
+  Pad2_L1: Q
+  Pad2_L2: BracketRight
+  Pad2_R1: BracketLeft
+  Hotkeys_ShutdownVM: Escape
+  Hotkeys_OpenPauseMenu: Tab

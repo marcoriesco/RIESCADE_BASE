@@ -1,0 +1,1 @@
+%~dp0..\..\emulationstation\emulatorLauncher.exe -rvzcheevos

@@ -103,7 +103,7 @@ msgid "Loading gamelists"
 msgstr "Memuat listgame"
 
 msgid "Loading..."
-msgstr "Memuat..."
+msgstr "Memuat…"
 
 msgid "MENU"
 msgstr "MENU"
@@ -190,9 +190,9 @@ msgid "Favorite"
 msgstr "Favorit"
 
 #, c-format
-msgid "This folder contains %i game, including :%s"
-msgid_plural "This folder contains %i games, including :%s"
-msgstr[0] "Folder ini berisi %i permainan, termasuk :%s"
+msgid "This folder contains %i game, including: %s"
+msgid_plural "This folder contains %i games, including: %s"
+msgstr[0] "Folder ini berisi %i permainan, termasuk: %s"
 
 msgid "FILTER GAMES BY TEXT"
 msgstr "FILTER ULANG"
@@ -291,7 +291,7 @@ msgstr "SIMPAN PERUBAHAN?"
 msgid "ARE YOU SURE?"
 msgstr "YAKIN?"
 
-msgid "RETROACHIEVEMENT SETTINGS"
+msgid "RETROACHIEVEMENTS SETTINGS"
 msgstr "PENGATURAN RETROACHIEVEMENTS"
 
 msgid "SETTINGS"
@@ -355,7 +355,7 @@ msgstr "PENCAPAIAN TIDAK RESMI"
 msgid "Enable unlocking of unofficial achievements."
 msgstr "Aktifkan pembukaan pencapaian tidak resmi."
 
-msgid "RETROACHIEVEMENT UNLOCK SOUND"
+msgid "RETROACHIEVEMENTS UNLOCK SOUND"
 msgstr "MEMBUKA PERINGKAT SUARA RETRO"
 
 msgid "none"
@@ -367,8 +367,8 @@ msgstr "MEMBUKA SUARA"
 msgid "SHOW RETROACHIEVEMENTS ENTRY IN MAIN MENU"
 msgstr "TAMPILKAN PENCAPAIAN RETRO DI MENU UTAMA"
 
-msgid "View your RetroAchievement stats right from the main menu!"
-msgstr "Lihat statistik RetroAchievement Anda langsung dari menu utama!"
+msgid "View your RetroAchievements stats right from the main menu!"
+msgstr "Lihat statistik RetroAchievements Anda langsung dari menu utama!"
 
 msgid "GAME INDEXES"
 msgstr "INDEKS GAME"
@@ -440,7 +440,7 @@ msgid "RESET"
 msgstr "MENGATUR ULANG"
 
 msgid "SAVE STATE"
-msgstr ""
+msgstr "SIMPAN PROGRES / SIMPAN DATA GAME"
 
 msgid "RESTORE STATE"
 msgstr "MUAT STATE (RESTORE)"
@@ -470,13 +470,13 @@ msgid "VOLUME MUTE"
 msgstr "BISUKAN VOLUME"
 
 msgid "START RECORDING"
-msgstr ""
+msgstr "MULAI REKAM"
 
 msgid "STOP RECORDING"
-msgstr ""
+msgstr "HENTIKAN REKAMAN"
 
 msgid "KEYBOARD TOGGLE"
-msgstr ""
+msgstr "TOMBOL KEYBOARD / AKTIFKAN KEYBOARD"
 
 msgid "KEY ASSIGNED TWICE"
 msgstr "TOMBOL DITETAPKAN DUA KALI"
@@ -581,16 +581,6 @@ msgstr "SISTEM TERMASUK"
 msgid "START"
 msgstr "MULAI"
 
-#, c-format
-msgid "UPDATING %s"
-msgstr "MEMPERBARUI %s"
-
-msgid "UPDATE IS READY"
-msgstr "PEMBARUAN SUDAH SIAP"
-
-msgid "REBOOT TO APPLY"
-msgstr "MULAI ULANG UNTUK MENERAPKAN"
-
 msgid "REALLY UPDATE?"
 msgstr "YAKIN MEMPERBARUI?"
 
@@ -617,6 +607,16 @@ msgstr "KONEKSI JARINGAN DIPERLUKAN"
 
 msgid "NO UPDATE AVAILABLE"
 msgstr "TIDAK ADA PEMBARUAN YANG TERSEDIA"
+
+#, c-format
+msgid "UPDATING %s"
+msgstr "MEMPERBARUI %s"
+
+msgid "UPDATE IS READY"
+msgstr "PEMBARUAN SUDAH SIAP"
+
+msgid "REBOOT TO APPLY"
+msgstr "MULAI ULANG UNTUK MENERAPKAN"
 
 msgid "CONNECT TO NETPLAY"
 msgstr "HUBUNGKAN KE NETPLAY"
@@ -880,7 +880,7 @@ msgid "VIEWER PASSWORD"
 msgstr "PASSWOR PENONTON"
 
 msgid "FIND SIMILAR GAMES..."
-msgstr "TEMUKAN GAME SERUPA..."
+msgstr "TEMUKAN GAME SERUPA…"
 
 msgid "DELETE ITEM"
 msgstr "HAPUS ITEM"
@@ -915,7 +915,7 @@ msgid "WRITE"
 msgstr "TULIS"
 
 msgid "PLACE A TAG ON THE WRITER..."
-msgstr "TEMPATKAN LABEL PADA ALAT PENULIS..."
+msgstr "TEMPATKAN LABEL PADA ALAT PENULIS…"
 
 msgid "THE TAG WAS WRITTEN SUCCESSFULLY"
 msgstr "LABEL BERHASIL DITULIS"
@@ -932,7 +932,7 @@ msgid "FAVORITES"
 msgstr "FAVORIT"
 
 msgid "ADD TO CUSTOM COLLECTION..."
-msgstr "TAMBAHKAN KE KOLEKSI KUSTOM..."
+msgstr "TAMBAHKAN KE KOLEKSI KUSTOM…"
 
 msgid "SCRAPE"
 msgstr "SCRAPE"
@@ -1137,7 +1137,7 @@ msgid "SHOW CONTROLLER BATTERY LEVEL"
 msgstr "TAMPILKAN TINGKAT BATERAI KONTROLER"
 
 msgid "SHOW GUN NOTIFICATIONS"
-msgstr ""
+msgstr "TAMPILKAN NOTIFIKASI SENJATA"
 
 msgid "DRAW GUN CROSSHAIR"
 msgstr "GAMBARKAN CROSHAIR GUN"
@@ -1208,8 +1208,8 @@ msgstr "TOMBOL PINTAS"
 msgid "DEFAULT"
 msgstr "BAWAAN"
 
-msgid "NO DEVICE FOUND (JAMMASD, IPAC, ...)"
-msgstr "PERANGKAT TIDAK DITEMUKAN (JAMMASD, IPAC, ...)"
+msgid "NO DEVICE FOUND (JAMMASD, IPAC...)"
+msgstr "PERANGKAT TIDAK DITEMUKAN (JAMMASD, IPAC…)"
 
 msgid "DECLARE A NEW GLOBAL HOTKEY"
 msgstr "TETAPKAN TOMBOL PINTAS GLOBAL BARU"
@@ -1401,7 +1401,7 @@ msgid "PORT"
 msgstr "PORT"
 
 msgid "AUTOMATICALLY CREATE LOBBY"
-msgstr ""
+msgstr "BUAT LOBBY OTOMATIS"
 
 msgid "Automatically creates a Netplay lobby when starting a game."
 msgstr "Otomatis membuat lobby Netplay saat memulai permainan."
@@ -1550,9 +1550,6 @@ msgstr "PERINGKAT KOMUNITAS"
 
 msgid "VIDEO"
 msgstr "VIDEO"
-
-msgid "FANART"
-msgstr "SENI"
 
 msgid "BEZEL (16:9)"
 msgstr "RESOLUSI (16:9)"
@@ -2012,6 +2009,9 @@ msgstr "Aktifkan juga penghitung FPS asli emulator, jika tersedia."
 msgid "VSYNC"
 msgstr "VSYNC"
 
+msgid "FPS LIMIT"
+msgstr "BATAS FPS"
+
 msgid "OVERSCAN"
 msgstr "OVERSCAN"
 
@@ -2171,8 +2171,8 @@ msgid ""
 "Switches to short-press North for Savestates & long-press South button for "
 "Game Options"
 msgstr ""
-"Tekan Sebentar â–³ ( Segitiga ) untuk Penyimpanandan tekan lama Ã— untuk "
-"pengaturan game"
+"Tekan Sebentar Ã¢â€“Â³ ( Segitiga ) untuk Penyimpanandan tekan lama Ãƒâ€” "
+"untuk pengaturan game"
 
 msgid "CONTROL EMULATIONSTATION WITH FIRST JOYSTICK ONLY"
 msgstr "KONTROL EMULATIONSTATION DENGAN JOYSTICK PERTAMA"
@@ -2227,7 +2227,7 @@ msgid "OPTIMIZE VIDEO VRAM USAGE"
 msgstr "OPTIMALKAN VIDEO UNTUK VRAM"
 
 msgid "USE FILESYSTEM CACHE"
-msgstr ""
+msgstr "USE FILESYSTEM CACHE"
 
 msgid "REBOOT REQUIRED TO APPLY THE NEW CONFIGURATION"
 msgstr "REBOOT DIPERLUKAN UNTUK MENERAPKAN KONFIGURASI BARU"
@@ -2255,6 +2255,33 @@ msgstr "MULAI PEMBARUAN"
 
 msgid "UPDATER IS ALREADY RUNNING"
 msgstr "PEMBARUAN SEDANG BERLANGSUNG"
+
+msgid "START LOCAL MEDIA UPDATE"
+msgstr "MULAI PEMBAHARUAN LOCAL MEDIA"
+
+msgid "REALLY UPDATE FROM LOCAL MEDIA?"
+msgstr "SUNGGUH INGIN PEMBAHARUAN LOCAL MEDIA"
+
+msgid "SOFTWARE UPDATES VIA TORRENT"
+msgstr "PEMBARUAN PERANGKAT LUNAK VIA TORRENT"
+
+msgid "SHARE UPDATES VIA TORRENT"
+msgstr "BAGIKAN PEMBARUAN VIA TORRENT"
+
+msgid "Torrent update service started"
+msgstr "Layanan pembaruan Torrent telah dimulai"
+
+msgid "Torrent update service stopped"
+msgstr "Layanan pembaruan Torrent telah dihentikan"
+
+msgid "START UPDATE FROM TORRENT FILE"
+msgstr "MULAI PEMBARUAN DARI FILE TORRENT"
+
+msgid "REALLY UPDATE FROM TORRENT FILE ?"
+msgstr "YAKIN INGIN MEMPERBARUI DARI FILE TORRENT?"
+
+msgid "DOWNLOAD STATUS"
+msgstr "STATUS PENGUNDUHAN"
 
 msgid "LANGUAGE"
 msgstr "BAHASA"
@@ -2415,6 +2442,21 @@ msgstr "PERANGKAT LED"
 msgid "ENABLE LED"
 msgstr "AKTIFKAN LED"
 
+msgid "LED MODE"
+msgstr "MODE LED"
+
+msgid "STATIC"
+msgstr "STATIS"
+
+msgid "RAINBOW"
+msgstr "PELANGI"
+
+msgid "CHROMA"
+msgstr "CHROMA"
+
+msgid "PULSE"
+msgstr "DENYUT (PULSE)"
+
 msgid "LED BRIGHTNESS"
 msgstr "KECERAHAN LED"
 
@@ -2444,6 +2486,16 @@ msgstr "Memerlukan sandi untuk mengakses jaringan share."
 
 msgid "ROOT PASSWORD"
 msgstr "SANDI ROOT"
+
+msgid "CPU SECURITY MITIGATIONS"
+msgstr "MITIGASI KEAMANAN CPU"
+
+msgid ""
+"Disabling mitigations may improve performance on some systems at the cost of "
+"reduced protection against certain CPU vulnerabilities."
+msgstr ""
+"Mematikan mitigasi dapat meningkatkan kinerja pada beberapa sistem,namun "
+"mengurangi perlindungan terhadap kerentanan CPU tertentu."
 
 msgid "LATENCY REDUCTION"
 msgstr "KURANGI LATENSI"
@@ -2841,26 +2893,26 @@ msgstr "STATUS INTERNET"
 msgid "HOSTNAME"
 msgstr "NAMA HOST"
 
-msgid "ENABLE WIFI"
-msgstr "AKTIFKAN WIFI"
+msgid "ENABLE WI-FI"
+msgstr "AKTIFKAN WI-FI"
 
-msgid "WIFI SSID"
-msgstr "NAMA WIFI"
+msgid "WI-FI SSID"
+msgstr "NAMA WI-FI"
 
-msgid "WIFI KEY"
-msgstr "PASSWORD WIFI"
+msgid "WI-FI KEY"
+msgstr "PASSWORD WI-FI"
 
-msgid "WIFI COUNTRY"
-msgstr "NEGARA WIFI"
+msgid "WI-FI COUNTRY"
+msgstr "NEGARA WI-FI"
 
 msgid "N/A"
 msgstr "N/A"
 
-msgid "WIFI ENABLED"
-msgstr "WIFI AKTIF"
+msgid "WI-FI ENABLED"
+msgstr "WI-FI AKTIF"
 
-msgid "WIFI CONFIGURATION ERROR"
-msgstr "KESALAHAN KONFIGURASI WIFI"
+msgid "WI-FI CONFIGURATION ERROR"
+msgstr "KESALAHAN KONFIGURASI WI-FI"
 
 msgid "QUICK ACCESS"
 msgstr "AKSES CEPAT"
@@ -2995,7 +3047,7 @@ msgid "NO DRIVE SELECTED"
 msgstr "TIDAK ADA DRIVE YANG DIPILIH"
 
 msgid "Ejecting..."
-msgstr "Mengeluarkan..."
+msgstr "Mengeluarkan…"
 
 msgid "EDIT METADATA"
 msgstr "UBAH METADATA"
@@ -3229,7 +3281,7 @@ msgstr "masukkan lokasi box"
 msgid "Fan art"
 msgstr "Fan art"
 
-msgid "enter path to fanart"
+msgid "enter path to fan art"
 msgstr "masukkan lokasi fanart"
 
 msgid "Title shot"
@@ -3392,13 +3444,13 @@ msgid "Screenscraper Game ID"
 msgstr "ID Game Screenscraper"
 
 msgid "MultiDisk"
-msgstr ""
+msgstr "BANYAK KASET / MULTI DISK"
 
 msgid "Loading system config..."
-msgstr "Memuat konfigurasi sistem..."
+msgstr "Memuat konfigurasi sistem…"
 
 msgid "SAVING METADATA. PLEASE WAIT..."
-msgstr "MENYIMPAN METADATA, TUNGGU..."
+msgstr "MENYIMPAN METADATA, TUNGGU…"
 
 msgid "DO YOU WANT TO SWITCH THE SCREEN ?"
 msgstr "APAKAH INGIN BERALIH LAYAR?"
@@ -3421,8 +3473,8 @@ msgstr "4 pemain"
 msgid "never played"
 msgstr "tidak pernah dimainkan"
 
-msgid "retroachievements"
-msgstr "retroachievements"
+msgid "RetroAchievements"
+msgstr "RetroAchievements"
 
 msgid "arcade"
 msgstr "arkade"
@@ -3464,11 +3516,11 @@ msgid "Various"
 msgstr "Macam -  macam"
 
 #, c-format
-msgid "This collection contains %i game:%s"
-msgid_plural "This collection contains %i games, including:%s"
+msgid "This collection contains %i game: %s"
+msgid_plural "This collection contains %i games, including: %s"
 msgstr[0] ""
 "Koleksi ini terdapat\n"
-"Gamenya %i adalah :%s"
+"Gamenya %i adalah: %s"
 
 msgid "INVALID CONTENT"
 msgstr "KONTEN TIDAK VALID"
@@ -3519,11 +3571,14 @@ msgstr "CORE HILANG"
 msgid "UKNOWN ERROR"
 msgstr "ERROR TAK DIKETAHUI"
 
+msgid "Checking for latest upgrade script..."
+msgstr "Memeriksa skrip peningkatan terbaru…"
+
 msgid "Collections"
 msgstr "Koleksi"
 
 msgid "Searching for devices..."
-msgstr "Mencari perangkat..."
+msgstr "Mencari perangkat…"
 
 msgid "FORMATTING DEVICE"
 msgstr "FORMAT PERANGKAT"
@@ -3613,7 +3668,7 @@ msgid "up/down"
 msgstr "atas/bawah"
 
 msgid "WORKING..."
-msgstr "MEMPROSES..."
+msgstr "MEMPROSES…"
 
 msgid "accept"
 msgstr "terima"
@@ -3652,7 +3707,7 @@ msgstr "%s terhubung"
 msgid "%s disconnected"
 msgstr "%s terputus"
 
-msgid "SHIFTS FOR UPPER,LOWER, AND SPECIAL"
+msgid "SHIFTS FOR UPPER, LOWER, AND SPECIAL"
 msgstr "TEKAN SHIFT UNTUK ATAS, BAWAH, DAN SPESIAL"
 
 msgid "ALT GR"
@@ -3838,7 +3893,7 @@ msgstr ""
 "Sesuaikan Target untuk Melakukan Kalibrasi"
 
 msgid "Reloaded the games list..."
-msgstr "Memuat ulang daftar game..."
+msgstr "Memuat ulang daftar game…"
 
 msgid "GAME DRIVE DETECTED"
 msgstr "DRIVE GAME TERDETEKSI"
@@ -3862,7 +3917,7 @@ msgid "(This will also apply on future boots)"
 msgstr "(Ini juga akan diterapkan pada proses booting mendatang)"
 
 msgid "Merge requested... Please wait."
-msgstr "Penggabungan diminta... Mohon tunggu."
+msgstr "Penggabungan diminta… Mohon tunggu."
 
 msgid "MERGE FAILED"
 msgstr "PENGGABUNGAN GAGAL"
@@ -3877,10 +3932,10 @@ msgid "NO, IGNORE FOREVER"
 msgstr "TIDAK, ABAIKAN SELAMANYA"
 
 msgid "Adding drive to ignore list..."
-msgstr "Menambahkan drive ke daftar abaikan..."
+msgstr "Menambahkan drive ke daftar abaikan…"
 
 msgid "YES, MERGE DRIVE"
-msgstr ""
+msgstr "YA, GABUNGKAN PENYIMPANAN (DRIVE)"
 
 msgid "NEW DRIVE DETECTED"
 msgstr "DRIVE BARU TERDETEKSI"
@@ -3892,7 +3947,7 @@ msgid "(ALL EXISTING DATA WILL BE ERASED)"
 msgstr "(SEMUA DATA YANG ADA AKAN DIHAPUS)"
 
 msgid "Starting format process..."
-msgstr "Memulai proses format..."
+msgstr "Memulai proses format…"
 
 msgid "FORMAT FAILED"
 msgstr "FORMAT GAGAL"
@@ -3944,6 +3999,9 @@ msgid "%d second ago"
 msgid_plural "%d seconds ago"
 msgstr[0] "%d detik lalu"
 
+#~ msgid "FANART"
+#~ msgstr "SENI"
+
 #~ msgid "BUILD IMAGE CACHE"
 #~ msgstr "BUAT CACHE IMAGE"
 
@@ -3990,7 +4048,7 @@ msgstr[0] "%d detik lalu"
 #~ msgstr "urutan rgb dmd"
 
 #~ msgid "SAVING METADATAS. PLEASE WAIT..."
-#~ msgstr "MENYIMPAN METADATA. HARAP TUNGGU..."
+#~ msgstr "MENYIMPAN METADATA. HARAP TUNGGU…"
 
 #~ msgid "FORGET A BLUETOOTH DEVICE"
 #~ msgstr "LUPAKAN PERANGKAT BLUETOOTH"
