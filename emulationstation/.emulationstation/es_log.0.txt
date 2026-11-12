@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 2026-10-08 20:27:01	[8808]	ERROR	HttpReq::onError (3) : Couldn't connect to server
 2026-10-08 20:27:05	[18352]	ERROR	System "mess" is missing name, extension, or command!
 2026-10-08 20:29:58	[27492]	ERROR	GL error: glDeleteTextures(1, &_texture) failed with error code: 1282
+=======
+2026-05-29 19:12:18	[10560]	ERROR	System "mess" is missing name, extension, or command!
+2026-05-29 19:12:20	[14408]	ERROR	HttpReq::onError (3) : Couldn't connect to server
+>>>>>>> 3d6c87e89f5f66a486bd40462751744499be5321
